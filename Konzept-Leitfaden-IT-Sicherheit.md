@@ -60,13 +60,10 @@ Bei der Priorisierung von Anforderungen berücksichtigt der Leitfaden folgende D
 
 Die Priorisierung mündet in den folgenden Reifegradstufen
 
-- **Stufe 0 ("Laien-Niveau")**: Selbst die meisten Laien würden diese Anforderung erfüllen. Wer nicht einmal die Anforderungen dieser Stufe erfüllt, sollte keine Medizinprodukte entwickeln.
-- **Stufe 1 (Niveau "fortgeschrittener Anfänger")**: Der Hersteller hat sich des Themas IT-Sicherheit bereits angenommen. Bei unkritischen Produkten und beim ersten Audit kann dieses Niveau akzeptiert werden. In den Folgejahren wird jedoch eine Verbesserung erwartet.
-- **Stufe 2 ("State-of-the-art")**: Das ist das Niveau, das Hersteller auf Dauer in der Regel erreichen müssen. Es entspricht aber nicht dem Stand der Wissenschaft.
-
-|ID|Anforderung|Stufe|Begründung, Referenzen, Kommentare|
-|:--:|:--|:--:|:--|
-|12|Das System meldet den Anwender nach x Minuten Inaktivität automatisch wieder ab|2|UL 2900-2-1 Absatz XY, ISO 15408 Teil X Kapitel Y|
+- **Stufe 0 ("Laien-Niveau")**: Selbst die meisten Laien würden diese Anforderung erfüllen. Wer nicht einmal die Anforderungen dieser Stufe erfüllt, sollte keine Medizinprodukte entwickeln. Diese Anforderungen darf und muss ein Auditor bereits im allerersten Audit als erfüllt erwarten.
+- **Stufe 1 (Niveau "fortgeschrittener Anfänger")**: Der Hersteller hat sich des Themas IT-Sicherheit bereits angenommen. Bei unkritischeren Produkten und den ersten Audits kann dieses Niveau akzeptiert werden. In jedem Folgejahr wird jedoch eine Verbesserung erwartet, bis die Stufe 2 erreicht wird.
+- **Stufe 2 ("State-of-the-art")**: Das ist das Niveau, das Hersteller auf Dauer in der Regel erreichen müssen. Es entspricht aber noch nicht dem Stand der Wissenschaft.
+- **Stufe 3 ("Experten-Niveau")**: Dieses Niveau erreichen hauptberufliche IT-Security-Experten. Es geht über das hinaus, was ein Auditor in der Regel bei Medizinprodukten erwarten darf. Auf diesem Niveau werden beispielsweise Schwachstellen beherrscht, die allgemein nicht bekannt sind. Energieversorger, Geheimdienste und das Militär müssten auf diesem Niveau agieren.
 
 
 Aufbau des Leitfadens
@@ -90,3 +87,9 @@ Aufbau des Leitfadens
    2. Marktüberwachung
    3. Rückrufe, Patches
 
+Die Kapitel 4 f. enthalten die Anforderungen thematisch gruppiert in Tabellen, wie der folgenden:
+
+|ID|Anforderung|Stufe|Begründung, Referenzen, Kommentare|
+|:--:|:--|:--:|:--|
+|12|Das System meldet den Anwender nach x Minuten Inaktivität automatisch wieder ab|2|UL 2900-2-1 Absatz XY, ISO 15408 Teil X Kapitel Y|
+|...||||
