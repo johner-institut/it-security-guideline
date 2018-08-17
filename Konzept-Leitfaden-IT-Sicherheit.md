@@ -25,9 +25,9 @@ Autoren und Nutzungsrechte
 
 Der Leitfaden wird von den folgenden Autoren verfasst:
 
-Dr. Andreas Purde (TÜV SÜD)
-Olaf Teichert (TÜV SÜD)
-Prof. Dr. Christian Johner (Johner Institut)
+- Dr. Andreas Purde (TÜV SÜD)
+- Olaf Teichert (TÜV SÜD)
+- Prof. Dr. Christian Johner (Johner Institut)
 
 Die Autoren oder/und deren Institutionen sind im Leitfaden genannt inklusive Logo der Institutionen.
 
@@ -74,21 +74,21 @@ Aufbau des Leitfadens
 
 1. Metainformationen (Autoren, Dokumentenlenkung, Ziele, Verweise z.B. auf Erwägungsgründe)
 2. Über diesen Leitfaden
-  - Anwendungsbereich
-  - Hinweise zur Verwendung 
+  1. Anwendungsbereich
+  2. Hinweise zur Verwendung 
 2. Allgemeine Anforderungen (Prozesse, Dokumentation) 
 3. Anforderungen an die Produktentwicklung
-  - Zweckbestimmung und Stakeholder-Anforderungen
-  - System- und Software-Anforderungen
-  - System- und Software-Architektur
-  - Implementierung und Erstellung der Software
-  - Bewertung von Software-Einheiten
-  - System- und Software-Tests
-  - Produktfreigabe
+  1. Zweckbestimmung und Stakeholder-Anforderungen
+  2. System- und Software-Anforderungen
+  3. System- und Software-Architektur
+  4. Implementierung und Erstellung der Software
+  5. Bewertung von Software-Einheiten
+  6. System- und Software-Tests
+  7. Produktfreigabe
 4. Anforderungen an die der Entwicklung nachgelagerten Phasen
-  -  Produktion, Distribution, Installation
-  -  Marktüberwachung
-  -  Rückrufe, Patches
+  1. Produktion, Distribution, Installation
+  2. Marktüberwachung
+  3. Rückrufe, Patches
 
 Interne Hinweise
 ------------
