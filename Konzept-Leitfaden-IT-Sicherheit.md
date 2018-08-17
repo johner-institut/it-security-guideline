@@ -74,21 +74,21 @@ Aufbau des Leitfadens
 
 1. Metainformationen (Autoren, Dokumentenlenkung, Ziele, Verweise z.B. auf Erwägungsgründe)
 2. Über diesen Leitfaden
- - Anwendungsbereich
- - Hinweise zur Verwendung 
+  - Anwendungsbereich
+  - Hinweise zur Verwendung 
 2. Allgemeine Anforderungen (Prozesse, Dokumentation) 
 3. Anforderungen an die Produktentwicklung
- - Zweckbestimmung und Stakeholder-Anforderungen
- - System- und Software-Anforderungen
- - System- und Software-Architektur
- - Implementierung und Erstellung der Software
- - Bewertung von Software-Einheiten
- - System- und Software-Tests
- - Produktfreigabe
+  - Zweckbestimmung und Stakeholder-Anforderungen
+  - System- und Software-Anforderungen
+  - System- und Software-Architektur
+  - Implementierung und Erstellung der Software
+  - Bewertung von Software-Einheiten
+  - System- und Software-Tests
+  - Produktfreigabe
 4. Anforderungen an die der Entwicklung nachgelagerten Phasen
- -  Produktion, Distribution, Installation
- -  Marktüberwachung
- -  Rückrufe, Patches
+  -  Produktion, Distribution, Installation
+  -  Marktüberwachung
+  -  Rückrufe, Patches
 
 Interne Hinweise
 ------------
