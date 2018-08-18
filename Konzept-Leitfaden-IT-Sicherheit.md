@@ -86,6 +86,9 @@ Aufbau des Leitfadens
    1. Produktion, Distribution, Installation
    2. Marktüberwachung
    3. Rückrufe, Patches
+5. Anhänge
+   1. Erläuterungen zu einzelnen Anforderungen
+   2. Weiterführende Literatur
 
 Die Kapitel 4 f. enthalten die Anforderungen thematisch gruppiert in Tabellen, wie der folgenden:
 
