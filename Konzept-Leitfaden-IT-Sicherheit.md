@@ -19,6 +19,7 @@ Erwägungsgründe
 13. Die einfache Verständlichkeit und Umsetzbarkeit ist entscheidend für den erhofften positiven Einfluss eines Leitfadens auf die IT-Sicherheit.
 13. Um die Verteilung und den Bekanntheitsgrad zu fördern, soll der Leitfaden kostenfrei verfügbar sein und bleiben. 
 14. Der Leitfaden sollte auf Deutsch und Englisch verfügbar sein.
+15. Der Fokus liegt auf der IT-Sicherheit der Medizinprodukte, nicht auf der IT-Sicherheit von Organisationen wie Krankenhäusern oder Medizinprodukteherstellern.
 
 Autoren und Nutzungsrechte
 ----------------
