@@ -70,10 +70,12 @@ Die Priorisierung mündet in den folgenden Reifegradstufen
 Aufbau des Leitfadens
 ------------------
 
-1. Metainformationen (Autoren, Dokumentenlenkung, Ziele, Verweise z.B. auf Erwägungsgründe)
-2. Über diesen Leitfaden
+1. Metainformationen
+   1. Ziele
    1. Anwendungsbereich
    2. Hinweise zur Verwendung 
+   3. Autoren und Nutzungsrechte
+   4. Dokumentenlenkung und Identifikation
 2. Allgemeine Anforderungen (Prozesse, Dokumentation) 
 3. Anforderungen an die Produktentwicklung
    1. Zweckbestimmung und Stakeholder-Anforderungen
