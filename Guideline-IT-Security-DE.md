@@ -162,6 +162,8 @@ C) Anforderungen an die Produktentwicklung
 ||Das Produkt erlaubt berechtigten Benutzern, andere Benutzer und Nachbarsysteme zu löschen|1||
 ||Das Produkt erlaubt es Benutzern nicht, die eigene Berechtigung zu ändern|||
 ||Das Produkt erlaubt es, Berechtigungen auszuhebeln ("Breaking the glas"), und identifiziert / dokumentiert die Person und die Gründe|||
+||In einer Client-Server Architektur werden alle Cyber-Sicherungsmaßnahmen serverseitig berechnet und geprüft|||
+||In einer Client-Server Architektur werden alle Eingaben des Clients serverseitig geprüft|||
 
 [^C2a-02]: Idealerweise müssten auch Passwörter ausgeschlossen werden, die über Wörterbuch-Angriffe erraten werden können.
 
