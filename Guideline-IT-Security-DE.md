@@ -149,7 +149,7 @@ C) Anforderungen an die Produktentwicklung
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Das Produkt erlaubt den Benutzern nur dann seine Nutzung, wenn sie sich am Produkt authentifiziert haben|0|Zugehörige Testfälle zeigen lassen|
+||Das Produkt erlaubt den Benutzern nur dann seine Nutzung, wenn sie sich am Produkt authentifiziert haben|0|Zugehörige Testfälle zeigen lassen apu: sehe ich für manche Produkte kritisch|
 ||Das Produkt erlaubt an jeder Datenschnittstelle den daran angeschlossenen Nachbarsystemen (z.B. andere Medizinprodukte, IT-Systeme), nur dann mit ihm Daten auszutauschen, wenn diese vom Produkt authentifiziert wurden|0|dto.|
 ||Das Produkt erlaubt eine Authentifizierung mit Passwort nur, wenn dieses Passwort eine Länge von 6 Zeichen hat von denen mindestens eines ein nicht alphanumerisches Zeichen ist und das mindestens einen Groß- und einen Kleinbuchstaben enthält [^C2a-02]|1||
 ||Das Produkt hat kein Default-Passwort oder verlangt, dass ein solches bei der ersten Nutzung geändert wird|0||
@@ -388,7 +388,8 @@ E) Anhänge
 
 Bei der Priorisierung von Anforderungen berücksichtigt der Leitfaden folgende Dimensionen:
 
-- Risiko für Patienten (Kombination von Schweregrade und Wahrscheinlichkeit von Schäden)
+- Risiko für den einzelnen Patienten (Kombination von Schweregrade und Wahrscheinlichkeit von Schäden)
+- Tragweite (nur ein Patient, ganzes Krankenhaus etc.)
 - Umsetzbarkeit (finanzieller und zeitlicher Aufwand, Voraussetzungen bezüglich Werkzeuge)
 
 Die Priorisierung mündet in den folgenden Reifegradstufen
