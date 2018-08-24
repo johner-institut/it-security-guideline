@@ -1,6 +1,8 @@
 Leitfaden IT-Sicherheit
 ==============
 
+TODO: BSI Leitfaden einbauen, AAMI 57 durchgehen, ebenso nochmals UL 2900
+
 A) Metainformationen
 ----------------
 
@@ -69,6 +71,8 @@ Die freigegebenen Versionen sind über ein Tag im Repository als solche gekennze
 B) Allgemeine Anforderungen
 ---------------
 
+TODO: All diese Anforderungen in binär entscheidbare Prüfkriterien überführen!
+
 ### 1. Prozesse
 
 Die Hersteller sollten alle unten genannten Aspekte entweder in den Verfahrensanweisungen oder in den entsprechenden Plänen abdecken, um zu gewährleisten, dass die IT-Sicherheit systematisch gewährleistet wird. Üblicherweise sind die folgenden Verfahrensanweisungen bzw. Pläne betroffen:
@@ -79,6 +83,7 @@ Die Hersteller sollten alle unten genannten Aspekte entweder in den Verfahrensan
 - Marktbeobachtung (Post-Market Surveillance) und Vigilanz
 - Service, Installation
 - Kundenkommunikation
+- Managementbewertung (ISO 13485 fordert "anwendbare neue oder überarbeitete regulatorische Anforderungen" zu berücksichtigen.)
 
 Nutzt der Hersteller ausgelagerte Prozesse, so gelten die Anforderungen entsprechend. Beispielsweise müsste ein (Software-)Entwicklungsdienstleister verpflichtet werden, die Anforderungen dieser Leitlinie zu beachten.
 
@@ -202,7 +207,7 @@ C) Anforderungen an die Produktentwicklung
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Das System erlaubt es, Patches (eigener Code, SOUP-/OTS-Komponenten) aufzuspielen|1|Hersteller sollte begründen können, ob das remote erfolgen darf oder muss|
+||Das System erlaubt es, Patches (eigener Code, SOUP-/OTS-Komponenten) aufzuspielen|1|Hersteller sollte Ausnahmen begründen können, ebenso, ob das Patchen remote erfolgen darf oder muss|
 ||Das System erlaubt es, fehlerhafte Patches wieder zu entfernen|||
 ||Das System prüft geänderten Programm-Code (Patches) vor dessen ersten Ausführung auf Integrität.|2||
 ||Das System aktualisiert sich selbständig||Diese Anforderung ist etwas wage. Hersteller müssen Risiken, die durch solche "Auto-Updates" entstehen ebenfalls analysieren und beherrschen|
