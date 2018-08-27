@@ -1,8 +1,6 @@
 Leitfaden IT-Sicherheit
 ==============
 
-TODO: BSI Leitfaden einbauen, AAMI 57 durchgehen, ebenso nochmals UL 2900
-
 A) Metainformationen
 ----------------
 
@@ -13,6 +11,8 @@ Dieser Leitfaden hat das Ziel, Herstellern und benannten Stellen eine Handlungsl
 - zu verstehen, was die Erwartungen der benannten Stellen sind,
 - die schrittweise Umsetzung der IT-Sicherheit der Produkte zu befördern,
 - das Fehlen einer harmonierten Norm (zwischenzeitlich) bestmöglich zu kompensieren.
+
+Der Leitfaden hat **nicht** die Zielsetzung, als Lehrbuch oder Leitfaden für das Erreichen der IT-Sicherheit zu dienen. Vielmehr möchte er ein Leitfaden für deren Überprüfung sein.
 
 ### 2. Anwendungsbereich
 
@@ -53,6 +53,7 @@ Diesen Leitfaden haben die folgenden Autoren verfasst:
 - Dr. Andreas Purde (TÜV SÜD)
 - Olaf Teichert (TÜV SÜD)
 - Prof. Dr. Christian Johner (Johner Institut)
+- Georg Heidenreich (SIEMENS Healthineers)
 
 Der Leitfaden ist unter der [Creative Commons Lizenz](https://creativecommons.org/licenses/?lang=de) vom Typ [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) veröffentlicht. Diese erfordert die Namensnennung der Autoren ("TÜV SÜD und Johner Institut") und erlaubt es, Dritten auf diesem Werk aufzubauen z.B. es zu verbessern; letzteres allerdings nur zu nicht-kommerziellen Zwecken.
 
@@ -428,7 +429,7 @@ Die Priorisierung mündet in den folgenden Reifegradstufen
 
 #### b) Fachliteratur, Lehrbücher
 
-- Eckert: 
+- Eckert: TODO
 - Johner Institut: [Videotrainings zur IT-Sicherheit bei Medizinprodukten](www.auditgarant.de)
 
 ### 4. Erwägungsgründe
