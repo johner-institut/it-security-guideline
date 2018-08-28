@@ -195,13 +195,12 @@ C) Anforderungen an die Produktentwicklung
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Das Produkt erlaubt es (nur) berechtigten Benutzern, alle patientenspezifischen Daten zu löschen |2||
+||Das Produkt erlaubt es Benutzern, alle patientenspezifischen Daten endgültig zu löschen. Das Produkt erlaubt es, die Berechtigungen dafür zu beschränken (z.B. auf Rollen). |2||
+||Das Produkt schützt Daten vor ungewolltem Löschen [^C2b-04]||Hersteller müssen prüfen, ob kein höherwertiges Schutzziel dem entgegensteht, wie die zuvorgenannte Anforderung|
 ||Das Produkt übermittelt Daten, zumindest sicherheitsbezogene Daten, über seine Datenschnittstellen nur in verschlüsselter Form. Das gilt auch für das Abspeichern auf externen Datenträgen|1|Nachfragen, welche Verschlüsselung zum Einsatz kommt und wie der initiale Schlüsselaustausch realisiert ist|
 ||Das Produkt sichert die Integrität der Daten vor ungewollter Veränderung z.B. durch kryptographische Verfahren|2|Das gilt insbesondere für sicherheitsrelevante Daten wie die unter [^C2b-02] genannten.|
 ||Das Produkt überprüft alle Benutzereingaben und alle eingehenden Daten vor der weiteren Verarbeitung anhand von Hersteller festgelegten Überprüfungskriterien (s.o.)||Jeweils ein Beispiel für einen Dateninput an der Benutzer- und an der Datenschnittstelle auswählen und sich die Überprüfung im Code zeigen lassen|
 ||Das Produkt speichert Passwörter und personenidentifizierende Merkmale nur verschlüsselt|||
-
-
 
 ### c) Patches
 
