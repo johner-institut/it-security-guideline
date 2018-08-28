@@ -6,7 +6,7 @@ A) Metainformationen
 
 ### 1. Ziele des Leitfadens
 
-Dieser Leitfaden hat das Ziel, Herstellern und benannten Stellen eine Handlungsleitung und eine konkrete Checkliste an die Hand zu geben, um 
+Dieser Leitfaden hat das Ziel, Medizinprodukte-Herstellern und benannten Stellen eine Handlungsleitung und eine konkrete Checkliste an die Hand zu geben, um 
 
 - zu verstehen, was die Erwartungen der benannten Stellen sind,
 - die schrittweise Umsetzung der IT-Sicherheit der Produkte zu befördern,
@@ -16,7 +16,7 @@ Der Leitfaden hat **nicht** die Zielsetzung, als Lehrbuch oder Leitfaden für da
 
 ### 2. Anwendungsbereich
 
-Dieser Leitfaden wendet sich an Hersteller vernetzbarer Medizinprodukte und deren Dienstleister sowie an Personen und Organisation, die die IT-Sicherheit dieser Produkte bewerten müssen.
+Dieser Leitfaden wendet sich an Hersteller von Medizinprodukten, inbesondere von vernetzbaren Medizinprodukten, und deren Dienstleister sowie an Personen und Organisation, die die IT-Sicherheit dieser Produkte bewerten müssen.
 
 Er hat die IT-Sicherheit der Produkte im Fokus, nicht die IT-Sicherheit der Organisation. 
 
@@ -34,7 +34,9 @@ Dieser Leitfaden enthält Anforderungen, die nicht bei allen Produkten anwendbar
 
 #### b) Priorisierung
 
-Sollten die Hersteller nicht alle Anforderungen dieses Leitfadens von Beginn an erfüllen können, sollten so möglich und sinnvoll die Anforderungen in der Reihenfolge deren Priorität (zuerst Stufe 0, zum Schluss Stufe 3) erfüllen. Diese Stufen beschreibt der Anhang.
+Sollten die Hersteller nicht alle Anforderungen dieses Leitfadens von Beginn an erfüllen können, sollten so möglich und sinnvoll die Anforderungen in der Reihenfolge deren Priorität (zuerst Stufe 0, zum Schluss Stufe 3) erfüllen. Diese Stufen beschreibt der Anhang. 
+
+Die Akzeptanz des erreichten Sicherheitsniveaus ist zu bewerten. 
 
 #### c) Kommentare
 
@@ -42,7 +44,7 @@ Der Leitfaden enthält zu den meisten Anforderungen "Kommentare". Diese Kommenta
 
 #### d) Verbindlichkeit
 
-Dieser Leitfaden weder eine gesetzliche Anforderung noch eine harmonisierte Norm. Entsprechend unterscheidet er auch nicht zwischen normativen und informativen Elementen.
+Dieser Leitfaden ist weder eine gesetzliche Anforderung noch eine harmonisierte Norm. Entsprechend unterscheidet er auch nicht zwischen normativen und informativen Elementen.
 
 Vielmehr trägt der Leitfaden Best-Practices zusammen, um den gesetzlich geforderten "State-of-the-Art" bestmöglich zu beschreiben. 
 
@@ -82,7 +84,7 @@ Die Hersteller sollten alle unten genannten Aspekte entweder in den Verfahrensan
 - Risikomanagement
 - Verifizierung und Validierung (falls nicht Teil der Entwicklung)
 - Marktbeobachtung (Post-Market Surveillance) und Vigilanz
-- Service, Installation
+- Service, Installation, Außerbetriebnahme
 - Kundenkommunikation
 - Managementbewertung (ISO 13485 fordert "anwendbare neue oder überarbeitete regulatorische Anforderungen" zu berücksichtigen.)
 
@@ -118,7 +120,7 @@ C) Anforderungen an die Produktentwicklung
 ||Der Hersteller hat die Risikoakzeptanzkriterien nachvollziehbar aus dem Nutzen des Produkts und dem State-of-the-Art abgeleitet|||
 ||Der Hersteller hat ein System entwickelt, mit dem er IT-Sicherheitsbezogene Risiken bewerten kann[^C1-04]|2||
 
-[^C1-01]: Primäre Benutzer sind diejenigen, die das System im Sinne der medizinischen Zweckbestimmung anwenden. Sekundäre Benutzer sind alle anderen Personen, die das Produkt im bestimmungsgemäßen Gebrauch nutzen z.B. bei der Installation, Konfiguration, Update/Upgrade
+[^C1-01]: Primäre Benutzer sind diejenigen, die das Produkt im Sinne der medizinischen Zweckbestimmung anwenden. Sekundäre Benutzer sind alle anderen Personen, die das Produkt im bestimmungsgemäßen Gebrauch nutzen z.B. bei der Installation, Konfiguration, Update/Upgrade
 
 [^C1-02]: Beispiele finden sich in der Sektion zum Labeling 
 
@@ -155,6 +157,7 @@ C) Anforderungen an die Produktentwicklung
 ||Das Produkt erlaubt eine Authentifizierung mit Passwort nur, wenn dieses Passwort eine Länge von 6 Zeichen hat von denen mindestens eines ein nicht alphanumerisches Zeichen ist und das mindestens einen Groß- und einen Kleinbuchstaben enthält [^C2a-02]|1||
 ||Das Produkt hat kein Default-Passwort oder verlangt, dass ein solches bei der ersten Nutzung geändert wird|0||
 ||Das Produkt sperrt Benutzer und Nachbarsysteme nach n Versuchen für m Minuten aus, wobei der Hersteller n und m Werte oder Untergrenzen festlegt|1||
+||Das Produkt zeigt im Falle eines nicht erfolgreichen Logins nur Informationen an, die es dem Anwender nicht erlauben die genaue Ursache der Sperrung zu erkennen, wie z.B. falscher Benutzername oder falsches Passwort.|2||
 ||Das Produkt logged Benutzer und Nachbarsysteme nach n Minuten Inaktivität aus, wobei der Hersteller für n den Wert oder dessen Obergrenze festlegt|||
 ||Das Produkt weist jedem Benutzer und jedem Nachbarsystem bei der Authentifizierung eine Rolle zu|1|Erklären lassen, in welcher/welchen Software-Komponente(n) Komponenten diese Funktionalität implementiert und wie dies geprüft ist|
 ||Das Produkt erlaubt jeder Rolle den Zugriff auf nur die Funktionen, für die die sie berechtigt ist. Dies gilt insbesondere auch für das Update/Upgrade des Produkts|1|dto.|
@@ -178,22 +181,25 @@ C) Anforderungen an die Produktentwicklung
 ||Der Hersteller hat die Schutzwürdigkeit dieser Daten mit Bezug zur Vertraulichkeit und deren Auswirkung auf die Patientensicherheit bewertet.|||
 ||Der Hersteller hat im Risikomanagement die Auswirkungen bewertet, wenn der Schutz besonders schützenswerter Daten nicht mehr gegeben ist|||
 ||Der Hersteller hat im Risikomanagement die Folgen einer Überlastung des Systems durch zu viele Anfragen (z.B. DoS) oder Anfragen mit zu großen Daten-Volumina untersucht und falls notwendig Maßnahmen definiert|||
-||Der Hersteller hat allgemein oder produktspezifisch festgelegt, nach welchen Überprüfungskriterien[^C2b-02] externe Daten vor der weiteren Verarbeitung überprüft werden müssen|||
+||Der Hersteller hat im Risikomanagement die Folgen eines Datenverlusts analysiert und ggf. Maßnahmen wie Backup festgelegt|||
+||Der Hersteller hat allgemein oder produktspezifisch festgelegt, nach welchen Überprüfungskriterien[^C2b-02] externe Daten vor der weiteren Verarbeitung überprüft werden müssen[^C2b-03]|||
 
-[^C2b-01]: Beispiele für solche Daten sind Patientendaten (z.B. demographische Daten, Anamnesen, Diagnosen), Untersuchungsdaten (z.B. Laborwerte, radiologische und pathologische Bilder) und Behandlungsdaten (Verschreibungen, Einstellungen von Medizingeräten), Konfigurationsdaten der Produkte, Daten der Anwender (insbesondere Zugangsdaten), Programm-Code.
+[^C2b-01]: Beispiele für solche Daten sind Patientendaten (z.B. demographische Daten, Anamnesen, Diagnosen), Untersuchungsdaten (z.B. Laborwerte, radiologische und pathologische Bilder) und Behandlungsdaten (Verschreibungen, Einstellungen von Medizingeräten), Konfigurationsdaten der Produkte, Daten der Anwender (insbesondere Zugangsdaten), Keys, Software Zertifikate, Programm-Code (inklusive SOUP/OTS).
 
-[^C2b-02]: Beispiele für Überprüfungen: Überprüfung auf falsche Länge, auf Vollständigkeit, auf falschen Zeichensatz, auf nicht erwartete Zeichen, auf mehrfach geschickte Daten, auf veraltete / verspätete Daten, nicht erwartete oder falsche Formate (z.B. kein Escaping von Zeichen mit besonderer Bedeutung wie Trennzeichen, kein wohlgeformtes XML, ungültige JSON-Dateien, falsche Datentypen, XML, das nicht dem spezifizierten Schema entspricht), andere Zeichensätze, im Input enthaltene Schlüsselworte, BigEndian statt Little Endian, Werte, die nicht im vorgesehenen Wertebereich enthalten sind (z.B. im Klassifikations- oder Kodiersystem), falsche Zeitzone, falsches Zahlenformat, unmögliche Daten (z.B. Geburtstag in der Zukunft) usw.
+[^C2b-02]: Beispiele für Überprüfungen: Überprüfung auf falsche Länge, auf Vollständigkeit, auf falschen Zeichensatz, auf nicht erwartete Zeichen, auf mehrfach geschickte Daten, auf veraltete / verspätete Daten, nicht erwartete oder falsche Formate (z.B. kein Escaping von Zeichen mit besonderer Bedeutung wie Trennzeichen, kein wohlgeformtes XML, ungültige JSON-Dateien, falsche Datentypen, XML, das nicht dem spezifizierten Schema entspricht), andere Zeichensätze, im Input enthaltene Schlüsselworte und (ungültige) Befehle, BigEndian statt Little Endian, Werte, die nicht im vorgesehenen Wertebereich enthalten sind (z.B. im Klassifikations- oder Kodiersystem), falsche Zeitzone, falsches Zahlenformat, unmögliche Daten (z.B. Geburtstag in der Zukunft), widersprüchliche Daten usw.
+
+[^C2b-03]: Falls möglich und sinnvoll empfehlen sich Listen erlaubter Werte (White-Listing)
 
 
 ##### ii) Produkt
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Das System erlaubt es berechtigten Benutzern, alle patientenspezifischen Daten zu löschen|2||
-||Das System übermittelt Daten, zumindest sicherheitsbezogene Daten, über seine Datenschnittstellen nur in verschlüsselter Form|1|Nachfragen, welche Verschlüsselung zum Einsatz kommt und wie der initiale Schlüsselaustausch realisiert ist|
-||Das System sichert die Integrität der Daten vor ungewollter Veränderung z.B. durch kryptographische Verfahren|2|Das gilt insbesondere für den Programm-Code.|
-||Das System überprüft alle Benutzereingaben und alle eingehenden Daten vor der weiteren Verarbeitung anhand von Hersteller festgelegten Überprüfungskriterien (s.o.)||Jeweils ein Beispiel für einen Dateninput an der Benutzer- und an der Datenschnittstelle auswählen und sich die Überprüfung im Code zeigen lassen|
-||Das System speichert Passwörter und personenidentifizierende Merkmale nur verschlüsselt|||
+||Das Produkt erlaubt es (nur) berechtigten Benutzern, alle patientenspezifischen Daten zu löschen |2||
+||Das Produkt übermittelt Daten, zumindest sicherheitsbezogene Daten, über seine Datenschnittstellen nur in verschlüsselter Form. Das gilt auch für das Abspeichern auf externen Datenträgen|1|Nachfragen, welche Verschlüsselung zum Einsatz kommt und wie der initiale Schlüsselaustausch realisiert ist|
+||Das Produkt sichert die Integrität der Daten vor ungewollter Veränderung z.B. durch kryptographische Verfahren|2|Das gilt insbesondere für sicherheitsrelevante Daten wie die unter [^C2b-02] genannten.|
+||Das Produkt überprüft alle Benutzereingaben und alle eingehenden Daten vor der weiteren Verarbeitung anhand von Hersteller festgelegten Überprüfungskriterien (s.o.)||Jeweils ein Beispiel für einen Dateninput an der Benutzer- und an der Datenschnittstelle auswählen und sich die Überprüfung im Code zeigen lassen|
+||Das Produkt speichert Passwörter und personenidentifizierende Merkmale nur verschlüsselt|||
 
 
 
@@ -210,20 +216,24 @@ C) Anforderungen an die Produktentwicklung
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Das System erlaubt es, Patches (eigener Code, SOUP-/OTS-Komponenten) aufzuspielen|1|Hersteller sollte Ausnahmen begründen können, ebenso, ob das Patchen remote erfolgen darf oder muss|
-||Das System erlaubt es, fehlerhafte Patches wieder zu entfernen|||
-||Das System prüft geänderten Programm-Code (Patches) vor dessen ersten Ausführung auf Integrität.|2||
-||Das System aktualisiert sich selbständig||Diese Anforderung ist etwas wage. Hersteller müssen Risiken, die durch solche "Auto-Updates" entstehen ebenfalls analysieren und beherrschen|
+||Das Produkt erlaubt es, Patches (eigener Code, SOUP-/OTS-Komponenten) aufzuspielen|1|Hersteller sollte Ausnahmen begründen können, ebenso, ob das Patchen remote erfolgen darf oder muss|
+||Das Produkt erlaubt es, fehlerhafte Patches wieder zu entfernen|||
+||Das Produkt beschränkt die Möglichkeit, Patches aufzuspielen oder zu entfernen auf die berechtigten Benutzer[^C3c-01]|2||
+||Das Produkt prüft geänderten Programm-Code (Patches) vor dessen ersten Ausführung auf Integrität.|2||
+||Das Produkt aktualisiert sich selbständig||Diese Anforderung ist etwas wage. Hersteller müssen Risiken, die durch solche "Auto-Updates" entstehen ebenfalls analysieren und beherrschen (z.B. durch unvollständige, unberechtigte, fehlerhafte und unterlassene Updates)|
+
+[^C2c-01]: Diese Prüfung erfolgt üblicherweise auf einem rollenbasierten Berechtigungskonzept sowie einer Authentififzierung der Nutzer.
 
 ### d) Sonstiges
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Das System protokolliert alle wesentlichen Aktionen [^C3d-01] am/im System in einem Auditlog|||
-||Das System schützt das Auditlog vor Veränderung||sich vom Hersteller erklären lassen, wie der Schutz gewährleistet wird und wie eine Änderung des Auditlogs vom System identifiziert wird. Ggf. sogar verantwortliche Software-Komponente zeigen lassen|
-||Das System erkennt einen Einbruch oder Angriff [^C3d-02] und reagiert darauf [^C3d-03]|||
+||Das Produkt protokolliert alle wesentlichen Aktionen [^C3d-01] am/im System in einem Auditlog inklusive Tag und Uhrzeit und Akteur (Nutzer, System)|2||
+||Das Produkt stellt sicher, das es die korrekte Systemzeit hat|3|sich den Mechanismus erklären lassen. Auch wie sichergestellt ist, dass Nutzer die Uhrzeit nicht ungewollt und unbemerkt ändern können|
+||Das Produkt schützt das Auditlog vor Veränderung||sich vom Hersteller erklären lassen, wie der Schutz gewährleistet wird und wie eine Änderung des Auditlogs vom System identifiziert wird. Ggf. sogar verantwortliche Software-Komponente zeigen lassen|
+||Das Produkt erkennt einen Einbruch oder Angriff [^C3d-02] und reagiert darauf [^C3d-03]|||
 
-[^C3d-01]: z.B. erfolgreiche und nicht erfolgreiche Anmeldeversuche, Aufruf wesentlicher Funktionen (inklusive Ändern von Konfigurationseinstellungen), Aufspielen und Entfernen von Patches, Anlegen, Ändern und Löschen von Benutzern, Passwörtern und Berechtigungen
+[^C3d-01]: z.B. erfolgreiche und nicht erfolgreiche Anmeldeversuche, Aufruf wesentlicher Funktionen (inklusive Ändern von Konfigurationseinstellungen), Identifikation von sicherheitsproblemen (z.B. durch Geräte Selbsttests, Detektion von Malware, etc.), Aufspielen und Entfernen von Patches, Anlegen, Ändern und Löschen von Benutzern, Passwörtern und Berechtigungen
 
 [^C3d-02]: Nicht so allgemein formulieren, sondern konkrete Systemanforderung spezifizieren z.B. System erkennt eine CPU-Auslastung größer x%, eine Datenverkehr größer y MB/s, ein Speichermedium, dass voller ist als z% usw.
 
@@ -244,10 +254,11 @@ C) Anforderungen an die Produktentwicklung
 ||Der Hersteller hat für jede Funktion (siehe oben) den Prozess identifiziert, der diese Funktion anbietet / realisiert|2||
 ||Der Hersteller hat für jeden Prozess den Nutzer (auf Betriebssystemebene) identifiziert und begründet, wenn dieser mit maximalen Rechten (als Root) läuft|2||
 ||Der Hersteller hat Risiken durch mangelnde IT-Sicherheit systematisch durch ein Threat-Modeling abgeleitet. |2|Sich das Modell zeigen lassen, dass zumindest die externen Akteure und/oder Bedrohungen und die bedrohten Objekte erkennen lassen muss|
+||Der Hersteller hat die Risiken analysiert, die sich durch das (Auto-)Update von Anti-Malware ergeben|||
 ||Der Hersteller hat für alle Software-Komponenten [^C3-02], Dienste bzw. Prozesse, Daten und internen Funktionen analysiert, welche Risiken entstehen, wenn diese sich aufgrund eines Problems mit der IT-Sicherheit nicht spezifikationsgemäß verhalten ||Entspricht einem FMEA-Ansatz|
 ||Der Hersteller hat die Software-Anforderungen in der Software-Architektur berücksichtigt||Beispielhaft für o.g. Software-Anforderungen sich die Komponente(n) bzw. Technologien in der Architektur zeigen lassen, die die Anforderungen realisieren|
 
-[^C3-01]: Beispiel für von Betriebssystemen üblicherweise angebotene Dienste: Webserver, RPC, Laufwerke (z.B. USB), Datenbank, DICOM, Dienste über Socket-Verbindungen
+[^C3-01]: Beispiel für von Betriebssystemen üblicherweise angebotene Dienste: Webserver, RPC, Cloud-Services, Laufwerke (z.B. USB), Datenbank, DICOM, Dienste über Socket-Verbindungen
 
 [^C3-02]: zumindest die Top-Level-Komponenten. Diese Komponenten entsprechen auch den Objekten
 
@@ -265,8 +276,10 @@ C) Anforderungen an die Produktentwicklung
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
 ||Der Hersteller hat Coding-Guidelines erstellt, die Anforderungen spezifisch für die IT-Sicherheit stellt [^C4-01]|1|sich vom Hersteller die Coding-Guidelines und entsprechende Forderungen zeigen lassen|
+||Der Hersteller spielt nur Code auf, der vor Reverse-Engineering und Auslesen des RAMs geschützt ist [^C4-02]|||
 
 [^C4-01]: Beispiele sind Code-Metriken (z.B. McCabe Maß), Vorgaben zur Dokumentation / Kommentierung des Codes und zu dessen Formatierung, ebenso das Verbot unsicherer Funktionen (in C "gets", "strcopy" und [weiterer Funktion](https://msdn.microsoft.com/library/bb288454.aspx)), zudem die Pflicht mit Annotationen (z.B. [SAL](TODO)) zu verwenden, um Buffer-Overflows zu vermeiden, die Pflicht, die Übergabeparameter auch für interne Schnittstellen grundsätzlich zu überprüfen usw.
+[^C4-02]: Beispiele wären ein physischer Zugriffsschutz, Obfuscation von Code, Betriebssystem mit Address Space Layout Randomization
 
 ### 5. Bewertung von Software-Einheiten
 
@@ -310,6 +323,7 @@ C) Anforderungen an die Produktentwicklung
 ||Die Installations- und Service-Anleitungen legen fest, welche weiteren Rollen (Betreiber, Service-Techniker) welche Aktivitäten[^15] wie häufig durchführen müssen|1||
 ||Die Begleitmaterialien beschreiben, wie mit verlorengegangenen oder gestohlenen Produkten Tokens (z.B. Karten) sowie mit vergessenen Passwörtern umgegangen werden soll|||
 ||Die Begleitmaterialien beschreiben, wie die Anwender erkennen können, dass das Produkt ein Problem mit der IT-Sicherheit hat, und wie sie sich in diesem Fall verhalten sollen|||
+||Die Begleitmaterialien beschreiben, welche Anti-Malware-Software für das Produkt zugelassen und von wo (z.B. Link) diese zu beziehen ist||nur soweit anwendbar|
 
 
 Ggf. müssen die Hersteller auch Trainingsmaterialien bereithalten.
@@ -324,7 +338,7 @@ Ggf. müssen die Hersteller auch Trainingsmaterialien bereithalten.
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Der Hersteller hat die häufigsten Fehler [^20] in der Risikoanalyse adressiert oder kann zumindest darlegen, weshalb diese Risiken beherrscht sind||ein Beispiel aus einer der verlinkten Listen häufigster Fehler auswählen und den Hersteller um eine Begründung bitten|
+||Der Hersteller hat die häufigsten Fehler [^20] und daraus resultierenden Gefährdungen in der Risikoanalyse adressiert oder kann zumindest darlegen, weshalb diese Risiken beherrscht sind||ein Beispiel aus einer der verlinkten Listen häufigster Fehler auswählen und den Hersteller um eine Begründung bitten|
 ||Der Hersteller diskutiert in der Risikoanalyse Risiken durch alle relevanten Angriffs-Vektoren (s.o.) und zeigt, wie diese beherrscht werden|||
 ||Der Hersteller hat alle Maßnahmen zur Risikobeherrschung auf Wirksamkeit überprüft||z.B. Referenzen auf entsprechende Tests zeigen lassen|
 ||Der Hersteller hat den Risikomanagementbericht und den IT Security Report erstellt.||Der IT Security Report kann in Europa durchaus Teil des Risikomanagementberichts sein, in den USA nicht.|
@@ -352,17 +366,17 @@ D) Anforderungen an die der Entwicklung nachgelagerten Phasen
 ||Der Hersteller hat einen Post-Market Surveillance Plan erstellt.|||
 ||Der Hersteller hat beschrieben, welche Informationen aus der nachgelagerten Phase gesammelt werden [^D2-01]|||
 ||Der Hersteller hat beschrieben, wie und über welche Kanäle Informationen aus der nachgelagerten Phase gesammelt werden|||
-||Der Hersteller hat beschrieben, wie Informationen aus der nachgelagerten Phase ausgewertet bzw. bewertet werden ||erklären lassen, wie der Hersteller eine Trendumkehr erkennt und definiert und welche Schwellwerte er dazu festgelegt hat [^D2-02] |
-||Der Hersteller hat beschrieben, welche Maßnahmen daraus resultieren [^D2-03]||sich die Verbindung zu den Korrektur- und Vorbeugemaßnahmen in den Prozessbeschreibungen zeigen lassen|
-||Der Hersteller hat für jede OTS-Komponente mindestens eine Quelle und die Frequenz deren Überwachung festgelegt, über die er über IT-Sicherheitsbezogene Probleme informiert wird [^D2-04] und beschrieben, welche Rolle mit welchen Werkzeugen diese Auswertung vornimmt||Zu diesen Quellen sollten die Webseiten des OTS-Herstellers sowie die [NIST Datenbank mit den Common Vulnerabilities](TODO)  zählen.|
+||Der Hersteller hat beschrieben, wie Informationen aus der nachgelagerten Phase ausgewertet bzw. bewertet werden [^D2-02]||erklären lassen, wie der Hersteller eine Trendumkehr erkennt und definiert und welche Schwellwerte er dazu festgelegt hat [^D2-03] |
+||Der Hersteller hat beschrieben, welche Maßnahmen daraus resultieren [^D2-04]||sich die Verbindung zu den Korrektur- und Vorbeugemaßnahmen in den Prozessbeschreibungen zeigen lassen|
+||Der Hersteller hat für jede OTS-Komponente mindestens eine Quelle und die Frequenz deren Überwachung festgelegt, über die er über IT-Sicherheitsbezogene Probleme informiert wird [^D2-05] und beschrieben, welche Rolle mit welchen Werkzeugen diese Auswertung vornimmt||Zu diesen Quellen sollten die Webseiten des OTS-Herstellers sowie die [NIST Datenbank mit den Common Vulnerabilities](TODO)  zählen.|
 
-[^D2-02]: Beispiele: Auditlogs, Vulnerability Datenbanken, Kundenbeschwerden, Anrufe bei Hotline, Beobachtungen (z.B. Verhalten der Anwender), Behörden-Datenbanken (FDA MAUDE, BfArM, SwissMedic etc.) auch zu ähnlichen Produkten oder Technologien, Normen, Gesetze etc.
+[^D2-01]: Beispiele: Auditlogs, Vulnerability Datenbanken, Kundenbeschwerden, Anrufe bei Hotline, Beobachtungen (z.B. Verhalten der Anwender), Behörden-Datenbanken (FDA MAUDE, BfArM, SwissMedic etc.) auch zu ähnlichen Produkten oder Technologien, Normen, Gesetze etc.
 
-[^D2-02]: Die MDR fordert dies im Anhang zur Post-Market Surveillance
+[^D2-03]: Die MDR fordert dies im Anhang zur Post-Market Surveillance. Die Hersteller müssen festlegen, wann (z.B. Incident/Near Incident) die Maßnahme (s.u.) zu ergreifen ist. 
 
-[^D2-03]: Maßnahmen können beinhalten: Rückrufe, Behördenmeldungen, CAPA, Produktverbesserung, Prozessverbesserung, Training (Anwender, intern), Information der Kunden, Änderung der Begleitmaterialien, Einschränkung der Zweckbestimmung
+[^D2-04]: Maßnahmen können beinhalten: Rückrufe, Behördenmeldungen, CAPA, Produktverbesserung, Prozessverbesserung, Training (Anwender, intern), Information der Kunden, Änderung der Begleitmaterialien, Einschränkung der Zweckbestimmung. Die Festlegung muss somitdie Festlegung einschließen, wer (z.B. Anwender, benannte Stelle, Behörde), wie (z.B. Field Safety Note) zu informieren ist.  
 
-[^D2-04]: Die Frequenz müsste mindestens jährlich, bei kritischen Komponenten häufiger als monatlich erfolgen. Die UL 2900-2-1 spricht von Update-Zyklen von zwei Wochen.
+[^D2-05]: Die Frequenz müsste mindestens jährlich, bei kritischen Komponenten häufiger als monatlich erfolgen. Die UL 2900-2-1 spricht von Update-Zyklen von zwei Wochen.
 
 ### 3. Incident Response Plan 
 
@@ -416,11 +430,17 @@ Die Priorisierung mündet in den folgenden Reifegradstufen
 
 - Norm zur Kommunikation von Schwachstellen
 - AAMI/TIR57
+- EN IEC 60601-1
+- IEC 62443-2-1
 - IEC 62443-4-1
 - IEC 62443-4-2
 - IEC 82304-1
+- IEC 80001-1
+- IEC/TR 80001-2-2
 - FDA guidances 
    - “Content of Premarket Submissions for Management of Cybersecurity in Medical Devices”
+   - "Postmarket Management of Cybersecurity in Medical Devices"
+   - "Design Considerations and Premarket Submissions - Recommendations for Interoperable Medical Devices"
    - “Wireless Medical Telemetry Risks and Recommendations”
 - BSI-CS 132
 - IEC/TR 80001-2-8, 
@@ -432,7 +452,10 @@ Die Priorisierung mündet in den folgenden Reifegradstufen
 - Eckert: TODO
 - Johner Institut: [Videotrainings zur IT-Sicherheit bei Medizinprodukten](www.auditgarant.de)
 
-### 4. Erwägungsgründe
+### 4. Definitionen
+
+
+### 5. Erwägungsgründe
 
 1. Hersteller entwickeln immer mehr vernetzte Medizinprodukte. Dadurch erhöhen sich die Risiken durch mangelnde IT Sicherheit (z.B. gegen Cyberangriffe). Dem Tragen viele Hersteller nur unzureichend Rechnung.
 2. Die EU-Verordnungen (MDR, IVDR) fordern explizit die IT-Sicherheit. Die EU-Richtlinien fordern dies indirekt. Diese Vorgaben finden sich in den jeweiligen Anhängen I mit den grundlegenden (Sicherheits- und Leistungs-)Anforderungen. 
