@@ -6,11 +6,11 @@ A) Metainformationen
 
 ### 1. Ziele des Leitfadens
 
-Dieser Leitfaden hat das Ziel, Medizinprodukte-Herstellern und benannten Stellen eine Handlungsleitung und eine konkrete Checkliste an die Hand zu geben, um 
+Dieser Leitfaden hat das Ziel, Medizinprodukte-Herstellern und Benannten Stellen eine Handlungsanleitung und eine konkrete Checkliste an die Hand zu geben, um 
 
 - zu verstehen, was die Erwartungen der benannten Stellen sind,
 - die schrittweise Umsetzung der IT-Sicherheit der Produkte zu befördern,
-- das Fehlen einer harmonierten Norm (zwischenzeitlich) bestmöglich zu kompensieren.
+- das Fehlen einer harmonisierten Norm (zwischenzeitlich) bestmöglich zu kompensieren.
 
 Der Leitfaden hat **nicht** die Zielsetzung, als Lehrbuch oder Leitfaden für das Erreichen der IT-Sicherheit zu dienen. Vielmehr möchte er ein Leitfaden für deren Überprüfung sein.
 
@@ -55,7 +55,7 @@ Diesen Leitfaden haben die folgenden Autoren verfasst:
 - Dr. Andreas Purde (TÜV SÜD)
 - Olaf Teichert (TÜV SÜD)
 - Prof. Dr. Christian Johner (Johner Institut)
-- Dr. Georg Heidenreich (SIEMENS Healthineers)
+- Dr. Georg Heidenreich (Siemens Healthcare GmbH)
 
 Der Leitfaden ist unter der [Creative Commons Lizenz](https://creativecommons.org/licenses/?lang=de) vom Typ [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) veröffentlicht. Diese erfordert die Namensnennung der Autoren ("TÜV SÜD und Johner Institut") und erlaubt es, Dritten auf diesem Werk aufzubauen z.B. es zu verbessern; letzteres allerdings nur zu nicht-kommerziellen Zwecken.
 
@@ -98,7 +98,7 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 
 ### 3. Dokumentation
 
-Die Hersteller sollten den Nachweis führen können, die relevanten Anforderungen dieser Leitlinie beachtet zu haben. Es gibt keine spezifischen Anforderungen an die Dokumentation und "Objective Evidenz".
+Die Hersteller sollten den Nachweis führen können, die relevanten Anforderungen dieser Leitlinie beachtet zu haben. Es gibt keine spezifischen Anforderungen an die Dokumentation und "Objective Evidence".
 
 Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisches Dokument zur IT-Sicherheit zu erstellen. Vielmehr können Hersteller diese Aspekte in bereits bestehenden Dokumenten wie den Vorgabedokumenten des QM-Systems und der technischen Dokumentation (z.B. Software-Akte, Risikomanagementakte) integrieren.
 
