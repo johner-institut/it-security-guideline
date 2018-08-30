@@ -286,19 +286,22 @@ C) Anforderungen an die Produktentwicklung
 |:--:|:--|:--:|:--|
 ||Der Hersteller hat alle SOUP-/ OTS-Komponenten dokumentiert (inkl. Version, Hersteller, Referenz auf Informationen zu Updates, Release-Notes)|1|Liste / Tabelle zeigen lassen|
 ||Der Hersteller hat die spezifischen Risiken, die sich durch die Wahl der Technologien (insbesondere Programmiersprache, SOUP- / OTS-Komponenten) ergeben analysiert.|2||
-||Der Hersteller, die OTS-Betriebssysteme einsetzen, haben einer Liste aller Dienste [^C3-01] erstellt, die das Betriebssystem nach "außen" anbietet bzw. nutzt|1|sich diese Liste zeigen lassen|
+||Der Hersteller hat Maßnahmen ergriffen, um sicherzustellen, dass die verwendeten Werkzeuge (z.B. Entwicklungsumgebung, Compiler), sowie die Plattformen und SOUP/OTS-Komponenten frei von Schadcode sind [^C3-01]|2||
+||Der Hersteller, die OTS-Betriebssysteme einsetzen, haben einer Liste aller Dienste [^C3-02] erstellt, die das Betriebssystem nach "außen" anbietet bzw. nutzt|1|sich diese Liste zeigen lassen|
 ||Der Hersteller hat für jeden Dienst begründet, weshalb dieser (zeitlich unbeschränkt) nach außen sichtbar sein muss|2|sich vom Hersteller erklären lassen, wie/wo gefordert und geprüft ist, dass nicht (zeitlich unbeschränkt) benötigte Dienste auch nicht (zeitlich unbeschränkt) angeboten werden. Ziel ist die "Attack Surface Reduction"|
 ||Wenn das Produkt eine USB-Schnittstelle anbietet, hat der Hersteller im Risikomanagement beschrieben, wie Angriffe über diese Schnittstelle beherrscht werden|1|eine völlige Beherrschung dieser Risiken ist i.d.R. kaum möglich, aber auch nicht notwendigerweise erforderlich|
 ||Der Hersteller hat für jede Funktion (siehe oben) den Prozess identifiziert, der diese Funktion anbietet / realisiert|2||
 ||Der Hersteller hat für jeden Prozess den Nutzer (auf Betriebssystemebene) identifiziert und begründet, wenn dieser mit maximalen Rechten (als Root) läuft|2||
 ||Der Hersteller hat Risiken durch mangelnde IT-Sicherheit systematisch durch ein Threat-Modeling abgeleitet. |2|Sich das Modell zeigen lassen, dass zumindest die externen Akteure und/oder Bedrohungen und die bedrohten Objekte erkennen lassen muss|
 ||Der Hersteller hat die Risiken analysiert, die sich durch das (Auto-)Update von Anti-Malware ergeben|1||
-||Der Hersteller hat für alle Software-Komponenten [^C3-02], Dienste bzw. Prozesse, Daten und internen Funktionen analysiert, welche Risiken entstehen, wenn diese sich aufgrund eines Problems mit der IT-Sicherheit nicht spezifikationsgemäß verhalten |1|Entspricht einem FMEA-Ansatz|
+||Der Hersteller hat für alle Software-Komponenten [^C3-03], Dienste bzw. Prozesse, Daten und internen Funktionen analysiert, welche Risiken entstehen, wenn diese sich aufgrund eines Problems mit der IT-Sicherheit nicht spezifikationsgemäß verhalten |1|Entspricht einem FMEA-Ansatz|
 ||Der Hersteller hat die Software-Anforderungen in der Software-Architektur berücksichtigt|1|Beispielhaft für o.g. Software-Anforderungen sich die Komponente(n) bzw. Technologien in der Architektur zeigen lassen, die die Anforderungen realisieren|
 
-[^C3-01]: Beispiel für von Betriebssystemen üblicherweise angebotene Dienste: Webserver, RPC, Cloud-Services, Laufwerke (z.B. USB), Datenbank, DICOM, Dienste über Socket-Verbindungen
+[^C3-01]: Zu den Maßnahmen zählen die Anforderung, dass Entwicklungswerkzeuge, Entwicklungsumgebungen und Bibliotheken (SOUP, OTS-Komponenten) nur von als sicher eingestuften und freigebenen Quellen geladen werden dürfen, dass die IT-Infrastruktur durch geeignete Maßnahmen wie Virenschutz und Firewalls geschützt sind und dass Bibliotheken vor der Verwendung auf Schadcode untersucht werden (z.B. mit Virenscanner)
 
-[^C3-02]: zumindest die Top-Level-Komponenten. Diese Komponenten entsprechen auch den Objekten
+[^C3-02]: Beispiel für von Betriebssystemen üblicherweise angebotene Dienste: Webserver, RPC, Cloud-Services, Laufwerke (z.B. USB), Datenbank, DICOM, Dienste über Socket-Verbindungen
+
+[^C3-03]: zumindest die Top-Level-Komponenten. Diese Komponenten entsprechen auch den Objekten
 
 ##### ii) Produkt / Software / Komponenten
 
@@ -343,8 +346,8 @@ C) Anforderungen an die Produktentwicklung
 ||Der Hersteller sieht im Testplan [^C6-01] Portscans an allen relevanten Datenschnittstellen vor und führt diese auch durch|1||
 ||Der Hersteller sieht im Testplan  Penetrationstests an allen relevanten Datenschnittstellen und/oder für alle bekannten Schwachstellen der eingesetzten OTS-Komponenten [^C6-02] vor und führt diese auch durch|2|für eine bekannte OTS-Komponente in der [NIST Common / National Vulnerability Database](https://nvd.nist.gov/)  eine Schwachstelle recherchieren und vom Hersteller erklären lassen, wie er sicherstellt, dass diese nicht ausgenutzt werden kann |
 ||Der Hersteller sieht im Testplan Fuzz-Tests an allen relevanten Datenschnittstellen mit mindestens einem Werkzeug vor und führt diese auch durch|2||
-||Der Hersteller sieht im Testplan eine Simulation der üblichen Angriffsvektoren vor [^C6-03]|||
-||Der Hersteller sieht im Testplan die Überprüfung aller System-/Software-Anforderungen (s.o.) vor|||
+||Der Hersteller sieht im Testplan eine Simulation der üblichen Angriffsvektoren vor [^C6-03]|2||
+||Der Hersteller sieht im Testplan die Überprüfung aller System-/Software-Anforderungen (s.o.) vor|1||
 ||Der Hersteller lässt seine Software zusätzlich zu den o.g. Maßnahmen durch IT-Security-Experten überprüfen.|3|Zu dieser Überprüfung müssen Fuzz- und Penetrationstests ebenso zählen wie die Analyse der System-/ Software-Architektur und des Quell-Codes, um auf Stufe 3 zu gelangen|
 
 
