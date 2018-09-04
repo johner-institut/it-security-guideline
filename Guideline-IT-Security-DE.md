@@ -18,7 +18,7 @@ Der Anhang nennt die Erwägungsgründe, die zur Entwicklung dieses Leitfadens f�
 
 ### 2. Anwendungsbereich
 
-Dieser Leitfaden wendet sich an Hersteller von Medizinprodukten, inbesondere von vernetzbaren Medizinprodukten, und deren Dienstleister sowie an Personen und Organisation, die die IT-Sicherheit dieser Produkte bewerten müssen.
+Dieser Leitfaden wendet sich an Hersteller von Medizinprodukten, insbesondere von vernetzbaren Medizinprodukten, und deren Dienstleister sowie an Personen und Organisation, die die IT-Sicherheit dieser Produkte bewerten müssen.
 
 Er hat die IT-Sicherheit der Produkte im Fokus, nicht die IT-Sicherheit der Organisation. 
 
@@ -123,7 +123,7 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
 ||Der Hersteller hat eine Liste aller Rollen erstellt, die mit dem Thema IT-Sicherheit direkt oder indirekt befasst sind [^B2-01]|1||
-||Der Hersteller hat für jede Rollen die Kompetenzen mit Bezug zur IT Sicherheit bestimmt [^B2-02]|1||
+||Der Hersteller hat für jede Rollen die Kompetenzen mit Bezug zur IT-Sicherheit bestimmt [^B2-02]|1||
 ||Der Hersteller hat Aufzeichnungen (z.B. Schulungsunterlagen), die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen|1||
 ||Die (Software-)Entwicklungspläne legen produktspezifisch die (darüber hinausgehenden oder abweichenden) Kompetenzen fest|2|Forderung ab ISO 13485:2016|
 
@@ -181,7 +181,7 @@ C) Anforderungen an die Produktentwicklung
 ||Der Hersteller hat ggf. weitere Mechanismen gefordert, um die Wahrscheinlichkeit unautorisierter Zugriffe zu minimieren [^C2a-02]|2||
 ||Der Hersteller hat im Risikomanagement die Auswirkungen für die Patientensicherheit analysiert, wenn eine Person nicht auf Patientendaten zugreifen kann (z.B. keine Berechtigung, Passwort vergessen), und entsprechende Maßnahmen definiert|1|Hier geht es um die Abwägung der Schutzziele "Vertraulichkeit" versus "Safety"|
 
-[^C2a-01]: Die Standards lassen sich aufteilen u.a. auf die strukturelle Interoperabilitätsebene (z.B. TCP/IP, HTTPs, SFTP, CAN, RS232, USB), auf die syntaktische (z.B. csv, JSON, XML, HL7), auf die sematische (z.B. Nomenklaturen und Kodiersysteme wie LOINC (u.a. Laborwerte), ATC (Medikamente), ICD (Diagnosen), UCUM (Einheiten)) und die organisatorische
+[^C2a-01]: Die Standards lassen sich aufteilen u.a. auf die strukturelle Interoperabilitätsebene (z.B. TCP/IP, HTTPs, SFTP, CAN, RS232, USB), auf die syntaktische (z.B. csv, JSON, XML, HL7), auf die semantische (z.B. Nomenklaturen und Kodiersysteme wie LOINC (u.a. Laborwerte), ATC (Medikamente), ICD (Diagnosen), UCUM (Einheiten)) ((GHS: und die organisatorische Ebene. ? STandards??)
 
 [^C2a-02]: z.B. Einschränkung erlaubter IP- oder MAC-Adressen
 
@@ -195,14 +195,14 @@ C) Anforderungen an die Produktentwicklung
 ||Das Produkt hat kein Default-Passwort oder verlangt, dass ein solches bei der ersten Nutzung geändert wird|0||
 ||Das Produkt sperrt Benutzer und Nachbarsysteme nach n Versuchen für m Minuten aus, wobei der Hersteller n und m Werte oder Untergrenzen festlegt|1||
 ||Das Produkt zeigt im Falle eines nicht erfolgreichen Logins nur Informationen an, die es dem Anwender nicht erlauben die genaue Ursache der Sperrung zu erkennen, wie z.B. falscher Benutzername oder falsches Passwort.|2||
-||Das Produkt logged Benutzer und Nachbarsysteme nach n Minuten Inaktivität aus, wobei der Hersteller für n den Wert oder dessen Obergrenze festlegt|2||
+||Das Produkt beendet Bediensitzungen für Benutzer und Nachbarsysteme nach n Minuten Inaktivität, wobei der Hersteller für n den Wert oder dessen Obergrenze festlegt.|2||
 ||Das Produkt weist jedem Benutzer und jedem Nachbarsystem bei der Authentifizierung eine Rolle zu|1|Erklären lassen, in welcher/welchen Software-Komponente(n) Komponenten diese Funktionalität implementiert und wie dies geprüft ist|
 ||Das Produkt erlaubt jeder Rolle den Zugriff auf nur die Funktionen, für die die sie berechtigt ist. Dies gilt insbesondere auch für das Update/Upgrade des Produkts|1|dto.|
 ||Das Produkt erlaubt berechtigten Benutzern, andere Benutzer und Nachbarsysteme zu sperren|1||
 ||Das Produkt erlaubt berechtigten Benutzern, die Passwörter anderer Benutzer und Nachbarsysteme zurückzusetzen|1||
 ||Das Produkt erlaubt berechtigten Benutzern, andere Benutzer und Nachbarsysteme zu löschen|1||
 ||Das Produkt erlaubt es Benutzern nicht, die eigene Berechtigung zu ändern|2||
-||Das Produkt erlaubt es, Berechtigungen auszuhebeln ("Breaking the glas"), und identifiziert / dokumentiert die Person und die Gründe|2||
+||Das Produkt erlaubt es, Berechtigungen auszuhebeln ("Breaking the glass"), und identifiziert / dokumentiert die Person und die Gründe|2||
 ||In einer Client-Server Architektur werden alle Cyber-Sicherungsmaßnahmen serverseitig berechnet und geprüft|2||
 ||In einer Client-Server Architektur werden alle Eingaben des Clients serverseitig geprüft|2||
 
@@ -233,8 +233,8 @@ C) Anforderungen an die Produktentwicklung
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
 ||Das Produkt erlaubt es Benutzern, alle patientenspezifischen Daten endgültig zu löschen. Das Produkt erlaubt es, die Berechtigungen dafür zu beschränken (z.B. auf Rollen). |2||
-||Das Produkt schützt Daten vor ungewolltem Löschen [^C2b-04]|2|Hersteller müssen prüfen, ob kein höherwertiges Schutzziel dem entgegensteht, wie die zuvorgenannte Anforderung|
-||Das Produkt übermittelt Daten, zumindest sicherheitsbezogene Daten, über seine Datenschnittstellen nur in verschlüsselter Form. Das gilt auch für das Abspeichern auf externen Datenträgen|1|Nachfragen, welche Verschlüsselung zum Einsatz kommt und wie der initiale Schlüsselaustausch realisiert ist|
+||Das Produkt schützt Daten vor ungewolltem Löschen. [^C2b-04]|2|Hersteller müssen prüfen, ob kein höherwertiges Schutzziel dem entgegensteht, wie die zuvor genannte Anforderung.|
+||Das Produkt übermittelt Daten, zumindest sicherheitsbezogene Daten, über seine Datenschnittstellen nur in verschlüsselter Form. Das gilt auch für das Abspeichern auf externen Datenträgern.|1|Nachfragen, welche Verschlüsselung zum Einsatz kommt und wie der initiale Schlüsselaustausch realisiert ist|
 ||Das Produkt sichert die Integrität der Daten vor ungewollter Veränderung z.B. durch kryptographische Verfahren|2|Das gilt insbesondere für sicherheitsrelevante Daten wie die unter [^C2b-02] genannten.|
 ||Das Produkt überprüft alle Benutzereingaben und alle eingehenden Daten vor der weiteren Verarbeitung anhand von Hersteller festgelegten Überprüfungskriterien (s.o.)|1|Jeweils ein Beispiel für einen Dateninput an der Benutzer- und an der Datenschnittstelle auswählen und sich die Überprüfung im Code zeigen lassen|
 ||Das Produkt speichert Passwörter und personenidentifizierende Merkmale nur verschlüsselt|2||
@@ -253,13 +253,13 @@ C) Anforderungen an die Produktentwicklung
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Das Produkt erlaubt es, Patches (eigener Code, SOUP-/OTS-Komponenten) aufzuspielen|1|Hersteller sollte Ausnahmen begründen können, ebenso, ob das Patchen remote erfolgen darf oder muss|
-||Das Produkt erlaubt es, fehlerhafte Patches wieder zu entfernen|2||
-||Das Produkt beschränkt die Möglichkeit, Patches aufzuspielen oder zu entfernen auf die berechtigten Benutzer[^C3c-01]|2||
+||Das Produkt erlaubt es, Patches (eigener Code, SOUP-/OTS-Komponenten) aufzuspielen.|1|Hersteller sollte Ausnahmen begründen können, ebenso, ob das Patchen remote erfolgen darf oder muss.|
+||Das Produkt erlaubt es, fehlerhafte Patches wieder zu entfernen.|2||
+||Das Produkt beschränkt die Möglichkeit, Patches aufzuspielen oder zu entfernen auf die berechtigten Benutzer.[^C3c-01]|2||
 ||Das Produkt prüft geänderten Programm-Code (Patches) vor dessen ersten Ausführung auf Integrität.|2|Diese Prüfungen erfolgen üblicherweise über Signaturen, die selbst vor Fälschung gesichert sein müssen|
 ||Das Produkt aktualisiert sich selbständig [^C2c-02]|2||
 
-[^C2c-01]: Diese Prüfung erfolgt üblicherweise auf einem rollenbasierten Berechtigungskonzept sowie einer Authentififzierung der Nutzer.
+[^C2c-01]: Diese Prüfung erfolgt üblicherweise auf einem rollenbasierten Berechtigungskonzept sowie einer Authentifizierung der Nutzer.
 
 [^C2c-02]: Diese Anforderung ist etwas wage und auch nicht in jedem Fall einzufordern. Hersteller müssen Risiken, die durch solche "Auto-Updates" entstehen ebenfalls analysieren und beherrschen (z.B. durch unvollständige, unberechtigte, fehlerhafte und unterlassene Updates)
 
@@ -269,11 +269,11 @@ C) Anforderungen an die Produktentwicklung
 |:--:|:--|:--:|:--|
 ||Das Produkt protokolliert alle wesentlichen Aktionen [^C3d-01] am/im System in einem Audit-Log inklusive Tag und Uhrzeit und Akteur (Nutzer, System)|2||
 ||Das Produkt stellt sicher, das es die korrekte Systemzeit hat|3|sich den Mechanismus erklären lassen. Auch wie sichergestellt ist, dass Nutzer die Uhrzeit nicht ungewollt und unbemerkt ändern können|
-||Das Produkt schützt das Auditlog vor Veränderung|2|sich vom Hersteller erklären lassen, wie der Schutz gewährleistet wird und wie eine Änderung des Auditlogs vom System identifiziert wird. Ggf. sogar verantwortliche Software-Komponente zeigen lassen|
+||Das Produkt schützt das Audit-Log vor Veränderung|2|sich vom Hersteller erklären lassen, wie der Schutz gewährleistet wird und wie eine Änderung des Audit-Logs vom System identifiziert wird. Ggf. sogar verantwortliche Software-Komponente zeigen lassen|
 ||Das Produkt erkennt einen Einbruch oder Angriff [^C3d-02] und reagiert darauf [^C3d-03]|2||
 ||Das Produkt erlaubt den Austausch von Zertifikaten|2||
 
-[^C3d-01]: z.B. erfolgreiche und nicht erfolgreiche Anmeldeversuche, Aufruf wesentlicher Funktionen (inklusive Ändern von Konfigurationseinstellungen), Identifikation von sicherheitsproblemen (z.B. durch Geräte Selbsttests, Detektion von Malware, etc.), Aufspielen und Entfernen von Patches, Anlegen, Ändern und Löschen von Benutzern, Passwörtern und Berechtigungen, Hinzufügen oder Entfernen von Speichermedien, Anschluss oder Entfernen von Nachbarsystemen
+[^C3d-01]: z.B. erfolgreiche und nicht erfolgreiche Anmeldeversuche, Aufruf wesentlicher Funktionen (inklusive Ändern von Konfigurationseinstellungen), Identifikation von Sicherheitsproblemen (z.B. durch Geräte eigenständig durchgeführte Selbsttests, Detektion von Malware, etc.), Aufspielen und Entfernen von Patches, Anlegen, Ändern und Löschen von Benutzern, Passwörtern und Berechtigungen, Hinzufügen oder Entfernen von Speichermedien, Anschluss oder Entfernen von Nachbarsystemen
 
 [^C3d-02]: Nicht so allgemein formulieren, sondern konkrete Systemanforderung spezifizieren z.B. System erkennt eine CPU-Auslastung größer x%, eine Datenverkehr größer y MB/s, ein Speichermedium, dass voller ist als z%, mehr als n Einlogversuche innerhalb m Minuten usw.
 
@@ -381,7 +381,7 @@ Die Begleitmaterialien beziehen sich v.a. auf die Gebrauchs- und Installationsan
 
 [^14]: Beispiele: Ausbildung der Anwender (z.B. zum Umgang mit Passwörtern), Aktualisierung des Virenschutzes, Information des Herstellers über Zwischenfälle, Aufspielen von Updates und Patches, Monitoring
 
-[^15]: Beispiele: Auswerten Auditlog, Löschen nicht benötigter Benutzer, Austausch von Schlüsseln oder Zertifikaten, Löschen von temporären Dateien
+[^15]: Beispiele: Auswerten der Audit-Logs, Löschen nicht benötigter Benutzer, Austausch von Schlüsseln oder Zertifikaten, Löschen von temporären Dateien
 
 ### 8. Produktfreigabe
 
@@ -406,7 +406,7 @@ D) Anforderungen an die der Entwicklung nachgelagerten Phasen
 ||Der Hersteller hat beschrieben, wie sichergestellt ist, dass nur genau die vorgesehenen Artefakte (Dateien) in genau der vorgesehenen Version im Produkt oder als Produkt ausgeliefert werden|1|hier geht es ums Konfigurationsmanagement. Auch bei Downloads oder AppStores relevant|
 ||Der Hersteller hat beschrieben, wie die für die Installation verantwortlichen Personen wissen, welches die aktuellste Version ist und wie Verwechslungen bei der Installation ausgeschlossen werden können|2|Dies ist nur bei stand-alone Software relevant. Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
 ||Der Hersteller hat beschrieben, wie bei der Installation sichergestellt wird, dass die Anforderungen, die in den Begleitmaterialien spezifiziert sind (s.o.) tatsächlich erfüllt sind|1|Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
-||Der Hersteller hat Verfahren etabiliert, die gewährleisten, dass er mit den Betreibern und Anwendern seiner Produkte zeitnah kommunizieren kann|1|Bei unkritschen Produkten ist die Stufe 2 vertretbar|
+||Der Hersteller hat Verfahren etabliert, die gewährleisten, dass er mit den Betreibern und Anwendern seiner Produkte zeitnah kommunizieren kann|1|Bei unkritischen Produkten ist die Stufe 2 vertretbar|
 
 
 ### 2. Marktüberwachung
@@ -421,7 +421,7 @@ D) Anforderungen an die der Entwicklung nachgelagerten Phasen
 ||Der Hersteller hat für jede OTS-Komponente mindestens eine Quelle und die Frequenz deren Überwachung festgelegt, über die er über IT-Sicherheitsbezogene Probleme informiert wird [^D2-05] und beschrieben, welche Rolle mit welchen Werkzeugen diese Auswertung vornimmt|2|Zu diesen Quellen sollten die Webseiten des OTS-Herstellers sowie die [NIST Datenbank mit den Vulnerabilities](https://nvd.nist.gov/)  zählen.|
 ||Der Hersteller hat beschrieben, wie er überwacht, dass verwendete Technologien und Verfahren (z.B. Kryptologie) noch sicher sind|2||
 
-[^D2-01]: Beispiele: Auditlogs, Vulnerability Datenbanken, Kundenbeschwerden, Anrufe bei Hotline, Beobachtungen (z.B. Verhalten der Anwender), Behörden-Datenbanken (FDA MAUDE, BfArM, SwissMedic etc.), Social Media, Google-Suche, Gesetze, Normen usw.. Alles auch zu ähnlichen Produkten oder Technologien
+[^D2-01]: Beispiele: Audit-Logs, Vulnerability Datenbanken, Kundenbeschwerden, Anrufe bei Hotline, Beobachtungen (z.B. Verhalten der Anwender), Behörden-Datenbanken (FDA MAUDE, BfArM, SwissMedic etc.), Social Media, Google-Suche, Gesetze, Normen usw.. Alles auch zu ähnlichen Produkten oder Technologien
 
 [^D2-03]: Die MDR fordert dies im Anhang zur Post-Market Surveillance. Die Hersteller müssen festlegen, wann (z.B. Incident/Near Incident) die Maßnahme (s.u.) zu ergreifen ist. 
 
@@ -440,7 +440,7 @@ D) Anforderungen an die der Entwicklung nachgelagerten Phasen
 ||wer wie innerhalb welcher Fristen die Patches entwickelt und freigibt,|2||
 ||wie der Hersteller die Patches zum Kunden bringt und dort deren Installation sichergestellt,|2||
 ||wer die Kunden in welcher Form und Frist informiert,|2||
-||in welchen Fällen eine Stillegung oder ein sonstiger Rückruf des Produkts wie angeordent wird|2||
+||in welchen Fällen eine Stilllegung oder ein sonstiger Rückruf des Produkts wie angeordnet wird.|2||
 
 [^D3-01]: Der Incident Response Plan kann Teil anderer Pläne oder Dokumente sein z.B. des Post-Market Surveillance Plans  oder der Vorgaben zur Vigilanz.
 
@@ -512,17 +512,17 @@ Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfe bereits von Beg
 
 ### 5. Erwägungsgründe
 
-1. Hersteller entwickeln immer mehr vernetzte Medizinprodukte. Dadurch erhöhen sich die Risiken durch mangelnde IT Sicherheit (z.B. gegen Cyberangriffe). Dem Tragen viele Hersteller nur unzureichend Rechnung.
+1. Hersteller entwickeln immer mehr vernetzte Medizinprodukte. Dadurch erhöhen sich die Risiken durch mangelnde IT-Sicherheit (z.B. gegen Cyberangriffe). Kunden sind über den Stand der Technik bei Beschaffungen nicht informiert und tragen die Aufwände für Absicherung - vor oder nach IT-Zwischenfällen. Dem Tragen viele Hersteller nur unzureichend Rechnung.
 2. Die EU-Verordnungen (MDR, IVDR) fordern explizit die IT-Sicherheit. Die EU-Richtlinien fordern dies indirekt. Diese Vorgaben finden sich in den jeweiligen Anhängen I mit den grundlegenden (Sicherheits- und Leistungs-)Anforderungen. 
 3. Im Gegensatz zu den meisten anderen grundlegenden Anforderungen sind keine Normen zum Thema IT-Sicherheit harmonisiert. Daher gibt es keinen kanonischen Katalog an Anforderungen, der anerkannt den geforderten Stand der Technik reflektiert.
 4. Die FDA hat sowohl mehrere *Guidance Documents* veröffentlicht als auch Normen wie die UL 2900-2-1 anerkannt. Diese Vorgaben sind uneinheitlich bezüglich der Granularität, Vollständigkeit und konzeptionellen Integrität. Sie erfüllen nur bedingt die Ansprüche, die an die Qualität einer Norm üblicherweise gestellt werden. 
-5. Viele Normen sind kostenpflicht (trotz teilweise fragwürdiger Qualität). Hersteller müssen nach Auffassung der Autoren kostenfrei Zugang zu regulatorischen Anforderungen haben.
+5. Viele Normen sind kostenpflichtig (trotz teilweise fragwürdiger Qualität). Hersteller müssen nach Auffassung der Autoren kostenfrei Zugang zu regulatorischen Anforderungen haben.
 6. Weil die meisten Medizinproduktehersteller die IT-Sicherheit nicht oder nur unzureichend adressieren, erfüllen sie die grundlegenden Anforderungen nur teilweise.
 7. Für die meisten Hersteller wäre es weder zeitlich noch finanziell umsetzbar, mit einem Schlag ein IT-Sicherheits-Niveau zu erreichen, wie es z.B. der UL 2900 fordert. Daher sollten die Hersteller schrittweise ein State-of-the-Art Niveau bezüglich der IT-Sicherheit anstreben und erreichen. Damit verfolgt dieser Leitfaden das Ziel, lieber schnell erste Verbesserungen umzusetzen, als wegen Überforderung nichts zu tun.
 8. IT-Sicherheit muss bei allen Produkt-Lebenszyklusprozessen berücksichtigt werden. Eine Beschränkung auf das Testen ist unzureichend.
 9. Es ist zu erwarten, dass Normen zur IT-Sicherheit von Medizinprodukten entwickelt und harmonisiert werden, was aber noch Jahre in Anspruch nehmen kann. Daher bedarf es eines Leitfadens (nur) in dieser Zwischenphase. 
 10. Dieser Leitfaden sollte sehr zeitnah (bis November 2018) zur Verfügung, um rasch den Herstellern als Orientierung zu dienen und es ihnen zu ermöglichen, sofort zu handeln. Die hohe Geschwindigkeit seiner Entwicklung macht Kompromisse bezüglich der Abstimmung mit möglichst vielen Parteien unumgänglich.
-11. Da der Leitfaden von einer stufenweisen Annäherung auf ein State-of-the-Art-Nivau ausgeht und zudem in sehr kurzer Zeit entsteht, kann er keinen Anspruch auf Vollständigkeit erheben.
+11. Da der Leitfaden von einer stufenweisen Annäherung auf den Stand der Technik ausgeht und zudem in sehr kurzer Zeit entstanden ist, kann er keinen Anspruch auf Vollständigkeit erheben.
 12. Der Leitfaden soll dennoch ein weitgehend allgemein akzeptiertes Niveau an Anforderungen repräsentieren. Die Auswahl und Priorität dessen Anforderungen müssen daher möglichst transparent nachvollziehbar sein.
 13. Ein solcher Leitfaden muss die Spezifika von Medizinprodukten berücksichtigen, wozu die Prinzipen der Patientensicherheit (Safety) und eines risikobasierten Ansatzes zählen.
 14. Die einfache Verständlichkeit und Umsetzbarkeit ist entscheidend für den erhofften positiven Einfluss eines Leitfadens auf die IT-Sicherheit. Daher stellt er möglichst keine abstrakten oder "high level" Anforderungen, sondern nennt "binär entscheidbare" Prüfkriterien. 
