@@ -6,11 +6,11 @@ A) Metainformationen
 
 ### 1. Ziele des Leitfadens
 
-Dieser Leitfaden hat das Ziel, Medizinprodukte-Herstellern und benannten Stellen eine Handlungsanleitung und eine konkrete Checkliste an die Hand zu geben, um 
+Dieser Leitfaden hat das Ziel, Medizinprodukte-Herstellern und Benannten Stellen eine Handlungsanleitung und eine konkrete Checkliste an die Hand zu geben, um 
 
 - zu verstehen, was die Erwartungen der benannten Stellen sind,
 - die schrittweise Umsetzung der IT-Sicherheit der Produkte zu befördern,
-- das Fehlen einer harmonierten Norm (zwischenzeitlich) bestmöglich zu kompensieren.
+- das Fehlen einer harmonisierten Norm (zwischenzeitlich) bestmöglich zu kompensieren.
 
 Der Leitfaden hat **nicht** die Zielsetzung, als Lehrbuch oder Leitfaden für das Erreichen der IT-Sicherheit zu dienen. Vielmehr möchte er ein Leitfaden für deren Überprüfung sein. 
 
@@ -46,7 +46,7 @@ Dieser Leitfaden enthält in Kapitel B) zuerst allgemeine Anforderungen und glie
 
 Innerhalb dieser Kapitel und Unterkapitel unterteilt der Leitfaden die Anforderungen in Anforderungen an die Hersteller (insbesondere an die Dokumentation) und in Anforderungen an das Produkt.
 
-Die Anforderungen mit Bezug zum Risikomanagement sind in die Anforderungen entlang des Produktlebenzyklus eingewoben.
+Die Anforderungen mit Bezug zum Risikomanagement sind in die Anforderungen entlang des Produktlebenszyklus eingewoben.
 
 #### b) Anwendbare Kapitel und Anforderungen
 
@@ -66,6 +66,8 @@ Die Akzeptanz des erreichten Sicherheitsniveaus ist zu bewerten.
 
 Der Leitfaden enthält zu den meisten Anforderungen "Kommentare". Diese Kommentare umfassen Begründungen, Referenzen, Anmerkungen und v.a. Tipps für Auditoren und Reviewer.
 
+Da der deutsche Begriff "Sicherheit" nicht genau zwischen den bedeutsamen Schutzzielen Gefährdungsfreiheit und Informationssicherheit unterscheidet, wird zur Hervorhebung auch der Begriff Security für Informationssicherheit verwendet. Entsprechend steht der Begriff "Risiko" für die technische Möglichkeit der Reduktion von Gefährdungsfreiheit, währen der Begriff "Bedrohung" für mögliche Angriffe im Bereich Informatiosnsicherheit steht.
+
 #### e) Verbindlichkeit
 
 Dieser Leitfaden ist weder eine gesetzliche Anforderung noch eine harmonisierte Norm. Entsprechend unterscheidet er auch nicht zwischen normativen und informativen Elementen.
@@ -81,7 +83,7 @@ Diesen Leitfaden haben die folgenden Autoren verfasst:
 - Prof. Dr. Christian Johner ([Johner Institut](https://www.johner-institut.de))
 - Dr. Georg Heidenreich ([Siemens Healthcare GmbH](https://www.healthcare.siemens.com/))
 
-Der Leitfaden ist unter der [Creative Commons Lizenz](https://creativecommons.org/licenses/?lang=de) vom Typ [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) veröffentlicht. Diese erfordert die Namensnennung der Autoren ("TÜV SÜD und Johner Institut") und erlaubt es, Dritten auf diesem Werk aufzubauen z.B. es zu verbessern; letzteres allerdings nur zu nicht-kommerziellen Zwecken.
+Der Leitfaden ist unter der [Creative Commons Lizenz](https://creativecommons.org/licenses/?lang=de) vom Typ [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) veröffentlicht. Diese erfordert die Namensnennung der Autoren ("TÜV SÜD, Johner Institut sowie Dr. Georg Heidenreich") und erlaubt es Dritten, auf diesem Werk aufzubauen z.B. es zu verbessern; letzteres allerdings nur zu nicht-kommerziellen Zwecken.
 
 Die Lizenz gestattet es, das Produkt zu Beratungszwecken einschließlich Audits kommerziell einzusetzen. Sie untersagt es aber, dieses Werk selbst in unveränderter oder veränderter Version kommerziell zu nutzen z.B. in Form eines Verkaufs als Broschüre.
 
@@ -114,7 +116,7 @@ Nutzt der Hersteller ausgelagerte Prozesse, so gelten die Anforderungen entsprec
 
 ### 2. Kompetenzen
 
-Die Hersteller müssen sicherstellen und nachweisen, dass sie über ausreichend Kompetenzen verfügen, um eine State-of-the-Art IT-Security zu gewährleisten. Diese Nachweise gelingen oft am leichtesten durch interne oder externe Schulungen.
+Die Hersteller müssen sicherstellen und nachweisen, dass sie über ausreichend Kompetenzen verfügen, um eine dem Stand der Technik entsprechende Informationssicherheit (auch: IT-Sicherheit) zu gewährleisten. Diese Nachweise gelingen oft am leichtesten durch interne oder externe Schulungen.
 
 Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen. 
 
@@ -125,7 +127,7 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 ||Der Hersteller hat Aufzeichnungen (z.B. Schulungsunterlagen), die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen|1||
 ||Die (Software-)Entwicklungspläne legen produktspezifisch die (darüber hinausgehenden oder abweichenden) Kompetenzen fest|2|Forderung ab ISO 13485:2016|
 
-[^B2-01]: Beispiele sind: Entwicker, Tester, Regulatory Affairs und Qualitätsmanager, Mitarbeiter in Service und Support, Produktmanager, Medizinprodukteberater
+[^B2-01]: Beispiele sind: Entwickler, Tester, Regulatory Affairs und Qualitätsmanager, Mitarbeiter in Service und Support, Produktmanager, Medizinprodukteberater
 
 [^B2-02]: Es sollten Kompetenzen (verstehen, können) und nicht primär Themen genannt sein
 
@@ -144,10 +146,10 @@ C) Anforderungen an die Produktentwicklung
 |:--:|:--|:--:|:--|
 ||Der Hersteller hat alle Nachbarsysteme (Medizinprodukte, IT-Systeme) bestimmt, die mit dem Produkt verbunden werden dürfen.|0||
 ||Der Hersteller hat eine Liste an Rollen erstellt (Personen, Nachbarssysteme), die mit dem Produkt interagieren dürfen|0|Liste der Rollen zeigen lassen|
-||Der Hersteller hat alle Märkte und alle dort relevanten regulatorischen Anforderungen festgelegt|0|sich die Liste der regulatorischen Anforderungen mit Bezug zur IT-Sicherheit zeigen lassen|
-||Der Hersteller hat die vorgesehenen primären und sekundären Benutzer mit ihren IT-Kompetenzen festgelegt[^C1-01]|1||
-||Der Hersteller hat die vorgesehenen Nutzungsumgebung festgelegt[^C1-02]|1||
-||Der Hersteller hat die Risiken analysiert, die folgen, wenn die nicht die spezifizierten Benutzer in der spezifizierten Benutzungsumgebung mit dem System arbeiten [^C1-03]|1||
+||Der Hersteller hat alle Märkte und alle dort relevanten regulatorischen Anforderungen festgelegt.|0|sich die Liste der regulatorischen Anforderungen mit Bezug zur IT-Sicherheit zeigen lassen|
+||Der Hersteller hat die vorgesehenen primären und sekundären Benutzer mit ihren IT-Kompetenzen festgelegt.[^C1-01]|1||
+||Der Hersteller hat die vorgesehene Nutzungsumgebung festgelegt.[^C1-02]|1||
+||Der Hersteller hat die Risiken (Gefährdung) analysiert, die folgen, wenn die nicht die spezifizierten Benutzer in der spezifizierten Benutzungsumgebung mit dem System arbeiten [^C1-03]|1||
 ||Der Hersteller hat im Risikomanagement beschrieben, welche Bedrohungen für die IT-Sicherheit bestehen und was die Folgen für Patienten, Anwender und Dritte wären|1||
 ||Der Hersteller hat die Risikoakzeptanzkriterien nachvollziehbar aus dem Nutzen des Produkts und dem State-of-the-Art abgeleitet|1||
 ||Der Hersteller hat ein System entwickelt, mit dem er IT-sicherheitsbezogene Risiken bewerten kann[^C1-04]|2||
@@ -158,7 +160,7 @@ C) Anforderungen an die Produktentwicklung
 
 [^C1-03]: Beispiele: Der Betreiber hat keinen Virenschutz installiert. Benutzer teilen sich ein Passwort.
 
-[^C1-04]: Beispiele für solche Klassifikationssystem sind [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)) und [CVSS](https://nvd.nist.gov/vuln-metrics/cvss). Allerdings haben diese keinen Bezug zur "Safety".
+[^C1-04]: Beispiele für solche Klassifikationssystem sind [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)) und [CVSS](https://nvd.nist.gov/vuln-metrics/cvss). Allerdings haben diese keinen Bezug zur Gefährdungsfreiheit ("Safety").
 
 ### 2. System- und Software-Anforderungen
 
@@ -307,9 +309,9 @@ C) Anforderungen an die Produktentwicklung
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Die Software verwendet für alle kryptographischen Funktionen (z.B. Verschlüsselung, Signierung) ausschließlich bewährte Bibliotheken / Komponenten (keine eigene Implementierung)|1|die Bibliothek muss in der Liste der SOUP-/OTS-Komponenten enthalten sein. Vom Hersteller sich die Auswahl(kriterien) erklären lassen|
-||Die Software verwendet für unterschiedliche Funktionen (z.B. Verschlüsselung der Kommunikation, Verschlüsselung der Daten) unterschiedliche Technologien oder Schlüssel|3||
-||Die Software ist vor Malware (Viren, Würmern usw.) geschützt|1|Sich erklären lassen, wo und wie der Virenschutz realisiert und aktualisiert wird.|
+||Die Software verwendet für alle kryptographischen Funktionen (z.B. Verschlüsselung, Signierung) ausschließlich bewährte Bibliotheken / Komponenten (keine eigene Implementierung).|1|die Bibliothek muss in der Liste der SOUP-/OTS-Komponenten enthalten sein. Vom Hersteller sich die Auswahl(kriterien) erklären lassen|
+||Die Software verwendet für unterschiedliche Funktionen (z.B. Verschlüsselung der Kommunikation, Verschlüsselung der Daten) unterschiedliche Technologien oder Schlüssel.|3||
+||Die Software ist vor Malware (Viren, Würmern usw.) geschützt.|1|Sich erklären lassen, wo und wie der Virenschutz realisiert und aktualisiert wird.|
 ||Die Software basiert auf den aktuellsten Versionen der SOUP-/OTS-Komponenten. Ausnahmen sind begründet|1|sich in SOUP-Liste ein Beispiel herauspicken und auf der Herstellerseite die aktuellste Version recherchieren.|
 
 
@@ -317,8 +319,8 @@ C) Anforderungen an die Produktentwicklung
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Der Hersteller hat Coding-Guidelines erstellt, die Anforderungen spezifisch für die IT-Sicherheit stellt [^C4-01]|1|sich vom Hersteller die Coding-Guidelines und entsprechende Forderungen zeigen lassen|
-||Der Hersteller spielt nur Code auf, der vor Reverse-Engineering und Auslesen des RAMs geschützt ist [^C4-02]|3||
+||Der Hersteller hat Coding-Guidelines erstellt, die Anforderungen spezifisch für die IT-Sicherheit stellt. [^C4-01]|1|sich vom Hersteller die Coding-Guidelines und entsprechende Forderungen zeigen lassen|
+||Der Hersteller spielt nur Code auf, der vor Reverse-Engineering und Auslesen des RAMs geschützt ist.(GHS: Datenspeicher ? Programmspeicher ? Macht das nichtt ehr die Plattform?) [^C4-02]|3||
 ||Der Hersteller überprüft entweder die Software (Source-Code und Binaries) vor der Auslieferung auf Schadcode und/oder er hat auf allen an der Entwicklung und "Produktion" der Software beteiligten Rechner gegen Malware geschützt.|0||
 ||Der Hersteller hat Maßnahmen bestimmt, mit denen Buffer-Overflows gefunden und beseitigt werden können.|2||
 
@@ -329,11 +331,11 @@ C) Anforderungen an die Produktentwicklung
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Der Hersteller hat mindestens eine Methode festgelegt, mit der die Einhaltung der Coding-Guidelines überprüft wird|1|das wird dem Hersteller gelingen, wenn er Werkzeuge zur statischen Code-Analyse einsetzt und/oder Vorgaben für die Code-Reviews macht.|
-||Der Hersteller verlangt Code-Reviews für alle Komponenten, die (IT-)sicherheitsrelevanten Funktionen abbilden|2||
-||Der Hersteller hat konkrete Prüfkriterien[^C5-01] in seinen Vorgabedokumenten für die Code-Reviews |1||
-||Der Hersteller hat festgelegt, welche Tests (z.B. Unit-Tests) mit welchen Testfällen[^C5-02] und welchem zu erreichenden Abdeckungsgraden notwendig sind|1||
-||Der Hersteller hat für alle SOUP- bzw. OTS-Komponenten beschrieben, wie diese zu verifizieren sind|1||
+||Der Hersteller hat mindestens eine Methode festgelegt, mit der die Einhaltung der Coding-Guidelines überprüft wird.|1|das wird dem Hersteller gelingen, wenn er Werkzeuge zur statischen Code-Analyse einsetzt und/oder Vorgaben für die Code-Reviews macht.|
+||Der Hersteller verlangt Code-Reviews für alle Komponenten, die (IT-)sicherheitsrelevanten Funktionen abbilden.|2||
+||Der Hersteller hat konkrete Prüfkriterien[^C5-01] in seinen Vorgabedokumenten für die Code-Reviews.|1||
+||Der Hersteller hat festgelegt, welche Tests (z.B. Unit-Tests) mit welchen Testfällen[^C5-02] und welchem zu erreichenden Abdeckungsgraden notwendig sind.|1||
+||Der Hersteller hat für alle SOUP- bzw. OTS-Komponenten beschrieben, wie diese zu verifizieren sind.|1||
 
 [^C5-01]: Beispiele: Keine Verwendung unsicherer Funktionen, "Input-Sanitization" zumindest bei allen externen Schnittstellen
 
@@ -343,12 +345,12 @@ C) Anforderungen an die Produktentwicklung
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Der Hersteller sieht im Testplan [^C6-01] Portscans an allen relevanten Datenschnittstellen vor und führt diese auch durch|1||
-||Der Hersteller sieht im Testplan  Penetrationstests an allen relevanten Datenschnittstellen und/oder für alle bekannten Schwachstellen der eingesetzten OTS-Komponenten [^C6-02] vor und führt diese auch durch|2|für eine bekannte OTS-Komponente in der [NIST Common / National Vulnerability Database](https://nvd.nist.gov/)  eine Schwachstelle recherchieren und vom Hersteller erklären lassen, wie er sicherstellt, dass diese nicht ausgenutzt werden kann |
-||Der Hersteller sieht im Testplan Fuzz-Tests an allen relevanten Datenschnittstellen mit mindestens einem Werkzeug vor und führt diese auch durch|2||
-||Der Hersteller sieht im Testplan eine Simulation der üblichen Angriffsvektoren vor [^C6-03]|2||
-||Der Hersteller sieht im Testplan die Überprüfung aller System-/Software-Anforderungen (s.o.) vor|1||
-||Der Hersteller lässt seine Software zusätzlich zu den o.g. Maßnahmen durch IT-Security-Experten überprüfen.|3|Zu dieser Überprüfung müssen Fuzz- und Penetrationstests ebenso zählen wie die Analyse der System-/ Software-Architektur und des Quell-Codes, um auf Stufe 3 zu gelangen|
+||Der Hersteller sieht im Testplan [^C6-01] Portscans an allen relevanten Datenschnittstellen vor und führt diese auch durch.|1||
+||Der Hersteller sieht im Testplan Penetrationstests an allen relevanten Datenschnittstellen und/oder für alle bekannten Schwachstellen der eingesetzten OTS-Komponenten [^C6-02] vor und führt diese auch durch.|2|für eine bekannte OTS-Komponente in der [NIST Common / National Vulnerability Database](https://nvd.nist.gov/)  eine Schwachstelle recherchieren und vom Hersteller erklären lassen, wie er sicherstellt, dass diese nicht ausgenutzt werden kann|
+||Der Hersteller sieht im Testplan Fuzz-Tests an allen relevanten Datenschnittstellen mit mindestens einem Werkzeug vor und führt diese auch durch.|2||
+||Der Hersteller sieht im Testplan eine Simulation der üblichen Angriffsvektoren vor.[^C6-03]|2||
+||Der Hersteller sieht im Testplan die Überprüfung aller System-/Software-Anforderungen (s.o.) vor.|1||
+||Der Hersteller lässt seine Software zusätzlich zu den o.g. Maßnahmen durch IT-Sicherheitsexperten überprüfen.|3|Zu dieser Überprüfung müssen Fuzz- und Penetrationstests ebenso zählen wie die Analyse der System-/ Software-Architektur und des Quell-Codes, um auf Stufe 3 zu gelangen|
 
 
 
@@ -364,13 +366,13 @@ Die Begleitmaterialien beziehen sich v.a. auf die Gebrauchs- und Installationsan
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Die Gebrauchsanweisung legt die vorgesehene IT-Umgebung fest[^13]|1||
-||Die Gebrauchsanweisung legt fest, welche Aktivitäten[^14] der Betreiber wie häufig durchführen müssen|1||
-||Die Installations- und Service-Anleitungen legen fest, welche weiteren Rollen (Betreiber, Service-Techniker) welche Aktivitäten[^15] wie häufig durchführen müssen|1||
-||Die Begleitmaterialien beschreiben, wie mit verlorengegangenen oder gestohlenen Produkten Tokens (z.B. Karten) sowie mit vergessenen Passwörtern umgegangen werden soll|1||
-||Die Begleitmaterialien beschreiben, wie die Anwender erkennen können, dass das Produkt ein Problem mit der IT-Sicherheit hat, und wie sie sich in diesem Fall verhalten sollen|2|Dies bedingt, dass das Produkt diese Detektion implementiert|
-||Die Begleitmaterialien beschreiben, welche Anti-Malware-Software für das Produkt zugelassen und von wo (z.B. Link) diese zu beziehen ist und wer für deren Aktualisierung verantwortlich ist|2|nur soweit anwendbar|
-||Die Begleitmaterialien enthalten die Kontaktdaten des Herstellers, über die dieser z.B. bei Problemen mit der IT-Sicherheit zu erreichen ist|||
+||Die Gebrauchsanweisung legt die vorgesehene IT-Umgebung für den Betrieb fest.[^13]|1||
+||Die Gebrauchsanweisung legt fest, welche Aktivitäten[^14] die Betreiber wie häufig durchführen müssen.|1||
+||Die Installations- und Service-Anleitungen legen fest, welche weiteren Rollen (Betreiber, Service-Techniker) welche Aktivitäten[^15] wie häufig durchführen müssen.|1||
+||Die Begleitmaterialien beschreiben, wie mit verlorengegangenen oder gestohlenen Produkten Tokens (z.B. Karten) sowie mit vergessenen Passwörtern umgegangen werden soll.|1||
+||Die Begleitmaterialien beschreiben, wie die Anwender erkennen können, dass das Produkt ein Problem mit der IT-Sicherheit hat, und wie sie sich in diesem Fall verhalten sollen.|2|Dies bedingt, dass das Produkt diese Detektion implementiert|
+||Die Begleitmaterialien beschreiben, welche Anti-Malware-Software für das Produkt zugelassen und von wo (z.B. Link) diese zu beziehen ist und wer für deren Aktualisierung verantwortlich ist.|2|nur soweit anwendbar|
+||Die Begleitmaterialien enthalten die Kontaktdaten des Herstellers, über die dieser z.B. bei Problemen mit der IT-Sicherheit zu erreichen ist.|||
 
 
 
@@ -385,9 +387,9 @@ Die Begleitmaterialien beziehen sich v.a. auf die Gebrauchs- und Installationsan
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Der Hersteller hat die häufigsten Fehler [^C8-01] und daraus resultierenden Gefährdungen in der Risikoanalyse adressiert oder kann zumindest darlegen, weshalb diese Risiken beherrscht sind|1|ein Beispiel aus einer der verlinkten Listen häufigster Fehler auswählen und den Hersteller um eine Begründung bitten|
-||Der Hersteller diskutiert in der Risikoanalyse Risiken durch alle relevanten Angriffs-Vektoren (s.o.) und zeigt, wie diese beherrscht werden|1||
-||Der Hersteller hat alle Maßnahmen zur Risikobeherrschung auf Wirksamkeit überprüft|1|z.B. Referenzen auf entsprechende Tests zeigen lassen|
+||Der Hersteller hat die häufigsten Fehler [^C8-01] und daraus resultierenden Gefährdungen in der Risikoanalyse adressiert oder kann zumindest darlegen, weshalb diese Risiken beherrscht sind.|1|ein Beispiel aus einer der verlinkten Listen häufigster Fehler auswählen und den Hersteller um eine Begründung bitten|
+||Der Hersteller diskutiert in der Risikoanalyse Risiken durch alle relevanten Angriffs-Vektoren (s.o.) und zeigt, wie diese beherrscht werden.|1||
+||Der Hersteller hat alle Maßnahmen zur Risikobeherrschung auf Wirksamkeit überprüft.|1|z.B. Referenzen auf entsprechende Tests zeigen lassen|
 ||Der Hersteller hat den Risikomanagementbericht und den IT Security Report erstellt.|2|Der IT Security Report kann in Europa durchaus Teil des Risikomanagementberichts sein, in den USA nicht.|
 ||Der Hersteller hat die notwendigen Pläne für die der Entwicklung nachgelagerten Phase (z.B. Post-Market und Incident Response Plan) erstellt|1|Details weiter unten|
 
