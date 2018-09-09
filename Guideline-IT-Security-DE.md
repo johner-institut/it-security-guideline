@@ -185,8 +185,11 @@ C) Anforderungen an die Prozesse
 ||Der Hersteller hat im Risikomanagement die Auswirkungen für die Patientensicherheit analysiert, wenn eine Person nicht auf Patientendaten zugreifen kann (z.B. keine Berechtigung, Passwort vergessen), und entsprechende Maßnahmen definiert [^C2a-05]|1|Hier geht es um die Abwägung der Schutzziele "Vertraulichkeit" versus "Safety"|
 
 [^C2a-01]: Die Standards lassen sich aufteilen u.a. auf die strukturelle Interoperabilitätsebene (z.B. TCP/IP, HTTPs, SFTP, CAN, RS232, USB), auf die syntaktische (z.B. csv, JSON, XML, HL7), auf die semantische (z.B. Nomenklaturen und Kodierungssysteme wie LOINC (u.a. Laborwerte), ATC (Medikamente), ICD (Diagnosen), UCUM (Einheiten) und auf die organisatorische Ebene (IHE))
+
 [^C2a-02]: Alternativ zu den Benutzungsszenarien kann auch jede zusammengehörende Gruppe an UI-Elementen (z.B. Bildschirmseiten, Panels) untersucht werden, die im Rahmen dieses Benutzungsszenarios angeboten werden.
+
 [^C2a-04]: z.B. Einschränkung erlaubter IP- oder MAC-Adressen
+
 [^C2a-05]: Im Gegensatz zu den oben genannten Punkten, geht es hier um Risiken, die sich ergeben, obwohl sich das System spezifikationsgemäß verhält. Es geht also nicht um Risiken durch mangelnde IT-Sicherheit, sondern um Risiken, die aus Maßnahmen zur Erhöhung der IT-Sicherheit folgen.
 
 ##### ii) Daten, Kommunikation
@@ -248,6 +251,7 @@ C) Anforderungen an die Prozesse
 ||Der Hersteller hat Maßnahmen bestimmt, mit denen Buffer-Overflows gefunden und beseitigt werden können.|2||
 
 [^C4-01]: Beispiele sind Code-Metriken (z.B. McCabe Maß), Vorgaben zur Dokumentation / Kommentierung des Codes und zu dessen Formatierung, ebenso das Verbot unsicherer Funktionen (in C "gets", "strcopy" und [weiterer Funktion](https://msdn.microsoft.com/library/bb288454.aspx)), zudem die Pflicht mit Annotationen (z.B. [SAL](https://msdn.microsoft.com/en-us/library/ms235402.aspx)) zu verwenden, um Buffer-Overflows zu vermeiden, die Pflicht, die Übergabeparameter auch für interne Schnittstellen grundsätzlich zu überprüfen usw.
+
 [^C4-02]: Beispiele wären ein physischer Zugriffsschutz, Obfuscation von Code, Betriebssystem mit Address Space Layout Randomization. Diesen Schutz realisieren üblicherweise die Betriebssysteme
 
 #### e) Bewertung von Software-Einheiten
@@ -262,7 +266,9 @@ C) Anforderungen an die Prozesse
 ||Der Hersteller hat für alle SOUP- bzw. OTS-Komponenten beschrieben, wie diese zu verifizieren sind.|1||
 
 [^C5-01]: Beispiele: Keine Verwendung unsicherer Funktionen, "Input-Sanitization" zumindest bei allen externen Schnittstellen
+
 [^C5-02]: Dokumentiert ist im doppelten Sinne zu verstehen: 1. Der Hersteller hat die notwendigen Kompetenzen festgelegt (siehe ISO 13485:2016 Kapitel 7.3.2 f). 2. Der Hersteller hat dokumentiert, dass die konkreten Personen über die Kompetenzen verfügen.
+
 [^C5-03]: Beim Ableiten der Testfälle kann man sich an der o.g. Liste von Überprüfungskriterien orientieren.
 
 #### f) System- und Software-Tests
@@ -281,7 +287,9 @@ C) Anforderungen an die Prozesse
 [^C6-01]: Dieser Plan kann Teil des Entwicklungsplans, eines V&V-Plans oder eines anderen Plans sein.
 
 [^C6-02]: Die Schwachstellen sind z.B. in der [NIST National Vulnerability Database](https://nvd.nist.gov/) hinterlegt. Üblicherweise setzt man Scanner wie Nessus oder OpenVAS ein. Die Anforderung lautet nicht, dass beim Penetrationstest notwendigerweise alle bekannten Schwachstellen getestet werden.
+
 [^C6-03]: Im Fokus beim Fuzz-Testing sollte der eigene Code stehen und weniger die OTS-Software. Der Einsatz mehrerer Scanner führt meist zu einem größeren Bereich von Input-Werten. 
+
 [^C6-04]: z.B. DoS, SQL-Injection, Cross-Site-Scripting, Directory Transversal, Buffer-Overflow, syntaktisch oder semantisch fehlerhafte Anfragen,
 
 #### g) Produktfreigabe
@@ -371,8 +379,11 @@ C) Anforderungen an die Prozesse
 |      | In einer Client-Server Architektur werden alle Eingaben des Clients serverseitig geprüft |   2   |                                                              |
 
 [^C2a-02]: Idealerweise müssten auch Passwörter ausgeschlossen werden, die über Wörterbuch-Angriffe erraten werden können. Die Mindestlänge hängt davon ab, ob Brute-Force-Angriffe möglich sind, was bei einer Datenschnittstelle einfacher ist als abei einer Benutzerschnittstelle. Es gibt Systeme, bei denen "nicht-alphanumerische" Zeichen nicht möglich sind. Das sollte bei der Wahl der Mindestlänge betrachtet werden.
+
 [^C2a-03]: Beispielsweise implementiert der Hersteller ein "Breaking the glass", d.h. eine Möglichkeit, das Berechtigungskonzept zu umgehen, um zeitnah auf wichtige Daten zugreifen zu können. Dieses Umgehen muss protokolliert und später gerechtfertigt werden. 
+
 [^C2a-04]: Auch dieses Sperren darf nicht zu Safety-Risiken führen. Daher sollte das Sperren nicht während  der Untersuchung oder Behandlung möglich sein, sondern beispielsweise nur im Wartungsmodus.
+
 [^C2a-05]: Es gibt Situationen, in denen Safety wichtiger ist als Security insbesondere als Vertraulichkeit. In diesen Notfallsituationen muss ein Anwender auf Daten (insbesondere Patienten- oder Verschreibungsdaten) zugreifen, auch wenn ihm oder ihr die notwendigen Berechtigungen fehlen. Ein Beispiel wäre, dass ein Notfallpatient behandelt werden muss und man vor der Behandlung (z.B. Medikamente, Bluttransfusion) auf die Daten wie Medikamenten-Unverträglichkeiten oder Laborwerte (z.B. Blutgruppe) zugreifen muss. Dieser Zugriff muss einem Behandelnden immer und unabhängig von den Berechtigungen möglich sein. Das "Breaking-the-glass" lässt sich z.B. als Button implementieren.
 
 #### b) Kommunikation
@@ -399,6 +410,7 @@ C) Anforderungen an die Prozesse
 |      | Das Produkt prüft geänderten Programm-Code (Patches) vor der ersten Verwendung sowie beim Neustart auf Integrität. [^C2c-02] |   2   | Diese Prüfungen erfolgen üblicherweise über Signaturen, die selbst vor Fälschung gesichert sein müssen |
 
 [^C2c-01]: Diese Prüfung erfolgt üblicherweise auf einem rollenbasierten Berechtigungskonzept sowie einer Authentifizierung der Nutzer.
+
 [^C2c-02]: Dies ist ein Sonderfall der Forderung, dass jeder Programm-Code beim Neustart auf Integrität zu prüfen ist.
 
 #### d) Sonstiges
@@ -412,7 +424,9 @@ C) Anforderungen an die Prozesse
 |      | Das Produkt erlaubt den Austausch von Zertifikaten           |   2   |                                                              |
 
 [^C3d-01]: z.B. erfolgreiche und nicht erfolgreiche Anmeldeversuche, Aufruf wesentlicher Funktionen (inklusive Ändern von Konfigurationseinstellungen), Identifikation von Sicherheitsproblemen (z.B. durch Geräte eigenständig durchgeführte Selbsttests, Detektion von Malware, etc.), Aufspielen und Entfernen von Patches, Anlegen, Ändern und Löschen von Benutzern, Passwörtern und Berechtigungen, Hinzufügen oder Entfernen von Speichermedien, Anschluss oder Entfernen von Nachbarsystemen
+
 [^C3d-02]: Nicht so allgemein formulieren, sondern konkrete Systemanforderung spezifizieren z.B. System erkennt eine CPU-Auslastung größer x%, eine Datenverkehr größer y MB/s, ein Speichermedium, dass voller ist als z%, mehr als n Einlog-Versuche innerhalb m Minuten usw.
+
 [^C3d-03]: Ebenfalls sehr spezifisch formulieren, idealerweise über ein an den Schnittstellen beobachtbares Verhalten wie "schaltet sich aus", "deaktiviert die Datenverbindung", "zeigt folgende Warnmeldung an" usw.
 
 ### 2. System-/Software-Architektur
@@ -441,9 +455,10 @@ Die Begleitmaterialien beziehen sich v.a. auf die Gebrauchs- und Installationsan
 
 
 [^13]: Beispiele: Netzwerk (Bandbreite, Verfügbarkeit, Ports, IP-Ranges, Latenzen, Verschlüsselung, Firewalls usw.), Virenschutz, Betriebssysteme, physische Zugriffsberechtigungen, andere Software, die zeitgleich auf dem System laufen darf oder eben nicht (Spiele?, Firewall, Datenbank, Webserver)
-[^14]: Beispiele: Ausbildung der Anwender (z.B. zum Umgang mit Passwörtern), Aktualisierung des Virenschutzes, Information des Herstellers über Zwischenfälle, Aufspielen von Updates und Patches, Monitoring
-[^15]: Beispiele: Auswerten der Audit-Logs, Löschen nicht benötigter Benutzer, Austausch von Schlüsseln oder Zertifikaten, Löschen von temporären Dateien
 
+[^14]: Beispiele: Ausbildung der Anwender (z.B. zum Umgang mit Passwörtern), Aktualisierung des Virenschutzes, Information des Herstellers über Zwischenfälle, Aufspielen von Updates und Patches, Monitoring
+
+[^15]: Beispiele: Auswerten der Audit-Logs, Löschen nicht benötigter Benutzer, Austausch von Schlüsseln oder Zertifikaten, Löschen von temporären Dateien
 
 
 E) Anhänge
