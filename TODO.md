@@ -3,13 +3,16 @@ TODOs
 
 - [x] BSI Leitfaden einbauen
 - [ ] AAMI 57 durchgehen
-- [x] ebenso nochmals UL 2900
+- [x] UL 2900 durchgehen
 - [x] Prozessanforderungen spezifischer formulieren
 - [x] Fehlende Links einfügen
 - [x] Feedback von Olaf Teichert einarbeiten
-- [ ] Checkliste nach Produkt und Prozess umsortieren
-- [ ] Feedback von IT Sicherheitsexperten des TÜV Süd einbauen
+- [x] Checkliste nach Produkt und Prozess umsortieren
+- [x] Feedback von IT Sicherheitsexperten des TÜV Süd einbauen
 - [ ] Hinweise geben, wie man mit Risiken umgeht (s. Kommentar von Andreas unten)
+- [ ] Definitionen ergänzen oder referenzieren oder Anhang löschen
+- [ ] Anforderungen durchnummerieren
+- [ ] Fußnoten neu durchnummerieren
 - [ ] Leitfaden ins Englische übersetzen
 
 
