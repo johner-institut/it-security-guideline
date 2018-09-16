@@ -12,6 +12,8 @@ Dieser Leitfaden hat das Ziel, Medizinprodukte-Herstellern und Benannten Stellen
 - die schrittweise Umsetzung der IT-Sicherheit der Produkte zu befördern,
 - das Fehlen einer harmonisierten Norm (zwischenzeitlich) bestmöglich zu kompensieren.
 
+Im Gegensatz zu vielen anderen Leitfäden zur IT-Sicherheit bezieht sich dieser nur auf Medizinprodukte und hat die Patientensicherheit ("Safety") im Fokus.
+
 Der Leitfaden hat **nicht** die Zielsetzung, als Lehrbuch oder Leitfaden für das Erreichen der IT-Sicherheit zu dienen. Vielmehr möchte er ein Leitfaden für deren Überprüfung sein. 
 
 Der Anhang nennt die Erwägungsgründe, die zur Entwicklung dieses Leitfadens führten.
@@ -386,19 +388,25 @@ C) Anforderungen an die Prozesse
 
 [^C2a-05]: Es gibt Situationen, in denen Safety wichtiger ist als Security insbesondere als Vertraulichkeit. In diesen Notfallsituationen muss ein Anwender auf Daten (insbesondere Patienten- oder Verschreibungsdaten) zugreifen, auch wenn ihm oder ihr die notwendigen Berechtigungen fehlen. Ein Beispiel wäre, dass ein Notfallpatient behandelt werden muss und man vor der Behandlung (z.B. Medikamente, Bluttransfusion) auf die Daten wie Medikamenten-Unverträglichkeiten oder Laborwerte (z.B. Blutgruppe) zugreifen muss. Dieser Zugriff muss einem Behandelnden immer und unabhängig von den Berechtigungen möglich sein. Das "Breaking-the-glass" lässt sich z.B. als Button implementieren.
 
-#### b) Kommunikation
+#### b) Kommunikation und Speicherung
 
 |  ID  | Anforderung                                                  | Stufe | Kommentare                                                   |
 | :--: | :----------------------------------------------------------- | :---: | :----------------------------------------------------------- |
 |      | Das Produkt erlaubt es Benutzern, alle patientenspezifischen Daten endgültig zu löschen. Das Produkt erlaubt es, die Berechtigungen dafür zu beschränken (z.B. auf Rollen). |   2   |                                                              |
-|      | Das Produkt schützt Daten vor ungewolltem Löschen. [^C2b-04] |   2   | Hersteller müssen prüfen, ob kein höherwertiges Schutzziel dem entgegensteht, wie die zuvor genannte Anforderung. |
+|      | Das Produkt schützt Daten vor ungewolltem Löschen. [^C2b-01] |   2   | Hersteller müssen prüfen, ob kein höherwertiges Schutzziel dem entgegensteht, wie die zuvor genannte Anforderung. |
 |      | Das Produkt übermittelt Daten, zumindest sicherheitsbezogene Daten, über seine Datenschnittstellen nur in verschlüsselter Form. Das gilt auch für das Abspeichern auf externen Datenträgern. |   1   | Nachfragen, welche Verschlüsselung zum Einsatz kommt und wie der initiale Schlüsselaustausch realisiert ist |
 |      | Das Produkt sichert die Integrität der Daten vor ungewollter Veränderung z.B. durch kryptographische Verfahren |   2   | Das gilt insbesondere für sicherheitsrelevante Daten wie die unter [^C2b-01] genannten. |
 |      | Das Produkt überprüft alle Benutzereingaben und alle eingehenden Daten vor der weiteren Verarbeitung anhand von Hersteller festgelegten Überprüfungskriterien (s.o.) |   1   | Jeweils ein Beispiel für einen Dateninput an der Benutzer- und an der Datenschnittstelle auswählen und sich die Überprüfung im Code zeigen lassen |
+|      | Das Produkt nutzt für die Übertragung von zeitkritischen Daten, die relevant für die Patientensicherheit sind, keine kabellose Übertragung. |   2   |                                                              |
 |      | Das Produkt speichert Passwörter nur als "salted hash"       |   2   | z.B. nach Hash-Verfahren fragen und ggf. zeigen lassen       |
 |      | Das Produkt speichert personenidentifizierende Merkmale nur verschlüsselt |   2   | Erklären lassen, was der Hersteller als personenidentifizierende Merkmale definiert und welchen Verschlüsselungs-mechanismus er nutzt |
-|      | Das Produkt erlaubt es Nutzern Datenschnittstellen zu deaktivieren (z.B. USB, Fernzugriff) |   2   |                                                              |
+|      | Das Produkt schützt kritische Daten vor ungewollter Veränderung und vor Verlust |   2   |                                                              |
+|      | Das Programm überprüft bei jedem Neustart, ob die Mechanismen in Takt sind, mit denen die Daten vor Verlust und Veränderung geschützt werden. |       |                                                              |
+|      | Das Produkt erlaubt es Nutzern, Datenschnittstellen zu deaktivieren (z.B. USB, Fernzugriff) |   2   |                                                              |
 |      | Das Produkt prüft den Programm-Code bei jedem Neustart auf Integrität |   2   |                                                              |
+|      | Das Produkt stellt im Fall einer Kompromittierung einen Notfall-Modus für Funktionen bereit, die relevant für die Sicherheit der Patienten sind. |   2   |                                                              |
+
+[^C2b-01]: Der Schutz kann auch in einer Undo-Funktion bestehen. Ggf. ist der Zeitraum für ein Undo zu beschränken. Es ist zu beachten, dass die Anforderungen des Datenschutzes nach einem (endgültigen) Löschen der Daten erfüllt werden.
 
 #### c) Patches
 
@@ -435,7 +443,7 @@ C) Anforderungen an die Prozesse
 | :--: | :----------------------------------------------------------- | :---: | :----------------------------------------------------------- |
 |      | Die Software verwendet für alle kryptographischen Funktionen (z.B. Verschlüsselung, Signierung) ausschließlich bewährte Bibliotheken / Komponenten (keine eigene Implementierung). |   1   | die Bibliothek muss in der Liste der SOUP-/OTS-Komponenten enthalten sein. Vom Hersteller sich die Auswahl(kriterien) erklären lassen |
 |      | Die Software verwendet für unterschiedliche Funktionen (z.B. Verschlüsselung der Kommunikation, Verschlüsselung der Daten) unterschiedliche Technologien oder Schlüssel. |   3   |                                                              |
-|      | Die Software ist vor Malware (Viren, Würmern usw.) geschützt. |   1   | Sich erklären lassen, wie das System vor Malware geschützt ist und wie dieser Schutz aufrechterhalten wird |
+|      | Die Software ist soweit technisch möglich vor Malware (Viren, Würmern usw.) geschützt. |   1   | Sich erklären lassen, wie das System vor Malware geschützt ist und wie dieser Schutz aufrechterhalten wird |
 |      | Die Software basiert auf den Versionen der SOUP-/OTS-Komponenten, die keine sicherheitsrelevanten Schwachstellen enthalten. Ausnahmen sind begründet |   1   | sich in SOUP-Liste ein Beispiel herauspicken und auf der Herstellerseite die Version recherchieren und prüfen, welche Schwachstellen in Nachfolge-Versionen gepatched wurden |
 
 ### 3. Begleitmaterialien
