@@ -359,6 +359,10 @@ C) Anforderungen an die Prozesse
 
 ### 1. System-/Software-Anforderungen
 
+Dieser Abschnitt beschreibt technische Funktionen des Produkts, die die Informationssicherheit unterstützen. Sie sind über die Anforderungsepzifikation einzubringen und als Anforderungen umzusetzen.
+
+Die nachfolgenden technischen Produktmaßnahmen für Informationssicherheit (‚Security-Controls‘)  müssen grundsätzlich für die Sicherstellung der Zweckbestimmung unter Berücksichtigung der intendierten Betriebsumgebung  angemessen sein! Zur Erhaltung der grundlegenden Anforderungen an Gefährdungsfreiheit und Funktion darf der Hersteller im begründeten, dokumentierten Einzelfall auf die Implementierung einzelner Produktmaßnahmen verzichten. Der Hersteller kann also zu jeder einzelnen der nachfolgenden Anforderungen anstelle einer Implementierung auch in der Dokumentation (z.B. Lastenheft) einen Hinweis einbringen, warum die jeweilige Anforderung im Hinblick auf die Zweckbestimmung und unter Berücksichtigung der Einsatzumgebung nicht implementiert wurde und welches Restrisiko besteht.
+
 #### a) Authentifizierung
 
 |  ID  | Anforderung                                                  | Stufe | Kommentare                                                   |
