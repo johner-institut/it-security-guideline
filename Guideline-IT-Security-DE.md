@@ -178,17 +178,17 @@ C) Anforderungen an die Prozesse
 ||Der Hersteller hat alle Datenschnittstellen identifiziert|0|Liste der Datenschnittstellen zeigen lassen (drahtgebunden, WLAN, USB usw.)|
 ||Der Hersteller hat für jede Datenschnittstelle die verwendeten Protokolle und Standards spezifiziert[^C2a-01]|1||
 ||Der Hersteller hat für jede Datenschnittstellen die Funktionen spezifiziert, die über die jeweilige Schnittstelle angeboten werden|0|Liste der Funktionen zeigen lassen|
-||Der Hersteller hat die Sicherheitsrelevanz aller Funktionen analysiert.|0||
-||Der Hersteller hat die Auswirkungen sicherheitsrelevanter Funktionen im Risikomanagement dokumentiert|0||
+||Der Hersteller hat die Sicherheitsrelevanz (im Sinne von Gefährdung) aller Funktionen analysiert.|0||
+||Der Hersteller hat die Auswirkungen sicherheitsrelevanter (im Sinne von Gefährdung) Funktionen im Risikomanagement dokumentiert|0||
 ||Der Hersteller hat jedes Benutzungsszenario[^C2a-02] untersucht, welche Risiken sich aus einer nicht spezifizierten Anzeige von Informationen (z.B. keine, falsche, zu späte Anzeige) ergeben.|1|In Risikomanagement- oder Usability-Akte zeigen lassen|
 ||Der Hersteller hat für jede Rolle und jedes Nachbarsystem die Funktionen des Produkts bestimmt, auf die sie über die jeweilige Schnittstelle zugreifen darf |1|"Mapping" von Rollen auf Funktionen zeigen lassen z.B. in Form einer Tabelle|
 ||Der Hersteller hat die Wahl des Authentifizierungsverfahren (Benutzername / Passwort, Biometrisches Verfahren, Token z.B. Karte) für alle Rollen und alle Nachbarsysteme begründet |1|Die Begründung sollte risikobasiert sein|
 ||Der Hersteller hat ggf. weitere Mechanismen gefordert, um die Wahrscheinlichkeit unautorisierter Zugriffe zu minimieren [^C2a-04]|2||
-||Der Hersteller hat im Risikomanagement die Auswirkungen für die Patientensicherheit analysiert, wenn eine Person nicht auf Patientendaten zugreifen kann (z.B. keine Berechtigung, Passwort vergessen), und entsprechende Maßnahmen definiert [^C2a-05]|1|Hier geht es um die Abwägung der Schutzziele "Vertraulichkeit" versus "Safety"|
+||Der Hersteller hat im Risikomanagement die Auswirkungen für die Patientensicherheit analysiert, wenn eine Person nicht auf Patienten- oder Gerätedaten zugreifen kann (z.B. keine Berechtigung, Passwort vergessen), und entsprechende Maßnahmen definiert [^C2a-05]|1|Hier geht es um die Abwägung der Schutzziele "Vertraulichkeit" versus "Safety"|
 
 [^C2a-01]: Die Standards lassen sich aufteilen u.a. auf die strukturelle Interoperabilitätsebene (z.B. TCP/IP, HTTPs, SFTP, CAN, RS232, USB), auf die syntaktische (z.B. csv, JSON, XML, HL7), auf die semantische (z.B. Nomenklaturen und Kodierungssysteme wie LOINC (u.a. Laborwerte), ATC (Medikamente), ICD (Diagnosen), UCUM (Einheiten) und auf die organisatorische Ebene (IHE))
 
-[^C2a-02]: Alternativ zu den Benutzungsszenarien kann auch jede zusammengehörende Gruppe an UI-Elementen (z.B. Bildschirmseiten, Panels) untersucht werden, die im Rahmen dieses Benutzungsszenarios angeboten werden.
+[^C2a-02]: Alternativ zu den Benutzungsszenarien kann auch jede zusammengehörende Gruppe an UI-Elementen (z.B. Bildschirmseiten, Panels) untersucht werden, die im Rahmen dieses Benutzungsszenarios angeboten werden. Diese Aktivität ist Teil der allgemeinen Analyse der Risiken, die durch die Umsetzung von Produktmaßnahmen der Informationssicherheit entstehen können.
 
 [^C2a-04]: z.B. Einschränkung erlaubter IP- oder MAC-Adressen
 
