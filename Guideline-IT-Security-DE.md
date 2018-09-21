@@ -192,7 +192,7 @@ C) Anforderungen an die Prozesse
 
 [^C2a-04]: z.B. Einschränkung erlaubter IP- oder MAC-Adressen
 
-[^C2a-05]: Im Gegensatz zu den oben genannten Punkten, geht es hier um Risiken, die sich ergeben, obwohl sich das System spezifikationsgemäß verhält. Es geht also nicht um Risiken durch mangelnde IT-Sicherheit, sondern um Risiken, die aus Maßnahmen zur Erhöhung der IT-Sicherheit folgen.
+[^C2a-05]: Im Gegensatz zu den oben genannten Punkten, geht es hier um Risiken, die sich ergeben, obwohl sich das System spezifikationsgemäß verhält. Diese Aktivität ist Teil der allgemeinen Analyse der Risiken, die durch die Umsetzung von Produktmaßnahmen der Informationssicherheit entstehen können. Es geht also nicht um Risiken durch mangelnde IT-Sicherheit, sondern um Risiken (im Sinne von Gefährdungsfreiheit, Verfügbarkeit und Performanz), die aus Maßnahmen zur Erhöhung der IT-Sicherheit folgen.
 
 ##### ii) Daten, Kommunikation
 
