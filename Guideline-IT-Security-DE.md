@@ -30,10 +30,16 @@ Der Leitfaden ist auch geeignet, um die technischen Maßnahmen zu bewerten, die 
 
 #### a) Aufbau und Struktur des Leitfadens
 
-Dieser Leitfaden enthält in Kapitel B) zuerst allgemeine Anforderungen und enthält im Kapitel C die Anforderungen an den Prozess und in Kapitel D die Anforderungen an das Produkt. Innerhalb dieser Kapitel gliedern sich die Anforderungen entlang der Software-Lebenszyklus-Prozesse:
+Dieser Leitfaden folgt dem Gedanken, dass die IT-Sicherheit auf drei wesentlichen Säulen ruht:
 
-1. Anforderungen an die Prozesse
-   1. Anforderungen an den Entwicklungsprozess
+1. Anforderungen an Prozesse
+2. Anforderungen an Produkte
+3. Dokumentierte Nachweise, dass diese Anforderungen an die Prozesse und Produkte erfüllt sind
+
+Die Struktur dieses Leitfadens folgt diesem Gedanken: Er enthält in Kapitel B) zuerst allgemeine Anforderungen, formuliert im Kapitel C) die Anforderungen an den Prozess (inklusive Dokumentation) und in Kapitel D) die Anforderungen an das Produkt (inklusive Dokumentation). Innerhalb dieser "Hauptkapitel" gliedern sich die Anforderungen entlang der Software-Lebenszyklus-Prozesse:
+
+1. **Anforderungen an die Prozesse**
+   1. ***Anforderungen an den Entwicklungsprozess***
       1. Zweckbestimmung und Stakeholder-Anforderungen
       2. System- und Software-Anforderungen
       3. System- und Software-Architektur
@@ -41,14 +47,15 @@ Dieser Leitfaden enthält in Kapitel B) zuerst allgemeine Anforderungen und enth
       5. Bewertung von Software-Einheiten
       6. System- und Software-Tests
       7. Produktfreigabe
-   2. Anforderungen an die der Entwicklung nachgelagerten Phase
+   2. ***Anforderungen an die der Entwicklung nachgelagerten Phase***
       1. Produktion, Distribution, Installation
       2. Marktüberwachung
       3. Incident Response Plan
-2. Anforderungen an das Produkt
-   1. System-Anforderungen
-   2. System- und Software-Architektur
-   3. Begleitmaterialien
+2. **Anforderungen an das Produkt**
+   1. Vorbemerkungen und allgemeine Anforderungen
+   2. System-Anforderungen
+   3. System- und Software-Architektur
+   4. Begleitmaterialien
 
 Die Anforderungen mit Bezug zum Risikomanagement sind in die Anforderungen entlang des Produktlebenszyklus eingewoben.
 
@@ -357,11 +364,15 @@ C) Anforderungen an die Prozesse
 
 ## D) Anforderungen an das Produkt
 
-### 1. System-/Software-Anforderungen
+### 1. Vorbemerkungen und allgemeine Anforderungen
 
-Dieser Abschnitt beschreibt technische Funktionen des Produkts, die die Informationssicherheit unterstützen. Sie sind über die Anforderungsepzifikation einzubringen und als Anforderungen umzusetzen.
+Dieser Abschnitt beschreibt technische Funktionen des Produkts, die die Informationssicherheit unterstützen. Sie sind über die Anforderungspezifikation (System-/Software-Anforderungen) einzubringen und als Anforderungen umzusetzen.
 
-Die nachfolgenden technischen Produktmaßnahmen für Informationssicherheit (‚Security-Controls‘)  müssen grundsätzlich für die Sicherstellung der Zweckbestimmung unter Berücksichtigung der intendierten Betriebsumgebung  angemessen sein! Zur Erhaltung der grundlegenden Anforderungen an Gefährdungsfreiheit und Funktion darf der Hersteller im begründeten, dokumentierten Einzelfall auf die Implementierung einzelner Produktmaßnahmen verzichten. Der Hersteller kann also zu jeder einzelnen der nachfolgenden Anforderungen anstelle einer Implementierung auch in der Dokumentation (z.B. Lastenheft) einen Hinweis einbringen, warum die jeweilige Anforderung im Hinblick auf die Zweckbestimmung und unter Berücksichtigung der Einsatzumgebung nicht implementiert wurde und welches Restrisiko besteht.
+Die nachfolgenden technischen Produktmaßnahmen für Informationssicherheit (‚Security-Controls‘)  müssen grundsätzlich für die Sicherstellung der Zweckbestimmung unter Berücksichtigung der intendierten Betriebsumgebung  angemessen sein: Zur Erhaltung der grundlegenden Anforderungen an Gefährdungsfreiheit und Funktion darf der Hersteller im begründeten, dokumentierten Einzelfall auf die Implementierung einzelner Produktmaßnahmen verzichten. Der Hersteller kann also zu jeder einzelnen der nachfolgenden Anforderungen anstelle einer Implementierung auch in der Dokumentation (z.B. Lastenheft) einen Hinweis einbringen, warum die jeweilige Anforderung im Hinblick auf die Zweckbestimmung und unter Berücksichtigung der Einsatzumgebung nicht implementiert wurde und welches Restrisiko besteht.
+
+Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin überprüfen, ob sie neue Risiken einführt, die selbst wieder beherrscht werden müssen.
+
+### 2. System-/Software-Anforderungen
 
 #### a) Authentifizierung
 
@@ -520,7 +531,7 @@ Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfe bereits von Beg
 - UL 2900-2-1
 - BSI-CS 132
 - ISO/IEC 29147: Information technology — Security techniques — Vulnerability disclosure
-- FDA guidances 
+- FDA Guidance Documents
    - “Content of Premarket Submissions for Management of Cybersecurity in Medical Devices”
    - "Postmarket Management of Cybersecurity in Medical Devices"
    - "Design Considerations and Premarket Submissions - Recommendations for Interoperable Medical Devices"
@@ -531,13 +542,10 @@ Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfe bereits von Beg
 
 - Eckert: [IT-Sicherheit: Konzepte - Verfahren - Protokolle (De Gruyter Studium](https://www.amazon.de/Sicherheit-Konzepte-Verfahren-Protokolle-Gruyter/dp/3110551586/)
 - Johner Institut: [Videotrainings zur IT-Sicherheit bei Medizinprodukten](www.auditgarant.de)
-
-### 3. Definitionen
-
-TODO
+- Aktuelle Trends im [Blog von Bruce Schneier](https://www.schneier.com/)
 
 
-### 4. Erwägungsgründe
+### 3. Erwägungsgründe
 
 1. Hersteller entwickeln immer mehr vernetzte Medizinprodukte. Dadurch erhöhen sich die Risiken durch mangelnde IT-Sicherheit (z.B. gegen Cyberangriffe). Kunden sind über den Stand der Technik bei Beschaffungen nicht informiert und tragen die Aufwände für Absicherung - vor oder nach IT-Zwischenfällen. Dem Tragen viele Hersteller nur unzureichend Rechnung.
 2. Die EU-Verordnungen (MDR, IVDR) fordern explizit die IT-Sicherheit. Die EU-Richtlinien fordern dies indirekt. Diese Vorgaben finden sich in den jeweiligen Anhängen I mit den grundlegenden (Sicherheits- und Leistungs-)Anforderungen. 
@@ -557,4 +565,4 @@ TODO
 16. Auch um die Verteilung und den Bekanntheitsgrad zu fördern, soll der Leitfaden kostenfrei verfügbar sein und bleiben. 
 17. Der Leitfaden fordert bewusst keine konkreten Technologien oder Verfahren. Zum einen sind diese einer zu hohen Änderung unterworfen, zum anderen möchten sich die Autoren des Leitfadens nicht anmaßen, für die Hersteller zu entscheiden, welche Technologien und Verfahren im konkreten Anwendungsfall die besten sind.
 18. Der Leitfaden sollte auf Deutsch und Englisch verfügbar sein.
-19. Der Fokus liegt auf der IT-Sicherheit der Medizinprodukte, nicht auf der IT-Sicherheit von Organisationen wie Krankenhäusern oder Medizinprodukteherstellern.
+19. Der Fokus liegt auf der IT-Sicherheit der Medizinprodukte, nicht auf der IT-Sicherheit von Organisationen wie Krankenhäusern oder Medizinprodukteherstellern. Die Autoren des Leitfadens sind sich bewusst, dass die Angriffe zunehmend auch die Lieferkette der Medizinproduktehersteller betreffen. Dem müssen künftige Versionen dieses Leitfadens durch Anforderungen an die Organisation Rechnung tragen.
