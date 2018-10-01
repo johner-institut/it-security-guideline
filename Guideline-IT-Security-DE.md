@@ -8,7 +8,7 @@ A) Metainformationen
 
 Dieser Leitfaden hat das Ziel, Medizinprodukte-Herstellern und Benannten Stellen eine Handlungsanleitung und eine konkrete Checkliste an die Hand zu geben, um 
 
-- zu verstehen, was die Erwartungen der benannten Stellen sind,
+- zu verstehen, was die Erwartungen der Benannten Stellen sind,
 - die schrittweise Umsetzung der IT-Sicherheit der Produkte zu befördern,
 - das Fehlen einer harmonisierten Norm (zwischenzeitlich) bestmöglich zu kompensieren.
 
@@ -78,6 +78,10 @@ Die Akzeptanz des erreichten Sicherheitsniveaus ist zu bewerten.
 Der Leitfaden enthält zu den meisten Anforderungen "Kommentare". Diese Kommentare umfassen Begründungen, Referenzen, Anmerkungen und v.a. Tipps für Auditoren und Reviewer.
 
 Da der deutsche Begriff "Sicherheit" nicht genau zwischen den bedeutsamen Schutzzielen Gefährdungsfreiheit und Informationssicherheit unterscheidet, wird zur Hervorhebung auch der Begriff Security für Informationssicherheit verwendet. Entsprechend steht der Begriff "Risiko" für die technische Möglichkeit der Reduktion von Gefährdungsfreiheit, währen der Begriff "Bedrohung" für mögliche Angriffe im Bereich Informationssicherheit steht.
+
+Als Ausblick für die weitere Entwicklung des Leitfadens lässt sich ein Trend zur Umsetzung der Normenreihe ISO 2700x feststellen. Dies ist den erkennbaren Versuchen professioneller Angreifer geschuldet, die Malware zukünftig über die IT-Infrastrukur der Hersteller-Organisation, über Kommunikationsmittel, Konfigurationswerkzeuge, Software-Werkzeuge und Bibliotheken in die Medizinprodukte einschleusen werden. Weiter Absicherungsmaßnahmen werden also bereits "früher" im Entwicklungsprozess greifen müssen, womit dann eben Themen der Informationssicherheit im Betrieb in den Vordergrund rücken.
+
+
 
 #### e) Verbindlichkeit
 
@@ -342,7 +346,7 @@ C) Anforderungen an die Prozesse
 
 [^D2-03]: Die MDR fordert dies im Anhang zur Post-Market Surveillance. Die Hersteller müssen festlegen, wann (z.B. Incident/Near Incident) die Maßnahme (s.u.) zu ergreifen ist. 
 
-[^D2-04]: Maßnahmen können beinhalten: Rückrufe, Behördenmeldungen, CAPA, Produktverbesserung, Prozessverbesserung, Training (Anwender, intern), Information der Kunden, Änderung der Begleitmaterialien, Einschränkung der Zweckbestimmung. Die Festlegung muss somit die Festlegung einschließen, wer (z.B. Anwender, benannte Stelle, Behörde), wie (z.B. Field Safety Note) zu informieren ist.  
+[^D2-04]: Maßnahmen können beinhalten: Rückrufe, Behördenmeldungen, CAPA, Produktverbesserung, Prozessverbesserung, Training (Anwender, intern), Information der Kunden, Änderung der Begleitmaterialien, Einschränkung der Zweckbestimmung. Die Festlegung muss somit die Festlegung einschließen, wer (z.B. Anwender, Benannte Stelle, Behörde), wie (z.B. Field Safety Note) zu informieren ist.  
 
 [^D2-05]: Die Frequenz müsste mindestens jährlich, bei kritischen Komponenten häufiger als monatlich erfolgen. Die UL 2900-2-1 spricht von Update-Zyklen von zwei Wochen.
 
@@ -547,19 +551,19 @@ Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfe bereits von Beg
 
 ### 3. Erwägungsgründe
 
-1. Hersteller entwickeln immer mehr vernetzte Medizinprodukte. Dadurch erhöhen sich die Risiken durch mangelnde IT-Sicherheit (z.B. gegen Cyberangriffe). Kunden sind über den Stand der Technik bei Beschaffungen nicht informiert und tragen die Aufwände für Absicherung - vor oder nach IT-Zwischenfällen. Dem Tragen viele Hersteller nur unzureichend Rechnung.
-2. Die EU-Verordnungen (MDR, IVDR) fordern explizit die IT-Sicherheit. Die EU-Richtlinien fordern dies indirekt. Diese Vorgaben finden sich in den jeweiligen Anhängen I mit den grundlegenden (Sicherheits- und Leistungs-)Anforderungen. 
+1. Hersteller entwickeln immer mehr vernetzte Medizinprodukte. Dadurch erhöhen sich die Risiken durch mangelnde IT-Sicherheit (z.B. gegen Cyberangriffe). Kunden sind über den Stand der Technik bei Beschaffungen nicht informiert und tragen die Aufwände für Absicherung - vor oder nach IT-Zwischenfällen. Die Anzahl der IT-Zwischenfälle steigt, wobei die Professionalität der Angreifer schnell zunimmt. Dem tragen viele Hersteller nur unzureichend Rechnung.
+2. Die EU-Verordnungen (MDR, IVDR) fordern explizit die IT-Sicherheit. Die EU-Richtlinien fordern dies indirekt. Diese Vorgaben finden sich in den jeweiligen Anhängen I mit den grundlegenden (Sicherheits- und Leistungs-)Anforderungen. Dabei geht die Risiko-Analyse für Informationssicherheit über die Anylse von Szenarien der zweckbestimmten Bedienung hinaus. Informationssicherheit soll nämlich gerade die Szenarien außerhalb der zweckbestimmten Verwendung abdecken, sodass der Begriff des vorhersehbaren Missbrauchs genauer analysiert werden muss, weil der Hersteller nunmehr alle technischen Invasionsmöglichkeiten in das vernetzte Medizingerät betrachten muss.
 3. Im Gegensatz zu den meisten anderen grundlegenden Anforderungen sind keine Normen zum Thema IT-Sicherheit harmonisiert. Daher gibt es keinen kanonischen Katalog an Anforderungen, der anerkannt den geforderten Stand der Technik reflektiert.
 4. Die FDA hat sowohl mehrere *Guidance Documents* veröffentlicht als auch Normen wie die UL 2900-2-1 anerkannt. Diese Vorgaben sind uneinheitlich bezüglich der Granularität, Vollständigkeit und konzeptionellen Integrität. Sie erfüllen nur bedingt die Ansprüche, die an die Qualität einer Norm üblicherweise gestellt werden. 
 5. Viele Normen sind kostenpflichtig (trotz teilweise fragwürdiger Qualität). Hersteller müssen nach Auffassung der Autoren kostenfrei Zugang zu regulatorischen Anforderungen haben.
-6. Weil die meisten Medizinproduktehersteller die IT-Sicherheit nicht oder nur unzureichend adressieren, erfüllen sie die grundlegenden Anforderungen nur teilweise.
+6. Weil die meisten Medizinproduktehersteller die IT-Sicherheit nicht oder nur unzureichend adressieren, erfüllen sie die grundlegenden Anforderungen nur teilweise. Es herrscht auf kein Konsens in Europe, welche technischen und prozessualen Pflichten den Hersteller betreffen.
 7. Für die meisten Hersteller wäre es weder zeitlich noch finanziell umsetzbar, mit einem Schlag ein IT-Sicherheits-Niveau zu erreichen, wie es z.B. der UL 2900 fordert. Daher sollten die Hersteller schrittweise ein State-of-the-Art Niveau bezüglich der IT-Sicherheit anstreben und erreichen. Damit verfolgt dieser Leitfaden das Ziel, lieber schnell erste Verbesserungen umzusetzen, als wegen Überforderung nichts zu tun.
-8. IT-Sicherheit muss bei allen Produkt-Lebenszyklusprozessen berücksichtigt werden. Eine Beschränkung auf das Testen ist unzureichend.
+8. IT-Sicherheit muss in allen Phasen des Produkt-Lebenszyklusprozessen berücksichtigt werden. Eine Beschränkung auf das Testen ist unzureichend. Zusammen mit technischen Produktmaßnahmen ("Controls") und Dokumentation möchte dieser Leitfaden auf drei Säulen für Informationssicherheit hinweisen: Anforderungen, Prozess, Dokumentation. Die Struktur des Leitfadens reflektiert diese Säulen und wird auch nach den absehbaren technologischen Anpassungen noch bestehen bleiben.
 9. Es ist zu erwarten, dass Normen zur IT-Sicherheit von Medizinprodukten entwickelt und harmonisiert werden, was aber noch Jahre in Anspruch nehmen kann. Daher bedarf es eines Leitfadens (nur) in dieser Zwischenphase. 
 10. Dieser Leitfaden sollte sehr zeitnah (bis November 2018) zur Verfügung, um rasch den Herstellern als Orientierung zu dienen und es ihnen zu ermöglichen, sofort zu handeln. Die hohe Geschwindigkeit seiner Entwicklung macht Kompromisse bezüglich der Abstimmung mit möglichst vielen Parteien unumgänglich.
 11. Da der Leitfaden von einer stufenweisen Annäherung auf den Stand der Technik ausgeht und zudem in sehr kurzer Zeit entstanden ist, kann er keinen Anspruch auf Vollständigkeit erheben.
 12. Der Leitfaden soll dennoch ein weitgehend allgemein akzeptiertes Niveau an Anforderungen repräsentieren. Die Auswahl und Priorität dessen Anforderungen müssen daher möglichst transparent nachvollziehbar sein.
-13. Ein solcher Leitfaden muss die Spezifika von Medizinprodukten berücksichtigen, wozu die Prinzipen der Patientensicherheit (Safety) und eines risikobasierten Ansatzes zählen.
+13. Ein solcher Leitfaden muss die Spezifika von Medizinprodukten berücksichtigen, wozu die Prinzipen der Patientensicherheit (Safety) und eines risikobasierten Ansatzes zählen. Im konkreten Fall können ausgewählte Maßnahmen der Informationssicherheit ("Controls") nämlich den grundlegenden Anforderungen entgegenstehen. Aus diesem Grund kann es für Medizingeräte keine feste Liste von "Controls" geben. Maßgeblich ist jeweils die vom Hersteller festgelegte Zweckbestimmung des Produkts.
 14. Die einfache Verständlichkeit und Umsetzbarkeit ist entscheidend für den erhofften positiven Einfluss eines Leitfadens auf die IT-Sicherheit. Daher stellt er möglichst keine abstrakten oder "high level" Anforderungen, sondern nennt "binär entscheidbare" Prüfkriterien. 
 15. Um die Umsetzbarkeit zu erhöhen, vermeiden die Autoren auch, möglichst viele Anforderungen zusammenzutragen. Vielmehr beschränken sie sich auf diejenigen, die sie für besonders relevant und umsetzbar halten.
 16. Auch um die Verteilung und den Bekanntheitsgrad zu fördern, soll der Leitfaden kostenfrei verfügbar sein und bleiben. 
