@@ -201,7 +201,7 @@ C) Anforderungen an die Prozesse
 
 [^C2a-02]: Alternativ zu den Benutzungsszenarien kann auch jede zusammengehörende Gruppe an UI-Elementen (z.B. Bildschirmseiten, Panels) untersucht werden, die im Rahmen dieses Benutzungsszenarios angeboten werden. Diese Aktivität ist Teil der allgemeinen Analyse der Risiken, die durch die Umsetzung von Produktmaßnahmen der Informationssicherheit entstehen können.
 
-[^C2a-04]: z.B. Einschränkung erlaubter IP- oder MAC-Adressen
+[^C2a-04]: z.B. Einschränkung erlaubter IP- oder MAC-Adressen, physischer Zugriffsschutz
 
 [^C2a-05]: Im Gegensatz zu den oben genannten Punkten, geht es hier um Risiken, die sich ergeben, obwohl sich das System spezifikationsgemäß verhält. Diese Aktivität ist Teil der allgemeinen Analyse der Risiken, die durch die Umsetzung von Produktmaßnahmen der Informationssicherheit entstehen können. Es geht also nicht um Risiken durch mangelnde IT-Sicherheit, sondern um Risiken (im Sinne von Gefährdungsfreiheit, Verfügbarkeit und Performanz), die aus Maßnahmen zur Erhöhung der IT-Sicherheit folgen.
 
@@ -213,6 +213,7 @@ C) Anforderungen an die Prozesse
 ||Der Hersteller hat die Schutzwürdigkeit dieser Daten mit Bezug zur Vertraulichkeit und deren Auswirkung auf die Patientensicherheit bewertet.|1||
 ||Der Hersteller hat im Risikomanagement die Auswirkungen bewertet, wenn der Schutz besonders schützenswerter Daten nicht mehr gegeben ist|1||
 ||Der Hersteller hat im Risikomanagement die Folgen einer Überlastung des Systems durch zu viele Anfragen (z.B. DoS) oder Anfragen mit zu großen Daten-Volumina untersucht und falls notwendig Maßnahmen definiert|2||
+||Der Hersteller hat im Risikomanagement die Folgen analysiert, wenn das Netzwerk nicht mehr oder nicht mehr in der erwarteten Güte zur Verfügung steht.|2||
 ||Der Hersteller hat im Risikomanagement die Folgen eines Datenverlusts analysiert und ggf. Maßnahmen wie Backup festgelegt|2||
 ||Der Hersteller hat allgemein oder produktspezifisch festgelegt, nach welchen Überprüfungskriterien[^C2b-02] externe Daten vor der weiteren Verarbeitung überprüft werden müssen[^C2b-03]|2||
 
@@ -228,13 +229,20 @@ C) Anforderungen an die Prozesse
 |:--:|:--|:--:|:--|
 ||Der Hersteller verfügt über eine dokumentierte Planung, wie Patches aufgespielt und wieder entfernt werden. Dieser Plan beinhaltet die Entwicklung, die Verteilung, die Installation und Überprüfung der Patches.|1|Dieser Plan kann Teil des Incident Response Plans sein (s.u.)|
 ||Der Hersteller verfügt eine Liste aller SOUP-/OTS-Komponenten|1|Diese Forderung zählt eher zum Kapitel "System- und Software-Architektur"|
+||Der Hersteller hat abgeschätzt, wie häufig Patches notwendig sind und wie diese installiert werden müssen|2||
+
+##### iv) Sonstiges
+|ID|Anforderung|Stufe|Kommentare|
+|:--:|:--|:--:|:--|
+||Der Hersteller hat festgelegt, wie das Medizinprodukt die Anwender im Fall einer Kompromittierung der Cybersecurity informiert|2||
+||Der Hersteller hat abgeschätzt, welche Funtionalität das Medizinprodukt auch im Falle einer Komprimittierung der Cybersecurity gewähren muss.|||
 
 
 #### c) System- und Software-Architektur
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-||Der Hersteller hat alle SOUP-/ OTS-Komponenten dokumentiert (inkl. Version, Hersteller, Referenz auf Informationen zu Updates, Release-Notes)|1|Liste / Tabelle zeigen lassen|
+||Der Hersteller hat alle SOUP-/ OTS-Komponenten dokumentiert (inkl. Version, Hersteller, Referenz auf Informationen zu Updates, Release-Notes)|1|Liste / Tabelle zeigen lassen. Die FDA fordert die "Cybersecurity Bill of Materials (CBOM)"|
 ||Der Hersteller hat die spezifischen Risiken, die sich durch die Wahl der Technologien (insbesondere Programmiersprache, SOUP- / OTS-Komponenten) ergeben analysiert.|2||
 ||Der Hersteller hat Maßnahmen ergriffen, um sicherzustellen, dass die verwendeten Werkzeuge (z.B. Entwicklungsumgebung, Compiler), sowie die Plattformen und SOUP/OTS-Komponenten frei von Schadcode sind [^C3-01]|2||
 ||Der Hersteller haben einer Liste aller Dienste [^C3-02] erstellt, die das Produkt (z.B. durch sein Betriebssystem) nach "außen" anbietet bzw. nutzt|1|sich diese Liste zeigen lassen|
@@ -244,10 +252,12 @@ C) Anforderungen an die Prozesse
 ||Der Hersteller hat für jeden Prozess den Nutzer (auf Betriebssystemebene) identifiziert und begründet, wenn dieser nicht mit minimalen Rechten ("worst case" als Root) läuft|2||
 ||Der Hersteller hat Risiken durch mangelnde IT-Sicherheit systematisch durch ein Threat-Modeling abgeleitet. |2|Sich das Modell zeigen lassen, dass zumindest die externen Akteure und/oder Bedrohungen und die bedrohten Objekte erkennen lassen muss|
 ||Der Hersteller hat die Risiken analysiert, die sich durch das (Auto-)Update von Anti-Malware ergeben|1||
+||Der Hersteller hat festgelegt, wie das Produkt eine Kompromittierung der IT-Sicherheit feststellen, diese dokumentieren (log) und darauf wie schnell reagieren muss.|||
+||Bezüglich des Auditlogs hat der Hersteller festgelegt, wo dessen Daten liegen, wie diese geschützt, aktualisiert und in welcher Form dieses automatisiert ausgewertet werden kann.|||
 ||Der Hersteller hat für alle Software-Komponenten [^C3-03], Dienste bzw. Prozesse, Daten und Software-Komponenten analysiert, welche Risiken entstehen, wenn diese sich aufgrund eines Problems mit der IT-Sicherheit nicht spezifikationsgemäß verhalten |1|Entspricht einem FMEA-Ansatz|
 ||Der Hersteller hat die Software-Anforderungen in der Software-Architektur berücksichtigt|1|Beispielhaft für o.g. Software-Anforderungen sich die Komponente(n) bzw. Technologien in der Architektur zeigen lassen, die die Anforderungen realisieren|
 
-[^C3-01]: Zu den Maßnahmen zählen die Anforderung, dass Entwicklungswerkzeuge, Entwicklungsumgebungen und Bibliotheken (SOUP, OTS-Komponenten) nur von als sicher eingestuften und freigegebenen Quellen geladen werden dürfen, dass die IT-Infrastruktur durch geeignete Maßnahmen wie Virenschutz und Firewalls geschützt sind und dass Bibliotheken vor der Verwendung auf Schadcode untersucht werden (z.B. mit Virenscanner)
+[^C3-01]: Zu den Maßnahmen zählen die Anforderung, dass Entwicklungswerkzeuge, Entwicklungsumgebungen und Bibliotheken (SOUP, OTS-Komponenten) nur von als sicher eingestuften und freigegebenen Quellen geladen werden dürfen, dass die IT-Infrastruktur durch geeignete Maßnahmen wie Virenschutz und Firewalls geschützt sind und dass Bibliotheken vor der Verwendung auf Schadcode untersucht werden (z.B. mit Virenscanner). Diese Forderungen betreffen ggf. auch den Einkaufsprozess.
 
 [^C3-02]: Beispiel für von Betriebssystemen üblicherweise angebotene Dienste: Webserver, RPC, Cloud-Services, Laufwerke (z.B. USB), Datenbank, DICOM, Dienste über Socket-Verbindungen
 
@@ -274,7 +284,7 @@ C) Anforderungen an die Prozesse
 ||Der Hersteller hat mindestens eine Methode festgelegt, mit der die Einhaltung der Coding-Guidelines überprüft wird.|1|das wird dem Hersteller gelingen, wenn er Werkzeuge zur statischen Code-Analyse einsetzt und/oder Vorgaben für die Code-Reviews macht.|
 ||Der Hersteller verlangt Code-Reviews für alle Komponenten, die (IT-)sicherheitsrelevanten Funktionen abbilden.|2||
 ||Der Hersteller hat konkrete Prüfkriterien[^C5-01] in seinen Vorgabedokumenten für die Code-Reviews.|1||
-||Die Code-Reviews werden nach dem Vier-Augen-Prinzip und nur von Personen durchgeführt, die über die notwendige Kompetenz verfügen. Der Hersteller hat diese Kompetenz dokumentiert[^C5-02].|||
+||Die Code-Reviews werden nach dem Vier-Augen-Prinzip und nur von Personen durchgeführt, die über die notwendige Kompetenz verfügen. Der Hersteller hat diese Kompetenz dokumentiert[^C5-02].|2||
 ||Der Hersteller hat festgelegt, welche Tests (z.B. Unit-Tests) mit welchen Testfällen[^C5-03] und welchem zu erreichenden Abdeckungsgraden notwendig sind.|1||
 ||Der Hersteller hat für alle SOUP- bzw. OTS-Komponenten beschrieben, wie diese zu verifizieren sind.|1||
 
@@ -290,16 +300,19 @@ C) Anforderungen an die Prozesse
 |:--:|:--|:--:|:--|
 ||Der Hersteller sieht im Testplan [^C6-01] Portscans an allen relevanten Netzwerkschnittstellen vor und führt diese auch durch.|1||
 ||Der Hersteller sieht im Testplan Penetrationstests an allen relevanten Datenschnittstellen und/oder für alle bekannten Schwachstellen der eingesetzten OTS-Komponenten [^C6-02] vor und führt diese auch durch.|2|für eine bekannte OTS-Komponente in der [NIST Common / National Vulnerability Database](https://nvd.nist.gov/)  eine Schwachstelle recherchieren und vom Hersteller erklären lassen, wie er sicherstellt, dass diese nicht ausgenutzt werden kann, bzw. weshalb diese nicht relevant ist|
+||Der Hersteller sieht im Testplan den Einsatz eines "Vulerability Scanners" vor.|||
 ||Der Hersteller sieht im Testplan Fuzz-Tests an allen relevanten Datenschnittstellen mit mindestens einem Werkzeug vor und führt diese auch durch [^C6-03]|2||
 ||Der Hersteller sieht im Testplan eine Überprüfung der Sicherheit gegen die üblichen Angriffsvektoren vor.[^C6-04]|2||
+||Der Hersteller sieht im Testplan die Überprüfung vor, die Robustheit und Leistungsfähigkeit zu prüfen.|||
 ||Der Hersteller sieht im Testplan die Überprüfung aller System-/Software-Anforderungen (s.o.) vor.|1||
 ||Der Hersteller lässt seine Software zusätzlich zu den o.g. Maßnahmen durch IT-Sicherheitsexperten überprüfen.|3|Zu dieser Überprüfung müssen Fuzz- und Penetrationstests ebenso zählen wie die Analyse der System-/ Software-Architektur und des Quell-Codes, um auf Stufe 3 zu gelangen|
+||Der Hersteller bezieht beim Systemtest die Testberichte Dritter (z.B. SOUP-Hersteller) mit ein (soweit verfügbar)|||
 
 
 
 [^C6-01]: Dieser Plan kann Teil des Entwicklungsplans, eines V&V-Plans oder eines anderen Plans sein.
 
-[^C6-02]: Die Schwachstellen sind z.B. in der [NIST National Vulnerability Database](https://nvd.nist.gov/) hinterlegt. Üblicherweise setzt man Scanner wie Nessus oder OpenVAS ein. Die Anforderung lautet nicht, dass beim Penetrationstest notwendigerweise alle bekannten Schwachstellen getestet werden.
+[^C6-02]: Die Schwachstellen sind z.B. in der [NIST National Vulnerability Database](https://nvd.nist.gov/) (NVD) hinterlegt. Üblicherweise setzt man Scanner wie Nessus oder OpenVAS ein. Die Anforderung lautet nicht, dass beim Penetrationstest notwendigerweise alle bekannten Schwachstellen getestet werden. Die FDA fordert diese Cross Reference zwischen den "CBOMs" und der NVD expliit ein.
 
 [^C6-03]: Im Fokus beim Fuzz-Testing sollte der eigene Code stehen und weniger die OTS-Software. Der Einsatz mehrerer Scanner führt meist zu einem größeren Bereich von Input-Werten. 
 
@@ -312,8 +325,10 @@ C) Anforderungen an die Prozesse
 ||Der Hersteller hat die häufigsten Fehler [^C8-01] und daraus resultierenden Gefährdungen in der Risikoanalyse adressiert oder kann zumindest darlegen, weshalb diese Risiken beherrscht sind.|1|ein Beispiel aus einer der verlinkten Listen häufigster Fehler auswählen und den Hersteller um eine Begründung bitten|
 ||Der Hersteller diskutiert in der Risikoanalyse Risiken durch alle relevanten Angriffs-Vektoren (s.o.) und zeigt, wie diese beherrscht werden.|1||
 ||Der Hersteller hat alle Maßnahmen zur Risikobeherrschung auf Wirksamkeit überprüft.|1|z.B. Referenzen auf entsprechende Tests zeigen lassen|
+||Der Hersteller hat eine Traceability Matrix erstellt, mit der er dokumentiert, dass alle Risiken mit Bezug zur IT-Sicherheit durch Maßnahmen beherrscht werden.|2||
 ||Der Hersteller hat den Risikomanagementbericht und den IT Security Report erstellt.|2|Der IT Security Report kann in Europa durchaus Teil des Risikomanagementberichts sein, in den USA nicht.|
 ||Der Hersteller hat die notwendigen Pläne für die der Entwicklung nachgelagerten Phase (z.B. Post-Market und Incident Response Plan) erstellt|1|Details weiter unten|
+||Der Hersteller hat die Vollständigkeit der Tests durch eine Traceability Matrix geprüft, die die Tests mit den Anforderungen verknüpft.|2||
 
 [^C8-01]: z.B. gemäß [OWSAP top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) oder [CWE/SANS top 25](http://cwe.mitre.org/top25/) 
 
@@ -384,12 +399,12 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 | :--: | :----------------------------------------------------------- | :---: | :----------------------------------------------------------- |
 |      | Das Produkt erlaubt den Benutzern nur dann seine Nutzung, wenn sie sich am Produkt authentifiziert haben |   0   | Zugehörige Testfälle zeigen lassen                           |
 |      | Das Produkt erlaubt an jeder Datenschnittstelle den daran angeschlossenen Nachbarsystemen (z.B. andere Medizinprodukte, IT-Systeme), nur dann mit ihm Daten auszutauschen, wenn diese vom Produkt authentifiziert wurden |   0   | dto. Die Forderung, dass die Daten nur verschlüsselt übertragen werden dürfen, findet sich weiter unten. |
-|      | Das Produkt erlaubt eine Authentifizierung mit Passwort nur, wenn dieses Passwort eine definierte eine Mindestlänge hat von denen mindestens eines ein nicht alphanumerisches Zeichen ist und das mindestens einen Groß- und einen Kleinbuchstaben enthält [^C2a-02] |   1   |                                                              |
+|      | Das Produkt erlaubt eine Authentifizierung mit Passwort nur, wenn dieses Passwort eine definierte eine Mindestlänge hat von denen mindestens eines ein nicht alphanumerisches Zeichen ist und das mindestens einen Groß- und einen Kleinbuchstaben enthält [^C2a-02] |   1   | Die Wahl des Mechanismus zur Authentifizierung hat der Hersteller begründet siehe oben. |
 |      | Das Produkt hat kein Default-Passwort oder verlangt, dass ein solches bei der ersten Nutzung geändert wird |   0   |                                                              |
 |      | Das Produkt sperrt Benutzer und Nachbarsysteme nach n Versuchen für m Minuten aus, wobei der Hersteller n und m Werte oder Untergrenzen festlegt. Der Hersteller hat die "Safety-bezogenen" Risiken als Folge des Aussperrens analysiert und ggf. risikominimierende Maßnahmen implementiert[^C2a-03]. |   1   |                                                              |
 |      | Das Produkt zeigt im Falle eines nicht erfolgreichen Logins nur Informationen an, die es dem Anwender nicht erlauben die genaue Ursache der Sperrung zu erkennen, wie z.B. falscher Benutzername oder falsches Passwort. |   2   |                                                              |
 |      | Das Produkt beendet Bediensitzungen für Benutzer und Nachbarsysteme nach n Minuten Inaktivität, wobei der Hersteller für n den Wert oder dessen Obergrenze festlegt. |   2   |                                                              |
-|      | Das Produkt weist jedem Benutzer und jedem Nachbarsystem bei der Authentifizierung eine Rolle zu |   1   | Erklären lassen, in welcher/welchen Software-Komponente(n) Komponenten diese Funktionalität implementiert und wie dies geprüft ist |
+|      | Das Produkt weist jedem Benutzer und jedem Nachbarsystem bei der Authentifizierung eine Rolle zu |   1   | Erklären lassen, in welcher/welchen Software-Komponente(n) Komponenten diese Funktionalität implementiert und wie dies geprüft ist. Die FDA fordert sogar ein hierarchisches Rollenkonzept. |
 |      | Das Produkt erlaubt jeder Rolle den Zugriff auf nur die Funktionen, für die die sie berechtigt ist. Dies gilt insbesondere auch für das Update/Upgrade des Produkts |   1   | dto.                                                         |
 |      | Das Produkt erlaubt berechtigten Benutzern, andere Benutzer und Nachbarsysteme zu sperren [^C2a-04] |   1   |                                                              |
 |      | Das Produkt erlaubt berechtigten Benutzern, die Authentifizierung notwendigen Elemente (Passwörter, kryptografische Schlüssel, Zertifikate) anderer Benutzer und Nachbarsysteme zurückzusetzen |   1   |                                                              |
@@ -415,7 +430,8 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 |      | Das Produkt schützt Daten vor ungewolltem Löschen. [^C2b-01] |   2   | Hersteller müssen prüfen, ob kein höherwertiges Schutzziel dem entgegensteht, wie die zuvor genannte Anforderung. |
 |      | Das Produkt übermittelt Daten, zumindest sicherheitsbezogene Daten, über seine Datenschnittstellen nur in verschlüsselter Form. Das gilt auch für das Abspeichern auf externen Datenträgern. |   1   | Nachfragen, welche Verschlüsselung zum Einsatz kommt und wie der initiale Schlüsselaustausch realisiert ist |
 |      | Das Produkt sichert die Integrität der Daten vor ungewollter Veränderung z.B. durch kryptographische Verfahren |   2   | Das gilt insbesondere für sicherheitsrelevante Daten wie die unter [^C2b-01] genannten. |
-|      | Das Produkt überprüft alle Benutzereingaben und alle eingehenden Daten vor der weiteren Verarbeitung anhand von Hersteller festgelegten Überprüfungskriterien (s.o.) |   1   | Jeweils ein Beispiel für einen Dateninput an der Benutzer- und an der Datenschnittstelle auswählen und sich die Überprüfung im Code zeigen lassen |
+|      | Das Produkt lehnt per Default alle eingehenden Verbindungen (z.B. USB, TCP, Bluetooth) ab. |   2   | Forderung der FDA                                            |
+|      | Das Produkt überprüft alle Benutzereingaben und alle eingehenden Daten vor der weiteren Verarbeitung anhand von Hersteller festgelegten Überprüfungskriterien (s.o.) [^C2b-02] |   1   | Jeweils ein Beispiel für einen Dateninput an der Benutzer- und an der Datenschnittstelle auswählen und sich die Überprüfung im Code zeigen lassen |
 |      | Das Produkt nutzt für die Übertragung von zeitkritischen Daten, die relevant für die Patientensicherheit sind, keine kabellose Übertragung. |   2   |                                                              |
 |      | Das Produkt speichert Passwörter nur als "salted hash"       |   2   | z.B. nach Hash-Verfahren fragen und ggf. zeigen lassen       |
 |      | Das Produkt speichert personenidentifizierende Merkmale nur verschlüsselt |   2   | Erklären lassen, was der Hersteller als personenidentifizierende Merkmale definiert und welchen Verschlüsselungs-mechanismus er nutzt |
@@ -426,19 +442,20 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 |      | Das Produkt stellt im Fall einer Kompromittierung einen Notfall-Modus für Funktionen bereit, die relevant für die Sicherheit der Patienten sind. |   2   |                                                              |
 
 [^C2b-01]: Der Schutz kann auch in einer Undo-Funktion bestehen. Ggf. ist der Zeitraum für ein Undo zu beschränken. Es ist zu beachten, dass die Anforderungen des Datenschutzes nach einem (endgültigen) Löschen der Daten erfüllt werden.
+[^C2b-02]: Diese Überprüfung sollte auf allen Interoperabilitätsebenen stattfinden. Beispielsweise wären auch die Protokolle, Formate zu überprüfen wie die Wohlgeformtheit von XML-Dateien. 
 
 #### c) Patches
 
 |  ID  | Anforderung                                                  | Stufe | Kommentare                                                   |
 | :--: | :----------------------------------------------------------- | :---: | :----------------------------------------------------------- |
 |      | Das Produkt erlaubt es, Patches (eigener Code, SOUP-/OTS-Komponenten) aufzuspielen. |   1   | Hersteller sollte Ausnahmen begründen können, ebenso, ob das Patchen remote erfolgen darf oder muss. |
-|      | Das Produkt erlaubt es, fehlerhafte Patches wieder zu entfernen. |   2   |                                                              |
-|      | Das Produkt beschränkt die Möglichkeit, Patches aufzuspielen oder zu entfernen auf die berechtigten Benutzer.[^C3c-01] |   2   |                                                              |
+|      | Das Produkt erlaubt es, fehlerhafte Patches wieder zu entfernen ("roll-back)". |   2   |                                                              |
+|      | Das Produkt beschränkt die Möglichkeit, Patches aufzuspielen oder zu entfernen auf die berechtigten (authentifizieren und autorisierten) Benutzer.[^C3c-01] |   2   |                                                              |
 |      | Das Produkt prüft geänderten Programm-Code (Patches) vor der ersten Verwendung sowie beim Neustart auf Integrität. [^C2c-02] |   2   | Diese Prüfungen erfolgen üblicherweise über Signaturen, die selbst vor Fälschung gesichert sein müssen |
 
 [^C2c-01]: Diese Prüfung erfolgt üblicherweise auf einem rollenbasierten Berechtigungskonzept sowie einer Authentifizierung der Nutzer.
 
-[^C2c-02]: Dies ist ein Sonderfall der Forderung, dass jeder Programm-Code beim Neustart auf Integrität zu prüfen ist.
+[^C2c-02]: Dies ist ein Sonderfall der Forderung, dass jeder Programm-Code beim Neustart auf Integrität zu prüfen ist. Der Programm-Code beinhaltet die Software und die Firmware. Die Prüfung muss kryptographische Verfahren nutzen.
 
 #### d) Sonstiges
 
@@ -456,36 +473,41 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 
 [^C3d-03]: Ebenfalls sehr spezifisch formulieren, idealerweise über ein an den Schnittstellen beobachtbares Verhalten wie "schaltet sich aus", "deaktiviert die Datenverbindung", "zeigt folgende Warnmeldung an" usw.
 
-### 2. System-/Software-Architektur
+### 3. System-/Software-Architektur
 
 |  ID  | Anforderung                                                  | Stufe | Kommentare                                                   |
 | :--: | :----------------------------------------------------------- | :---: | :----------------------------------------------------------- |
-|      | Die Software verwendet für alle kryptographischen Funktionen (z.B. Verschlüsselung, Signierung) ausschließlich bewährte Bibliotheken / Komponenten (keine eigene Implementierung). |   1   | die Bibliothek muss in der Liste der SOUP-/OTS-Komponenten enthalten sein. Vom Hersteller sich die Auswahl(kriterien) erklären lassen |
+|      | Die Software verwendet für alle kryptographischen Funktionen (z.B. Verschlüsselung, Signierung) ausschließlich bewährte Bibliotheken / Komponenten (keine eigene Implementierung). [^C3-01] |   1   | die Bibliothek muss in der Liste der SOUP-/OTS-Komponenten enthalten sein. Vom Hersteller sich die Auswahl(kriterien) erklären lassen |
 |      | Die Software verwendet für unterschiedliche Funktionen (z.B. Verschlüsselung der Kommunikation, Verschlüsselung der Daten) unterschiedliche Technologien oder Schlüssel. |   3   |                                                              |
 |      | Die Software ist soweit technisch möglich vor Malware (Viren, Würmern usw.) geschützt. |   1   | Sich erklären lassen, wie das System vor Malware geschützt ist und wie dieser Schutz aufrechterhalten wird |
 |      | Die Software basiert auf den Versionen der SOUP-/OTS-Komponenten, die keine sicherheitsrelevanten Schwachstellen enthalten. Ausnahmen sind begründet |   1   | sich in SOUP-Liste ein Beispiel herauspicken und auf der Herstellerseite die Version recherchieren und prüfen, welche Schwachstellen in Nachfolge-Versionen gepatched wurden |
 
-### 3. Begleitmaterialien
+[^C3-01]: Die FDA besteht auf dem [https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards) und  der [NIST FIPS 140-2 Suite B ](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2851.pdf). 					 				 			 		
+
+### 4. Begleitmaterialien
 
 Die Begleitmaterialien beziehen sich v.a. auf die Gebrauchs- und Installationsanweisungen. Ggf. müssen die Hersteller auch Trainingsmaterialien bereithalten.
 
 |  ID  | Anforderung                                                  | Stufe | Kommentare                                                   |
 | :--: | :----------------------------------------------------------- | :---: | :----------------------------------------------------------- |
 |      | Die Gebrauchsanweisung legt die vorgesehene IT-Umgebung für den Betrieb fest.[^13] |   1   |                                                              |
-|      | Die Gebrauchsanweisung legt fest, welche Aktivitäten[^14] die Betreiber wie häufig durchführen müssen. |   1   |                                                              |
+|      | Die Gebrauchsanweisung legt fest, welche Aktivitäten[^14] die Betreiber wie und wie häufig durchführen müssen. |   1   |                                                              |
 |      | Die Installations- und Service-Anleitungen legen fest, welche weiteren Rollen (Betreiber, Service-Techniker) welche Aktivitäten[^15] wie häufig durchführen müssen. |   1   |                                                              |
 |      | Die Begleitmaterialien beschreiben, wie mit verlorengegangenen oder gestohlenen Authentifizierungs-Elementen (z.B. Karten, Zertifikaten, kryptographischen Schlüsseln) sowie mit vergessenen Passwörtern umgegangen werden soll. |   1   |                                                              |
 |      | Die Begleitmaterialien beschreiben, wie die Anwender erkennen können, dass das Produkt ein Problem mit der IT-Sicherheit hat, und wie sie sich in diesem Fall verhalten sollen. |   2   | Dies bedingt, dass das Produkt diese Detektion implementiert |
 |      | Die Begleitmaterialien beschreiben, welche Anti-Malware-Software für das Produkt zugelassen und von wo (z.B. Link) diese zu beziehen ist und wer für deren Aktualisierung verantwortlich ist. |   2   | nur soweit anwendbar                                         |
-|      | Die Begleitmaterialien enthalten die Kontaktdaten des Herstellers, über die dieser z.B. bei Problemen mit der IT-Sicherheit zu erreichen ist. |       |                                                              |
+|      | Die Begleitmaterialien enthalten die Kontaktdaten des Herstellers, über die dieser z.B. bei Problemen mit der IT-Sicherheit zu erreichen ist. [^D4-04] |   1   |                                                              |
+|      | Die Begleitmaterialien beschreiben das Produkt auch technisch [^D4-05] |   2   | Das ist insbesondre eine FDA Anforderung                     |
 
 
 
-[^13]: Beispiele: Netzwerk (Bandbreite, Verfügbarkeit, Ports, IP-Ranges, Latenzen, Verschlüsselung, Firewalls usw.), Virenschutz, Betriebssysteme, physische Zugriffsberechtigungen, andere Software, die zeitgleich auf dem System laufen darf oder eben nicht (Spiele?, Firewall, Datenbank, Webserver)
+[^13]: Beispiele: Netzwerk / Schnittstellen (Bandbreite, Verfügbarkeit, Ports, IP-Ranges, Latenzen, Verschlüsselung, Firewalls usw.), Virenschutz, Betriebssysteme, physische Zugriffsberechtigungen, andere Software, die zeitgleich auf dem System laufen darf oder eben nicht (Spiele?, Firewall, Datenbank, Webserver). Die FDA verlangt bei den Schnittstellen auch eine Angabe über die Richtung der Kommunikation.
 
-[^14]: Beispiele: Ausbildung der Anwender (z.B. zum Umgang mit Passwörtern), Aktualisierung des Virenschutzes, Information des Herstellers über Zwischenfälle, Aufspielen von Updates und Patches, Monitoring
+[^14]: Beispiele: Ausbildung der Anwender (z.B. zum Umgang mit Passwörtern), Aktualisierung des Virenschutzes, Information des Herstellers über Zwischenfälle, Aufspielen von Updates und Patches, Monitoring, Backup (und Restore)
 
-[^15]: Beispiele: Auswerten der Audit-Logs, Löschen nicht benötigter Benutzer, Austausch von Schlüsseln oder Zertifikaten, Löschen von temporären Dateien
+[^15]: Beispiele: Installation, Anschluss an Netzwerk, Auswerten der Audit-Logs, Löschen nicht benötigter Benutzer, Austausch von Schlüsseln oder Zertifikaten, Löschen von temporären Dateien
+[^D4-04]: Ggf. muss der Hersteller auch angeben, für welchen Zeitraum er beabsichtigt, den Support anzubieten.
+[^D4-05]: Netzwerk-, Architektur, Fluss- und Zustanddiagramme. Schnittstellen, Komponenten, Kommunikationspfade, Authentifizierungsmechanismen für jede kommunizierende "Komponente" wie Webseiten, Server, Cloud-Speicher und Interoperable Systeme. "Design Features", die validierte Software-Updates und Patches gestatten. Liste aller Komponenten wie 3rd Party Software (s. CBOM der FDA)
 
 
 E) Anhänge
