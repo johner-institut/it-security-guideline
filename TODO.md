@@ -11,9 +11,9 @@ TODOs
 - [x] Feedback von IT Sicherheitsexperten des TÜV Süd einbauen
 - [ ] Hinweise geben, wie man mit Risiken umgeht (s. Kommentar von Andreas unten)
 - [x] Definitionen ergänzen oder referenzieren oder Anhang löschen
-- [ ] Anforderungen durchnummerieren
+- [x] Anforderungen durchnummerieren
 - [ ] Fußnoten neu durchnummerieren
-- [ ] Leitfaden ins Englische übersetzen
+- [x] Leitfaden ins Englische übersetzen
 
 
 Kommentare von Andreas (E-Mail vom 31.08.18)
