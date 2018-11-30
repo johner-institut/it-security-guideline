@@ -37,23 +37,23 @@ These guidelines are based on the idea that IT security is based on three fundam
 The structure of these guidelines is based on these ideas: In Chapter B) it starts off with the general requirements, in Chapter C) it establishes the process requirements (including documentation), and in Chapter D) it establishes the product requirements (including documentation). Within these &quot;main chapters&quot;, the requirements are structured along software life cycle process lines:
 
 1. **Process requirements**
-    ​    1. **Requirements for the development process**
-    ​           1. Intended purpose and stakeholder requirements
-    ​           2. System and software requirements
-    ​           3. System and software architecture
-    ​           4. Implementation and development of the software
-    ​           5. Evaluation of software units
-    ​           6. System and software tests
-    ​           7. Product release
-    ​    2. **Requirements for the post-development phase**
-    ​           1. Production, distribution, installation
-    ​           2. Market surveillance
-    ​           3. Incident response plan
+  1. ***Requirements for the development process***
+      1. Intended purpose and stakeholder requirements
+      2. System and software requirements
+      3. System and software architecture
+      4. Implementation and development of the software
+      5. Evaluation of software units
+      6. System and software tests
+      7. Product release
+  2. ***Requirements for the post-development phase***
+      1. Production, distribution, installation
+      2. Market surveillance
+      3. Incident response plan
 2. **Product requirements**
-    ​    1. Preliminary remarks and general requirements
-    ​    2. System requirements
-    ​    3. System and software architecture
-    ​    4. Support materials
+      1. Preliminary remarks and general requirements
+      2. System requirements
+      3. System and software architecture
+      4. Support materials
 
 The risk management requirements are woven into the requirements throughout the product life cycle.
 
@@ -89,7 +89,7 @@ These guidelines were prepared by the following authors:
 
 - Andreas Purde ([TÜV SÜD](https://www.tuev-sued.de/))
 - Olaf Teichert ([TÜV SÜD](https://www.tuev-sued.de/))
-- Dr. Christian Johner ([Johner Institute](https://www.johner-institut.de))
+- Prof. Dr. Christian Johner ([Johner Institute](https://www.johner-institut.de))
 
 Dr. Georg Heidenreich ([Siemens Healthcare GmbH](https://www.healthcare.siemens.com/)) has made a significant contribution as a reviewer.
 
@@ -129,10 +129,14 @@ In this way, manufacturers can also access the expertise of external resources.
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
-| B.2.1 | The manufacturer has created a list of all roles that are directly or indirectly involved with IT security.[1](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn1) | 1 |   |
-| B.2.2 | The manufacturer has provided evidence of the IT-security expertise for each role.[2](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn2) | 1 |   |
+| B.2.1 | The manufacturer has created a list of all roles that are directly or indirectly involved with IT security.[^B2-01] | 1 |   |
+| B.2.2 | The manufacturer has provided evidence of the IT-security expertise for each role.[^B2-02] | 1 |   |
 | B.2.3 | The manufacturer has records (e.g. training documents) that lead to the conclusion that the people in question actually have this expertise. | 1 |   |
 | B.2.4 | The (software) development plans define the (additional or deviating) expertise on a product-specific basis. | 2 | Requirement since ISO 13485:2016. |
+
+[^B2-01]: Examples are: developers, testers, regulatory affairs and quality managers, employees in service and support, product managers, medical product consultants
+
+[^B2-02]: competences (to understand, to be able to) and not primarily topics should be mentioned
 
 ### **3. Documentation**
 
@@ -151,12 +155,20 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | C.1.a.1 | The manufacturer has identified all neighboring systems (medical devices, IT systems) that may be connected to the product. | 0 |   |
 | C.1.a.2 | The manufacturer has created a list of roles (people, neighboring systems) that may interact with the product. | 0 | Ask for the list of roles to be shown. |
 | C.1.a.3 | The manufacturer has identified all markets and all the regulatory requirements that are relevant in these markets. | 0 | Ask for the list of IT security regulatory requirements to shown. |
-| C.1.a.4 | The manufacturer has identified the intended primary and secondary users with their IT expertise.[3](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn3) | 1 |   |
-| C.1.a.5 | The manufacturer has defined the intended user environment.[4](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn4) | 1 |   |
-| C.1.a.6 | The manufacturer has analyzed the risks (hazards) that result if the system is used in the specified user environment by someone who is not a specified user.[5](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn5) | 1 |   |
+| C.1.a.4 | The manufacturer has identified the intended primary and secondary users with their IT expertise.[^C1-01] | 1 |   |
+| C.1.a.5 | The manufacturer has defined the intended user environment.[^C1-02] | 1 |   |
+| C.1.a.6 | The manufacturer has analyzed the risks (hazards) that result if the system is used in the specified user environment by someone who is not a specified user.[^C1-03] | 1 |   |
 | C.1.a.7 | The manufacturer has described in the risk management documentation what the IT security threats are and what the consequences would be for patients, users and third parties. | 1 |   |
 | C.1.a.8 | The manufacturer has traceably generated the risk acceptance criteria based on the product&#39;s use and the state-of-the-art. | 1 |   |
-| C.1.a.9 | The manufacturer has developed a system it can use to evaluate IT security-related risks.[6](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn6) | 2 |   |
+| C.1.a.9 | The manufacturer has developed a system it can use to evaluate IT security-related risks.[^C1-04] | 2 | |
+
+[^C1-01]: Primary users are those who use the product for medical purposes. Secondary users are all other persons who use the product as intended, e.g. during installation, configuration, update/upgrade
+
+[^C1-02]: Examples can be found in the section on Labeling
+
+[^C1-03]: Examples: The operator has not installed virus protection. Users share a password.
+
+[^C1-04]: Examples of such classification systems are [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model) and [CVSS](https://nvd.nist.gov/vuln-metrics/cvss). However, they have no relation to safety.
 
 #### **b) System and software requirements**
 
@@ -165,27 +177,41 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
 | C.1.b.i.1 | The manufacturer has identified all data interfaces. | 0 | Ask for the list of data interfaces (wired, WLAN, USB, etc.) to be shown. |
-| C.1.b.i.2 | The manufacturer has specified the protocols and standards used for each data interface.[7](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn7) | 1 |   |
+| C.1.b.i.2 | The manufacturer has specified the protocols and standards used for each data interface.[^C2a-01] | 1 |   |
 | C.1.b.i.3 | For each data interface, the manufacturer has specified the functions offered via the interface. | 0 | Ask for the list of functions to be shown. |
 | C.1.b.i.4 | The manufacturer has analyzed each function&#39;s security relevance (in terms of hazards). | 0 |   |
 | C.1.b.i.5 | The manufacturer has documented the effects of the safety-relevant (in terms of hazards) functions in the risk management documentation. | 0 |   |
-| C.1.b.i.6 | The manufacturer has tested all usage scenarios[8](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn8) in which risks are generated due to a display of information that has not been specified (e.g. no display, incorrect display or display is too late). | 1 | Ask for this to be shown in the risk management or usability file. |
+| C.1.b.i.6 | The manufacturer has tested all usage scenarios[^C2a-02] in which risks are generated due to a display of information that has not been specified (e.g. no display, incorrect display or display is too late). | 1 | Ask for this to be shown in the risk management or usability file. |
 | C.1.b.i.7 | For each role and neighboring system, the manufacturer has defined the product functions that they may have access to via the corresponding interface. | 1 | Ask for the &quot;mapping&quot; of roles to functions to be shown, e.g. as a table. |
 | C.1.b.i.8 | The manufacturer has justified its choice of authentication procedure (user name/password, biometric procedure, token, e.g. card) for all roles and all neighboring systems. | 1 | The justification should be risk-based. |
-| C.1.b.i.9 | Where necessary, the manufacturer has requested additional mechanisms to minimize the probability of unauthorized access.[9](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn9) | 2 |   |
-| C.1.b.i.10 | The manufacturer has analyzed, in the risk management process, the effects on patient safety if a person cannot access patient or device data (e.g. no authorization, they forget their password), and defined appropriate measures.[10](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn10) | 1 | This is about balancing the protection goals of &quot;confidentiality&quot; and &quot;safety&quot;. |
+| C.1.b.i.9 | Where necessary, the manufacturer has requested additional mechanisms to minimize the probability of unauthorized access.[^C2a-04] | 2 |   |
+| C.1.b.i.10 | The manufacturer has analyzed, in the risk management process, the effects on patient safety if a person cannot access patient or device data (e.g. no authorization, they forget their password), and defined appropriate measures.[^C2a-05] | 1 | This is about balancing the protection goals of &quot;confidentiality&quot; and &quot;safety&quot;. |
+
+[^C2a-01]: The standards can be divided into the structural interoperability level (e.g. TCP/IP, HTTPs, SFTP, CAN, RS232, USB), the syntactic level (e.g. csv, JSON, XML, HL7), the semantic level (e.g. nomenclatures and coding systems such as LOINC (e.g. laboratory values), ATC (drugs), ICD (diagnoses), UCUM (units) and the organisational level (IHE))
+
+[^C2a-02]: As an alternative to the user scenarios, you can also examine each related group of UI elements (for example, screen pages, panels) that are offered within this user scenario. This activity is part of the general analysis of the risks that can arise from the implementation of information security product measures.
+
+[^C2a-04]: e.g. restriction of permitted IP or MAC addresses, physical access protection
+
+[^C2a-05]: In contrast to the points mentioned above, these are risks that arise even though the system behaves as specified. This activity is part of the general analysis of the risks that may arise from the implementation of information security product measures. It is therefore not a question of risks due to a lack of IT security, but of risks (in the sense of freedom from danger, availability and performance) resulting from measures to increase IT security.
 
 ##### **ii) Data, communication**
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
-| C.1.b.ii.1 | The manufacturer has created a list of all data managed by the system.[11](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn11) | 1 |   |
+| C.1.b.ii.1 | The manufacturer has created a list of all data managed by the system.[^C2b-01] | 1 |   |
 | C.1.b.ii.2 | The manufacturer has assessed how worthy of protection these data are in relation to confidentiality and their impact on patient safety. | 1 |   |
 | C.1.b.ii.3 | The manufacturer has evaluated, in the context of risk management process, the effect if particularly sensitive data is no longer protected. | 1 |   |
 | C.1.b.ii.4 | The manufacturer has investigated, in the context of risk management, the consequences of overloading the system with too many requests (e.g. DoS) or requests with volumes that are too large, and has defined actions if necessary. | 2 |   |
 | C.1.b.ii.5 | The manufacturer has, in the context of risk management, analyzed the consequences of the network no longer being available or no longer being available in the expected quality. | 2 |   |
 | C.1.b.ii.6 | The manufacturer has, in the context of risk management, analyzed the consequences of the loss of data and establishes actions, such as making a backup, if necessary. | 2 |   |
-| C.1.b.ii.7 | The manufacturer has established, in general or for specific products, the criteria[12](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn12) for the checking of external data before they are processed further.[13](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn13) | 2 |   |
+| C.1.b.ii.7 | The manufacturer has established, in general or for specific products, the criteria[^C2b-02] for the checking of external data before they are processed further.[^C2b-03] | 2 |   |
+
+[^C2b-01]: Examples of such data are patient data (e.g. demographic data, anamnesis, diagnoses), examination data (e.g. laboratory values, radiological and pathological images) and treatment data (prescriptions, settings of medical devices), configuration data of the products, user data (in particular access data), keys, software certificates, program code (including SOUP/OTS).
+
+[^C2b-02]: Examples of checks: Check for wrong length, completeness, wrong character set, unexpected characters, multiple sent data, outdated / delayed data, unexpected or wrong formats (e.g. no escaping of characters with special meaning like separators, no well-formed XML, invalid JSON files, wrong data types, XML that does not correspond to the specified schema), other character sets, keywords contained in the input and (invalid) commands, BigEndian instead of Little Endian, values that are not contained in the intended value range (e.g. in the classification or encoding system), wrong time zone, wrong number format, impossible data (e.g. birthday in the future), contradictory data, etc.
+
+[^C2b-03]: If possible and useful, lists of permitted values (white listing) are recommended.
 
 ##### **iii) Patches**
 
@@ -208,8 +234,8 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | --- | --- | --- | --- |
 | C.1.c.1 | The manufacturer has documented all SOUP/OTS components (incl. version, manufacturer, reference to information on updates, release notes). | 1 | Ask for the list/table to be shown. The FDA requires a &quot;Cybersecurity Bill of Materials (CBOM)&quot;. |
 | C.1.c.2 | The manufacturer has analyzed the specific risks resulting from the choice of technologies (in particular programming language, SOUP/OTS components). | 2 |   |
-| C.1.c.3 | The manufacturer has taken measures to ensure that the tools used (e.g., development environment, compiler) as well as the platforms and SOUP/OTS components are free of malicious code.[14](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn14) | 2 |   |
-| C.1.c.4 | The manufacturer has created a list of all services[15](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn15) that the product offers or uses &quot;externally&quot; (e.g. through its operating system). | 1 | Ask for this list to be shown. |
+| C.1.c.3 | The manufacturer has taken measures to ensure that the tools used (e.g., development environment, compiler) as well as the platforms and SOUP/OTS components are free of malicious code.[^C3-01] | 2 |   |
+| C.1.c.4 | The manufacturer has created a list of all services[^C3-02] that the product offers or uses &quot;externally&quot; (e.g. through its operating system). | 1 | Ask for this list to be shown. |
 | C.1.c.5 | For each service, the manufacturer has justified why it has to be visible externally (no time limitation). | 2 | Have the manufacturer explain how/where it is required and tested that services that are not required (no time limit) are not offered (no time limit). The aim of this is &quot;attack surface reduction&quot;. |
 | C.1.c.6 | If the product provides an interface, the manufacturer has described how attacks via this interface are controlled in the context of risk management. | 1 | Complete control of these risks is generally not really possible with USB interfaces, but also not necessary in all cases. |
 | C.1.c.7 | The manufacturer has identified the process offering/running this service for each externally visible service. | 2 |   |
@@ -218,17 +244,27 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | C.1.c.10 | The manufacturer has analyzed the risks that result from the (auto-)update of anti-malware software. | 1 |   |
 | C.1.c.11 | The manufacturer has established how the product detects compromised IT security, document (log) this and react to it quickly. |   |   |
 | C.1.c.12 | With regard to the audit log, the manufacturer has determined where its data is stored, how it is protected and updated and how this can be automatically analyzed. |   |   |
-| C.1.c.13 | For all software components[16](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn16), services and processes, and data and software components, the manufacturer has analyzed which risks arise if they do not behave in accordance with the specifications due to a problem with IT security. | 1 | Corresponds to an FMEA approach. |
+| C.1.c.13 | For all software components[^C3-03], services and processes, and data and software components, the manufacturer has analyzed which risks arise if they do not behave in accordance with the specifications due to a problem with IT security. | 1 | Corresponds to an FMEA approach. |
 | C.1.c.14 | The manufacturer has taken the software requirements into account in the software architecture. | 1 | For example, for the above software requirements, ask for the component(s) or technologies in the architecture that implement the requirements to be shown. |
+
+[^C3-01]: The measures include the requirement that development tools, development environments and libraries (SOUP, OTS components) may only be loaded from sources classified as secure and released, that the IT infrastructure is protected by appropriate measures such as virus protection and firewalls, and that libraries are checked for malware before use (e.g. with virus scanners). These requirements may also affect the purchasing process.
+
+[^C3-02]: Example of services typically offered by operating systems: Web server, RPC, cloud services, drives (e.g. USB), database, DICOM, services via socket connections
+
+[^C3-03]: at least the top-level components. These components also correspond to the objects
 
 #### **d) Implementation and development of the software**
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
-| C.1.d.1 | The manufacturer has created coding guidelines that establish specific requirements for IT security.[17](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn17) | 1 | Ask the manufacturer to show the coding guidelines and corresponding requirements. |
-| C.1.d.2 | The manufacturer only plays code where reverse engineering and RAM readout cannot lead to unacceptable risks.[18](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn18) | 3 |   |
+| C.1.d.1 | The manufacturer has created coding guidelines that establish specific requirements for IT security.[^C4-01]| 1 | Ask the manufacturer to show the coding guidelines and corresponding requirements. |
+| C.1.d.2 | The manufacturer only plays code where reverse engineering and RAM readout cannot lead to unacceptable risks.[^C4-02] | 3 |   |
 | C.1.d.3 | The manufacturer either tests the software (source code and binaries) for malicious code before delivery and/or has protected all computers involved in the development and &quot;production&quot; of the software against malware. | 0 |   |
 | C.1.d.4 | The manufacturer has defined measures that can find and eliminate buffer overflows. | 2 |   |
+
+[^C4-01]: Examples are code metrics (e.g. McCabe measure), specifications for the documentation/commenting of the code and for its formatting, as well as the prohibition of unsafe functions (in C "gets", "strcopy" and  [other functions](https://msdn.microsoft.com/library/bb288454.aspx)), also the obligation to use annotations (e.g. [SAL](https://msdn.microsoft.com/en-us/library/ms235402.aspx)) to avoid buffer overflows, the obligation to check the transfer parameters also for internal interfaces etc.
+
+[^C4-02]: Examples would be a physical access protection, obfuscation of code, operating system with Address Space Layout Randomization. This protection is usually implemented by the following operating systems
 
 #### **e) Evaluation of software units**
 
@@ -236,36 +272,52 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | --- | --- | --- | --- |
 | C.1.e.1 | The manufacturer has defined at least one method that is used to check compliance with the coding guidelines. | 1 | The manufacturer will achieve this if it uses tools for static code analysis and/or establishes specifications for the code reviews. |
 | C.1.e.2 | The manufacturer requires code reviews for all components that map (IT) security-relevant functions. | 2 |   |
-| C.1.e.3 | The manufacturer has concrete test criteria[19](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn19) in its specification documents for the code reviews. | 1 |   |
-| C.1.e.4 | The code reviews are carried out according to the four-eye principle and only by people who have the necessary expertise. The manufacturer has documented this expertise.[20](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn20) |    2 |   |
-| C.1.e.5 | The manufacturer has established which tests (e.g. unit tests) are necessary with which test cases[21](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn21) and which degrees of coverage are necessary. | 1 |   |
+| C.1.e.3 | The manufacturer has concrete test criteria[^C5-01] in its specification documents for the code reviews. | 1 |   |
+| C.1.e.4 | The code reviews are carried out according to the four-eye principle and only by people who have the necessary expertise. The manufacturer has documented this expertise.[^C5-02] |    2 |   |
+| C.1.e.5 | The manufacturer has established which tests (e.g. unit tests) are necessary with which test cases[^C5-03] and which degrees of coverage are necessary. | 1 |   |
 | C.1.e.6 | The manufacturer has described how all SOUP and OTS components have to be verified. | 1 |   |
+
+[^C5-01]: Examples: No use of insecure functions, "input sanitization" at least for all external interfaces
+
+[^C5-02]: Documented is to be understood in two senses: 1. the manufacturer has defined the necessary competences (see ISO 13485:2016 chapter 7.3.2 f). 2 The manufacturer has documented that the specific persons have the competences.
+
+[^C5-03]: When deriving test cases, you can use the above list of check criteria as a guide.
 
 #### **f) System and software tests**
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
-| C.1.f.1 | The manufacture includes port scans at all relevant network interfaces in the test plan[22](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn22) and also performs them. | 1 |   |
-| C.1.f.2 | The manufacturer includes penetration tests at all relevant data interfaces and/or for all known vulnerabilities of the OTS components used[23](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn23) in the test plan and also performs them. | 2 | For a known OTS component in the [NIST Common / National Vulnerability Database](https://nvd.nist.gov/), investigate a vulnerability and have the manufacturer explain how it ensures that it cannot be exploited or why it is not relevant. |
+| C.1.f.1 | The manufacture includes port scans at all relevant network interfaces in the test plan[^C6-01] and also performs them. | 1 |   |
+| C.1.f.2 | The manufacturer includes penetration tests at all relevant data interfaces and/or for all known vulnerabilities of the OTS components used[^C6-02] in the test plan and also performs them. | 2 | For a known OTS component in the [NIST Common / National Vulnerability Database](https://nvd.nist.gov/), investigate a vulnerability and have the manufacturer explain how it ensures that it cannot be exploited or why it is not relevant. |
 | C.1.f.3 | The manufacturer includes the use of &quot;vulnerability scanners&quot; in the test plan. |   |   |
-| C.1.f.4 | The manufacturer includes fuzz tests at all relevant data interfaces with at least one tool in the test plan and also performs them.[24](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn24) | 2 |   |
-| C.1.f.5 | The manufacturer includes a security check against the usual attack vectors in the test plan.[25](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn25) | 2 |   |
+| C.1.f.4 | The manufacturer includes fuzz tests at all relevant data interfaces with at least one tool in the test plan and also performs them.[^C6-03] | 2 |   |
+| C.1.f.5 | The manufacturer includes a security check against the usual attack vectors in the test plan.[^C6-04] | 2 |   |
 | C.1.f.6 | The manufacturer includes the testing of robustness and performance in the test plan. |   |   |
 | C.1.f.7 | The manufacturer includes the testing of all system/software requirements (see above) in the test plan. | 1 |   |
 | C.1.f.8 | The manufacturer also has its software checked by IT security experts with regard to the above measures. | 3 | To reach level 3, this testing must include fuzz and penetration testing as well as analysis of the system/software architecture and the source code. |
 | C.1.f.9 | The manufacturer includes third-party test reports (e.g. from SOUP manufacturers) in the system test (if available). |   |   |
 
+[^C6-01]: This plan can be part of the development plan, a V&V plan, or another plan.
+
+[^C6-02]: For example, the vulnerabilities are stored in the [NIST National Vulnerability Database](https://nvd.nist.gov/) (NVD). Usually scanners like Nessus or OpenVAS are used. The requirement is not that all known vulnerabilities are necessarily tested during penetration testing. The FDA demands this cross reference between the "CBOMs" and the NVD expliit.
+
+[^C6-03]: Fuzz testing should focus on your own code rather than on the OTS software. The use of several scanners usually leads to a larger range of input values.
+
+[^C6-04]: e.g. DoS, SQL injection, cross-site scripting, directory transversal, buffer overflow, syntactically or semantically incorrect queries,
+
 #### **g) Product release**
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
-| C.1.g.1 | The manufacturer has addressed the most common errors[26](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn26) and the resulting hazards in the risk analysis or can at least explain how these risks are controlled. | 1 | Select an example from one of the linked lists of the most common errors and ask the manufacturer for a justification. |
+| C.1.g.1 | The manufacturer has addressed the most common errors[^C8-01] and the resulting hazards in the risk analysis or can at least explain how these risks are controlled. | 1 | Select an example from one of the linked lists of the most common errors and ask the manufacturer for a justification. |
 | C.1.g.2 | The manufacturer discusses the risks posed by all relevant attack vectors (see above) in the risk analysis and shows how these risks are controlled. | 1 |   |
 | C.1.g.3 | The manufacturer has checked the effectiveness of all risk-control measures. | 1 | E.g. ask for references to corresponding tests to be shown. |
 | C.1.g.4 | The manufacturer has created a traceability matrix it uses to document that there are measures that control all risks related to IT security. | 2 |   |
 | C.1.g.5 | The manufacturer has prepared the risk management report and the IT security report. | 2 | In Europe but not in the USA, the IT security report can be part of the risk management report. |
 | C.1.g.6 | The manufacturer has drawn up the necessary plans for the post-development phase (e.g. post-market surveillance and incident response plan). | 1 | Details below. |
 | C.1.g.7 | The manufacturer has tested the completeness of the tests using a traceability matrix that links the tests to the requirements. | 2 |   |
+
+[^C8-01]: e.g. according to [OWSAP top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) or [CWE/SANS top 25](http://cwe.mitre.org/top25/)
 
 ### **2. Requirements for the post-development phases**
 
@@ -283,12 +335,20 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
 | C.2.b.1 | The manufacturer has created a post-market surveillance plan. | 0 |   |
-| C.2.b.2 | The manufacturer has described which information is collected from the downstream phase.[27](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn27) | 1 |   |
+| C.2.b.2 | The manufacturer has described which information is collected from the downstream phase.[^D2-01] | 1 |   |
 | C.2.b.3 | The manufacturer has described how and through which channels information is collected from the downstream phase. | 1 |   |
-| C.2.b.4 | The manufacturer has described what information is analyzed and evaluated from the downstream phase. [^D2-02] | 2 | Ask the manufacturer to explain how it recognizes and defines a trend reversal and the threshold values it has set.[28](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn28) |
-| C.2.b.5 | The manufacturer has described the resulting measures.[29](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn29) | 2 | Ask for the connection to the corrective and preventive actions in the process descriptions to be shown. |
-| C.2.b.6 | For each OTS component, the manufacturer has defined at least one source through which it is informed of IT security problems and how often it is monitored[30](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn30) and described the role this analysis performs with which tools. | 2 | These sources should include the websites of the OTS manufacturer and the [NIST Vulnerability Database](https://nvd.nist.gov/). |
+| C.2.b.4 | The manufacturer has described what information is analyzed and evaluated from the downstream phase. [^D2-02] | 2 | Ask the manufacturer to explain how it recognizes and defines a trend reversal and the threshold values it has set.[^D2-03] |
+| C.2.b.5 | The manufacturer has described the resulting measures.[^D2-04] | 2 | Ask for the connection to the corrective and preventive actions in the process descriptions to be shown. |
+| C.2.b.6 | For each OTS component, the manufacturer has defined at least one source through which it is informed of IT security problems and how often it is monitored[^D2-05] and described the role this analysis performs with which tools. | 2 | These sources should include the websites of the OTS manufacturer and the [NIST Vulnerability Database](https://nvd.nist.gov/). |
 | C.2.b.7 | The manufacturer has described how it monitors that the technologies and procedures used (e.g. cryptology) are still secure. | 2 |   |
+
+[^D2-01]: Examples: Audit logs, vulnerability databases, customer complaints, hotline calls, observations (e.g. user behavior), government databases (FDA MAUDE, BfArM, SwissMedic, etc.), social media, Google search, laws, standards, etc... All also about similar products or technologies
+
+[^D2-03]: The MDR requires this in the Annex to the Post-Market Surveillance. The manufacturers must determine when (e.g. Incident/Near Incident) the measure (see below) is to be taken.
+
+[^D2-04]: Measures may include: Recalls, government notifications, CAPA, product improvement, process improvement, training (user, internal), customer information, change of accompanying materials, restriction of purpose. The definition must therefore include the definition of who is to be informed (e.g. user, notified body, authority), such as (e.g. Field Safety Note).
+
+[^D2-05]: The frequency would have to be at least annually, for critical components more frequently than monthly. UL 2900-2-1 speaks of update cycles of two weeks.
 
 #### **c) Incident response plan**
 
@@ -296,13 +356,15 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
-| C.2.c.1 | The manufacturer has created an incident response plan.[31](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn31) | 2 |   |
+| C.2.c.1 | The manufacturer has created an incident response plan.[^D3-01] | 2 |   |
 | C.2.c.2 | The incident response plan governs the criteria the manufacturer uses to evaluate information from the market and when it implements the emergency plan... | 2 |   |
 | C.2.c.3 | Who develops and releases the patches and how and within what deadlines. | 2 |   |
 | C.2.c.4 | How the customer obtains the patches. | 2 |   |
 | C.2.c.5 | How the manufacturer ensures that the patches are also installed. | 2 |   |
 | C.2.c.6 | Who informs the customers, how and within what deadlines. | 2 |   |
 | C.2.c.7 | In which cases decommissioning or other product recalls is ordered and how. | 2 |   |
+
+[^D3-01]: The Incident Response Plan may be part of other plans or documents such as the Post-Market Surveillance Plan or vigilance requirements.
 
 ## **D) Product requirements**
 
@@ -324,7 +386,7 @@ Manufacturers must check each of the measures described below to see whether the
 | D.2.a.2 | The product allows the neighboring systems (e.g. other medical devices, IT systems) connected at each data interface to exchange data only if they have been authenticated by the product. | 0 | Ditto The requirement that data may only be transmitted in encrypted form is set out below. |
 | D.2.a.3 | The product allows password authentication only if this has a defined minimum length of which at least one is a non-alphanumeric character and it contains at least one uppercase and one lowercase character. [^C2a-02] | 1 | The choice of the authentication mechanism has been justified by the manufacturer (see above). |
 | D.2.a.4 | The product does not have a default password or requires that a password be changed during the first use. | 0 |   |
-| D.2.a.5 | The product blocks users and neighboring systems for m minutes after n attempts, with the manufacturer able to define the n and m values or their lower limits. The manufacturer has analyzed the &quot;safety-related&quot; risks resulting from such a blocking and, if necessary, has implemented measures to minimize these risks.[32](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn32) | 1 |   |
+| D.2.a.5 | The product blocks users and neighboring systems for m minutes after n attempts, with the manufacturer able to define the n and m values or their lower limits. The manufacturer has analyzed the &quot;safety-related&quot; risks resulting from such a blocking and, if necessary, has implemented measures to minimize these risks.[^C2a-03] | 1 |   |
 | D.2.a.6 | In the event of an unsuccessful login, the product only displays information that does not allow the user to identify the exact cause of the blocking, e.g. incorrect user name or password. | 2 |   |
 | D.2.a.7 | The product terminates user and neighboring system sessions after n minutes of inactivity, with the manufacturer setting the value for n or its upper limit. | 2 |   |
 | D.2.a.8 | The product assigns a role to each user and each neighboring system for authentication. | 1 | Ask for an explanation of which software component(s)/components this functionality will be implemented in and how this is tested. The FDA even requires a hierarchical role strategy |
@@ -336,6 +398,14 @@ Manufacturers must check each of the measures described below to see whether the
 | D.2.a.14 | The product allows permissions to be canceled (&quot;breaking the glass&quot;), and identifies/documents the person and the reasons. [^C2a-05] | 2 |   |
 | D.2.a.15 | In a client-server architecture, all cybersecurity measures are determined and checked on the server side. | 2 |   |
 | D.2.a.16 | In a client-server architecture, all client inputs are checked on the server side. | 2 |   |
+
+[^C2a-02]: Ideally, passwords that can be guessed through dictionary attacks should also be excluded. The minimum length depends on whether brute force attacks are possible, which is easier with a data interface than with a user interface. There are systems where "non-alphanumeric" characters are not possible. This should be considered when choosing the minimum length.
+
+[^C2a-03]: For example, the manufacturer implements "Breaking the glass", i.e. a possibility to bypass the authorization concept in order to be able to access important data promptly. This circumvention must be logged and later justified.
+
+[^C2a-04]: This blocking must also not lead to safety risks. For this reason, locking should not be possible during examination or treatment, but only in maintenance mode, for example.
+
+[^C2a-05]: There are situations in which safety is more important than security, especially as confidentiality. In these emergency situations, a user must access data (in particular patient or prescription data), even if he or she lacks the necessary authorizations. An example would be that an emergency patient must be treated and data such as drug intolerances or laboratory values (e.g. blood group) must be accessed before treatment (e.g. medication, blood transfusion) can begin. This access must always be possible for the treating physician, regardless of the authorizations. The "Breaking-the-glass" can, for example, be implemented as a button.
 
 #### **b) Communication and storage**
 
@@ -356,6 +426,10 @@ Manufacturers must check each of the measures described below to see whether the
 | D.2.b.13 | The product checks the integrity of the program code every time it is restarted. | 2 |   |
 | D.2.b.14 | In the event of that security is compromised, the product provides an emergency mode for functions that have an effect on patient safety. | 2 |   |
 
+[^C2b-01]: The protection can also consist of an undo function. If necessary, the period for an undo must be limited. It should be noted that the data protection requirements are met after (final) deletion of the data.
+
+[^C2b-02]: This review should take place at all levels of interoperability. For example, the protocols would also be to check formats such as the well-formedness of XML files.
+
 #### **c) Patches**
 
 | **ID** | **Requirement** | **Level** | **Comments** |
@@ -363,17 +437,27 @@ Manufacturers must check each of the measures described below to see whether the
 | D.2.c.1 | The product allows patches (own code, SOUP/OTS components) to be applied. | 1 | Manufacturers should be able to justify exceptions and to explain whether patching may or must be done remotely. |
 | D.2.c.2 | The product allows you to remove defective patches again (&quot;roll-back&quot;). | 2 |   |
 | D.2.c.3 | The product limits the ability to apply or remove patches to users with the corresponding permissions (authenticated and authorized). [^C3c-01] | 2 |   |
-| D.2.c.4 | The product checks changed program code (patches) for integrity before first use and when restarted.[33](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn33) | 2 | These checks are usually carried out using signatures, which themselves must be protected against forgery. |
+| D.2.c.4 | The product checks changed program code (patches) for integrity before first use and when restarted.[^C2c-02] | 2 | These checks are usually carried out using signatures, which themselves must be protected against forgery. |
+
+[^C2c-01]: This check is usually based on a role-based authorization concept and user authentication.
+
+[^C2c-02]: This is a special case of the requirement that every program code must be checked for integrity at restart. The program code contains the software and the firmware. The check must use cryptographic procedures.
 
 #### **d) Other**
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
-| D.2.d.1 | The product logs all essential actions[34](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn34) on/in the system in an audit log, including day and time and actor (user, system). | 2 |   |
+| D.2.d.1 | The product logs all essential actions[^C3d-01] on/in the system in an audit log, including day and time and actor (user, system). | 2 |   |
 | D.2.d.2 | The product ensures that it has the correct system time. | 3 | Have the mechanism explained. And how it is ensured that the user cannot unintentionally changed the time without noticing. |
 | D.2.d.3 | The product protects the audit log against change. | 2 | Have the manufacturer explain how the protection is ensured and how a change to the audit log is identified by the system. If necessary, even ask for the responsible software components to be shown. |
-| D.2.d.4 | The product implements mechanisms that can detect penetration or an attack[35](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn35) and react to them.[36](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn36) | 3 |   |
+| D.2.d.4 | The product implements mechanisms that can detect penetration or an attack[^C3d-02] and react to them.[^C3d-03] | 3 |   |
 | D.2.d.5 | The product allows the exchange of certificates. | 2 |   |
+
+[^C3d-01]: e.g. successful and unsuccessful login attempts, calling essential functions (including changing configuration settings), identifying security problems (e.g. self-testing by devices, detection of malware, etc.), installing and removing patches, creating, changing and deleting users, passwords and permissions, adding or removing storage media, connecting or removing neighboring systems
+
+[^C3d-02]: For example, the system detects a CPU load greater than x%, a data traffic greater than y MB/s, a storage medium that is fuller than z%, more than n logon attempts within m minutes, and so on.
+
+[^C3d-03]: Also formulate very specifically, ideally via a behaviour observable at the interfaces such as "turns off", "disables the data connection", "displays the following warning message" etc.
 
 ### **3. System/software architecture**
 
@@ -384,20 +468,32 @@ Manufacturers must check each of the measures described below to see whether the
 | D.3.3 | The software is protected against malware (viruses, worms etc.) as far as is technically possible. | 1 | Ask for an explanation of how the system is protected against malware and how this protection is maintained. |
 | D.3.4 | The software is based on versions of the SOUP/OTS components that do not contain any security vulnerabilities. Exceptions are justified. | 1 | Pick an example from the SOUP list and research which version the manufacturer has and check which vulnerabilities have been patched in subsequent versions. |
 
+[^C3-01]: The FDA insists on the [https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards) and the [NIST FIPS 140-2 Suite B ](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2851.pdf).
+
 ### **4. Accompanying materials**
 
 The accompanying materials refer primarily to the instructions for use and installation. If necessary, the manufacturers must also provide training materials.
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
-| D.4.1 | The instructions for use establish the intended IT environment for operation.[37](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn37) | 1 |   |
-| D.4.2 | The instructions for use specify which activities[38](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn38) the operator must perform, as well as how and how often they should be performed. | 1 |   |
-| D.4.3 | The installation and service instructions establish which other roles (operator, service technician) are responsible for which activities[39](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn39) and how often they have to be performed. | 1 |   |
+| D.4.1 | The instructions for use establish the intended IT environment for operation.[^13] | 1 |   |
+| D.4.2 | The instructions for use specify which activities[^14] the operator must perform, as well as how and how often they should be performed. | 1 |   |
+| D.4.3 | The installation and service instructions establish which other roles (operator, service technician) are responsible for which activities[^15] and how often they have to be performed. | 1 |   |
 | D.4.4 | The support materials describe how to deal with lost or stolen authentication elements (e.g. cards, certificates, cryptographic keys) and forgotten passwords. | 1 |   |
 | D.4.5 | The support materials describe how users can recognize an IT security problem with the product and what to do in this case. | 2 | This means that the product implements this detection. |
 | D.4.6 | The support materials describe which anti-malware software has been approved for the product and where (e.g. link) it can be obtained and who is responsible for updating it. | 2 | Only to the extent applicable. |
 | D.4.7 | The support materials contain the manufacturer&#39;s contact details, which can be used to contact the manufacturer, for example, in the event of problems with IT security.[^D4-04]  |    1 |   |
 | D.4.8 | The support materials also give a technical description of the product. [^D4-05] |    2 | This is an FDA requirement in particular. |
+
+[^13]: Examples: Network / interfaces (bandwidth, availability, ports, IP ranges, latencies, encryption, firewalls etc.), virus protection, operating systems, physical access permissions, other software that may or may not run on the system at the same time (games?, firewall, database, web server). The FDA also requires an indication of the direction of communication in the interfaces.
+
+[^14]: Examples: User training (e.g. how to handle passwords), updating virus protection, informing the manufacturer about incidents, installing updates and patches, monitoring, backup (and restore)
+
+[^15]: Examples: Installation, connection to network, evaluation of audit logs, deletion of unneeded users, exchange of keys or certificates, deletion of temporary files
+
+[^D4-04]: The manufacturer may also be required to indicate the period for which it intends to provide support.
+
+[^D4-05]: Network, architecture, flow and state diagrams. Interfaces, components, communication paths, authentication mechanisms for each communicating "component" such as Web pages, servers, cloud storage, and interoperable systems. "Design features that allow validated software updates and patches. List of all components such as 3rd party software (see FDA CBOM).
 
 ## **E) Annex**
 
@@ -416,7 +512,9 @@ Prioritization leads to the following maturity levels
 - **Level 2 (&quot;State-of-the-art&quot;)**: This is the level that manufacturers generally have to reach in the long run. However, it does not yet reflect the state of scientific knowledge.
 - **Level 3 (&quot;Expert level&quot;)**: This level is reached by professional IT security experts. It goes beyond what an auditor can normally expect from medical devices. Energy suppliers, intelligence services and the military would have to operate at this level.
 
-Depending on the risk posed by a product, an auditor or test may require a certain level from the outset[40](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fn40).
+Depending on the risk posed by a product, an auditor or test may require a certain level from the outset[^E2-01].
+
+[^E2-01]: The safety of patients has priority, even if this approach contradicts the basic idea of this guideline, which is to increase IT security step by step rather than not taking action at all.
 
 ### **2. Further reading**
 
@@ -476,52 +574,3 @@ Depending on the risk posed by a product, an auditor or test may require a certa
 17. These guidelines deliberately do not require any specific technologies or processes. On the one hand, such technologies and processes are subject to too much change, and on the other hand, the authors of the guide do not presume to decide for manufacturers which technologies and processes are best for the specific application.
 18. These guidelines should be available in German and English.
 19. The focus is on the IT security of medical devices, not on IT security for organizations such as hospitals and medical device manufacturers. The authors of these guidelines are aware that attacks are increasingly affecting medical device manufacturers&#39; supply chains. Future versions of these guidelines will have to take this into account by establishing requirements for organizations.
-
-1. Examples are: Developers, testers, regulatory affairs department, quality managers, employees in service and support, product managers, medical device consultants. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref1)
-2. Competences should be specified (comprehension, capabilities), rather than primarily topics. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref2)
-3. Primary users are those who use the product for the intended medical purpose. Secondary users are all other people who use the product as intended, e.g. during installation, configuration, update/upgrade. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref3)
-4. Examples can be found in the section on labeling. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref4)
-5. Examples: The operator has not installed virus protection. Users share a password. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref5)
-6. Examples of such classification systems are [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)) and [CVSS](https://nvd.nist.gov/vuln-metrics/cvss). However, these have no relation to safety. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref6)
-7. The standards can be divided into the structural interoperability level (e.g. TCP/IP, HTTPs, SFTP, CAN, RS232, USB), the syntactic level (e.g. csv, JSON, XML, HL7), the semantic level (e.g. nomenclatures and coding systems such as LOINC (e.g. laboratory values), ATC (drugs), ICD (diagnoses), UCUM (units) and the organizational level (IHE)). [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref7)
-8. As an alternative to the usage scenarios, each group of UI elements (for example, screen pages, panels) offered within this usage scenario can be examined. This activity is part of the general analysis of the risk caused by the implementation of product measures concerning IT security. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref8)
-9. g. restriction of permitted IP and MAC addresses, physical access protection. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref9)
-10. Unlike the aspects described above, these are risks that arise even though the system behaves as specified. This activity is part of the general analysis of the risk caused by the implementation of product measures concerning IT security. It is therefore not a question of risks due to a lack of IT security, but of risks (in the sense of freedom from danger, availability and performance) resulting from measures to increase IT security. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref10)
-11. Examples of such data are patient data (e.g. demographic data, case histories, diagnoses), examination data (e.g. laboratory values, radiological and pathological images) and treatment data (prescriptions, medical device settings), configuration data for the devices, user data (in particular access data), keys, software certificates, program code (including SOUP/OTS). [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref11)
-12. Examples of checks: Check for incorrect length, completeness, incorrect character set, unexpected characters, data sent multiple times, outdated/late data, unexpected or incorrect formats (e.g. no escaping of characters with special meaning like separators, no well-formed XML, invalid JSON files, incorrect data types, XML that does not correspond to the specified schema), other character sets, keywords contained in the input and (invalid) commands, Big-Endian instead of Little-Endian, values that are not included in the intended value range (e.g. in the classification or encoding system), wrong time zone, wrong number format, impossible data (e.g. birthday in the future), contradictory data, etc. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref12)
-13. If possible and useful, lists of permitted values (whitelisting) are recommended. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref13)
-14. The measures include the requirement that development tools, development environments and libraries (SOUP, OTS components) may only be loaded from approved sources that have been classified as secure, that the IT infrastructure is protected by appropriate measures such as virus protection and firewalls, and that libraries are checked for malware before use (e.g. with virus scanners). These requirements may also affect the purchasing process. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref14)
-15. Example of services typically offered by operating systems: Webserver, RPC, cloud services, drives (e.g. USB), database, DICOM, services via socket connections. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref15)
-16. At least the top-level components. These components also correspond to the objects. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref16)
-17. Examples are code metrics (e.g. McCabe measure), specifications for the documentation of/commenting on the code and for its formatting, as well as the prohibition of insecure functions (in C &quot;gets&quot;, &quot;strcopy&quot; and [ther functions](https://msdn.microsoft.com/library/bb288454.aspx)), and the obligation to use annotations (e.g. [SAL](https://msdn.microsoft.com/en-us/library/ms235402.aspx)) to avoid buffer overflows, the obligation to check the transfer parameters for internal interfaces, etc. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref17)
-18. Examples would be a physical access protection, obfuscation of code, operating system with address space layout randomization. This protection is usually provided by the operating systems. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref18)
-19. Examples: No use of insecure functions, &quot;input sanitization&quot; for all external interfaces at least. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref19)
-20. Documented should be understood as having a double meaning: 1. The manufacturer has defined the necessary competences (see ISO 13485:2016 chapter 7.3.2 f). 2. The manufacturer has documented that the specific people have the competences. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref20)
-21. When working out the test cases, you can use the above list of check criteria as a guide. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref21)
-22. This plan may be part of the development plan, a V&amp;V plan, or another plan. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref22)
-23. Vulnerabilities are, for example, recorded in the[NIST National Vulnerability Database](https://nvd.nist.gov/) (NVD). In general, scanners such as Nessus or OpenVAS are used. The requirement is not for penetration testing to necessarily test for all known vulnerabilities. The FDA explicitly requires this cross referencing between the CBOMs and the NVS. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref23)
-24. Fuzz testing should focus more on your own code and less so on the OTS software. The use of several scanners usually leads to a larger range of input values. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref24)
-25. g. DoS, SQL injection, cross-site scripting, directory transversal, buffer overflow, syntactically or semantically incorrect queries. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref25)
-26. g. according to [OWSAP Top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) or [CWE/SANS Top 25](http://cwe.mitre.org/top25/). [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref26)
-27. Examples: Audit logs, vulnerability databases, customer complaints, calls to the hotline, observations (e.g. user behavior), government databases (FDA MAUDE, BfArM, SwissMedic etc.), social media, Google searches, laws, standards etc. As well as everything on similar products or technologies. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref27)
-28. The MDR requires this in the Annex on post-market surveillance. The manufacturers must establish when (e.g. incident/near incident), the measures (see below) have to be implemented. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref28)
-29. Measures may include: Recalls, notifications from the regulatory authorities, CAPA, product improvement, process improvement, training (user, internal), customer information, changes to the support materials, limitation of intended purpose. The definition must therefore include the definition of who (e.g. user, notified body, authority) should be informed and how (e.g. field safety note). [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref29)
-30. The frequency must be at least once a year, for critical components it must be more than once a month. UL 2900-2-1 talks about two-week update cycles. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref30)
-31. The incident response plan can be part of other plans or documents, such as the post-market surveillance plan or the vigilance requirements. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref31)
-32. For example, the manufacturer implements a &quot;break glass&quot;, i.e. an option to bypass the authorization strategy in order to be able to access important data immediately. These workaround must be recorded and later justified. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref32)
-33. This is a special case of the requirement that every program code must be checked for integrity in the event of a restart. The programcode includes the software and the firmware. The check must use cryptographic methods. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref33)
-34. g. successful and unsuccessful login attempts, calling up of basic functions (including changing configuration settings), identifying security problems (e.g. independent self-testing by devices, detection of malware, etc.), installing and removing patches, creating, changing and deleting users, passwords and permissions, adding or removing storage media, connecting or removing neighboring systems. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref34)
-35. Don&#39;t formulate so generally, but specify specific system requirements, e.g. the system detects a CPU load greater than x%, a data traffic greater than y MB/s, a storage medium that is using than z% of its capacity, more than n login attempts within m minutes, and so on. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref35)
-36. Again, formulate very specifically, ideally via a behavior observable at the interfaces such as &quot;turns off&quot;, &quot;deactivates the data connection&quot;, &quot;shows the following warning&quot;, etc. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref36)
-37. Examples: Network/interfaces (bandwidth, availability, ports, IP ranges, latencies, encryption, firewalls etc.), virus protection, operating systems, physical access permissions, other software that may or may not run on the system at the same time (games?, firewall, database, web server). The FDA also requires details of the direction of communication at the interfaces. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref37)
-38. Examples: User training (e.g. how to handle passwords), virus protection updates, manufacturer information on incidents, updates and patches, monitoring, backup (and restore). [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref38)
-39. Examples: Installation, connection to network, evaluation of audit logs, deletion of unneeded users, exchange of keys or certificates, deletion of temporary files. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref39)
-40. Patient safety takes priority, even if this approach contradicts the basic idea behind these guidelines, it is better to increase IT security step-by-step rather than to not take any action at all. [?](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5CGuideline-IT-Security-DE.md#fnref40)
-
-[^C2b-02]: The check should be done at all levels of interoperability. For example, the protocols and formats would also have to checked, e.g. whether XML -files are well-formed.
-
-[^C3-01]: The FDA insists on [https://csrc.nist.gov/Projects/Cryptographic-Module-Validation- Program/Standards] (https://csrc.nist.gov/Projects/Cryptographic- Module-Validation-Program/Standards) and [NIST FIPS 140-2 Suite B] (https://csrc.nist.gov/CSRC/media/projects/cryptographic-module- validation-program/documents/security-policies/140sp2851.pdf).
-
-[^D4-04]: If necessary, the manufacturer must also specify how long it intends to offer support for.
-
-[^D4-05]: Network, architecture, flow and state diagrams.  Interfaces, components, communication paths, authentication mechanisms for each communicating component, such as websites, servers, cloud storage and interoperable systems. Design features that permit the validated software updates and patches. List of all components, such as 3rd party software (see FDA CBOM)
