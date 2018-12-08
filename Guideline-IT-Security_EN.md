@@ -37,7 +37,7 @@ These guidelines are based on the idea that IT security is based on three fundam
 The structure of these guidelines is based on these ideas: In Chapter B) it starts off with the general requirements, in Chapter C) it establishes the process requirements (including documentation), and in Chapter D) it establishes the product requirements (including documentation). Within these &quot;main chapters&quot;, the requirements are structured along software life cycle process lines:
 
 1. **Process requirements**
-  1. ***Requirements for the development process***
+   1. ***Requirements for the development process***
       1. Intended purpose and stakeholder requirements
       2. System and software requirements
       3. System and software architecture
@@ -45,15 +45,15 @@ The structure of these guidelines is based on these ideas: In Chapter B) it star
       5. Evaluation of software units
       6. System and software tests
       7. Product release
-  2. ***Requirements for the post-development phase***
+   2. ***Requirements for the post-development phase***
       1. Production, distribution, installation
       2. Market surveillance
       3. Incident response plan
 2. **Product requirements**
-      1. Preliminary remarks and general requirements
-      2. System requirements
-      3. System and software architecture
-      4. Support materials
+   1. Preliminary remarks and general requirements
+   2. System requirements
+   3. System and software architecture
+   4. Support materials
 
 The risk management requirements are woven into the requirements throughout the product life cycle.
 
@@ -168,7 +168,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 
 [^C1-03]: Examples: The operator has not installed virus protection. Users share a password.
 
-[^C1-04]: Examples of such classification systems are [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model) and [CVSS](https://nvd.nist.gov/vuln-metrics/cvss). However, they have no relation to safety.
+[^C1-04]: Examples of such classification systems are [DREAD](https://en.wikipedia.org/wiki/DREAD_risk_assessment_model) and [CVSS](https://nvd.nist.gov/vuln-metrics/cvss). However, they have no relation to safety.
 
 #### **b) System and software requirements**
 
@@ -468,7 +468,7 @@ Manufacturers must check each of the measures described below to see whether the
 | D.3.3 | The software is protected against malware (viruses, worms etc.) as far as is technically possible. | 1 | Ask for an explanation of how the system is protected against malware and how this protection is maintained. |
 | D.3.4 | The software is based on versions of the SOUP/OTS components that do not contain any security vulnerabilities. Exceptions are justified. | 1 | Pick an example from the SOUP list and research which version the manufacturer has and check which vulnerabilities have been patched in subsequent versions. |
 
-[^C3-01]: The FDA insists on the [https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards) and the [NIST FIPS 140-2 Suite B ](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2851.pdf).
+[^C3-01]: The FDA insists on the [https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards) and the [NIST FIPS 140-2 Suite B](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2851.pdf).
 
 ### **4. Accompanying materials**
 

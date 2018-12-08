@@ -1,12 +1,10 @@
-Leitfaden IT-Sicherheit
-==============
+# Leitfaden IT-Sicherheit
 
-A) Metainformationen
-----------------
+## A) Metainformationen
 
 ### 1. Ziele des Leitfadens
 
-Dieser Leitfaden hat das Ziel, Medizinprodukte-Herstellern und Benannten Stellen eine Handlungsanleitung und eine konkrete Checkliste an die Hand zu geben, um 
+Dieser Leitfaden hat das Ziel, Medizinprodukte-Herstellern und Benannten Stellen eine Handlungsanleitung und eine konkrete Checkliste an die Hand zu geben, um
 
 - zu verstehen, was die Erwartungen der Benannten Stellen sind,
 - die schrittweise Umsetzung der IT-Sicherheit der Produkte zu befördern,
@@ -14,7 +12,7 @@ Dieser Leitfaden hat das Ziel, Medizinprodukte-Herstellern und Benannten Stellen
 
 Im Gegensatz zu vielen anderen Leitfäden zur IT-Sicherheit bezieht sich dieser nur auf Medizinprodukte und hat die Patientensicherheit ("Safety") im Fokus.
 
-Der Leitfaden hat **nicht** die Zielsetzung, als Lehrbuch oder Leitfaden für das Erreichen der IT-Sicherheit zu dienen. Vielmehr möchte er ein Leitfaden für deren Überprüfung sein. 
+Der Leitfaden hat **nicht** die Zielsetzung, als Lehrbuch oder Leitfaden für das Erreichen der IT-Sicherheit zu dienen. Vielmehr möchte er ein Leitfaden für deren Überprüfung sein.
 
 Der Anhang nennt die Erwägungsgründe, die zur Entwicklung dieses Leitfadens führten.
 
@@ -22,11 +20,11 @@ Der Anhang nennt die Erwägungsgründe, die zur Entwicklung dieses Leitfadens f�
 
 Dieser Leitfaden wendet sich an Hersteller von Medizinprodukten, insbesondere von vernetzbaren Medizinprodukten, und deren Dienstleister sowie an Personen und Organisation, die die IT-Sicherheit dieser Produkte bewerten müssen.
 
-Er hat die IT-Sicherheit der Produkte im Fokus, nicht die IT-Sicherheit der Organisation. 
+Er hat die IT-Sicherheit der Produkte im Fokus, nicht die IT-Sicherheit der Organisation.
 
 Der Leitfaden ist auch geeignet, um die technischen Maßnahmen zu bewerten, die der vom Datenschutz gefordert werden. Dennoch liegt der Schwerpunkt auf der Patientensicherheit, nicht der Vertraulichkeit von Daten.
 
-### 3. Hinweise zur Verwendung 
+### 3. Hinweise zur Verwendung
 
 #### a) Aufbau und Struktur des Leitfadens
 
@@ -69,9 +67,9 @@ Dieser Leitfaden enthält Anforderungen, die nicht bei allen Produkten anwendbar
 
 #### c) Priorisierung
 
-Sollten die Hersteller nicht alle Anforderungen dieses Leitfadens von Beginn an erfüllen können, sollten so möglich und sinnvoll die Anforderungen in der Reihenfolge deren Priorität (zuerst Stufe 0, zum Schluss Stufe 3) erfüllen. Diese Stufen beschreibt der Anhang. 
+Sollten die Hersteller nicht alle Anforderungen dieses Leitfadens von Beginn an erfüllen können, sollten so möglich und sinnvoll die Anforderungen in der Reihenfolge deren Priorität (zuerst Stufe 0, zum Schluss Stufe 3) erfüllen. Diese Stufen beschreibt der Anhang.
 
-Die Akzeptanz des erreichten Sicherheitsniveaus ist zu bewerten. 
+Die Akzeptanz des erreichten Sicherheitsniveaus ist zu bewerten.
 
 #### d) Kommentare
 
@@ -85,7 +83,7 @@ Als Ausblick für die weitere Entwicklung des Leitfadens lässt sich ein Trend z
 
 Dieser Leitfaden ist weder eine gesetzliche Anforderung noch eine harmonisierte Norm. Entsprechend unterscheidet er auch nicht zwischen normativen und informativen Elementen.
 
-Vielmehr trägt der Leitfaden Best-Practices zusammen, um den gesetzlich geforderten "State-of-the-Art" bestmöglich zu beschreiben. 
+Vielmehr trägt der Leitfaden Best-Practices zusammen, um den gesetzlich geforderten "State-of-the-Art" bestmöglich zu beschreiben.
 
 ### 4. Autoren und Nutzungsrechte
 
@@ -101,7 +99,6 @@ Der Leitfaden ist unter der [Creative Commons Lizenz](https://creativecommons.or
 
 Die Lizenz gestattet es, das Produkt zu Beratungszwecken einschließlich Audits kommerziell einzusetzen. Sie untersagt es aber, dieses Werk selbst in unveränderter oder veränderter Version kommerziell zu nutzen z.B. in Form eines Verkaufs als Broschüre.
 
-
 ### 5. Dokumentenlenkung, Dokumentenidentifikation
 
 Dieses Dokument wird über das Versionsverwaltungssystem git bzw. die Plattform GitHub verwaltet. Einzig die in diesem Repository genannten Dokumente sind gültig.
@@ -110,9 +107,7 @@ Die Versionshistorie einschließlich der jeweiligen Autoren kann der Dokumentenh
 
 Die freigegebenen Versionen sind über ein Tag im Repository als solche gekennzeichnet. Versionen ohne Tag sind Dokumente im Entwurfsstadium.
 
-
-B) Allgemeine Anforderungen
----------------
+## B) Allgemeine Anforderungen
 
 ### 1. Prozesse
 
@@ -132,7 +127,7 @@ Nutzt der Hersteller ausgelagerte Prozesse, so gelten die Anforderungen entsprec
 
 Die Hersteller müssen sicherstellen und nachweisen, dass sie über ausreichend Kompetenzen verfügen, um eine dem Stand der Technik entsprechende Informationssicherheit (auch: IT-Sicherheit) zu gewährleisten. Diese Nachweise gelingen oft am leichtesten durch interne oder externe Schulungen.
 
-Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen. 
+Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
@@ -151,8 +146,7 @@ Die Hersteller sollten den Nachweis führen können, die relevanten Anforderunge
 
 Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisches Dokument zur IT-Sicherheit zu erstellen. Vielmehr können Hersteller diese Aspekte in bereits bestehenden Dokumenten wie den Vorgabedokumenten des QM-Systems und der technischen Dokumentation (z.B. Software-Akte, Risikomanagementakte) integrieren.
 
-C) Anforderungen an die Prozesse
---------------
+## C) Anforderungen an die Prozesse
 
 ### 1. Anforderungen an die Produktentwicklung
 
@@ -180,7 +174,7 @@ C) Anforderungen an die Prozesse
 
 #### b) System- und Software-Anforderungen
 
-##### i) Authentifizierung und Autorisierung 
+##### i) Authentifizierung und Autorisierung
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
@@ -230,11 +224,11 @@ C) Anforderungen an die Prozesse
 |C.1.b.iii.3|Der Hersteller hat abgeschätzt, wie häufig Patches notwendig sind und wie diese installiert werden müssen|2||
 
 ##### iv) Sonstiges
+
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
 |C.1.b.iv.1|Der Hersteller hat festgelegt, wie das Medizinprodukt die Anwender im Fall einer Kompromittierung der Cybersecurity informiert|2||
 |C.1.b.iv.2|Der Hersteller hat abgeschätzt, welche Funtionalität das Medizinprodukt auch im Falle einer Komprimittierung der Cybersecurity gewähren muss.|||
-
 
 #### c) System- und Software-Architektur
 
@@ -260,7 +254,6 @@ C) Anforderungen an die Prozesse
 [^C3-02]: Beispiel für von Betriebssystemen üblicherweise angebotene Dienste: Webserver, RPC, Cloud-Services, Laufwerke (z.B. USB), Datenbank, DICOM, Dienste über Socket-Verbindungen
 
 [^C3-03]: zumindest die Top-Level-Komponenten. Diese Komponenten entsprechen auch den Objekten
-
 
 #### d) Implementierung und Erstellung der Software
 
@@ -306,8 +299,6 @@ C) Anforderungen an die Prozesse
 |C.1.f.8|Der Hersteller lässt seine Software zusätzlich zu den o.g. Maßnahmen durch IT-Sicherheitsexperten überprüfen.|3|Zu dieser Überprüfung müssen Fuzz- und Penetrationstests ebenso zählen wie die Analyse der System-/ Software-Architektur und des Quell-Codes, um auf Stufe 3 zu gelangen|
 |C.1.f.9|Der Hersteller bezieht beim Systemtest die Testberichte Dritter (z.B. SOUP-Hersteller) mit ein (soweit verfügbar)|||
 
-
-
 [^C6-01]: Dieser Plan kann Teil des Entwicklungsplans, eines V&V-Plans oder eines anderen Plans sein.
 
 [^C6-02]: Die Schwachstellen sind z.B. in der [NIST National Vulnerability Database](https://nvd.nist.gov/) (NVD) hinterlegt. Üblicherweise setzt man Scanner wie Nessus oder OpenVAS ein. Die Anforderung lautet nicht, dass beim Penetrationstest notwendigerweise alle bekannten Schwachstellen getestet werden. Die FDA fordert diese Cross Reference zwischen den "CBOMs" und der NVD expliit ein.
@@ -330,7 +321,6 @@ C) Anforderungen an die Prozesse
 
 [^C8-01]: z.B. gemäß [OWSAP top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) oder [CWE/SANS top 25](http://cwe.mitre.org/top25/) 
 
-
 ### 2. Anforderungen an die der Entwicklung nachgelagerten Phasen
 
 #### a) Produktion, Distribution, Installation
@@ -341,7 +331,6 @@ C) Anforderungen an die Prozesse
 |C.2.a.2|Der Hersteller hat beschrieben, wie die für die Installation verantwortlichen Personen wissen, welches die aktuellste Version ist und wie Verwechslungen bei der Installation ausgeschlossen werden können|2|Dies ist nur bei stand-alone Software relevant. Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
 |C.2.a.3|Der Hersteller hat beschrieben, wie bei der Installation sichergestellt wird, dass die Anforderungen, die in den Begleitmaterialien spezifiziert sind (s.o.) tatsächlich erfüllt sind|1|Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
 |C.2.a.4|Der Hersteller hat Verfahren etabliert, die gewährleisten, dass er mit den Betreibern und Anwendern seiner Produkte zeitnah kommunizieren kann|1|Bei unkritischen Produkten ist die Stufe 2 vertretbar|
-
 
 #### b) Marktüberwachung
 
@@ -357,13 +346,13 @@ C) Anforderungen an die Prozesse
 
 [^D2-01]: Beispiele: Audit-Logs, Vulnerability Datenbanken, Kundenbeschwerden, Anrufe bei Hotline, Beobachtungen (z.B. Verhalten der Anwender), Behörden-Datenbanken (FDA MAUDE, BfArM, SwissMedic etc.), Social Media, Google-Suche, Gesetze, Normen usw.. Alles auch zu ähnlichen Produkten oder Technologien
 
-[^D2-03]: Die MDR fordert dies im Anhang zur Post-Market Surveillance. Die Hersteller müssen festlegen, wann (z.B. Incident/Near Incident) die Maßnahme (s.u.) zu ergreifen ist. 
+[^D2-03]: Die MDR fordert dies im Anhang zur Post-Market Surveillance. Die Hersteller müssen festlegen, wann (z.B. Incident/Near Incident) die Maßnahme (s.u.) zu ergreifen ist.
 
 [^D2-04]: Maßnahmen können beinhalten: Rückrufe, Behördenmeldungen, CAPA, Produktverbesserung, Prozessverbesserung, Training (Anwender, intern), Information der Kunden, Änderung der Begleitmaterialien, Einschränkung der Zweckbestimmung. Die Festlegung muss somit die Festlegung einschließen, wer (z.B. Anwender, Benannte Stelle, Behörde), wie (z.B. Field Safety Note) zu informieren ist.  
 
 [^D2-05]: Die Frequenz müsste mindestens jährlich, bei kritischen Komponenten häufiger als monatlich erfolgen. Die UL 2900-2-1 spricht von Update-Zyklen von zwei Wochen.
 
-#### c) Incident Response Plan 
+#### c) Incident Response Plan
 
 (inkl. Rückrufe, Patches, Kundenkommunikation)
 
@@ -414,7 +403,7 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 
 [^C2a-02]: Idealerweise müssten auch Passwörter ausgeschlossen werden, die über Wörterbuch-Angriffe erraten werden können. Die Mindestlänge hängt davon ab, ob Brute-Force-Angriffe möglich sind, was bei einer Datenschnittstelle einfacher ist als abei einer Benutzerschnittstelle. Es gibt Systeme, bei denen "nicht-alphanumerische" Zeichen nicht möglich sind. Das sollte bei der Wahl der Mindestlänge betrachtet werden.
 
-[^C2a-03]: Beispielsweise implementiert der Hersteller ein "Breaking the glass", d.h. eine Möglichkeit, das Berechtigungskonzept zu umgehen, um zeitnah auf wichtige Daten zugreifen zu können. Dieses Umgehen muss protokolliert und später gerechtfertigt werden. 
+[^C2a-03]: Beispielsweise implementiert der Hersteller ein "Breaking the glass", d.h. eine Möglichkeit, das Berechtigungskonzept zu umgehen, um zeitnah auf wichtige Daten zugreifen zu können. Dieses Umgehen muss protokolliert und später gerechtfertigt werden.
 
 [^C2a-04]: Auch dieses Sperren darf nicht zu Safety-Risiken führen. Daher sollte das Sperren nicht während  der Untersuchung oder Behandlung möglich sein, sondern beispielsweise nur im Wartungsmodus.
 
@@ -440,7 +429,7 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 | D.2.b.14 | Das Produkt stellt im Fall einer Kompromittierung einen Notfall-Modus für Funktionen bereit, die relevant für die Sicherheit der Patienten sind. |   2   |                                                              |
 
 [^C2b-01]: Der Schutz kann auch in einer Undo-Funktion bestehen. Ggf. ist der Zeitraum für ein Undo zu beschränken. Es ist zu beachten, dass die Anforderungen des Datenschutzes nach einem (endgültigen) Löschen der Daten erfüllt werden.
-[^C2b-02]: Diese Überprüfung sollte auf allen Interoperabilitätsebenen stattfinden. Beispielsweise wären auch die Protokolle, Formate zu überprüfen wie die Wohlgeformtheit von XML-Dateien. 
+[^C2b-02]: Diese Überprüfung sollte auf allen Interoperabilitätsebenen stattfinden. Beispielsweise wären auch die Protokolle, Formate zu überprüfen wie die Wohlgeformtheit von XML-Dateien.
 
 #### c) Patches
 
@@ -480,7 +469,7 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 | D.3.3 | Die Software ist soweit technisch möglich vor Malware (Viren, Würmern usw.) geschützt. |   1   | Sich erklären lassen, wie das System vor Malware geschützt ist und wie dieser Schutz aufrechterhalten wird |
 | D.3.4 | Die Software basiert auf den Versionen der SOUP-/OTS-Komponenten, die keine sicherheitsrelevanten Schwachstellen enthalten. Ausnahmen sind begründet |   1   | sich in SOUP-Liste ein Beispiel herauspicken und auf der Herstellerseite die Version recherchieren und prüfen, welche Schwachstellen in Nachfolge-Versionen gepatched wurden |
 
-[^C3-01]: Die FDA besteht auf dem [https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards) und  der [NIST FIPS 140-2 Suite B ](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2851.pdf). 					 				 			 		
+[^C3-01]: Die FDA besteht auf dem [https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards) und  der [NIST FIPS 140-2 Suite B](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2851.pdf).
 
 ### 4. Begleitmaterialien
 
@@ -497,8 +486,6 @@ Die Begleitmaterialien beziehen sich v.a. auf die Gebrauchs- und Installationsan
 | D.4.7 | Die Begleitmaterialien enthalten die Kontaktdaten des Herstellers, über die dieser z.B. bei Problemen mit der IT-Sicherheit zu erreichen ist. [^D4-04] |   1   |                                                              |
 | D.4.8 | Die Begleitmaterialien beschreiben das Produkt auch technisch [^D4-05] |   2   | Das ist insbesondre eine FDA Anforderung                     |
 
-
-
 [^13]: Beispiele: Netzwerk / Schnittstellen (Bandbreite, Verfügbarkeit, Ports, IP-Ranges, Latenzen, Verschlüsselung, Firewalls usw.), Virenschutz, Betriebssysteme, physische Zugriffsberechtigungen, andere Software, die zeitgleich auf dem System laufen darf oder eben nicht (Spiele?, Firewall, Datenbank, Webserver). Die FDA verlangt bei den Schnittstellen auch eine Angabe über die Richtung der Kommunikation.
 
 [^14]: Beispiele: Ausbildung der Anwender (z.B. zum Umgang mit Passwörtern), Aktualisierung des Virenschutzes, Information des Herstellers über Zwischenfälle, Aufspielen von Updates und Patches, Monitoring, Backup (und Restore)
@@ -507,9 +494,7 @@ Die Begleitmaterialien beziehen sich v.a. auf die Gebrauchs- und Installationsan
 [^D4-04]: Ggf. muss der Hersteller auch angeben, für welchen Zeitraum er beabsichtigt, den Support anzubieten.
 [^D4-05]: Netzwerk-, Architektur, Fluss- und Zustanddiagramme. Schnittstellen, Komponenten, Kommunikationspfade, Authentifizierungsmechanismen für jede kommunizierende "Komponente" wie Webseiten, Server, Cloud-Speicher und Interoperable Systeme. "Design Features", die validierte Software-Updates und Patches gestatten. Liste aller Komponenten wie 3rd Party Software (s. CBOM der FDA)
 
-
-E) Anhänge
--------------
+## E) Anhänge
 
 ### 1. Priorisierung
 
@@ -529,7 +514,6 @@ Die Priorisierung mündet in den folgenden Reifegradstufen
 Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfe bereits von Beginn an eine bestimmte Stufe voraussetzen[^E2-01].
 
 [^E2-01]: Die Sicherheit der Patienten hat Vorrang, auch wenn dieser Ansatz dem Grundgedanken dieses Leitfadens widerspricht, besser Schritt für Schritt die IT-Sicherheit zu erhöhen, als gar nicht ins Handeln zu kommen.
-
 
 ### 2. Weiterführende Literatur
 
@@ -556,10 +540,10 @@ Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfe bereits von Beg
 - BSI-CS 132
 - ISO/IEC 29147: Information technology — Security techniques — Vulnerability disclosure
 - FDA Guidance Documents
-   - “Content of Premarket Submissions for Management of Cybersecurity in Medical Devices”
-   - "Postmarket Management of Cybersecurity in Medical Devices"
-   - "Design Considerations and Premarket Submissions - Recommendations for Interoperable Medical Devices"
-   - “Wireless Medical Telemetry Risks and Recommendations”
+  - “Content of Premarket Submissions for Management of Cybersecurity in Medical Devices”
+  - "Postmarket Management of Cybersecurity in Medical Devices"
+  - "Design Considerations and Premarket Submissions - Recommendations for Interoperable Medical Devices"
+  - “Wireless Medical Telemetry Risks and Recommendations”
 - [BSI Cyber-Sicherheitsanforderungen an netzwerkfähige Medizinprodukte](https://www.allianz-fuer-cybersicherheit.de/ACS/DE/_/downloads/BSI-CS_132.pdf?__blob=publicationFile&v=6)
 
 #### b) Fachliteratur, Lehrbücher
@@ -567,7 +551,6 @@ Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfe bereits von Beg
 - Eckert: [IT-Sicherheit: Konzepte - Verfahren - Protokolle (De Gruyter Studium](https://www.amazon.de/Sicherheit-Konzepte-Verfahren-Protokolle-Gruyter/dp/3110551586/)
 - Johner Institut: [Videotrainings zur IT-Sicherheit bei Medizinprodukten](www.auditgarant.de)
 - Aktuelle Trends im [Blog von Bruce Schneier](https://www.schneier.com/)
-
 
 ### 3. Erwägungsgründe
 

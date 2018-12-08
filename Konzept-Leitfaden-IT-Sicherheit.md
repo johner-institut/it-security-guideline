@@ -1,8 +1,6 @@
-Konzept zum gemeinsamen "Leitfaden IT Security" des TÜV SÜD und des Johner Instituts
-=================
+# Konzept zum gemeinsamen "Leitfaden IT Security" des TÜV SÜD und des Johner Instituts
 
-Erwägungsgründe
------------
+## Erwägungsgründe
 
 1. Hersteller entwickeln immer mehr vernetzte Medizinprodukte. Dadurch erhöhen sich die Risiken durch mangelnde IT Sicherheit (z.B. gegen Cyberangriffe). Dem Tragen viele Hersteller nur unzureichend Rechnung.
 2. Die EU-Verordnungen (MDR, IVDR) fordern explizit die IT-Sicherheit. Die EU-Richtlinien fordern dies indirekt. Diese Vorgaben finden sich in den jeweiligen Anhängen I mit den grundlegenden (Sicherheits- und Leistungs-)Anforderungen. 
@@ -17,12 +15,11 @@ Erwägungsgründe
 11. Der Leitfaden soll dennoch ein weitgehend allgemein akzeptiertes Niveau an Anforderungen repräsentieren. Die Auswahl und Priorität dessen Anforderungen müssen daher möglichst transparent nachvollziehbar sein.
 12. Ein solcher Leitfaden muss die Spezifika von Medizinprodukten berücksichtigen, wozu die Prinzipen der Patientensicherheit (Safety) und eines risikobasierten Ansatzes zählen.
 13. Die einfache Verständlichkeit und Umsetzbarkeit ist entscheidend für den erhofften positiven Einfluss eines Leitfadens auf die IT-Sicherheit.
-13. Um die Verteilung und den Bekanntheitsgrad zu fördern, soll der Leitfaden kostenfrei verfügbar sein und bleiben. 
-14. Der Leitfaden sollte auf Deutsch und Englisch verfügbar sein.
-15. Der Fokus liegt auf der IT-Sicherheit der Medizinprodukte, nicht auf der IT-Sicherheit von Organisationen wie Krankenhäusern oder Medizinprodukteherstellern.
+14. Um die Verteilung und den Bekanntheitsgrad zu fördern, soll der Leitfaden kostenfrei verfügbar sein und bleiben. 
+15. Der Leitfaden sollte auf Deutsch und Englisch verfügbar sein.
+16. Der Fokus liegt auf der IT-Sicherheit der Medizinprodukte, nicht auf der IT-Sicherheit von Organisationen wie Krankenhäusern oder Medizinprodukteherstellern.
 
-Autoren und Nutzungsrechte
-----------------
+## Autoren und Nutzungsrechte
 
 Der Leitfaden wird von den folgenden Autoren verfasst:
 
@@ -36,9 +33,7 @@ Der Leitfaden wird unter der [Creative Commons Lizenz](https://creativecommons.o
 
 Die Lizenz gestattet es, das Produkt zu Beratungszwecken kommerziell zu nutzen. Sie untersagt es aber, dieses Werk selbst in unveränderter oder veränderter Version kommerziell zu nutzen z.B. in Form eines Verkaufs als Broschüre.
 
-
-Verteilung 
-------------
+## Verteilung
 
 Die Autoren planen, den Leitfaden aktiv bekannt zu machen z.B. über die folgenden Kanäle:
 
@@ -51,8 +46,7 @@ Die Autoren planen, den Leitfaden aktiv bekannt zu machen z.B. über die folgend
 - Publikation in eigenen Medien sowie den Medien Dritter z.B. Fachzeitschriften
 - Distribution über Multiplikatoren wie Normengremien
 
-Priorisierung von Anforderungen
--------------
+## Priorisierung von Anforderungen
 
 Bei der Priorisierung von Anforderungen berücksichtigt der Leitfaden folgende Dimensionen:
 
@@ -66,16 +60,14 @@ Die Priorisierung mündet in den folgenden Reifegradstufen
 - **Stufe 2 ("State-of-the-art")**: Das ist das Niveau, das Hersteller auf Dauer in der Regel erreichen müssen. Es entspricht aber noch nicht dem Stand der Wissenschaft.
 - **Stufe 3 ("Experten-Niveau")**: Dieses Niveau erreichen hauptberufliche IT-Security-Experten. Es geht über das hinaus, was ein Auditor in der Regel bei Medizinprodukten erwarten darf. Auf diesem Niveau werden beispielsweise Schwachstellen beherrscht, die allgemein nicht bekannt sind. Energieversorger, Geheimdienste und das Militär müssten auf diesem Niveau agieren.
 
-
-Aufbau des Leitfadens
-------------------
+## Aufbau des Leitfadens
 
 1. Metainformationen
    1. Ziele
-   1. Anwendungsbereich
-   2. Hinweise zur Verwendung 
-   3. Autoren und Nutzungsrechte
-   4. Dokumentenlenkung und Identifikation
+   2. Anwendungsbereich
+   3. Hinweise zur Verwendung 
+   4. Autoren und Nutzungsrechte
+   5. Dokumentenlenkung und Identifikation
 2. Allgemeine Anforderungen (Prozesse, Dokumentation) 
 3. Anforderungen an die Produktentwicklung
    1. Zweckbestimmung und Stakeholder-Anforderungen
