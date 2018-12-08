@@ -225,7 +225,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
-| C.1.b.iv.1 | The manufacturer has established how the medical device informs the users in the event that cybersecurity is compromised. | 2 |   |
+| C.1.b.iv.1 | The manufacturer has established how the medical device informs the users in the event that cybersecurity is compromised. | 2 | E.g. like an anti-malware program that warns about suspious files |
 | C.1.b.iv.2 | The manufacturer has assessed what functionality the medical device must guarantee in the event that cybersecurity is compromised.  |   |   |
 
 #### **c) System and software architecture**
@@ -309,10 +309,10 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
-| C.1.g.1 | The manufacturer has addressed the most common errors[^C8-01] and the resulting hazards in the risk analysis or can at least explain how these risks are controlled. | 1 | Select an example from one of the linked lists of the most common errors and ask the manufacturer for a justification. |
+| C.1.g.1 | The manufacturer has addressed the most common vulnerabilities[^C8-01] and the resulting hazards in the risk analysis or can at least explain how these risks are controlled. | 1 | Select an example from one of the linked lists of the most common errors and ask the manufacturer for a justification. |
 | C.1.g.2 | The manufacturer discusses the risks posed by all relevant attack vectors (see above) in the risk analysis and shows how these risks are controlled. | 1 |   |
 | C.1.g.3 | The manufacturer has checked the effectiveness of all risk-control measures. | 1 | E.g. ask for references to corresponding tests to be shown. |
-| C.1.g.4 | The manufacturer has created a traceability matrix it uses to document that there are measures that control all risks related to IT security. | 2 |   |
+| C.1.g.4 | The manufacturer has created a traceability matrix it uses to document that there are measures that control all identified risks related to IT security. | 2 |   |
 | C.1.g.5 | The manufacturer has prepared the risk management report and the IT security report. | 2 | In Europe but not in the USA, the IT security report can be part of the risk management report. |
 | C.1.g.6 | The manufacturer has drawn up the necessary plans for the post-development phase (e.g. post-market surveillance and incident response plan). | 1 | Details below. |
 | C.1.g.7 | The manufacturer has tested the completeness of the tests using a traceability matrix that links the tests to the requirements. | 2 |   |

@@ -227,7 +227,7 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-|C.1.b.iv.1|Der Hersteller hat festgelegt, wie das Medizinprodukt die Anwender im Fall einer Kompromittierung der Cybersecurity informiert|2||
+|C.1.b.iv.1|Der Hersteller hat festgelegt, wie das Medizinprodukt die Anwender im Fall einer Kompromittierung der Cybersecurity informiert|2|z.B. wie bei einem Virenschutzprogramm, das vor verdächtigen Dateien warnt|
 |C.1.b.iv.2|Der Hersteller hat abgeschätzt, welche Funtionalität das Medizinprodukt auch im Falle einer Komprimittierung der Cybersecurity gewähren muss.|||
 
 #### c) System- und Software-Architektur
@@ -311,10 +311,10 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-|C.1.g.1|Der Hersteller hat die häufigsten Fehler [^C8-01] und daraus resultierenden Gefährdungen in der Risikoanalyse adressiert oder kann zumindest darlegen, weshalb diese Risiken beherrscht sind.|1|ein Beispiel aus einer der verlinkten Listen häufigster Fehler auswählen und den Hersteller um eine Begründung bitten|
+|C.1.g.1|Der Hersteller hat die häufigsten Schwachstellen[^C8-01] und daraus resultierenden Gefährdungen in der Risikoanalyse adressiert oder kann zumindest darlegen, weshalb diese Risiken beherrscht sind.|1|ein Beispiel aus einer der verlinkten Listen häufigster Fehler auswählen und den Hersteller um eine Begründung bitten|
 |C.1.g.2|Der Hersteller diskutiert in der Risikoanalyse Risiken durch alle relevanten Angriffs-Vektoren (s.o.) und zeigt, wie diese beherrscht werden.|1||
 |C.1.g.3|Der Hersteller hat alle Maßnahmen zur Risikobeherrschung auf Wirksamkeit überprüft.|1|z.B. Referenzen auf entsprechende Tests zeigen lassen|
-|C.1.g.4|Der Hersteller hat eine Traceability Matrix erstellt, mit der er dokumentiert, dass alle Risiken mit Bezug zur IT-Sicherheit durch Maßnahmen beherrscht werden.|2||
+|C.1.g.4|Der Hersteller hat eine Traceability Matrix erstellt, mit der er dokumentiert, dass alle identifizierten Risiken mit Bezug zur IT-Sicherheit durch Maßnahmen beherrscht werden.|2||
 |C.1.g.5|Der Hersteller hat den Risikomanagementbericht und den IT Security Report erstellt.|2|Der IT Security Report kann in Europa durchaus Teil des Risikomanagementberichts sein, in den USA nicht.|
 |C.1.g.6|Der Hersteller hat die notwendigen Pläne für die der Entwicklung nachgelagerten Phase (z.B. Post-Market und Incident Response Plan) erstellt|1|Details weiter unten|
 |C.1.g.7|Der Hersteller hat die Vollständigkeit der Tests durch eine Traceability Matrix geprüft, die die Tests mit den Anforderungen verknüpft.|2||
