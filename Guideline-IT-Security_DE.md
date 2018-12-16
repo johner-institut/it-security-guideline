@@ -1,4 +1,4 @@
-# Leitfaden IT-Sicherheit
+# Leitfaden IT-Sicherheit für Medizinprodukte
 
 ## A) Metainformationen
 
@@ -47,7 +47,7 @@ Die Struktur dieses Leitfadens folgt diesem Gedanken: Er enthält in Kapitel B) 
       7. Produktfreigabe
    2. ***Anforderungen an die der Entwicklung nachgelagerten Phase***
       1. Produktion, Distribution, Installation
-      2. Marktüberwachung
+      2. Marktüberwachung (nach der Inverkehrbringung)
       3. Incident Response Plan
 2. **Anforderungen an das Produkt**
    1. Vorbemerkungen und allgemeine Anforderungen
@@ -119,7 +119,7 @@ Die Hersteller sollten alle unten genannten Aspekte entweder in den Verfahrensan
 - Marktbeobachtung (Post-Market Surveillance) und Vigilanz
 - Service, Installation, Außerbetriebnahme
 - Kundenkommunikation
-- Managementbewertung (ISO 13485 fordert "anwendbare neue oder überarbeitete regulatorische Anforderungen" zu berücksichtigen.)
+- Managementbewertung (ISO 13485:2016 fordert "anwendbare neue oder überarbeitete regulatorische Anforderungen" zu berücksichtigen.)
 
 Nutzt der Hersteller ausgelagerte Prozesse, so gelten die Anforderungen entsprechend. Beispielsweise müsste ein (Software-)Entwicklungsdienstleister verpflichtet werden, die für ihn relevanten Kapitel dieser Leitlinie zu beachten.
 
@@ -133,8 +133,8 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 |:--:|:--|:--:|:--|
 |B.2.1|Der Hersteller hat eine Liste aller Rollen erstellt, die mit dem Thema IT-Sicherheit direkt oder indirekt befasst sind [^B2-01]|1||
 |B.2.2|Der Hersteller hat für jede Rollen die Kompetenzen mit Bezug zur IT-Sicherheit bestimmt [^B2-02]|1||
-|B.2.3|Der Hersteller hat Aufzeichnungen (z.B. Schulungsunterlagen), die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen|1||
-|B.2.4|Die (Software-)Entwicklungspläne legen produktspezifisch die (darüber hinausgehenden oder abweichenden) Kompetenzen fest|2|Forderung seit ISO 13485:2016|
+|B.2.3|Der Hersteller hat an gemessene Aufzeichnungen über die Ausbildung, Weiterbildung und Kompetenzen, die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen|1||
+|B.2.4|Die (Software-)Entwicklungspläne legen produktspezifisch die (darüber hinausgehenden oder abweichenden) Kompetenzen fest|2|Anforderung der ISO 13485:2016|
 
 [^B2-01]: Beispiele sind: Entwickler, Tester, Regulatory Affairs und Qualitätsmanager, Mitarbeiter in Service und Support, Produktmanager, Medizinprodukteberater
 
@@ -204,14 +204,14 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 |C.1.b.ii.1|Der Hersteller hat eine Liste aller vom System verwalteten Daten [^C2b-01] erstellt|1||
 |C.1.b.ii.2|Der Hersteller hat die Schutzwürdigkeit dieser Daten mit Bezug zur Vertraulichkeit und deren Auswirkung auf die Patientensicherheit bewertet.|1||
 |C.1.b.ii.3|Der Hersteller hat im Risikomanagement die Auswirkungen bewertet, wenn der Schutz besonders schützenswerter Daten nicht mehr gegeben ist|1||
-|C.1.b.ii.4|Der Hersteller hat im Risikomanagement die Folgen einer Überlastung des Systems durch zu viele Anfragen (z.B. DoS) oder Anfragen mit zu großen Daten-Volumina untersucht und falls notwendig Maßnahmen definiert|2||
+|C.1.b.ii.4|Der Hersteller hat im Risikomanagement die Folgen einer Überlastung des Systems durch zu viele Anfragen (z.B. DoS (Denial of Service)) oder Anfragen mit zu großen Daten-Volumina untersucht und falls notwendig Maßnahmen definiert|2||
 |C.1.b.ii.5|Der Hersteller hat im Risikomanagement die Folgen analysiert, wenn das Netzwerk nicht mehr oder nicht mehr in der erwarteten Güte zur Verfügung steht.|2||
-|C.1.b.ii.6|Der Hersteller hat im Risikomanagement die Folgen eines Datenverlusts analysiert und ggf. Maßnahmen wie Backup festgelegt|2||
+|C.1.b.ii.6|Der Hersteller hat im Risikomanagement die Folgen eines Datenverlusts analysiert und ggf. Maßnahmen (z.B. Backup und Wiederherstellung von Daten) festgelegt|2||
 |C.1.b.ii.7|Der Hersteller hat allgemein oder produktspezifisch festgelegt, nach welchen Überprüfungskriterien[^C2b-02] externe Daten vor der weiteren Verarbeitung überprüft werden müssen[^C2b-03]|2||
 
 [^C2b-01]: Beispiele für solche Daten sind Patientendaten (z.B. demographische Daten, Anamnesen, Diagnosen), Untersuchungsdaten (z.B. Laborwerte, radiologische und pathologische Bilder) und Behandlungsdaten (Verschreibungen, Einstellungen von Medizingeräten), Konfigurationsdaten der Produkte, Daten der Anwender (insbesondere Zugangsdaten), Keys, Software Zertifikate, Programm-Code (inklusive SOUP/OTS).
 
-[^C2b-02]: Beispiele für Überprüfungen: Überprüfung auf falsche Länge, auf Vollständigkeit, auf falschen Zeichensatz, auf nicht erwartete Zeichen, auf mehrfach geschickte Daten, auf veraltete / verspätete Daten, nicht erwartete oder falsche Formate (z.B. kein Escaping von Zeichen mit besonderer Bedeutung wie Trennzeichen, kein wohlgeformtes XML, ungültige JSON-Dateien, falsche Datentypen, XML, das nicht dem spezifizierten Schema entspricht), andere Zeichensätze, im Input enthaltene Schlüsselworte und (ungültige) Befehle, BigEndian statt Little Endian, Werte, die nicht im vorgesehenen Wertebereich enthalten sind (z.B. im Klassifikations- oder Kodierungssystem), falsche Zeitzone, falsches Zahlenformat, unmögliche Daten (z.B. Geburtstag in der Zukunft), widersprüchliche Daten usw.
+[^C2b-02]: Beispiele für Überprüfungen: Überprüfung auf falsche Länge, auf Vollständigkeit, auf falschen Zeichensatz, auf nicht erwartete Zeichen, auf mehrfach geschickte Daten, auf veraltete / verspätete Daten, nicht erwartete oder falsche Formate (z.B. kein Escaping von Zeichen mit besonderer Bedeutung wie Trennzeichen, kein wohlgeformtes XML, ungültige JSON-Dateien, falsche Datentypen, XML, das nicht dem spezifizierten Schema entspricht), andere Zeichensätze, im Input enthaltene Schlüsselworte und (ungültige) Befehle, Big Endian statt Little Endian, Werte, die nicht im vorgesehenen Wertebereich enthalten sind (z.B. im Klassifikations- oder Kodierungssystem), falsche Zeitzone, falsches Zahlenformat, unmögliche Daten (z.B. Geburtstag in der Zukunft), widersprüchliche Daten usw.
 
 [^C2b-03]: Falls möglich und sinnvoll empfehlen sich Listen erlaubter Werte (White-Listing)
 
@@ -227,15 +227,15 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-|C.1.b.iv.1|Der Hersteller hat festgelegt, wie das Medizinprodukt die Anwender im Fall einer Kompromittierung der Cybersecurity informiert|2|z.B. wie bei einem Virenschutzprogramm, das vor verdächtigen Dateien warnt|
-|C.1.b.iv.2|Der Hersteller hat abgeschätzt, welche Funtionalität das Medizinprodukt auch im Falle einer Komprimittierung der Cybersecurity gewähren muss.|||
+|C.1.b.iv.1|Der Hersteller hat festgelegt, wie das Medizinprodukt die Anwender im Fall einer Kompromittierung der IT Sicherheit informiert|2|z.B. wie bei einem Virenschutzprogramm, das vor verdächtigen Dateien warnt|
+|C.1.b.iv.2|Der Hersteller hat abgeschätzt, welche Funtionalität das Medizinprodukt auch im Falle einer Komprimittierung der IT Sicherheit gewähren muss.|2||
 
 #### c) System- und Software-Architektur
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
 |C.1.c.1|Der Hersteller hat alle SOUP-/ OTS-Komponenten dokumentiert (inkl. Version, Hersteller, Referenz auf Informationen zu Updates, Release-Notes)|1|Liste / Tabelle zeigen lassen. Die FDA fordert die "Cybersecurity Bill of Materials (CBOM)"|
-|C.1.c.2|Der Hersteller hat die spezifischen Risiken, die sich durch die Wahl der Technologien (insbesondere Programmiersprache, SOUP- / OTS-Komponenten) ergeben analysiert.|2||
+|C.1.c.2|Der Hersteller hat die spezifischen Risiken, die sich durch die Wahl der Technologien (insbesondere Programmiersprache, SOUP- / OTS-Komponenten inklusive Betriebssystemen) ergeben analysiert.|2||
 |C.1.c.3|Der Hersteller hat Maßnahmen ergriffen, um sicherzustellen, dass die verwendeten Werkzeuge (z.B. Entwicklungsumgebung, Compiler), sowie die Plattformen und SOUP/OTS-Komponenten frei von Schadcode sind [^C3-01]|2||
 |C.1.c.4|Der Hersteller haben einer Liste aller Dienste [^C3-02] erstellt, die das Produkt (z.B. durch sein Betriebssystem) nach "außen" anbietet bzw. nutzt|1|sich diese Liste zeigen lassen|
 |C.1.c.5|Der Hersteller hat für jeden Dienst begründet, weshalb dieser (zeitlich unbeschränkt) nach außen sichtbar sein muss|2|sich vom Hersteller erklären lassen, wie/wo gefordert und geprüft ist, dass nicht (zeitlich unbeschränkt) benötigte Dienste auch nicht (zeitlich unbeschränkt) angeboten werden. Ziel ist die "Attack Surface Reduction"|
@@ -244,8 +244,8 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 |C.1.c.8|Der Hersteller hat für jeden Prozess den Nutzer (auf Betriebssystemebene) identifiziert und begründet, wenn dieser nicht mit minimalen Rechten ("worst case" als Root) läuft|2||
 |C.1.c.9|Der Hersteller hat Risiken durch mangelnde IT-Sicherheit systematisch durch ein Threat-Modeling abgeleitet. |2|Sich das Modell zeigen lassen, dass zumindest die externen Akteure und/oder Bedrohungen und die bedrohten Objekte erkennen lassen muss|
 |C.1.c.10|Der Hersteller hat die Risiken analysiert, die sich durch das (Auto-)Update von Anti-Malware ergeben|1||
-|C.1.c.11|Der Hersteller hat festgelegt, wie das Produkt eine Kompromittierung der IT-Sicherheit feststellen, diese dokumentieren (log) und darauf wie schnell reagieren muss.|||
-|C.1.c.12|Bezüglich des Auditlogs hat der Hersteller festgelegt, wo dessen Daten liegen, wie diese geschützt, aktualisiert und in welcher Form dieses automatisiert ausgewertet werden kann.|||
+|C.1.c.11|Der Hersteller hat festgelegt, wie das Produkt eine Kompromittierung der IT-Sicherheit feststellen, diese dokumentieren (log) und darauf wie schnell reagieren muss.|1||
+|C.1.c.12|Bezüglich des Auditlogs hat der Hersteller festgelegt, wo dessen Daten liegen, wie diese geschützt, aktualisiert und in welcher Form dieses automatisiert ausgewertet werden kann.|2||
 |C.1.c.13|Der Hersteller hat für alle Software-Komponenten [^C3-03], Dienste bzw. Prozesse, Daten und Software-Komponenten analysiert, welche Risiken entstehen, wenn diese sich aufgrund eines Problems mit der IT-Sicherheit nicht spezifikationsgemäß verhalten |1|Entspricht einem FMEA-Ansatz|
 |C.1.c.14|Der Hersteller hat die Software-Anforderungen in der Software-Architektur berücksichtigt|1|Beispielhaft für o.g. Software-Anforderungen sich die Komponente(n) bzw. Technologien in der Architektur zeigen lassen, die die Anforderungen realisieren|
 
@@ -291,13 +291,13 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 |:--:|:--|:--:|:--|
 |C.1.f.1|Der Hersteller sieht im Testplan [^C6-01] Portscans an allen relevanten Netzwerkschnittstellen vor und führt diese auch durch.|1||
 |C.1.f.2|Der Hersteller sieht im Testplan Penetrationstests an allen relevanten Datenschnittstellen und/oder für alle bekannten Schwachstellen der eingesetzten OTS-Komponenten [^C6-02] vor und führt diese auch durch.|2|für eine bekannte OTS-Komponente in der [NIST Common / National Vulnerability Database](https://nvd.nist.gov/)  eine Schwachstelle recherchieren und vom Hersteller erklären lassen, wie er sicherstellt, dass diese nicht ausgenutzt werden kann, bzw. weshalb diese nicht relevant ist|
-|C.1.f.3|Der Hersteller sieht im Testplan den Einsatz eines "Vulerability Scanners" vor.|||
+|C.1.f.3|Der Hersteller sieht im Testplan den Einsatz eines "Vulerability Scanners" vor.|2||
 |C.1.f.4|Der Hersteller sieht im Testplan Fuzz-Tests an allen relevanten Datenschnittstellen mit mindestens einem Werkzeug vor und führt diese auch durch [^C6-03]|2||
 |C.1.f.5|Der Hersteller sieht im Testplan eine Überprüfung der Sicherheit gegen die üblichen Angriffsvektoren vor.[^C6-04]|2||
-|C.1.f.6|Der Hersteller sieht im Testplan die Überprüfung vor, die Robustheit und Leistungsfähigkeit zu prüfen.|||
+|C.1.f.6|Der Hersteller sieht im Testplan die Überprüfung vor, die Robustheit und Leistungsfähigkeit zu prüfen.|2||
 |C.1.f.7|Der Hersteller sieht im Testplan die Überprüfung aller System-/Software-Anforderungen (s.o.) vor.|1||
 |C.1.f.8|Der Hersteller lässt seine Software zusätzlich zu den o.g. Maßnahmen durch IT-Sicherheitsexperten überprüfen.|3|Zu dieser Überprüfung müssen Fuzz- und Penetrationstests ebenso zählen wie die Analyse der System-/ Software-Architektur und des Quell-Codes, um auf Stufe 3 zu gelangen|
-|C.1.f.9|Der Hersteller bezieht beim Systemtest die Testberichte Dritter (z.B. SOUP-Hersteller) mit ein (soweit verfügbar)|||
+|C.1.f.9|Der Hersteller bezieht beim Systemtest die Testberichte Dritter (z.B. SOUP-Hersteller) mit ein (soweit verfügbar)|3||
 
 [^C6-01]: Dieser Plan kann Teil des Entwicklungsplans, eines V&V-Plans oder eines anderen Plans sein.
 
@@ -350,7 +350,7 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 
 [^D2-04]: Maßnahmen können beinhalten: Rückrufe, Behördenmeldungen, CAPA, Produktverbesserung, Prozessverbesserung, Training (Anwender, intern), Information der Kunden, Änderung der Begleitmaterialien, Einschränkung der Zweckbestimmung. Die Festlegung muss somit die Festlegung einschließen, wer (z.B. Anwender, Benannte Stelle, Behörde), wie (z.B. Field Safety Note) zu informieren ist.  
 
-[^D2-05]: Die Frequenz müsste mindestens jährlich, bei kritischen Komponenten häufiger als monatlich erfolgen. Die UL 2900-2-1 spricht von Update-Zyklen von zwei Wochen.
+[^D2-05]: Die Frequenz müsste mindestens jährlich, bei kritischen Komponenten häufiger als monatlich erfolgen. Die ANSI UL 2900-2-1 spricht von Update-Zyklen von zwei Wochen.
 
 #### c) Incident Response Plan
 
@@ -398,7 +398,7 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 | D.2.a.12 | Das Produkt erlaubt berechtigten Benutzern, andere Benutzer und Nachbarsysteme zu löschen |   1   |                                                              |
 | D.2.a.13 | Das Produkt erlaubt es Benutzern nicht, die eigene Berechtigung zu ändern |   2   |                                                              |
 | D.2.a.14 | Das Produkt erlaubt es, Berechtigungen auszuhebeln ("Breaking the glass"), und identifiziert / dokumentiert die Person und die Gründe[^C2a-05] |   2   |                                                              |
-| D.2.a.15 | In einer Client-Server Architektur werden alle Cyber-Sicherungsmaßnahmen serverseitig berechnet und geprüft |   2   |                                                              |
+| D.2.a.15 | In einer Client-Server Architektur werden alle Maßnahmen zur IT-Sicherheit serverseitig berechnet und geprüft |   2   |                                                              |
 | D.2.a.16 | In einer Client-Server Architektur werden alle Eingaben des Clients serverseitig geprüft |   2   |                                                              |
 
 [^C2a-02]: Idealerweise müssten auch Passwörter ausgeschlossen werden, die über Wörterbuch-Angriffe erraten werden können. Die Mindestlänge hängt davon ab, ob Brute-Force-Angriffe möglich sind, was bei einer Datenschnittstelle einfacher ist als abei einer Benutzerschnittstelle. Es gibt Systeme, bei denen "nicht-alphanumerische" Zeichen nicht möglich sind. Das sollte bei der Wahl der Mindestlänge betrachtet werden.
@@ -423,7 +423,7 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 | D.2.b.8  | Das Produkt speichert Passwörter nur als "salted hash"       |   2   | z.B. nach Hash-Verfahren fragen und ggf. zeigen lassen       |
 | D.2.b.9  | Das Produkt speichert personenidentifizierende Merkmale nur verschlüsselt |   2   | Erklären lassen, was der Hersteller als personenidentifizierende Merkmale definiert und welchen Verschlüsselungs-mechanismus er nutzt |
 | D.2.b.10 | Das Produkt schützt kritische Daten vor ungewollter Veränderung und vor Verlust |   2   |                                                              |
-| D.2.b.11 | Das Programm überprüft bei jedem Neustart, ob die Mechanismen in Takt sind, mit denen die Daten vor Verlust und Veränderung geschützt werden. |       |                                                              |
+| D.2.b.11 | Das Programm überprüft bei jedem Neustart, ob die Mechanismen in Takt sind, mit denen die Daten vor Verlust und Veränderung geschützt werden. |   2   |                                                              |
 | D.2.b.12 | Das Produkt erlaubt es Nutzern, Datenschnittstellen zu deaktivieren (z.B. USB, Fernzugriff) |   2   |                                                              |
 | D.2.b.13 | Das Produkt prüft den Programm-Code bei jedem Neustart auf Integrität |   2   |                                                              |
 | D.2.b.14 | Das Produkt stellt im Fall einer Kompromittierung einen Notfall-Modus für Funktionen bereit, die relevant für die Sicherheit der Patienten sind. |   2   |                                                              |
@@ -526,25 +526,34 @@ Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfe bereits von Beg
 
 #### b) Normen und Best-Practice Guides
 
-- AAMI/TIR57
-- EN IEC 60601-1
-- IEC 62443-2-1
-- IEC 62443-4-1
-- IEC 62443-4-2
-- IEC 82304-1
-- IEC 80001-1
-- IEC/TR 80001-2-2
-- IEC/TR 80001-2-8
-- UL 2900-1
-- UL 2900-2-1
-- BSI-CS 132
-- ISO/IEC 29147: Information technology — Security techniques — Vulnerability disclosure
+- **AAMI TIR57**, Principles for medical device security – Risk management
+- **ANSI UL 2900-1**, Standard for Safety, Standard for Software Cybersecurity Network-Connectable      Products, Part 1: General Requirements
+- **ANSI UL 2900-2-1**, Standard for Safety, Software Cybersecurity for Network-Connectable Products, Part      2-1: Particular Requirements for Network Connectable Components of Healthcare and Wellness Systems
+- **BSI-CS 132**, [Cyber Security Requirements for Network-Connected Medical Devices](https://www.allianz-fuer-cybersicherheit.de/ACS/DE/_/downloads/BSI-CS_132E.pdf?__blob=publicationFile&v=3)
+- **EN IEC 60601-1/AMD1**, Medical electrical equipment – Part 1: General requirements for basic safety and essential performance
+- **IEC 62304/AMD1**, Medical device software – Software life cycle processes
+- **IEC 62443-2-1**, Industrial communication networks – Network and system security – Part 2-1:      Establishing an industrial automation and control system security program
+- **IEC 62443-4-1**, Security for industrial automation and control systems – Part 4-1: Secure product      development lifecycle requirements
+- **IEC 62443-4-2**[[NHL1\]](#_msocom_1) , Security for industrial automation and control systems – Part 4-2: Technical security requirements for IACS components
+- **IEC 80001-1**, Application of risk management for IT-networks incorporating medical devices – Part 1:      Roles, responsibilities and activities
+- **IEC 82304-1**, Health software – Part 1: General requirements for product safety
+- **IEC/TR 80001-2-2**, Application of risk management for IT-networks incorporating medical devices – Part      2-2: Guidance for the communication of medical device security needs, risks and controls
+- **IEC TR 80001-2-8**, Application of risk management for IT-networks incorporating medical devices – Part      2-8: Application guidance – Guidance on standards for establishing the security capabilities identified in IEC TR 80001-2-2
+- **ISO/IEC 29147**, Information technology – Security techniques – Vulnerability disclosure
+- **ISO/IEC 30111**, Information technology – Security techniques – Vulnerability handling processes
+- **FIPS 140-2**, Non-Proprietary Security Policy, Suite B Cryptographic Module
 - FDA Guidance Documents
   - “Content of Premarket Submissions for Management of Cybersecurity in Medical Devices”
   - "Postmarket Management of Cybersecurity in Medical Devices"
+  - "Cybersecurity for Networked Medical Devices Containing Off-the-Shelf (OTS) Software"
   - "Design Considerations and Premarket Submissions - Recommendations for Interoperable Medical Devices"
   - “Wireless Medical Telemetry Risks and Recommendations”
-- [BSI Cyber-Sicherheitsanforderungen an netzwerkfähige Medizinprodukte](https://www.allianz-fuer-cybersicherheit.de/ACS/DE/_/downloads/BSI-CS_132.pdf?__blob=publicationFile&v=6)
+
+------
+
+
+
+ [[NHL1\]](#_msoanchor_1)Note: this standard is still under vote. It is not published yet.
 
 #### b) Fachliteratur, Lehrbücher
 
@@ -557,10 +566,10 @@ Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfe bereits von Beg
 1. Hersteller entwickeln immer mehr vernetzte Medizinprodukte. Dadurch erhöhen sich die Risiken durch mangelnde IT-Sicherheit (z.B. gegen Cyberangriffe). Kunden sind über den Stand der Technik bei Beschaffungen nicht informiert und tragen die Aufwände für Absicherung - vor oder nach IT-Zwischenfällen. Die Anzahl der IT-Zwischenfälle steigt, wobei die Professionalität der Angreifer schnell zunimmt. Dem tragen viele Hersteller nur unzureichend Rechnung.
 2. Die EU-Verordnungen (MDR, IVDR) fordern explizit die IT-Sicherheit. Die EU-Richtlinien fordern dies indirekt. Diese Vorgaben finden sich in den jeweiligen Anhängen I mit den grundlegenden (Sicherheits- und Leistungs-)Anforderungen. Dabei geht die Risiko-Analyse für Informationssicherheit über die Analyse von Szenarien der zweckbestimmten Bedienung hinaus. Informationssicherheit soll nämlich gerade die Szenarien außerhalb der zweckbestimmten Verwendung abdecken, sodass der Begriff des vorhersehbaren Missbrauchs genauer analysiert werden muss, weil der Hersteller nunmehr alle technischen Invasionsmöglichkeiten in das vernetzte Medizingerät betrachten muss.
 3. Im Gegensatz zu den meisten anderen grundlegenden Anforderungen sind keine Normen zum Thema IT-Sicherheit harmonisiert. Daher gibt es keinen kanonischen Katalog an Anforderungen, der anerkannt den geforderten Stand der Technik reflektiert.
-4. Die FDA hat sowohl mehrere *Guidance Documents* veröffentlicht als auch Normen wie die UL 2900-2-1 anerkannt. Diese Vorgaben sind uneinheitlich bezüglich der Granularität, Vollständigkeit und konzeptionellen Integrität. Sie erfüllen nur bedingt die Ansprüche, die an die Qualität einer Norm üblicherweise gestellt werden. 
+4. Die FDA hat sowohl mehrere *Guidance Documents* veröffentlicht als auch Normen wie die ANSI UL 2900-2-1 anerkannt. Diese Vorgaben sind uneinheitlich bezüglich der Granularität, Vollständigkeit und konzeptionellen Integrität. Sie erfüllen nur bedingt die Ansprüche, die an die Qualität einer Norm üblicherweise gestellt werden. 
 5. Viele Normen sind kostenpflichtig (trotz teilweise fragwürdiger Qualität). Hersteller müssen nach Auffassung der Autoren kostenfrei Zugang zu regulatorischen Anforderungen haben.
 6. Weil die meisten Medizinproduktehersteller die IT-Sicherheit nicht oder nur unzureichend adressieren, erfüllen sie die grundlegenden Anforderungen nur teilweise. Es herrscht auf kein Konsens in Europe, welche technischen und prozessualen Pflichten den Hersteller betreffen.
-7. Für die meisten Hersteller wäre es weder zeitlich noch finanziell umsetzbar, mit einem Schlag ein IT-Sicherheits-Niveau zu erreichen, wie es z.B. der UL 2900 fordert. Daher sollten die Hersteller schrittweise ein State-of-the-Art Niveau bezüglich der IT-Sicherheit anstreben und erreichen. Damit verfolgt dieser Leitfaden das Ziel, lieber schnell erste Verbesserungen umzusetzen, als wegen Überforderung nichts zu tun.
+7. Für die meisten Hersteller wäre es weder zeitlich noch finanziell umsetzbar, mit einem Schlag ein IT-Sicherheits-Niveau zu erreichen, wie es z.B. der ANSI UL 2900 fordert. Daher sollten die Hersteller schrittweise ein State-of-the-Art Niveau bezüglich der IT-Sicherheit anstreben und erreichen. Damit verfolgt dieser Leitfaden das Ziel, lieber schnell erste Verbesserungen umzusetzen, als wegen Überforderung nichts zu tun.
 8. IT-Sicherheit muss in allen Phasen des Produkt-Lebenszyklusprozessen berücksichtigt werden. Eine Beschränkung auf das Testen ist unzureichend. Zusammen mit technischen Produktmaßnahmen ("Controls") und Dokumentation möchte dieser Leitfaden auf drei Säulen für Informationssicherheit hinweisen: Anforderungen, Prozess, Dokumentation. Die Struktur des Leitfadens reflektiert diese Säulen und wird auch nach den absehbaren technologischen Anpassungen noch bestehen bleiben.
 9. Es ist zu erwarten, dass Normen zur IT-Sicherheit von Medizinprodukten entwickelt und harmonisiert werden, was aber noch Jahre in Anspruch nehmen kann. Daher bedarf es eines Leitfadens (nur) in dieser Zwischenphase. 
 10. Dieser Leitfaden sollte sehr zeitnah (bis November 2018) zur Verfügung, um rasch den Herstellern als Orientierung zu dienen und es ihnen zu ermöglichen, sofort zu handeln. Die hohe Geschwindigkeit seiner Entwicklung macht Kompromisse bezüglich der Abstimmung mit möglichst vielen Parteien unumgänglich.

@@ -1,20 +1,20 @@
-# IT Security Guideline
+# IT Security Guideline for Medical Devices
 
 ## **A) Meta information**
 
 ### **1. Guideline objectives**
 
-The objective of these guidelines is to provide medical device manufacturers and notified bodies with instructions and a specific checklist in order to:
+The objective of this guideline is to provide medical device manufacturers and notified bodies with instructions and a specific checklist in order to:
 
 - Explain what notified bodies&#39; expectations are
 - Encourage the step-by-step implementation of IT security for medical devices
 - Compensate for the absence of a harmonized standard (until there is one) as well as possible
 
-Unlike a lot of other guidelines on IT security, these guidelines only relate to medical devices and focus on patient safety.
+Unlike a lot of other guidelines on IT security, this guideline only relates to medical devices and focus on patient safety.
 
-These guidelines are **not** intended to act as a textbook or guidelines for implementing IT security. Instead, they are intended as a guide for reviewing IT security.
+This guideline are **not** intended to act as a textbook or guidelines for implementing IT security. Instead, they are intended as a guide for reviewing IT security.
 
-The annex details the considerations that led to the creation of these guidelines.
+The annex details the considerations that led to the creation of this guideline.
 
 ### **2. Scope of application**
 
@@ -34,7 +34,7 @@ These guidelines are based on the idea that IT security is based on three fundam
 2. Product requirements
 3. Documented evidence that these process and product requirements have been met
 
-The structure of these guidelines is based on these ideas: In Chapter B) it starts off with the general requirements, in Chapter C) it establishes the process requirements (including documentation), and in Chapter D) it establishes the product requirements (including documentation). Within these &quot;main chapters&quot;, the requirements are structured along software life cycle process lines:
+The structure of these guidelines is based on these pillars: In section B) it starts off with the general requirements, in section C) it establishes the process requirements (including documentation), and in section D) it establishes the product requirements (including documentation). Within these &quot;main sections&quot;, the requirements are structured along software life cycle process lines:
 
 1. **Process requirements**
    1. ***Requirements for the development process***
@@ -47,7 +47,7 @@ The structure of these guidelines is based on these ideas: In Chapter B) it star
       7. Product release
    2. ***Requirements for the post-development phase***
       1. Production, distribution, installation
-      2. Market surveillance
+      2. Post-market surveillance
       3. Incident response plan
 2. **Product requirements**
    1. Preliminary remarks and general requirements
@@ -57,9 +57,9 @@ The structure of these guidelines is based on these ideas: In Chapter B) it star
 
 The risk management requirements are woven into the requirements throughout the product life cycle.
 
-#### **b) Applicable chapters and requirements**
+#### **b) Applicable sections and requirements**
 
-Manufacturers should first use the guidelines to check the completeness of the specifications documents (procedural and work instructions, checklists, etc.). For this, they should look at sections B) to D).
+Manufacturers should first use the guidelines to check the completeness of the specification's documents (procedural and work instructions, checklists, etc.). For this, they should look at sections B) to D).
 
 Subsequently, they and the people who evaluate IT security on a product-specific basis (including internal and external auditors and technical documentation reviewers) should use the guidelines to evaluate IT security for the product. In this case, they can use sections C) and D) of these guidelines as a checklist.
 
@@ -117,7 +117,7 @@ Manufacturers should cover all the aspects mentioned below either in the procedu
 - Post-market surveillance and vigilance
 - Service, installation, decommissioning
 - Customer communication
-- Management evaluation (ISO 13485 requires &quot;applicable new or revised regulatory requirements&quot; to be taken into account).
+- Management evaluation (ISO 13485:2016 requires &quot;applicable new or revised regulatory requirements&quot; to be taken into account).
 
 If the manufacturer uses outsourced processes, the requirements apply accordingly. For example, a (software) development service provider would have to observe the sections of these guidelines that are relevant for it.
 
@@ -131,8 +131,8 @@ In this way, manufacturers can also access the expertise of external resources.
 | --- | --- | --- | --- |
 | B.2.1 | The manufacturer has created a list of all roles that are directly or indirectly involved with IT security.[^B2-01] | 1 |   |
 | B.2.2 | The manufacturer has provided evidence of the IT-security expertise for each role.[^B2-02] | 1 |   |
-| B.2.3 | The manufacturer has records (e.g. training documents) that lead to the conclusion that the people in question actually have this expertise. | 1 |   |
-| B.2.4 | The (software) development plans define the (additional or deviating) expertise on a product-specific basis. | 2 | Requirement since ISO 13485:2016. |
+| B.2.3 | The manufacturer has appropriate records of education, training and skills that lead to the conclusion that the people in question actually have this expertise. | 1 |   |
+| B.2.4 | The (software) development plans define the (additional or deviating) expertise on a product-specific basis. | 2 | ISO 13485:2016 requirement |
 
 [^B2-01]: Examples are: developers, testers, regulatory affairs and quality managers, employees in service and support, product managers, medical product consultants
 
@@ -151,8 +151,8 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 #### **a) Intended purpose and stakeholder requirements**
 
 | **ID** | **Requirement** | **Level** | **Comments** |
-| --- | --- | --- | --- |
-| C.1.a.1 | The manufacturer has identified all neighboring systems (medical devices, IT systems) that may be connected to the product. | 0 |   |
+| --- | --- | :-: | --- |
+| C.1.a.1 | The manufacturer has identified all neighboring systems (e.g. medical devices, IT systems) that may be connected to the product. | 0 |   |
 | C.1.a.2 | The manufacturer has created a list of roles (people, neighboring systems) that may interact with the product. | 0 | Ask for the list of roles to be shown. |
 | C.1.a.3 | The manufacturer has identified all markets and all the regulatory requirements that are relevant in these markets. | 0 | Ask for the list of IT security regulatory requirements to shown. |
 | C.1.a.4 | The manufacturer has identified the intended primary and secondary users with their IT expertise.[^C1-01] | 1 |   |
@@ -185,31 +185,31 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | C.1.b.i.7 | For each role and neighboring system, the manufacturer has defined the product functions that they may have access to via the corresponding interface. | 1 | Ask for the &quot;mapping&quot; of roles to functions to be shown, e.g. as a table. |
 | C.1.b.i.8 | The manufacturer has justified its choice of authentication procedure (user name/password, biometric procedure, token, e.g. card) for all roles and all neighboring systems. | 1 | The justification should be risk-based. |
 | C.1.b.i.9 | Where necessary, the manufacturer has requested additional mechanisms to minimize the probability of unauthorized access.[^C2a-04] | 2 |   |
-| C.1.b.i.10 | The manufacturer has analyzed, in the risk management process, the effects on patient safety if a person cannot access patient or device data (e.g. no authorization, they forget their password), and defined appropriate measures.[^C2a-05] | 1 | This is about balancing the protection goals of &quot;confidentiality&quot; and &quot;safety&quot;. |
+| C.1.b.i.10 | The manufacturer has analyzed in the context of risk management process the impacts on patient safety if a person cannot access patient or device data (e.g. no authorization, they forget their password), and defined appropriate measures.[^C2a-05] | 1 | This is about balancing the protection goals of &quot;confidentiality&quot; and &quot;safety&quot;. |
 
-[^C2a-01]: The standards can be divided into the structural interoperability level (e.g. TCP/IP, HTTPs, SFTP, CAN, RS232, USB), the syntactic level (e.g. csv, JSON, XML, HL7), the semantic level (e.g. nomenclatures and coding systems such as LOINC (e.g. laboratory values), ATC (drugs), ICD (diagnoses), UCUM (units) and the organisational level (IHE))
+[^C2a-01]: The standards can be divided into the structural interoperability level (e.g. TCP/IP, HTTPs, SFTP, CAN, RS232, USB), the syntactic level (e.g. csv, JSON, XML, HL7), the semantic level (e.g. nomenclatures and coding systems such as LOINC (e.g. laboratory values), ATC (drugs), ICD (diagnoses), UCUM (units) and the organizational level (IHE))
 
 [^C2a-02]: As an alternative to the user scenarios, you can also examine each related group of UI elements (for example, screen pages, panels) that are offered within this user scenario. This activity is part of the general analysis of the risks that can arise from the implementation of information security product measures.
 
-[^C2a-04]: e.g. restriction of permitted IP or MAC addresses, physical access protection
+[^C2a-04]: For example, restriction of permitted IP or MAC addresses, physical access protection
 
 [^C2a-05]: In contrast to the points mentioned above, these are risks that arise even though the system behaves as specified. This activity is part of the general analysis of the risks that may arise from the implementation of information security product measures. It is therefore not a question of risks due to a lack of IT security, but of risks (in the sense of freedom from danger, availability and performance) resulting from measures to increase IT security.
 
 ##### **ii) Data, communication**
 
 | **ID** | **Requirement** | **Level** | **Comments** |
-| --- | --- | --- | --- |
+| --- | --- | :-: | --- |
 | C.1.b.ii.1 | The manufacturer has created a list of all data managed by the system.[^C2b-01] | 1 |   |
 | C.1.b.ii.2 | The manufacturer has assessed how worthy of protection these data are in relation to confidentiality and their impact on patient safety. | 1 |   |
-| C.1.b.ii.3 | The manufacturer has evaluated, in the context of risk management process, the effect if particularly sensitive data is no longer protected. | 1 |   |
-| C.1.b.ii.4 | The manufacturer has investigated, in the context of risk management, the consequences of overloading the system with too many requests (e.g. DoS) or requests with volumes that are too large, and has defined actions if necessary. | 2 |   |
-| C.1.b.ii.5 | The manufacturer has, in the context of risk management, analyzed the consequences of the network no longer being available or no longer being available in the expected quality. | 2 |   |
-| C.1.b.ii.6 | The manufacturer has, in the context of risk management, analyzed the consequences of the loss of data and establishes actions, such as making a backup, if necessary. | 2 |   |
+| C.1.b.ii.3 | The manufacturer has evaluated, in the context of risk management process, the impact if particularly sensitive data is no longer protected. | 1 |   |
+| C.1.b.ii.4 | The manufacturer has investigated, in the context of risk management, the consequences of overloading the system with too many requests (e.g. DoS (Denial of Service)) or requests with volumes that are too large, and has defined actions if necessary. | 2 |   |
+| C.1.b.ii.5 | The manufacturer has analyzed, in the context of risk management, the consequences of the network no longer being available or no longer being available in the expected quality. | 2 |   |
+| C.1.b.ii.6 | The manufacturer has analyzed, in the context of risk management, the consequences of the loss of data and establishes actions (e.g. data backup and disaster recovery), if necessary. | 2 |   |
 | C.1.b.ii.7 | The manufacturer has established, in general or for specific products, the criteria[^C2b-02] for the checking of external data before they are processed further.[^C2b-03] | 2 |   |
 
-[^C2b-01]: Examples of such data are patient data (e.g. demographic data, anamnesis, diagnoses), examination data (e.g. laboratory values, radiological and pathological images) and treatment data (prescriptions, settings of medical devices), configuration data of the products, user data (in particular access data), keys, software certificates, program code (including SOUP/OTS).
+[^C2b-01]: Examples of such data are patient data (e.g. demographic data, anamnesis, diagnoses), examination data (e.g. laboratory values, radiology and pathology images) and treatment data (prescriptions, settings of medical devices), configuration data of the products, user data (in particular access data), keys, software certificates, program code (including SOUP/OTS).
 
-[^C2b-02]: Examples of checks: Check for wrong length, completeness, wrong character set, unexpected characters, multiple sent data, outdated / delayed data, unexpected or wrong formats (e.g. no escaping of characters with special meaning like separators, no well-formed XML, invalid JSON files, wrong data types, XML that does not correspond to the specified schema), other character sets, keywords contained in the input and (invalid) commands, BigEndian instead of Little Endian, values that are not contained in the intended value range (e.g. in the classification or encoding system), wrong time zone, wrong number format, impossible data (e.g. birthday in the future), contradictory data, etc.
+[^C2b-02]: Examples of checks: Check for wrong length, completeness, wrong character set, unexpected characters, multiple sent data, outdated / delayed data, unexpected or wrong formats (e.g. no escaping of characters with special meaning like separators, no well-formed XML, invalid JSON files, wrong data types, XML that does not correspond to the specified schema), other character sets, keywords contained in the input and (invalid) commands, big-endian instead of little-endian, values that are not contained in the intended value range (e.g. in the classification or encoding system), wrong time zone, wrong number format, impossible data (e.g. birthday in the future), contradictory data, etc.
 
 [^C2b-03]: If possible and useful, lists of permitted values (white listing) are recommended.
 
@@ -224,26 +224,26 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 ##### ** iv) Other**
 
 | **ID** | **Requirement** | **Level** | **Comments** |
-| --- | --- | --- | --- |
-| C.1.b.iv.1 | The manufacturer has established how the medical device informs the users in the event that cybersecurity is compromised. | 2 | E.g. like an anti-malware program that warns about suspious files |
-| C.1.b.iv.2 | The manufacturer has assessed what functionality the medical device must guarantee in the event that cybersecurity is compromised.  |   |   |
+| --- | --- | :-: | --- |
+| C.1.b.iv.1 | The manufacturer has established how the medical device informs the users in the event that IT security is compromised. | 2 | E.g. like an anti-malware program that warns about suspicious files |
+| C.1.b.iv.2 | The manufacturer has assessed what functionality the medical device must guarantee in the event that IT security is compromised. | 2 |   |
 
 #### **c) System and software architecture**
 
 | **ID** | **Requirement** | **Level** | **Comments** |
-| --- | --- | --- | --- |
+| --- | --- | :-: | --- |
 | C.1.c.1 | The manufacturer has documented all SOUP/OTS components (incl. version, manufacturer, reference to information on updates, release notes). | 1 | Ask for the list/table to be shown. The FDA requires a &quot;Cybersecurity Bill of Materials (CBOM)&quot;. |
-| C.1.c.2 | The manufacturer has analyzed the specific risks resulting from the choice of technologies (in particular programming language, SOUP/OTS components). | 2 |   |
+| C.1.c.2 | The manufacturer has analyzed the specific risks resulting from the choice of technologies (in particular programming language, SOUP/OTS components such as operating systems). | 2 |   |
 | C.1.c.3 | The manufacturer has taken measures to ensure that the tools used (e.g., development environment, compiler) as well as the platforms and SOUP/OTS components are free of malicious code.[^C3-01] | 2 |   |
 | C.1.c.4 | The manufacturer has created a list of all services[^C3-02] that the product offers or uses &quot;externally&quot; (e.g. through its operating system). | 1 | Ask for this list to be shown. |
-| C.1.c.5 | For each service, the manufacturer has justified why it has to be visible externally (no time limitation). | 2 | Have the manufacturer explain how/where it is required and tested that services that are not required (no time limit) are not offered (no time limit). The aim of this is &quot;attack surface reduction&quot;. |
-| C.1.c.6 | If the product provides an interface, the manufacturer has described how attacks via this interface are controlled in the context of risk management. | 1 | Complete control of these risks is generally not really possible with USB interfaces, but also not necessary in all cases. |
+| C.1.c.5 | For each service, the manufacturer has justified why it has to be visible externally (no time limitation). | 2 | Have the manufacturer explain how/where it is required and tested that services that are not required (no time limit) are not offered (no time limit). The aim of this is to reduce the &quot;attack surface&quot;. |
+| C.1.c.6 | If the product provides an interface, the manufacturer has described how attacks via this interface are controlled in the context of risk management process. | 1 | Complete control of these risks is generally not really possible with USB interfaces, but also not necessary in all cases. |
 | C.1.c.7 | The manufacturer has identified the process offering/running this service for each externally visible service. | 2 |   |
 | C.1.c.8 | For each process, the manufacturer has identified the user (at the operating system level) and, if this user does not run with minimal rights (&quot;worst case&quot; as root), justified this. | 2 |   |
 | C.1.c.9 | The manufacturer has systematically identified the risks that would be caused by deficient IT security using threat modeling. | 2 | Have the model show that at least the external actors and/or threats and the threatened objects have to be identified. |
 | C.1.c.10 | The manufacturer has analyzed the risks that result from the (auto-)update of anti-malware software. | 1 |   |
-| C.1.c.11 | The manufacturer has established how the product detects compromised IT security, document (log) this and react to it quickly. |   |   |
-| C.1.c.12 | With regard to the audit log, the manufacturer has determined where its data is stored, how it is protected and updated and how this can be automatically analyzed. |   |   |
+| C.1.c.11 | The manufacturer has established how the product detects compromised IT security, document (log) this and react to it quickly. | 1 |   |
+| C.1.c.12 | With regard to the audit log, the manufacturer has determined where its data is stored, how it is protected and updated and how this can be automatically analyzed. | 2 |   |
 | C.1.c.13 | For all software components[^C3-03], services and processes, and data and software components, the manufacturer has analyzed which risks arise if they do not behave in accordance with the specifications due to a problem with IT security. | 1 | Corresponds to an FMEA approach. |
 | C.1.c.14 | The manufacturer has taken the software requirements into account in the software architecture. | 1 | For example, for the above software requirements, ask for the component(s) or technologies in the architecture that implement the requirements to be shown. |
 
@@ -270,32 +270,32 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
-| C.1.e.1 | The manufacturer has defined at least one method that is used to check compliance with the coding guidelines. | 1 | The manufacturer will achieve this if it uses tools for static code analysis and/or establishes specifications for the code reviews. |
+| C.1.e.1 | The manufacturer has defined at least one method that is used to check compliance with the coding guidelines. | 1 | The manufacturer will achieve this if it uses tools for static code analysis and/or establishes test criteria for the code reviews. |
 | C.1.e.2 | The manufacturer requires code reviews for all components that map (IT) security-relevant functions. | 2 |   |
-| C.1.e.3 | The manufacturer has concrete test criteria[^C5-01] in its specification documents for the code reviews. | 1 |   |
-| C.1.e.4 | The code reviews are carried out according to the four-eye principle and only by people who have the necessary expertise. The manufacturer has documented this expertise.[^C5-02] |    2 |   |
+| C.1.e.3 | The manufacturer has concrete test criteria[^C5-01] in its guidelines / instructions for the code reviews. | 1 |   |
+| C.1.e.4 | The code reviews are performed according to the four-eye principle and only by people who have the necessary expertise. The manufacturer has documented this expertise.[^C5-02] |    2 |   |
 | C.1.e.5 | The manufacturer has established which tests (e.g. unit tests) are necessary with which test cases[^C5-03] and which degrees of coverage are necessary. | 1 |   |
 | C.1.e.6 | The manufacturer has described how all SOUP and OTS components have to be verified. | 1 |   |
 
 [^C5-01]: Examples: No use of insecure functions, "input sanitization" at least for all external interfaces
 
-[^C5-02]: Documented is to be understood in two senses: 1. the manufacturer has defined the necessary competences (see ISO 13485:2016 chapter 7.3.2 f). 2 The manufacturer has documented that the specific persons have the competences.
+[^C5-02]: Documented is to be understood in two senses: 1. the manufacturer has defined the necessary competences (see ISO 13485:2016 subchapter 7.3.2 f). 2 The manufacturer has documented that the specific persons have the competences.
 
 [^C5-03]: When deriving test cases, you can use the above list of check criteria as a guide.
 
 #### **f) System and software tests**
 
 | **ID** | **Requirement** | **Level** | **Comments** |
-| --- | --- | --- | --- |
+| --- | --- | :-: | --- |
 | C.1.f.1 | The manufacture includes port scans at all relevant network interfaces in the test plan[^C6-01] and also performs them. | 1 |   |
 | C.1.f.2 | The manufacturer includes penetration tests at all relevant data interfaces and/or for all known vulnerabilities of the OTS components used[^C6-02] in the test plan and also performs them. | 2 | For a known OTS component in the [NIST Common / National Vulnerability Database](https://nvd.nist.gov/), investigate a vulnerability and have the manufacturer explain how it ensures that it cannot be exploited or why it is not relevant. |
-| C.1.f.3 | The manufacturer includes the use of &quot;vulnerability scanners&quot; in the test plan. |   |   |
+| C.1.f.3 | The manufacturer includes the use of &quot;vulnerability scanners&quot; in the test plan. | 2 |   |
 | C.1.f.4 | The manufacturer includes fuzz tests at all relevant data interfaces with at least one tool in the test plan and also performs them.[^C6-03] | 2 |   |
 | C.1.f.5 | The manufacturer includes a security check against the usual attack vectors in the test plan.[^C6-04] | 2 |   |
-| C.1.f.6 | The manufacturer includes the testing of robustness and performance in the test plan. |   |   |
+| C.1.f.6 | The manufacturer includes the testing of robustness and performance in the test plan. | 2 |   |
 | C.1.f.7 | The manufacturer includes the testing of all system/software requirements (see above) in the test plan. | 1 |   |
 | C.1.f.8 | The manufacturer also has its software checked by IT security experts with regard to the above measures. | 3 | To reach level 3, this testing must include fuzz and penetration testing as well as analysis of the system/software architecture and the source code. |
-| C.1.f.9 | The manufacturer includes third-party test reports (e.g. from SOUP manufacturers) in the system test (if available). |   |   |
+| C.1.f.9 | The manufacturer includes third-party test reports (e.g. from SOUP manufacturers) in the system test (if available). | 3 |   |
 
 [^C6-01]: This plan can be part of the development plan, a V&V plan, or another plan.
 
@@ -303,7 +303,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 
 [^C6-03]: Fuzz testing should focus on your own code rather than on the OTS software. The use of several scanners usually leads to a larger range of input values.
 
-[^C6-04]: e.g. DoS, SQL injection, cross-site scripting, directory transversal, buffer overflow, syntactically or semantically incorrect queries,
+[^C6-04]: Examples: DoS, SQL injection, cross-site scripting (XSS), directory transversal, buffer overflow, syntactically or semantically incorrect queries,
 
 #### **g) Product release**
 
@@ -315,9 +315,9 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | C.1.g.4 | The manufacturer has created a traceability matrix it uses to document that there are measures that control all identified risks related to IT security. | 2 |   |
 | C.1.g.5 | The manufacturer has prepared the risk management report and the IT security report. | 2 | In Europe but not in the USA, the IT security report can be part of the risk management report. |
 | C.1.g.6 | The manufacturer has drawn up the necessary plans for the post-development phase (e.g. post-market surveillance and incident response plan). | 1 | Details below. |
-| C.1.g.7 | The manufacturer has tested the completeness of the tests using a traceability matrix that links the tests to the requirements. | 2 |   |
+| C.1.g.7 | The manufacturer has evaluated the completeness of the tests using a traceability matrix that links the tests to the requirements. | 2 |   |
 
-[^C8-01]: e.g. according to [OWSAP top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) or [CWE/SANS top 25](http://cwe.mitre.org/top25/)
+[^C8-01]: For example, according to [OWSAP top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) or [CWE/SANS top 25](http://cwe.mitre.org/top25/)
 
 ### **2. Requirements for the post-development phases**
 
@@ -337,18 +337,18 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | C.2.b.1 | The manufacturer has created a post-market surveillance plan. | 0 |   |
 | C.2.b.2 | The manufacturer has described which information is collected from the downstream phase.[^D2-01] | 1 |   |
 | C.2.b.3 | The manufacturer has described how and through which channels information is collected from the downstream phase. | 1 |   |
-| C.2.b.4 | The manufacturer has described what information is analyzed and evaluated from the downstream phase. [^D2-02] | 2 | Ask the manufacturer to explain how it recognizes and defines a trend reversal and the threshold values it has set.[^D2-03] |
+| C.2.b.4 | The manufacturer has described what information is analyzed and evaluated from the downstream phase. | 2 | Ask the manufacturer to explain how it recognizes and defines a trend reversal and the threshold values it has set.[^D2-03] |
 | C.2.b.5 | The manufacturer has described the resulting measures.[^D2-04] | 2 | Ask for the connection to the corrective and preventive actions in the process descriptions to be shown. |
-| C.2.b.6 | For each OTS component, the manufacturer has defined at least one source through which it is informed of IT security problems and how often it is monitored[^D2-05] and described the role this analysis performs with which tools. | 2 | These sources should include the websites of the OTS manufacturer and the [NIST Vulnerability Database](https://nvd.nist.gov/). |
+| C.2.b.6 | For each OTS component, the manufacturer has defined at least one source through which it is informed of IT security problems and how often it is monitored[^D2-05] and described the role this analysis performs with which tools. | 2 | These sources should include the websites of the OTS manufacturer and the [NIST National Vulnerability Database](https://nvd.nist.gov/). |
 | C.2.b.7 | The manufacturer has described how it monitors that the technologies and procedures used (e.g. cryptology) are still secure. | 2 |   |
 
-[^D2-01]: Examples: Audit logs, vulnerability databases, customer complaints, hotline calls, observations (e.g. user behavior), government databases (FDA MAUDE, BfArM, SwissMedic, etc.), social media, Google search, laws, standards, etc... All also about similar products or technologies
+[^D2-01]: Examples: Audit logs, vulnerability databases, customer complaints, hotline calls, observations (e.g. user behavior), government databases (e.g. FDA MAUDE, BfArM, SwissMedic, etc.), social media, Google search, laws, standards, etc... All also about similar products or technologies
 
-[^D2-03]: The MDR requires this in the Annex to the Post-Market Surveillance. The manufacturers must determine when (e.g. Incident/Near Incident) the measure (see below) is to be taken.
+[^D2-03]: The MDR requires this in the Annex to the Post-Market Surveillance. The manufacturers must determine when (e.g. Incident/near Incident) the measure (see below) is to be taken.
 
-[^D2-04]: Measures may include: Recalls, government notifications, CAPA, product improvement, process improvement, training (user, internal), customer information, change of accompanying materials, restriction of purpose. The definition must therefore include the definition of who is to be informed (e.g. user, notified body, authority), such as (e.g. Field Safety Note).
+[^D2-04]: Measures may include: Recalls, government notifications, CAPA, product improvement, process improvement, training (user, internal), customer information, change of accompanying materials, restriction of purpose. The definition (e.g. field safety note) must therefore include the definition of who is to be informed (e.g. user, notified body, authority).
 
-[^D2-05]: The frequency would have to be at least annually, for critical components more frequently than monthly. UL 2900-2-1 speaks of update cycles of two weeks.
+[^D2-05]: The frequency would have to be at least annually, for critical components more frequently than monthly. ANSI UL 2900-2-1 speaks of update cycles of two weeks.
 
 #### **c) Incident response plan**
 
@@ -364,7 +364,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | C.2.c.6 | Who informs the customers, how and within what deadlines. | 2 |   |
 | C.2.c.7 | In which cases decommissioning or other product recalls is ordered and how. | 2 |   |
 
-[^D3-01]: The Incident Response Plan may be part of other plans or documents such as the Post-Market Surveillance Plan or vigilance requirements.
+[^D3-01]: The Incident Response Plan may be part of other plans or documents such as the post-market surveillance plan or vigilance requirements.
 
 ## **D) Product requirements**
 
@@ -381,22 +381,22 @@ Manufacturers must check each of the measures described below to see whether the
 #### **a) Authentication**
 
 | **ID** | **Requirement** | **Level** | **Comments** |
-| --- | --- | --- | --- |
+| --- | --- | :-: | --- |
 | D.2.a.1 | The product only allows users to use it if they have authenticated themselves to the product. | 0 | Ask for the associated test cases to be shown. |
-| D.2.a.2 | The product allows the neighboring systems (e.g. other medical devices, IT systems) connected at each data interface to exchange data only if they have been authenticated by the product. | 0 | Ditto The requirement that data may only be transmitted in encrypted form is set out below. |
+| D.2.a.2 | The product allows the neighboring systems (e.g. other medical devices, IT systems) connected at each data interface to exchange data only if they have been authenticated by the product. | 0 | Ditto. The requirement that data may only be transmitted in encrypted form is set out below. |
 | D.2.a.3 | The product allows password authentication only if this has a defined minimum length of which at least one is a non-alphanumeric character and it contains at least one uppercase and one lowercase character. [^C2a-02] | 1 | The choice of the authentication mechanism has been justified by the manufacturer (see above). |
-| D.2.a.4 | The product does not have a default password or requires that a password be changed during the first use. | 0 |   |
+| D.2.a.4 | The product does not have a default password or requires that a password is changed during the first use. | 0 |   |
 | D.2.a.5 | The product blocks users and neighboring systems for m minutes after n attempts, with the manufacturer able to define the n and m values or their lower limits. The manufacturer has analyzed the &quot;safety-related&quot; risks resulting from such a blocking and, if necessary, has implemented measures to minimize these risks.[^C2a-03] | 1 |   |
 | D.2.a.6 | In the event of an unsuccessful login, the product only displays information that does not allow the user to identify the exact cause of the blocking, e.g. incorrect user name or password. | 2 |   |
 | D.2.a.7 | The product terminates user and neighboring system sessions after n minutes of inactivity, with the manufacturer setting the value for n or its upper limit. | 2 |   |
 | D.2.a.8 | The product assigns a role to each user and each neighboring system for authentication. | 1 | Ask for an explanation of which software component(s)/components this functionality will be implemented in and how this is tested. The FDA even requires a hierarchical role strategy |
 | D.2.a.9 | The product allows each role to access only the functions it is authorized for. This applies in particular for product updates/upgrades. | 1 | Ditto. |
 | D.2.a.10 | The product allows authorized users to block other users and neighboring systems. [^C2a-04] | 1 |   |
-| D.2.a.11 | The product allows authorized users to reset the authentication of any required elements (passwords, cryptographic keys, certificates) of other users and neighboring systems. | 1 |   |
+| D.2.a.11 | The product allows authorized users to reset the authentication of any required elements (e.g. passwords, cryptographic keys, certificates) of other users and neighboring systems. | 1 |   |
 | D.2.a.12 | The product allows authorized users to delete other users and neighboring systems. | 1 |   |
 | D.2.a.13 | The product does not allow users to change their own permissions. | 2 |   |
 | D.2.a.14 | The product allows permissions to be canceled (&quot;breaking the glass&quot;), and identifies/documents the person and the reasons. [^C2a-05] | 2 |   |
-| D.2.a.15 | In a client-server architecture, all cybersecurity measures are determined and checked on the server side. | 2 |   |
+| D.2.a.15 | In a client-server architecture, all IT security measures are determined and checked on the server side. | 2 |   |
 | D.2.a.16 | In a client-server architecture, all client inputs are checked on the server side. | 2 |   |
 
 [^C2a-02]: Ideally, passwords that can be guessed through dictionary attacks should also be excluded. The minimum length depends on whether brute force attacks are possible, which is easier with a data interface than with a user interface. There are systems where "non-alphanumeric" characters are not possible. This should be considered when choosing the minimum length.
@@ -410,21 +410,21 @@ Manufacturers must check each of the measures described below to see whether the
 #### **b) Communication and storage**
 
 | **ID** | **Requirement** | **Level** | **Comments** |
-| --- | --- | --- | --- |
-| D.2.b.1 | The product allows users to permanently delete all patient-specific data. The product allows you to restrict permissions to do this (e.g. to roles). | 2 |   |
+| --- | --- | :-: | --- |
+| D.2.b.1 | The product allows users to permanently delete all patient-specific data. The product allows you to restrict permissions to do this (e.g. roles). | 2 |   |
 | D.2.b.2 | The product protects data from accidental deletion. [^C2b-01] | 2 | Manufacturers must check that there is no higher value security objective that prevents this, e.g. the above requirement. |
 | D.2.b.3 | The product only transmits data (or at least security-related data) via its data interfaces in encrypted form. This also applies to storage on external data carrier. | 1 | Ask which encryption is used and how the initial key exchange is done. |
 | D.2.b.4 | The product protects the integrity of the data against unwanted modification, e.g. through cryptographic procedures. | 2 | This applies in particular to security-relevant data, such as those mentioned in [^C2b-01]. |
 | D.2.b.5 | By default, the product rejects all incoming connections (e.g. USB, TCP, Bluetooth). | 1 | FDA requirement. |
-| D.2.b.6 | The product checks all user inputs and all incoming data on the basis of verification criteria defined by the manufacturer (see above) before further processing. [^C2b-02] | | 1 |
+| D.2.b.6 | The product checks all user inputs and all incoming data on the basis of verification criteria defined by the manufacturer (see above) before further processing. [^C2b-02] | 2 |  |
 | D.2.b.7 | The product does not use wireless transmission for the transmission of time-critical data relevant to patient safety. | 2 |   |
 | D.2.b.8 | The product stores passwords as &quot;salted hash&quot; only. | 2 | E.g. ask about the hash procedure and, if necessary, ask for it to be shown. |
 | D.2.b.9 | The product stores characteristics that could be used to identify a person in encrypted form only. | 2 | Ask for an explanation as to what the manufacturer defines as characteristics that could be used to identify a person and which encryption mechanism it uses. |
 | D.2.b.10 | The product protects critical data against accidental change and loss. | 2 |   |
-| D.2.b.11 | Every time the program is restarted, it checks whether the mechanisms used to protect the data against loss and modification are in sync. |   |   |
+| D.2.b.11 | Every time the program is restarted, it checks whether the mechanisms used to protect the data against loss and modification are in sync. | 2 |   |
 | D.2.b.12 | The product allows users to deactivate data interfaces (e.g. USB, remote access). | 2 |   |
 | D.2.b.13 | The product checks the integrity of the program code every time it is restarted. | 2 |   |
-| D.2.b.14 | In the event of that security is compromised, the product provides an emergency mode for functions that have an effect on patient safety. | 2 |   |
+| D.2.b.14 | In the event of that IT security is compromised, the product provides an emergency mode for functions that have an impact on patient safety. | 2 |   |
 
 [^C2b-01]: The protection can also consist of an undo function. If necessary, the period for an undo must be limited. It should be noted that the data protection requirements are met after (final) deletion of the data.
 
@@ -453,11 +453,11 @@ Manufacturers must check each of the measures described below to see whether the
 | D.2.d.4 | The product implements mechanisms that can detect penetration or an attack[^C3d-02] and react to them.[^C3d-03] | 3 |   |
 | D.2.d.5 | The product allows the exchange of certificates. | 2 |   |
 
-[^C3d-01]: e.g. successful and unsuccessful login attempts, calling essential functions (including changing configuration settings), identifying security problems (e.g. self-testing by devices, detection of malware, etc.), installing and removing patches, creating, changing and deleting users, passwords and permissions, adding or removing storage media, connecting or removing neighboring systems
+[^C3d-01]: For example, successful and unsuccessful login attempts, calling essential functions (including changing configuration settings), identifying security problems (e.g. self-testing by devices, detection of malware, etc.), installing and removing patches, creating, changing and deleting users, passwords and permissions, adding or removing storage media, connecting or removing neighboring systems
 
 [^C3d-02]: For example, the system detects a CPU load greater than x%, a data traffic greater than y MB/s, a storage medium that is fuller than z%, more than n logon attempts within m minutes, and so on.
 
-[^C3d-03]: Also formulate very specifically, ideally via a behaviour observable at the interfaces such as "turns off", "disables the data connection", "displays the following warning message" etc.
+[^C3d-03]: Also formulate very specifically, ideally via a behavior observable at the interfaces such as "turns off", "disables the data connection", "displays the following warning message" etc.
 
 ### **3. System/software architecture**
 
@@ -468,7 +468,7 @@ Manufacturers must check each of the measures described below to see whether the
 | D.3.3 | The software is protected against malware (viruses, worms etc.) as far as is technically possible. | 1 | Ask for an explanation of how the system is protected against malware and how this protection is maintained. |
 | D.3.4 | The software is based on versions of the SOUP/OTS components that do not contain any security vulnerabilities. Exceptions are justified. | 1 | Pick an example from the SOUP list and research which version the manufacturer has and check which vulnerabilities have been patched in subsequent versions. |
 
-[^C3-01]: The FDA insists on the [https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards) and the [NIST FIPS 140-2 Suite B](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2851.pdf).
+[^C3-01]: The FDA insists on the [https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards) and the [NIST FIPS 140-2 Suite B](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2851.pdf) 
 
 ### **4. Accompanying materials**
 
@@ -485,7 +485,7 @@ The accompanying materials refer primarily to the instructions for use and insta
 | D.4.7 | The support materials contain the manufacturer&#39;s contact details, which can be used to contact the manufacturer, for example, in the event of problems with IT security.[^D4-04]  |    1 |   |
 | D.4.8 | The support materials also give a technical description of the product. [^D4-05] |    2 | This is an FDA requirement in particular. |
 
-[^13]: Examples: Network / interfaces (bandwidth, availability, ports, IP ranges, latencies, encryption, firewalls etc.), virus protection, operating systems, physical access permissions, other software that may or may not run on the system at the same time (games?, firewall, database, web server). The FDA also requires an indication of the direction of communication in the interfaces.
+[^13]: Examples: Network / interfaces (bandwidth, availability, ports, IP ranges, latencies, encryption, firewalls etc.), virus protection, operating systems, physical access permissions, other software that may or may not run on the system at the same time (e.g. games, firewall, database, web server). The FDA also requires an indication of the direction of communication in the interfaces.
 
 [^14]: Examples: User training (e.g. how to handle passwords), updating virus protection, informing the manufacturer about incidents, installing updates and patches, monitoring, backup (and restore)
 
@@ -527,29 +527,38 @@ Depending on the risk posed by a product, an auditor or test may require a certa
 
 #### **b) Standards and best practice guides**
 
-- AAMI/TIR57
-- EN IEC 60601-1
-- IEC 62443-2-1
-- IEC 62443-4-1
-- IEC 62443-4-2
-- IEC 82304-1
-- IEC 80001-1
-- IEC/TR 80001-2-2
-- IEC/TR 80001-2-8
-- UL 2900-1
-- UL 2900-2-1
-- BSI-CS 132
-- ISO/IEC 29147: Information technology ó Security techniques ó Vulnerability disclosure
+- **AAMI TIR57**, Principles for medical device security – Risk management
+- **ANSI UL 2900-1**, Standard for Safety, Standard for Software Cybersecurity Network-Connectable      Products, Part 1: General Requirements
+- **ANSI UL 2900-2-1**, Standard for Safety, Software Cybersecurity for Network-Connectable Products, Part      2-1: Particular Requirements for Network Connectable Components of Healthcare and Wellness Systems
+- **BSI-CS 132**, [Cyber Security Requirements for Network-Connected Medical Devices](https://www.allianz-fuer-cybersicherheit.de/ACS/DE/_/downloads/BSI-CS_132E.pdf?__blob=publicationFile&v=3)
+- **EN IEC 60601-1/AMD1**, Medical electrical equipment – Part 1: General requirements for basic safety and essential performance
+- **IEC 62304/AMD1**, Medical device software – Software life cycle processes
+- **IEC 62443-2-1**, Industrial communication networks – Network and system security – Part 2-1:      Establishing an industrial automation and control system security program
+- **IEC 62443-4-1**, Security for industrial automation and control systems – Part 4-1: Secure product      development lifecycle requirements
+- **IEC 62443-4-2**[[NHL1\]](#_msocom_1) , Security for industrial automation and control systems – Part 4-2: Technical security requirements for IACS components
+- **IEC 80001-1**, Application of risk management for IT-networks incorporating medical devices – Part 1:      Roles, responsibilities and activities
+- **IEC 82304-1**, Health software – Part 1: General requirements for product safety
+- **IEC/TR 80001-2-2**, Application of risk management for IT-networks incorporating medical devices – Part      2-2: Guidance for the communication of medical device security needs, risks and controls
+- **IEC TR 80001-2-8**, Application of risk management for IT-networks incorporating medical devices – Part      2-8: Application guidance – Guidance on standards for establishing the security capabilities identified in IEC TR 80001-2-2
+- **ISO/IEC 29147**, Information technology – Security techniques – Vulnerability disclosure
+- **ISO/IEC 30111**, Information technology – Security techniques – Vulnerability handling processes
+- **FIPS 140-2**, Non-Proprietary Security Policy, Suite B Cryptographic Module
 - FDA Guidance Documents
-  - &quot;Content of Premarket Submissions for Management of Cybersecurity in Medical Devices&quot;
-  - &quot;Postmarket Management of Cybersecurity in Medical Devices&quot;
-  - &quot;Design Considerations and Premarket Submissions - Recommendations for Interoperable Medical Devices&quot;
-  - &quot;Wireless Medical Telemetry Risks and Recommendations&quot;
-- [BSI Cyber-Sicherheitsanforderungen an netzwerkf‰hige Medizinprodukte [Cyber Security Requirements for Network-Compatible Medical Devices]](https://www.allianz-fuer-cybersicherheit.de/ACS/DE/_/downloads/BSI-CS_132.pdf?__blob=publicationFile&amp;v=6)
+  - “Content of Premarket Submissions for Management of Cybersecurity in Medical Devices”
+  - "Postmarket Management of Cybersecurity in Medical Devices"
+  - "Cybersecurity for Networked Medical Devices Containing Off-the-Shelf (OTS) Software"
+  - "Design Considerations and Premarket Submissions - Recommendations for Interoperable Medical Devices"
+  - “Wireless Medical Telemetry Risks and Recommendations”
 
-#### **b) Specialist literature, text books**
+------
 
-- Eckert: [IT-Sicherheit:](https://www.amazon.de/Sicherheit-Konzepte-Verfahren-Protokolle-Gruyter/dp/3110551586/)[Konzepte - Verfahren - Protokolle (De Gruyter Studium](https://www.amazon.de/Sicherheit-Konzepte-Verfahren-Protokolle-Gruyter/dp/3110551586/)
+
+
+ [[NHL1\]](#_msoanchor_1)Note: this standard is still under vote. It is not published yet.
+
+#### **b) Technical literature and books**
+
+- Claudia Eckert: [IT-Sicherheit:](https://www.amazon.de/Sicherheit-Konzepte-Verfahren-Protokolle-Gruyter/dp/3110551586/)[Konzepte - Verfahren - Protokolle (De Gruyter Studium)](https://www.amazon.de/Sicherheit-Konzepte-Verfahren-Protokolle-Gruyter/dp/3110551586/)
 - Johner Institute: [Video trainings on the IT security of medical devices](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5Cwww.auditgarant.de)
 - Current trends in [Bruce Schneier&#39;s blog](https://www.schneier.com/)
 
@@ -558,11 +567,11 @@ Depending on the risk posed by a product, an auditor or test may require a certa
 1. Manufacturers are developing more and more networked medical devices. As a result, the risks resulting from inadequate IT security (e.g. against cyberattacks) have increased. Customers are not informed about the state of the art during the procurement process and are responsible for the costs of security - before or after IT incidents. The number of IT incidents is increasing as the professionalism of attackers is rapidly increasing. Many manufacturers do not take sufficient account of this.
 2. The EU regulations (MDR, IVDR) explicitly demand IT security. The EU directives demand it indirectly. These requirements can be found in the respective Annex I with the basic (safety and performance) requirements. The IT security risk analysis goes beyond the analysis of intended usage scenarios. IT security should cover scenarios outside the intended use. Therefore, the concept of foreseeable misuse must be analyzed more precisely, because the manufacturer now has to take all technical possibilities of invasion into the networked medical device into account.
 3. In contrast to most other basic requirements, there are no harmonized standards on IT security. Therefore, there is no canonical catalog of requirements that is recognized as reflecting the required state of the art.
-4. The FDA has published several guidance documents as well as standards such as UL 2900-2-1. These specifications are inconsistent in terms of granularity, completeness and conceptual integrity. They only meet the requirements that are usually placed on the quality of a standard to a limited extent.
+4. The FDA has published several guidance documents as well as standards such as ANSI UL 2900-2-1. These specifications are inconsistent in terms of granularity, completeness and conceptual integrity. They only meet the requirements that are usually placed on the quality of a standard to a limited extent.
 5. A lot of standards are subject to charges (despite some questionable quality). In the authors&#39; opinion, manufacturers should have free access to regulatory requirements.
 6. Because most medical device manufacturers do not deal with IT security at all or only deal with it inadequately, they only meet the basic requirements. There is no consensus in Europe with regard to which technical and procedural obligations concern the manufacturer.
-7. For most manufacturers, it would not be feasible in terms of time or in terms of finance to a reach an IT security level in one fell swoop, as required by UL 2900, for example. Therefore, manufacturers should gradually strive for and reach the state-of-the-art level with regard to IT security. The aim of these guidelines is to have the initial improvements implemented quickly rather than to do nothing due to excessive demands.
-8. IT security has to be taken into account in all phases of the product life cycle process. Limiting it to testing is not enough. Together with technical product measures (&quot;controls&quot;) and documentation, the guideline aims to refer to the three pillars of IT security: Requirements, process, documentation. The structure of these guidelines reflects these pillars and will continue to apply even after the foreseeable technological adjustments.
+7. For most manufacturers, it would not be feasible in terms of time or in terms of finance to a reach an IT security level in one fell swoop, as required by ANSI UL 2900 series of Cybersecurity standards, for example. Therefore, manufacturers should gradually strive for and reach the state-of-the-art level with regard to IT security. The aim of these guidelines is to have the initial improvements implemented quickly rather than to do nothing due to excessive demands.
+8. IT security has to be taken into account in all phases of the product life cycle process. Limiting it to testing is not enough. Together with technical product measures (&quot; security controls&quot;) and documentation, the guideline aims to refer to the three pillars of IT security: Requirements, process, documentation. The structure of these guidelines reflects these pillars and will continue to apply even after the foreseeable technological adjustments.
 9. It must be expected that standards will be developed and harmonized for medical device IT security, but this may still take years. Therefore, a guideline is needed in this intermediate phase (only).
 10. These guidelines should be available soon (by November 2018) so they can provide guidance to manufacturers in the short term and allow them to act immediately. The speed of its development makes compromises in terms of cooperation with as many parties as possible unavoidable.
 11. As the guidelines are based on a step-by-step convergence with the state of the art and have also been produced in a very short time, it cannot claim to be exhaustive.
