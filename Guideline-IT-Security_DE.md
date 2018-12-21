@@ -92,8 +92,7 @@ Diesen Leitfaden haben die folgenden Autoren verfasst:
 - Dr. Andreas Purde ([TÜV SÜD](https://www.tuev-sued.de/))
 - Olaf Teichert ([TÜV SÜD](https://www.tuev-sued.de/))
 - Prof. Dr. Christian Johner ([Johner Institut](https://www.johner-institut.de))
-
-Dr. Georg Heidenreich ([Siemens Healthcare GmbH](https://www.healthcare.siemens.com/)) hat als Reviewer wesentlich beigetragen.
+- Dr. Georg Heidenreich ([Siemens Healthcare GmbH](https://www.healthcare.siemens.com/)).
 
 Der Leitfaden ist unter der [Creative Commons Lizenz](https://creativecommons.org/licenses/?lang=de) vom Typ [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) veröffentlicht. Diese erfordert die Namensnennung der Autoren ("TÜV SÜD, Johner Institut sowie Dr. Georg Heidenreich") und erlaubt es Dritten, auf diesem Werk aufzubauen z.B. es zu verbessern; letzteres allerdings nur zu nicht-kommerziellen Zwecken.
 
