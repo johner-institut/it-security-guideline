@@ -258,7 +258,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
 | C.1.d.1 | The manufacturer has created coding guidelines that establish specific requirements for IT security.[^C4-01]| 1 | Ask the manufacturer to show the coding guidelines and corresponding requirements. |
-| C.1.d.2 | The manufacturer only plays code where reverse engineering and RAM readout cannot lead to unacceptable risks.[^C4-02] | 3 |   |
+| C.1.d.2 | The manufacturer only installs code in which reverse engineering and RAM readout cannot lead to unacceptable risks.[^C4-02] | 3 |   |
 | C.1.d.3 | The manufacturer either tests the software (source code and binaries) for malicious code before delivery and/or has protected all computers involved in the development and &quot;production&quot; of the software against malware. | 0 |   |
 | C.1.d.4 | The manufacturer has defined measures that can find and eliminate buffer overflows. | 2 |   |
 
@@ -287,7 +287,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | :-: | --- |
-| C.1.f.1 | The manufacture includes port scans at all relevant network interfaces in the test plan[^C6-01] and also performs them. | 1 |   |
+| C.1.f.1 | The manufacturer includes port scans at all relevant network interfaces in the test plan[^C6-01] and also performs them. | 1 |   |
 | C.1.f.2 | The manufacturer includes penetration tests at all relevant data interfaces and/or for all known vulnerabilities of the OTS components used[^C6-02] in the test plan and also performs them. | 2 | For a known OTS component in the [NIST Common / National Vulnerability Database](https://nvd.nist.gov/), investigate a vulnerability and have the manufacturer explain how it ensures that it cannot be exploited or why it is not relevant. |
 | C.1.f.3 | The manufacturer includes the use of &quot;vulnerability scanners&quot; in the test plan. | 2 |   |
 | C.1.f.4 | The manufacturer includes fuzz tests at all relevant data interfaces with at least one tool in the test plan and also performs them.[^C6-03] | 2 |   |
