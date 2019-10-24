@@ -1,5 +1,7 @@
 # IT Security Guideline
 
+[English README](./README_EN.md)
+
 ## Vorbemerkungen
 
 Der Leitfaden zur IT Security soll Herstellern, Behörden und benannten Stellen dienen, Anforderungen an die IT-Sicherheit gemeinschaftlich zu verstehen und deren Erfüllung zu befördern.
