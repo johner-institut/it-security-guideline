@@ -6,7 +6,7 @@
 
 The objective of this guideline is to provide medical device manufacturers and notified bodies with instructions and a specific checklist in order to:
 
-- Explain what notified bodies expectations are
+- Explain what notified bodies&#39; expectations are
 - Encourage the step-by-step implementation of IT security for medical devices
 - Compensate for the absence of a harmonized standard (until there is one) as well as possible
 
