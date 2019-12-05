@@ -77,7 +77,7 @@ Der Leitfaden enthält zu den meisten Anforderungen "Kommentare". Diese Kommenta
 
 Da der deutsche Begriff "Sicherheit" nicht genau zwischen den bedeutsamen Schutzzielen Gefährdungsfreiheit und Informationssicherheit unterscheidet, wird zur Hervorhebung auch der Begriff Security für Informationssicherheit verwendet. Entsprechend steht der Begriff "Risiko" für die technische Möglichkeit der Reduktion von Gefährdungsfreiheit, währen der Begriff "Bedrohung" für mögliche Angriffe im Bereich Informationssicherheit steht.
 
-Als Ausblick für die weitere Entwicklung des Leitfadens lässt sich ein Trend zur Umsetzung der Normenreihe ISO 2700x feststellen. Dies ist den erkennbaren Versuchen professioneller Angreifer geschuldet, die Malware zukünftig über die IT-Infrastrukur der Hersteller-Organisation, über Kommunikationsmittel, Konfigurationswerkzeuge, Software-Werkzeuge und Bibliotheken in die Medizinprodukte einschleusen werden. Weiter Absicherungsmaßnahmen werden also bereits "früher" im Entwicklungsprozess greifen müssen, womit dann eben Themen der Informationssicherheit im Betrieb in den Vordergrund rücken.
+Als Ausblick für die weitere Entwicklung des Leitfadens lässt sich ein Trend zur Umsetzung der Normenreihe ISO 2700x feststellen. Dies ist den erkennbaren Versuchen professioneller Angreifer geschuldet, die Malware zukünftig über die IT-Infrastruktur der Hersteller-Organisation, über Kommunikationsmittel, Konfigurationswerkzeuge, Software-Werkzeuge und Bibliotheken in die Medizinprodukte einschleusen werden. Weitere Absicherungsmaßnahmen werden also bereits "früher" im Entwicklungsprozess greifen müssen, womit dann eben Themen der Informationssicherheit im Betrieb in den Vordergrund rücken.
 
 #### e) Verbindlichkeit
 
@@ -226,8 +226,8 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-|C.1.b.iv.1|Der Hersteller hat festgelegt, wie das Medizinprodukt die Anwender im Fall einer Kompromittierung der IT Sicherheit informiert|2|z.B. wie bei einem Virenschutzprogramm, das vor verdächtigen Dateien warnt|
-|C.1.b.iv.2|Der Hersteller hat abgeschätzt, welche Funtionalität das Medizinprodukt auch im Falle einer Komprimittierung der IT Sicherheit gewähren muss.|2||
+|C.1.b.iv.1|Der Hersteller hat festgelegt, wie das Medizinprodukt die Anwender im Fall einer Kompromittierung der IT-Sicherheit informiert|2|z.B. wie bei einem Virenschutzprogramm, das vor verdächtigen Dateien warnt|
+|C.1.b.iv.2|Der Hersteller hat abgeschätzt, welche Funktionalität das Medizinprodukt auch im Falle einer Kompromittierung der IT-Sicherheit gewähren muss.|2||
 
 #### c) System- und Software-Architektur
 
@@ -290,7 +290,7 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 |:--:|:--|:--:|:--|
 |C.1.f.1|Der Hersteller sieht im Testplan [^C6-01] Portscans an allen relevanten Netzwerkschnittstellen vor und führt diese auch durch.|1||
 |C.1.f.2|Der Hersteller sieht im Testplan Penetrationstests an allen relevanten Datenschnittstellen und/oder für alle bekannten Schwachstellen der eingesetzten OTS-Komponenten [^C6-02] vor und führt diese auch durch.|2|für eine bekannte OTS-Komponente in der [NIST Common / National Vulnerability Database](https://nvd.nist.gov/)  eine Schwachstelle recherchieren und vom Hersteller erklären lassen, wie er sicherstellt, dass diese nicht ausgenutzt werden kann, bzw. weshalb diese nicht relevant ist|
-|C.1.f.3|Der Hersteller sieht im Testplan den Einsatz eines "Vulerability Scanners" vor.|2||
+|C.1.f.3|Der Hersteller sieht im Testplan den Einsatz eines "Vulnerability Scanners" vor.|2||
 |C.1.f.4|Der Hersteller sieht im Testplan Fuzz-Tests an allen relevanten Datenschnittstellen mit mindestens einem Werkzeug vor und führt diese auch durch [^C6-03]|2||
 |C.1.f.5|Der Hersteller sieht im Testplan eine Überprüfung der Sicherheit gegen die üblichen Angriffsvektoren vor.[^C6-04]|2||
 |C.1.f.6|Der Hersteller sieht im Testplan die Überprüfung vor, die Robustheit und Leistungsfähigkeit zu prüfen.|2||
@@ -300,11 +300,11 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 
 [^C6-01]: Dieser Plan kann Teil des Entwicklungsplans, eines V&V-Plans oder eines anderen Plans sein.
 
-[^C6-02]: Die Schwachstellen sind z.B. in der [NIST National Vulnerability Database](https://nvd.nist.gov/) (NVD) hinterlegt. Üblicherweise setzt man Scanner wie Nessus oder OpenVAS ein. Die Anforderung lautet nicht, dass beim Penetrationstest notwendigerweise alle bekannten Schwachstellen getestet werden. Die FDA fordert diese Cross Reference zwischen den "CBOMs" und der NVD expliit ein.
+[^C6-02]: Die Schwachstellen sind z.B. in der [NIST National Vulnerability Database](https://nvd.nist.gov/) (NVD) hinterlegt. Üblicherweise setzt man Scanner wie Nessus oder OpenVAS ein. Die Anforderung lautet nicht, dass beim Penetrationstest notwendigerweise alle bekannten Schwachstellen getestet werden. Die FDA fordert diese Cross Reference zwischen den "CBOMs" und der NVD explizit ein.
 
 [^C6-03]: Im Fokus beim Fuzz-Testing sollte der eigene Code stehen und weniger die OTS-Software. Der Einsatz mehrerer Scanner führt meist zu einem größeren Bereich von Input-Werten. 
 
-[^C6-04]: z.B. DoS, SQL-Injection, Cross-Site-Scripting, Directory Transversal, Buffer-Overflow, syntaktisch oder semantisch fehlerhafte Anfragen,
+[^C6-04]: z.B. DoS, SQL-Injection, Cross-Site-Scripting, Directory Transversal, Buffer-Overflow, syntaktisch oder semantisch fehlerhafte Anfragen.
 
 #### g) Produktfreigabe
 
@@ -357,7 +357,7 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-|C.2.c.1|Der Hersteller hat einen Incident Reponse Plan erstellt [^D3-01] |2||
+|C.2.c.1|Der Hersteller hat einen Incident Response Plan erstellt [^D3-01] |2||
 |C.2.c.2|Der Incident Response Plan regelt, nach welchen Kriterien der Hersteller Informationen aus dem Markt bewertet und wann er den Notfallplan in Kraft setzt ...|2||
 |C.2.c.3|wer wie innerhalb welcher Fristen die Patches entwickelt und freigibt,|2||
 |C.2.c.4|wie der Kunde die Patches bezieht,|2||
@@ -400,7 +400,7 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 | D.2.a.15 | In einer Client-Server Architektur werden alle Maßnahmen zur IT-Sicherheit serverseitig berechnet und geprüft |   2   |                                                              |
 | D.2.a.16 | In einer Client-Server Architektur werden alle Eingaben des Clients serverseitig geprüft |   2   |                                                              |
 
-[^C2a-02]: Idealerweise müssten auch Passwörter ausgeschlossen werden, die über Wörterbuch-Angriffe erraten werden können. Die Mindestlänge hängt davon ab, ob Brute-Force-Angriffe möglich sind, was bei einer Datenschnittstelle einfacher ist als abei einer Benutzerschnittstelle. Es gibt Systeme, bei denen "nicht-alphanumerische" Zeichen nicht möglich sind. Das sollte bei der Wahl der Mindestlänge betrachtet werden.
+[^C2a-02]: Idealerweise müssten auch Passwörter ausgeschlossen werden, die über Wörterbuch-Angriffe erraten werden können. Die Mindestlänge hängt davon ab, ob Brute-Force-Angriffe möglich sind, was bei einer Datenschnittstelle einfacher ist als bei einer Benutzerschnittstelle. Es gibt Systeme, bei denen "nicht-alphanumerische" Zeichen nicht möglich sind. Das sollte bei der Wahl der Mindestlänge betrachtet werden.
 
 [^C2a-03]: Beispielsweise implementiert der Hersteller ein "Breaking the glass", d.h. eine Möglichkeit, das Berechtigungskonzept zu umgehen, um zeitnah auf wichtige Daten zugreifen zu können. Dieses Umgehen muss protokolliert und später gerechtfertigt werden.
 
@@ -436,8 +436,8 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 | :-----: | :----------------------------------------------------------- | :---: | :----------------------------------------------------------- |
 | D.2.c.1 | Das Produkt erlaubt es, Patches (eigener Code, SOUP-/OTS-Komponenten) aufzuspielen. |   1   | Hersteller sollte Ausnahmen begründen können, ebenso, ob das Patchen remote erfolgen darf oder muss. |
 | D.2.c.2 | Das Produkt erlaubt es, fehlerhafte Patches wieder zu entfernen ("roll-back)". |   2   |                                                              |
-| D.2.c.3 | Das Produkt beschränkt die Möglichkeit, Patches aufzuspielen oder zu entfernen auf die berechtigten (authentifizieren und autorisierten) Benutzer.[^C3c-01] |   2   |                                                              |
-| D.2.c.4 | Das Produkt prüft geänderten Programm-Code (Patches) vor der ersten Verwendung sowie beim Neustart auf Integrität. [^C2c-02] |   2   | Diese Prüfungen erfolgen üblicherweise über Signaturen, die selbst vor Fälschung gesichert sein müssen |
+| D.2.c.3 | Das Produkt beschränkt die Möglichkeit, Patches aufzuspielen oder zu entfernen auf die berechtigten (authentifizierten und autorisierten) Benutzer.[^C3c-01] |   2   |                                                              |
+| D.2.c.4 | Das Produkt prüft geänderten Programm-Code (Patches) vor der ersten Verwendung sowie beim Neustart auf Integrität. [^C2c-02] |   2   | Diese Prüfungen erfolgen üblicherweise über Signaturen, die selbst vor Fälschung gesichert sein müssen. |
 
 [^C2c-01]: Diese Prüfung erfolgt üblicherweise auf einem rollenbasierten Berechtigungskonzept sowie einer Authentifizierung der Nutzer.
 
@@ -448,14 +448,14 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 |   ID    | Anforderung                                                  | Stufe | Kommentare                                                   |
 | :-----: | :----------------------------------------------------------- | :---: | :----------------------------------------------------------- |
 | D.2.d.1 | Das Produkt protokolliert alle wesentlichen Aktionen [^C3d-01] am/im System in einem Audit-Log, inklusive Tag und Uhrzeit und Akteur (Nutzer, System) |   2   |                                                              |
-| D.2.d.2 | Das Produkt stellt sicher, das es die korrekte Systemzeit hat |   3   | sich den Mechanismus erklären lassen. Auch wie sichergestellt ist, dass Nutzer die Uhrzeit nicht ungewollt und unbemerkt ändern können |
+| D.2.d.2 | Das Produkt stellt sicher, dass es die korrekte Systemzeit hat |   3   | sich den Mechanismus erklären lassen. Auch wie sichergestellt ist, dass Nutzer die Uhrzeit nicht ungewollt und unbemerkt ändern können |
 | D.2.d.3 | Das Produkt schützt das Audit-Log vor Veränderung            |   2   | sich vom Hersteller erklären lassen, wie der Schutz gewährleistet wird und wie eine Änderung des Audit-Logs vom System identifiziert wird. Ggf. sogar verantwortliche Software-Komponente zeigen lassen |
 | D.2.d.4 | Das Produkt implementiert Mechanismen, mit denen ein Einbruch oder Angriff [^C3d-02] erkannt und darauf reagiert[^C3d-03] werden kann |   3   |                                                              |
 | D.2.d.5 | Das Produkt erlaubt den Austausch von Zertifikaten           |   2   |                                                              |
 
 [^C3d-01]: z.B. erfolgreiche und nicht erfolgreiche Anmeldeversuche, Aufruf wesentlicher Funktionen (inklusive Ändern von Konfigurationseinstellungen), Identifikation von Sicherheitsproblemen (z.B. durch Geräte eigenständig durchgeführte Selbsttests, Detektion von Malware, etc.), Aufspielen und Entfernen von Patches, Anlegen, Ändern und Löschen von Benutzern, Passwörtern und Berechtigungen, Hinzufügen oder Entfernen von Speichermedien, Anschluss oder Entfernen von Nachbarsystemen
 
-[^C3d-02]: Nicht so allgemein formulieren, sondern konkrete Systemanforderung spezifizieren z.B. System erkennt eine CPU-Auslastung größer x%, eine Datenverkehr größer y MB/s, ein Speichermedium, dass voller ist als z%, mehr als n Einlog-Versuche innerhalb m Minuten usw.
+[^C3d-02]: Nicht so allgemein formulieren, sondern konkrete Systemanforderung spezifizieren z.B. System erkennt eine CPU-Auslastung größer x%, einen Datenverkehr größer y MB/s, ein Speichermedium, dass voller ist als z%, mehr als n Einlog-Versuche innerhalb m Minuten usw.
 
 [^C3d-03]: Ebenfalls sehr spezifisch formulieren, idealerweise über ein an den Schnittstellen beobachtbares Verhalten wie "schaltet sich aus", "deaktiviert die Datenverbindung", "zeigt folgende Warnmeldung an" usw.
 
@@ -483,7 +483,7 @@ Die Begleitmaterialien beziehen sich v.a. auf die Gebrauchs- und Installationsan
 | D.4.5 | Die Begleitmaterialien beschreiben, wie die Anwender erkennen können, dass das Produkt ein Problem mit der IT-Sicherheit hat, und wie sie sich in diesem Fall verhalten sollen. |   2   | Dies bedingt, dass das Produkt diese Detektion implementiert |
 | D.4.6 | Die Begleitmaterialien beschreiben, welche Anti-Malware-Software für das Produkt zugelassen und von wo (z.B. Link) diese zu beziehen ist und wer für deren Aktualisierung verantwortlich ist. |   2   | nur soweit anwendbar                                         |
 | D.4.7 | Die Begleitmaterialien enthalten die Kontaktdaten des Herstellers, über die dieser z.B. bei Problemen mit der IT-Sicherheit zu erreichen ist. [^D4-04] |   1   |                                                              |
-| D.4.8 | Die Begleitmaterialien beschreiben das Produkt auch technisch [^D4-05] |   2   | Das ist insbesondre eine FDA Anforderung                     |
+| D.4.8 | Die Begleitmaterialien beschreiben das Produkt auch technisch [^D4-05] |   2   | Das ist insbesondere eine FDA Anforderung                     |
 
 [^13]: Beispiele: Netzwerk / Schnittstellen (Bandbreite, Verfügbarkeit, Ports, IP-Ranges, Latenzen, Verschlüsselung, Firewalls usw.), Virenschutz, Betriebssysteme, physische Zugriffsberechtigungen, andere Software, die zeitgleich auf dem System laufen darf oder eben nicht (Spiele?, Firewall, Datenbank, Webserver). Die FDA verlangt bei den Schnittstellen auch eine Angabe über die Richtung der Kommunikation.
 
@@ -491,7 +491,7 @@ Die Begleitmaterialien beziehen sich v.a. auf die Gebrauchs- und Installationsan
 
 [^15]: Beispiele: Installation, Anschluss an Netzwerk, Auswerten der Audit-Logs, Löschen nicht benötigter Benutzer, Austausch von Schlüsseln oder Zertifikaten, Löschen von temporären Dateien
 [^D4-04]: Ggf. muss der Hersteller auch angeben, für welchen Zeitraum er beabsichtigt, den Support anzubieten.
-[^D4-05]: Netzwerk-, Architektur, Fluss- und Zustanddiagramme. Schnittstellen, Komponenten, Kommunikationspfade, Authentifizierungsmechanismen für jede kommunizierende "Komponente" wie Webseiten, Server, Cloud-Speicher und Interoperable Systeme. "Design Features", die validierte Software-Updates und Patches gestatten. Liste aller Komponenten wie 3rd Party Software (s. CBOM der FDA)
+[^D4-05]: Netzwerk-, Architektur, Fluss- und Zustandsdiagramme. Schnittstellen, Komponenten, Kommunikationspfade, Authentifizierungsmechanismen für jede kommunizierende "Komponente" wie Webseiten, Server, Cloud-Speicher und Interoperable Systeme. "Design Features", die validierte Software-Updates und Patches gestatten. Liste aller Komponenten wie 3rd Party Software (s. CBOM der FDA)
 
 ## E) Anhänge
 
@@ -510,7 +510,7 @@ Die Priorisierung mündet in den folgenden Reifegradstufen
 - **Stufe 2 ("State-of-the-art")**: Das ist das Niveau, das Hersteller auf Dauer in der Regel erreichen müssen. Es entspricht aber noch nicht dem Stand der Wissenschaft.
 - **Stufe 3 ("Experten-Niveau")**: Dieses Niveau erreichen hauptberufliche IT-Security-Experten. Es geht über das hinaus, was ein Auditor in der Regel bei Medizinprodukten erwarten darf. Energieversorger, Geheimdienste und das Militär müssten auf diesem Niveau agieren.
 
-Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfe bereits von Beginn an eine bestimmte Stufe voraussetzen[^E2-01].
+Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfer bereits von Beginn an eine bestimmte Stufe voraussetzen[^E2-01].
 
 [^E2-01]: Die Sicherheit der Patienten hat Vorrang, auch wenn dieser Ansatz dem Grundgedanken dieses Leitfadens widerspricht, besser Schritt für Schritt die IT-Sicherheit zu erhöhen, als gar nicht ins Handeln zu kommen.
 
@@ -574,7 +574,7 @@ Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfe bereits von Beg
 10. Dieser Leitfaden sollte sehr zeitnah (bis November 2018) zur Verfügung, um rasch den Herstellern als Orientierung zu dienen und es ihnen zu ermöglichen, sofort zu handeln. Die hohe Geschwindigkeit seiner Entwicklung macht Kompromisse bezüglich der Abstimmung mit möglichst vielen Parteien unumgänglich.
 11. Da der Leitfaden von einer stufenweisen Annäherung auf den Stand der Technik ausgeht und zudem in sehr kurzer Zeit entstanden ist, kann er keinen Anspruch auf Vollständigkeit erheben.
 12. Der Leitfaden soll dennoch ein weitgehend allgemein akzeptiertes Niveau an Anforderungen repräsentieren. Die Auswahl und Priorität dessen Anforderungen müssen daher möglichst transparent nachvollziehbar sein.
-13. Ein solcher Leitfaden muss die Spezifika von Medizinprodukten berücksichtigen, wozu die Prinzipen der Patientensicherheit (Safety) und eines risikobasierten Ansatzes zählen. Im konkreten Fall können ausgewählte Maßnahmen der Informationssicherheit ("Controls") nämlich den grundlegenden Anforderungen entgegenstehen. Aus diesem Grund kann es für Medizingeräte keine feste Liste von "Controls" geben. Maßgeblich ist jeweils die vom Hersteller festgelegte Zweckbestimmung des Produkts.
+13. Ein solcher Leitfaden muss die Spezifika von Medizinprodukten berücksichtigen, wozu die Prinzipien der Patientensicherheit (Safety) und eines risikobasierten Ansatzes zählen. Im konkreten Fall können ausgewählte Maßnahmen der Informationssicherheit ("Controls") nämlich den grundlegenden Anforderungen entgegenstehen. Aus diesem Grund kann es für Medizingeräte keine feste Liste von "Controls" geben. Maßgeblich ist jeweils die vom Hersteller festgelegte Zweckbestimmung des Produkts.
 14. Die einfache Verständlichkeit und Umsetzbarkeit ist entscheidend für den erhofften positiven Einfluss eines Leitfadens auf die IT-Sicherheit. Daher stellt er möglichst keine abstrakten oder "high level" Anforderungen, sondern nennt "binär entscheidbare" Prüfkriterien. 
 15. Um die Umsetzbarkeit zu erhöhen, vermeiden die Autoren auch, möglichst viele Anforderungen zusammenzutragen. Vielmehr beschränken sie sich auf diejenigen, die sie für besonders relevant und umsetzbar halten.
 16. Auch um die Verteilung und den Bekanntheitsgrad zu fördern, soll der Leitfaden kostenfrei verfügbar sein und bleiben. 
