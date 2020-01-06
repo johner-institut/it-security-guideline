@@ -226,8 +226,8 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-|C.1.b.iv.1|Der Hersteller hat festgelegt, wie das Medizinprodukt die Anwender im Fall einer Kompromittierung der IT-Sicherheit informiert|2|z.B. wie bei einem Virenschutzprogramm, das vor verdächtigen Dateien warnt|
-|C.1.b.iv.2|Der Hersteller hat abgeschätzt, welche Funktionalität das Medizinprodukt auch im Falle einer Kompromittierung der IT-Sicherheit gewähren muss.|2||
+|C.1.b.iv.1|Der Hersteller hat festgelegt, wie das Medizinprodukt die Anwender im Fall einer Kompromittierung der IT Sicherheit informiert|2|z.B. wie bei einem Virenschutzprogramm, das vor verdächtigen Dateien warnt|
+|C.1.b.iv.2|Der Hersteller hat abgeschätzt, welche Funktionalität das Medizinprodukt auch im Falle einer Komprimittierung der IT Sicherheit gewähren muss.|2||
 
 #### c) System- und Software-Architektur
 
