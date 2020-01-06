@@ -14,7 +14,7 @@ Unlike a lot of other guidelines on IT security, this guideline only relates to 
 
 This guideline are **not** intended to act as a textbook or guidelines for implementing IT security. Instead, they are intended as a guide for reviewing IT security.
 
-The annex details the considerations that led to the creation of this guideline.
+The annex details gives the considerations that led to the creation of this guideline.
 
 ### **2. Scope of application**
 
@@ -93,7 +93,7 @@ These guidelines were prepared by the following authors:
 
 Dr. Georg Heidenreich ([Siemens Healthcare GmbH](https://www.healthcare.siemens.com/)) has made a significant contribution as a reviewer.
 
-These guidelines are published under a [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)[Creative Commons license](https://creativecommons.org/licenses/?lang=de). This requires the naming of the authors (&quot;TÜV SÜD, Johner Institute and Dr. Georg Heidenreich&quot;) and allows third parties to build on this work, e.g. to improve, but only for non-commercial purposes.
+These guidelines are published under a [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) [Creative Commons license](https://creativecommons.org/licenses/?lang=en). This requires the naming of the authors (&quot;TÜV SÜD, Johner Institute and Dr. Georg Heidenreich&quot;) and allows third parties to build on this work, e.g. to improve, but only for non-commercial purposes.
 
 The license permits commercial use of the product for consulting purposes, including audits. However, it prohibits the commercial use of this work itself, either unchanged or amended, e.g. as brochure for sales purposes.
 
