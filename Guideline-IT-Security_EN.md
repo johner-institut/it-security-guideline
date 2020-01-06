@@ -175,7 +175,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
-| C.1.b.i.1 | The manufacturer has identified all data interfaces. | 0 | Ask for the list of data interfaces (wired, WLAN, USB, etc.). |
+| C.1.b.i.1 | The manufacturer has identified and documented all data interfaces. | 0 | Ask for the list of data interfaces (wired, WLAN, USB, etc.). |
 | C.1.b.i.2 | The manufacturer has specified the protocols and standards used for each data interface.[^C1bi-01] | 1 |   |
 | C.1.b.i.3 | For each data interface, the manufacturer has specified the functions offered via the interface. | 0 | Ask for the list of functions. |
 | C.1.b.i.4 | The manufacturer has analyzed each function&#39;s security relevance (in terms of hazards). | 0 |   |
@@ -212,7 +212,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 
 [^C1bii-03]: If possible and useful, lists of permitted values (white listing) are recommended.
 
-##### **iii) Patches**
+##### iii) Patches and Vulnerability Management
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
@@ -270,7 +270,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | --- | --- |
 | C.1.e.1 | The manufacturer has defined at least one method that is used to check compliance with the coding guidelines. | 1 | The manufacturer will achieve this if it uses tools for static code analysis and/or establishes evaluation criteria for the code reviews. |
-| C.1.e.2 | The manufacturer requires code reviews for all components that map (IT) security-relevant functions. | 1 |   |
+| C.1.e.2 | The manufacturer requires code reviews for all components that map safety-relevant functions. | 1 |   |
 | C.1.e.3 | The manufacturer has concrete evaluation criteria[^C1e-01] in its guidelines / instructions for code reviews. | 2 |   |
 | C.1.e.4 | The code reviews are performed according to the four-eye principle and only by people who have the necessary expertise. The manufacturer has documented this expertise.[^C1e-02] |    2 |   |
 | C.1.e.5 | The manufacturer has established which tests (e.g. unit tests) are necessary with which test cases[^C1e-03] and which degrees of coverage are necessary. | 1 |   |
@@ -364,6 +364,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | C.2.c.5 | How the manufacturer ensures that the patches are also installed. | 2 |   |
 | C.2.c.6 | Who informs the customers, how and within what deadlines. | 2 |   |
 | C.2.c.7 | In which cases decommissioning or other product recalls is ordered and how. | 2 |   |
+|C.2.c.8|Der Hersteller has created a plan how to develop and distribute patches and how to verify the effective distribution|2||
 
 [^C2c-01]: The Incident Response Plan may be part of other plans or documents such as the post-market surveillance plan or vigilance requirements.
 
@@ -383,7 +384,7 @@ Manufacturers must check each of the measures described below to see whether the
 
 | **ID** | **Requirement** | **Level** | **Comments** |
 | --- | --- | :-: | --- |
-| D.2.a.1 | The product only allows users to use it if they have authenticated themselves to the product. | 0 | Ask for the associated test cases to be shown. |
+| D.2.a.1 | The product only allows users to use it if they have authenticated themselves to the product. | 0 | Ask for the associated test cases to be shown. There may be products where an authentification is not necessary e.g. when using remote controls|
 | D.2.a.2 | The product allows the neighboring systems (e.g. other medical devices, IT systems) connected at each data interface to exchange data only if they have been authenticated by the product. | 0 | Ditto. The requirement that data may only be transmitted in encrypted form is set out below. |
 | D.2.a.3 | The product allows password authentication only if this has a defined minimum length of which at least one is a non-alphanumeric character and it contains at least one uppercase and one lowercase character. [^D2a-01] | 1 | The choice of the authentication mechanism has been justified by the manufacturer (see above). |
 | D.2.a.4 | The product does not have a default password or requires that a password is changed during the first use. | 0 |   |
@@ -393,7 +394,7 @@ Manufacturers must check each of the measures described below to see whether the
 | D.2.a.8 | On authentication the product assigns a role to each user and each neighboring system. | 1 | Ask for an explanation of which software component(s) this functionality will be implemented in and how this is tested. The FDA even requires a hierarchical role concept. |
 | D.2.a.9 | The product allows each role to access only the functions it is authorized for. This applies in particular for product updates/upgrades. | 1 | Ditto. |
 | D.2.a.10 | The product allows authorized users to block other users and neighboring systems. [^D2a-03] | 1 |   |
-| D.2.a.11 | The product allows authorized users to reset the authentication of any required elements (e.g. passwords, cryptographic keys, certificates) of other users and neighboring systems. | 1 |   |
+| D.2.a.11 | The product allows authorized users to reset the authentication of any required elements (e.g. passwords, cryptographic keys, certificates) of other users and neighboring systems. | 1 | These users typically are referred to as administrators |
 | D.2.a.12 | The product allows authorized users to delete other users and neighboring systems. | 1 |   |
 | D.2.a.13 | The product does not allow users to change their own permissions. | 2 |   |
 | D.2.a.14 | The product allows permissions to be canceled (&quot;breaking the glass&quot;), and identifies/documents the person and the reasons. [^D2a-04] | 2 |   |
@@ -414,7 +415,7 @@ Manufacturers must check each of the measures described below to see whether the
 | --- | --- | :-: | --- |
 | D.2.b.1 | The product allows users to permanently delete all patient-specific data. The product allows you to restrict permissions to do this (e.g. roles). | 2 |   |
 | D.2.b.2 | The product protects data from accidental deletion. [^D2b-01] | 2 | Manufacturers must check that there is no higher value security objective that prevents this, e.g. the above requirement. |
-| D.2.b.3 | The product only transmits data (or at least security-related data) via its data interfaces in encrypted form. This also applies to storage on external data carrier. | 1 | Ask which encryption is used and how the initial key exchange is done. |
+| D.2.b.3 | The product only transmits data (or at least security-related data) via its data interfaces in encrypted form. This also applies to storage on external data carrier. | 1 | Ask which encryption is used, why this is considered to be state-of-the-art and how the initial key exchange is done. |
 | D.2.b.4 | The product protects the integrity of the data against unwanted modification, e.g. through cryptographic procedures. | 2 | This applies in particular to security-relevant data, such as those mentioned in [^C1bii-01]. |
 | D.2.b.5 | By default, the product rejects all incoming connections (e.g. USB, TCP, Bluetooth). | 1 | FDA requirement. |
 | D.2.b.6 | The product checks all user inputs and all incoming data on the basis of verification criteria defined by the manufacturer (see above) before further processing. [^D2b-02] | 2 |  |
@@ -467,7 +468,7 @@ Manufacturers must check each of the measures described below to see whether the
 | D.3.1 | The software only uses tried and tested libraries/components (no self-implementation) for all cryptographic functions (e.g. encryption, signing). [^D3-01] | 1 | The library must be included in the list of SOUP/OTS components. Ask the manufacturer to explain the selection (criteria) to you. |
 | D.3.2 | The software uses different technologies or keys for different functions (e.g. encryption of communication, encryption of data). | 3 |   |
 | D.3.3 | The software is protected against malware (viruses, worms etc.) as far as is technically possible. | 1 | Ask for an explanation of how the system is protected against malware and how this protection is maintained. |
-| D.3.4 | The software is based on versions of the SOUP/OTS components that do not contain any security vulnerabilities. Exceptions are justified. | 1 | Pick an example from the SOUP list and research which version the manufacturer has and check which vulnerabilities have been patched in subsequent versions. |
+| D.3.4 | The software is based on versions of the SOUP/OTS components that do not contain any known security vulnerabilities. Exceptions are justified. | 1 | Pick an example from the SOUP list and research which version the manufacturer has and check which vulnerabilities have been patched in subsequent versions. |
 
 [^D3-01]: The FDA insists on the [https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards) and the [NIST FIPS 140-2 Suite B](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2851.pdf) 
 

@@ -177,7 +177,7 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
-|C.1.b.i.1|Der Hersteller hat alle Datenschnittstellen identifiziert|0|Liste der Datenschnittstellen zeigen lassen (drahtgebunden, WLAN, USB usw.)|
+|C.1.b.i.1|Der Hersteller hat alle Datenschnittstellen identifiziert und dokumentiert|0|Liste der Datenschnittstellen zeigen lassen (drahtgebunden, WLAN, USB usw.)|
 |C.1.b.i.2|Der Hersteller hat für jede Datenschnittstelle die verwendeten Protokolle und Standards spezifiziert[^C1bi-01]|1||
 |C.1.b.i.3|Der Hersteller hat für jede Datenschnittstellen die Funktionen spezifiziert, die über die jeweilige Schnittstelle angeboten werden|0|Liste der Funktionen zeigen lassen|
 |C.1.b.i.4|Der Hersteller hat die Sicherheitsrelevanz (im Sinne von Gefährdung) aller Funktionen analysiert.|0||
@@ -214,7 +214,7 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 
 [^C1bii-03]: Falls möglich und sinnvoll empfehlen sich Listen erlaubter Werte (White-Listing)
 
-##### iii) Patches
+##### iii) Patches / Schwachstellenmanagement
 
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
@@ -272,7 +272,7 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
 |C.1.e.1|Der Hersteller hat mindestens eine Methode festgelegt, mit der die Einhaltung der Coding-Guidelines überprüft wird.|1|das wird dem Hersteller gelingen, wenn er Werkzeuge zur statischen Code-Analyse einsetzt und/oder Vorgaben für die Code-Reviews macht.|
-|C.1.e.2|Der Hersteller verlangt Code-Reviews für alle Komponenten, die (IT-)sicherheitsrelevanten Funktionen abbilden.|1||
+|C.1.e.2|Der Hersteller verlangt Code-Reviews für alle Komponenten, die (IT-)sicherheitsrelevanten Funktionen abbilden.|1|"Sicherheit" ist hier im Sinne von "Safety" zu verstehen|
 |C.1.e.3|Der Hersteller hat konkrete Prüfkriterien[^C1e-01] in seinen Vorgabedokumenten für die Code-Reviews.|2||
 |C.1.e.4|Die Code-Reviews werden nach dem Vier-Augen-Prinzip und nur von Personen durchgeführt, die über die notwendige Kompetenz verfügen. Der Hersteller hat diese Kompetenz dokumentiert[^C1e-02].|2||
 |C.1.e.5|Der Hersteller hat festgelegt, welche Tests (z.B. Unit-Tests) mit welchen Testfällen[^C1e-03] und welchem zu erreichenden Abdeckungsgraden notwendig sind.|1||
@@ -366,6 +366,7 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 |C.2.c.5|wie der Hersteller sicherstellt, dass die Patches auch installiert werden,|2||
 |C.2.c.6|wer die Kunden in welcher Form und Frist informiert,|2||
 |C.2.c.7|in welchen Fällen eine Stilllegung oder ein sonstiger Rückruf des Produkts wie angeordnet wird.|2||
+|C.2.c.8|Der Hersteller hat einen Plan erstellt, wie er reguläre Patches entwickelt, verteilt und die Verteilung überprüft|2||
 
 [^C2c-01]: Der Incident Response Plan kann Teil anderer Pläne oder Dokumente sein z.B. des Post-Market Surveillance Plans  oder der Vorgaben zur Vigilanz.
 
@@ -385,7 +386,7 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 
 |    ID    | Anforderung                                                  | Stufe | Kommentare                                                   |
 | :------: | :----------------------------------------------------------- | :---: | :----------------------------------------------------------- |
-| D.2.a.1  | Das Produkt erlaubt den Benutzern nur dann seine Nutzung, wenn sie sich am Produkt authentifiziert haben |   0   | Zugehörige Testfälle zeigen lassen                           |
+| D.2.a.1  | Das Produkt erlaubt den Benutzern nur dann seine Nutzung, wenn sie sich am Produkt authentifiziert haben |   0   | Zugehörige Testfälle zeigen lassen. Es kann Produkte geben, bei denen diese Authentifizierung nicht notwendig ist z.B. beim Verwenden von Fernbedienungen |
 | D.2.a.2  | Das Produkt erlaubt an jeder Datenschnittstelle den daran angeschlossenen Nachbarsystemen (z.B. andere Medizinprodukte, IT-Systeme), nur dann mit ihm Daten auszutauschen, wenn diese vom Produkt authentifiziert wurden |   0   | dto. Die Forderung, dass die Daten nur verschlüsselt übertragen werden dürfen, findet sich weiter unten. |
 | D.2.a.3  | Das Produkt erlaubt eine Authentifizierung mit Passwort nur, wenn dieses Passwort eine definierte eine Mindestlänge hat von denen mindestens eines ein nicht alphanumerisches Zeichen ist und das mindestens einen Groß- und einen Kleinbuchstaben enthält [^D2a-01] |   1   | Die Wahl des Mechanismus zur Authentifizierung hat der Hersteller begründet siehe oben. |
 | D.2.a.4  | Das Produkt hat kein Default-Passwort oder verlangt, dass ein solches bei der ersten Nutzung geändert wird |   0   |                                                              |
@@ -394,7 +395,7 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 | D.2.a.7  | Das Produkt beendet Bediensitzungen für Benutzer und Nachbarsysteme nach n Minuten Inaktivität, wobei der Hersteller für n den Wert oder dessen Obergrenze festlegt. |   2   |                                                              |
 | D.2.a.8  | Das Produkt weist jedem Benutzer und jedem Nachbarsystem bei der Authentifizierung eine Rolle zu |   1   | Erklären lassen, in welcher/welchen Software-Komponente(n) Komponenten diese Funktionalität implementiert und wie dies geprüft ist. Die FDA fordert sogar ein hierarchisches Rollenkonzept. |
 | D.2.a.9  | Das Produkt erlaubt jeder Rolle den Zugriff auf nur die Funktionen, für die die sie berechtigt ist. Dies gilt insbesondere auch für das Update/Upgrade des Produkts |   1   | dto.                                                         |
-| D.2.a.10 | Das Produkt erlaubt berechtigten Benutzern, andere Benutzer und Nachbarsysteme zu sperren [^D2a-03] |   1   |                                                              |
+| D.2.a.10 | Das Produkt erlaubt berechtigten Benutzern, andere Benutzer und Nachbarsysteme zu sperren [^D2a-03] |   1   | Diese berechtigten Benutzer sind typischerweise die Adminstratoren |
 | D.2.a.12 | Das Produkt erlaubt berechtigten Benutzern, die Authentifizierung notwendigen Elemente (Passwörter, kryptografische Schlüssel, Zertifikate) anderer Benutzer und Nachbarsysteme zurückzusetzen |   1   |                                                              |
 | D.2.a.12 | Das Produkt erlaubt berechtigten Benutzern, andere Benutzer und Nachbarsysteme zu löschen |   1   |                                                              |
 | D.2.a.13 | Das Produkt erlaubt es Benutzern nicht, die eigene Berechtigung zu ändern |   2   |                                                              |
@@ -416,7 +417,7 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 | :------: | :----------------------------------------------------------- | :---: | :----------------------------------------------------------- |
 | D.2.b.1  | Das Produkt erlaubt es Benutzern, alle patientenspezifischen Daten endgültig zu löschen. Das Produkt erlaubt es, die Berechtigungen dafür zu beschränken (z.B. auf Rollen). |   2   |                                                              |
 | D.2.b.2  | Das Produkt schützt Daten vor ungewolltem Löschen. [^D2b-01] |   2   | Hersteller müssen prüfen, ob kein höherwertiges Schutzziel dem entgegensteht, wie die zuvor genannte Anforderung. |
-| D.2.b.3  | Das Produkt übermittelt Daten, zumindest sicherheitsbezogene Daten, über seine Datenschnittstellen nur in verschlüsselter Form. Das gilt auch für das Abspeichern auf externen Datenträgern. |   1   | Nachfragen, welche Verschlüsselung zum Einsatz kommt und wie der initiale Schlüsselaustausch realisiert ist |
+| D.2.b.3  | Das Produkt übermittelt Daten, zumindest sicherheitsbezogene Daten, über seine Datenschnittstellen nur in verschlüsselter Form. Das gilt auch für das Abspeichern auf externen Datenträgern. |   1   | Nachfragen, welche Verschlüsselung zum Einsatz kommt, weshalb die dem Stand der Technik entspricht und wie der initiale Schlüsselaustausch realisiert ist |
 | D.2.b.4  | Das Produkt sichert die Integrität der Daten vor ungewollter Veränderung z.B. durch kryptographische Verfahren |   2   | Das gilt insbesondere für sicherheitsrelevante Daten wie die unter [^C1bii-01] genannten. |
 | D.2.b.5  | Das Produkt lehnt per Default alle eingehenden Verbindungen (z.B. USB, TCP, Bluetooth) ab. |   2   | Forderung der FDA                                            |
 | D.2.b.6  | Das Produkt überprüft alle Benutzereingaben und alle eingehenden Daten vor der weiteren Verarbeitung anhand von Hersteller festgelegten Überprüfungskriterien (s.o.) [^D2b-02] |   1   | Jeweils ein Beispiel für einen Dateninput an der Benutzer- und an der Datenschnittstelle auswählen und sich die Überprüfung im Code zeigen lassen |
@@ -468,7 +469,7 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 | D.3.1 | Die Software verwendet für alle kryptographischen Funktionen (z.B. Verschlüsselung, Signierung) ausschließlich bewährte Bibliotheken / Komponenten (keine eigene Implementierung). [^D3-01] |   1   | die Bibliothek muss in der Liste der SOUP-/OTS-Komponenten enthalten sein. Vom Hersteller sich die Auswahl(kriterien) erklären lassen |
 | D.3.2 | Die Software verwendet für unterschiedliche Funktionen (z.B. Verschlüsselung der Kommunikation, Verschlüsselung der Daten) unterschiedliche Technologien oder Schlüssel. |   3   |                                                              |
 | D.3.3 | Die Software ist soweit technisch möglich vor Malware (Viren, Würmern usw.) geschützt. |   1   | Sich erklären lassen, wie das System vor Malware geschützt ist und wie dieser Schutz aufrechterhalten wird |
-| D.3.4 | Die Software basiert auf den Versionen der SOUP-/OTS-Komponenten, die keine sicherheitsrelevanten Schwachstellen enthalten. Ausnahmen sind begründet |   1   | sich in SOUP-Liste ein Beispiel herauspicken und auf der Herstellerseite die Version recherchieren und prüfen, welche Schwachstellen in Nachfolge-Versionen gepatched wurden |
+| D.3.4 | Die Software basiert auf den Versionen der SOUP-/OTS-Komponenten, für die keine sicherheitsrelevanten Schwachstellen bekannt sind. Ausnahmen sind begründet |   1   | sich in SOUP-Liste ein Beispiel herauspicken und auf der Herstellerseite die Version recherchieren und prüfen, welche Schwachstellen in Nachfolge-Versionen gepatched wurden |
 
 [^D3-01]: Die FDA besteht auf dem [https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Standards) und  der [NIST FIPS 140-2 Suite B](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2851.pdf).
 
