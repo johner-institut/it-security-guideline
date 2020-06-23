@@ -364,7 +364,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | C.2.c.5 | How the manufacturer ensures that the patches are also installed. | 2 |   |
 | C.2.c.6 | Who informs the customers, how and within what deadlines. | 2 |   |
 | C.2.c.7 | In which cases decommissioning or other product recalls is ordered and how. | 2 |   |
-|C.2.c.8|Der Hersteller has created a plan how to develop and distribute patches and how to verify the effective distribution|2||
+| C.2.c.8 | The manufacturer has created a plan how to develop and distribute patches and how to verify the effective distribution | 2 |   |
 
 [^C2c-01]: The Incident Response Plan may be part of other plans or documents such as the post-market surveillance plan or vigilance requirements.
 
