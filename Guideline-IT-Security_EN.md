@@ -135,7 +135,7 @@ In this way, manufacturers can also access the expertise of external resources.
 
 [^B2-01]: Examples are: developers, testers, regulatory affairs and quality managers, employees in service and support, product managers, medical product consultants
 
-[^B2-02]: competences (to understand, to be able to) and not primarily topics should be mentioned
+[^B2-02]: Competences (to understand, to be able to) and not primarily topics should be mentioned
 
 ### **3. Documentation**
 
@@ -165,7 +165,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 
 [^C1a-02]: Examples can be found in the section on "Accompanying materials".
 
-[^C1a-03]: Examples: A not specified users (e.g. a user without a mandatory training) uses the medical device software. A specified user uses the product in a non-specified use environment e.g. a product that is installed on a system without malware protection, despite the fact that the manufacturer has specified this malware protection as precondition. Other example: User uses software in web browser Z despite the fact that the manufacturer has specified to use the software only with web browsers X and Y.
+[^C1a-03]: Examples: An unspecified users (e.g. a user without a mandatory training) uses the medical device software. A specified user uses the product in a non-specified use environment e.g. a product that is installed on a system without malware protection, despite the fact that the manufacturer has specified this malware protection as precondition. Other example: User uses software in web browser Z despite the fact that the manufacturer has specified to use the software only with web browsers X and Y.
 
 [^C1a-04]: Examples of such classification systems are [DREAD](https://en.wikipedia.org/wiki/DREAD_risk_assessment_model) and [CVSS](https://nvd.nist.gov/vuln-metrics/cvss). However, they have no relation to safety.
 
@@ -186,7 +186,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | C.1.b.i.9 | Where necessary, the manufacturer has requested additional mechanisms to minimize the probability of unauthorized access.[^C1bi-04] | 2 |   |
 | C.1.b.i.10 | The manufacturer has analyzed in the context of risk management process the impacts on patient safety if a person cannot access patient or device data (e.g. no authorization, they forget their password), and defined appropriate measures.[^C1bi-05] | 1 | This is about balancing the protection goals of &quot;confidentiality&quot; and &quot;safety&quot;. |
 
-[^C1bi-01]: The standards can be divided into the structural interoperability level (e.g. TCP/IP, HTTPs, SFTP, CAN, RS232, USB), the syntactic level (e.g. csv, JSON, XML, HL7), the semantic level (e.g. nomenclatures and coding systems such as LOINC (e.g. laboratory values), ATC (drugs), ICD (diagnoses), UCUM (units) and the organizational level (IHE))
+[^C1bi-01]: The standards can be divided into the structural interoperability level (e.g. TCP/IP, HTTPS, SFTP, CAN, RS232, USB), the syntactic level (e.g. CSV, JSON, XML, HL7), the semantic level (e.g. nomenclatures and coding systems such as LOINC (e.g. laboratory values), ATC (drugs), ICD (diagnoses), UCUM (units) and the organizational level (IHE))
 
 [^C1bi-02]: As an alternative to the user scenarios, you can also examine each related group of UI elements (for example, screen pages, panels) that are offered within this user scenario. This activity is part of the general analysis of the risks that can arise from the implementation of information security product measures.
 
@@ -208,7 +208,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 
 [^C1bii-01]: Examples of such data are patient data (e.g. demographic data, anamnesis, diagnoses), examination data (e.g. laboratory values, radiology and pathology images) and treatment data (prescriptions, settings of medical devices), configuration data of the products, user data (in particular access data), keys, software certificates, program code (including SOUP/OTS).
 
-[^C1bii-02]: Examples of checks: Check for wrong length, completeness, wrong character set, unexpected characters, multiple sent data, outdated / delayed data, unexpected or wrong formats (e.g. no escaping of characters with special meaning like separators, no well-formed XML, invalid JSON files, wrong data types, XML that does not correspond to the specified schema), other character sets, keywords contained in the input and (invalid) commands, big-endian instead of little-endian, values that are not contained in the intended value range (e.g. in the classification or encoding system), wrong time zone, wrong number format, impossible data (e.g. birthday in the future), contradictory data, etc.
+[^C1bii-02]: Examples of checks: Check for wrong length, completeness, wrong character set, unexpected characters, multiple sent data, outdated / delayed data, unexpected or wrong formats (e.g. no escaping of characters with special meaning like separators, malformed XML, invalid JSON files, wrong data types, XML that does not correspond to the specified schema), other character sets, keywords contained in the input and (invalid) commands, big-endian instead of little-endian, values that are not contained in the intended value range (e.g. in the classification or encoding system), wrong time zone, wrong number format, impossible data (e.g. birthday in the future), contradictory data, etc.
 
 [^C1bii-03]: If possible and useful, lists of permitted values (white listing) are recommended.
 
@@ -263,7 +263,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 
 [^C1d-01]: Examples are code metrics (e.g. McCabe measure), specifications for the documentation/commenting of the code and for its formatting, as well as the prohibition of unsafe functions (in C "gets", "strcopy" and  [other functions](https://msdn.microsoft.com/library/bb288454.aspx)), also the obligation to use annotations (e.g. [SAL](https://msdn.microsoft.com/en-us/library/ms235402.aspx)) to avoid buffer overflows, the obligation to check the transfer parameters also for internal interfaces etc.
 
-[^C1d-02]: Examples would be a physical access protection, obfuscation of code, operating system with Address Space Layout Randomization. This protection is usually implemented by the following operating systems
+[^C1d-02]: Examples would be a physical access protection, obfuscation of code, operating system with Address Space Layout Randomization. This protection is usually implemented by the operating systems.
 
 #### **e) Evaluation of software units**
 
@@ -298,11 +298,11 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 
 [^C1f-01]: This plan can be part of the development plan, a V&V plan, or another plan.
 
-[^C1f-02]: For example, the vulnerabilities are stored in the [NIST National Vulnerability Database](https://nvd.nist.gov/) (NVD). Usually scanners like Nessus or OpenVAS are used. The requirement is not that all known vulnerabilities are necessarily tested during penetration testing. The FDA demands this cross reference between the "CBOMs" and the NVD expliit.
+[^C1f-02]: For example, the vulnerabilities are stored in the [NIST National Vulnerability Database](https://nvd.nist.gov/) (NVD). Usually scanners like Nessus or OpenVAS are used. The requirement is not that all known vulnerabilities are necessarily tested during penetration testing. The FDA demands this cross reference between the "CBOMs" and the NVD explicitly.
 
 [^C1f-03]: Fuzz testing should focus on your own code rather than on the OTS software. The use of several scanners usually leads to a larger range of input values.
 
-[^C1f-04]: Examples: DoS, SQL injection, cross-site scripting (XSS), directory transversal, buffer overflow, syntactically or semantically incorrect queries,
+[^C1f-04]: Examples: DoS, SQL injection, cross-site scripting (XSS), directory traversal, buffer overflow, syntactically or semantically incorrect queries,
 
 #### **g) Product release**
 
@@ -338,18 +338,20 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | C.2.b.1 | The manufacturer has created a post-market surveillance plan. | 0 |   |
 | C.2.b.2 | The manufacturer has described which information is collected from the post-production phase.[^C2b-01] | 1 |   |
 | C.2.b.3 | The manufacturer has described how and through which channels information is collected from the post-production phase. | 1 |   |
-| C.2.b.4 | The manufacturer has described what information is analyzed and evaluated from the post-production phase [^C2b-02]. | 2 | Ask the manufacturer to explain how it recognizes and defines a trend reversal and the threshold values it has set.[^D2-03] |
+| C.2.b.4 | The manufacturer has described what information is analyzed and evaluated from the post-production phase [^C2b-02]. | 2 | Ask the manufacturer to explain how it recognizes and defines a trend reversal and the threshold values it has set.[^C2b-03] |
 | C.2.b.5 | The manufacturer has described the resulting measures.[^C2b-04] | 2 | Ask for the connection to the corrective and preventive actions in the process descriptions to be shown. |
 | C.2.b.6 | For each OTS component, the manufacturer has defined at least one source through which it is informed of IT security problems and how often it is monitored [^C2b-05] and described the role this analysis performs with which tools. | 2 | These sources should include the websites of the OTS manufacturer and the [NIST National Vulnerability Database](https://nvd.nist.gov/). |
 | C.2.b.7 | The manufacturer has described how it monitors that the technologies and procedures used (e.g. cryptology) are still secure. | 2 |   |
 
-[^C2b-01]: Examples: Audit logs, vulnerability databases, customer complaints, hotline calls, observations (e.g. user behavior), government databases (e.g. FDA MAUDE, BfArM, SwissMedic, etc.), social media, Google search, laws, standards, etc... All also about similar products or technologies
+[^C2b-01]: Examples: Audit logs, vulnerability databases, customer complaints, hotline calls, observations (e.g. user behavior), government databases (e.g. FDA MAUDE, BfArM, SwissMedic, etc.), social media, Google search, laws, standards, etc... Also search for similar products and technologies.
 
 [^C2b-02]: The MDR requires this in the Annex to the Post-Market Surveillance. The manufacturers must determine when (e.g. Incident/near Incident) the measure (see below) is to be taken.
 
 [^C2b-03]: MDR also requires the definition of threshold values and identification of trends. 
+
 [^C2b-04]: Measures may include: Recalls, government notifications, CAPA, product improvement, process improvement, training (user, internal), customer information, change of accompanying materials, restriction of purpose. The definition (e.g. field safety note) must therefore include the definition of who is to be informed (e.g. user, notified body, authority).
-[^C2b-05]: The frequency would have to be at least annually, for critical components more frequently than monthly. ANSI UL 2900-2-1 speaks of update cycles of two weeks.
+
+[^C2b-05]: The frequency would have to be at least annually, for critical components more frequently than monthly. ANSI UL 2900-2-1 mentions update cycles of two weeks.
 
 #### **c) Incident response plan**
 
@@ -364,7 +366,7 @@ In Europe (unlike in the USA), there is also no obligation to create a specific 
 | C.2.c.5 | How the manufacturer ensures that the patches are also installed. | 2 |   |
 | C.2.c.6 | Who informs the customers, how and within what deadlines. | 2 |   |
 | C.2.c.7 | In which cases decommissioning or other product recalls is ordered and how. | 2 |   |
-|C.2.c.8|Der Hersteller has created a plan how to develop and distribute patches and how to verify the effective distribution|2||
+|C.2.c.8|The manufacturer has created a plan how to develop and distribute patches and how to verify the effective distribution|2||
 
 [^C2c-01]: The Incident Response Plan may be part of other plans or documents such as the post-market surveillance plan or vigilance requirements.
 
@@ -407,7 +409,7 @@ Manufacturers must check each of the measures described below to see whether the
 
 [^D2a-03]: This blocking must also not lead to safety risks. For this reason, locking should not be possible during examination or treatment, but only in maintenance mode, for example.
 
-[^D2a-04]: There are situations in which safety is more important than security, especially as confidentiality. In these emergency situations, a user must access data (in particular patient or prescription data), even if he or she lacks the necessary authorizations. An example would be that an emergency patient must be treated and data such as drug intolerances or laboratory values (e.g. blood group) must be accessed before treatment (e.g. medication, blood transfusion) can begin. This access must always be possible for the treating physician, regardless of the authorizations. The "Breaking-the-glass" can, for example, be implemented as a button.
+[^D2a-04]: There are situations in which safety is more important than security, especially as confidentiality. In these emergency situations, a user must access data (in particular patient or prescription data), even if he or she lacks the necessary authorizations. An example would be that an emergency patient must be treated and data such as drug intolerances or laboratory values (e.g. blood group) must be accessed before treatment (e.g. medication, blood transfusion) can begin. This access must always be possible for the treating physician, regardless of the authorizations. The "Breaking the glass" can, for example, be implemented as a button.
 
 #### **b) Communication and storage**
 
@@ -417,8 +419,8 @@ Manufacturers must check each of the measures described below to see whether the
 | D.2.b.2 | The product protects data from accidental deletion. [^D2b-01] | 2 | Manufacturers must check that there is no higher value security objective that prevents this, e.g. the above requirement. |
 | D.2.b.3 | The product only transmits data (or at least security-related data) via its data interfaces in encrypted form. This also applies to storage on external data carrier. | 1 | Ask which encryption is used, why this is considered to be state-of-the-art and how the initial key exchange is done. |
 | D.2.b.4 | The product protects the integrity of the data against unwanted modification, e.g. through cryptographic procedures. | 2 | This applies in particular to security-relevant data, such as those mentioned in [^C1bii-01]. |
-| D.2.b.5 | By default, the product rejects all incoming connections (e.g. USB, TCP, Bluetooth). | 1 | FDA requirement. |
-| D.2.b.6 | The product checks all user inputs and all incoming data on the basis of verification criteria defined by the manufacturer (see above) before further processing. [^D2b-02] | 2 |  |
+| D.2.b.5 | By default, the product rejects all incoming connections (e.g. USB, TCP, Bluetooth). | 2 | FDA requirement. |
+| D.2.b.6 | The product checks all user inputs and all incoming data on the basis of verification criteria defined by the manufacturer (see above) before further processing. [^D2b-02] | 1 |  |
 | D.2.b.7 | The product does not use wireless transmission for the transmission of time-critical data relevant to patient safety. | 2 |   |
 | D.2.b.8 | The product stores passwords as &quot;salted hash&quot; only. | 2 | E.g. ask about the hash procedure and, if necessary, ask for it to be shown. |
 | D.2.b.9 | The product stores characteristics that could be used to identify a person in encrypted form only. | 2 | Ask for an explanation as to what the manufacturer defines as characteristics that could be used to identify a person and which encryption mechanism it uses. |
@@ -532,7 +534,7 @@ Depending on the risk posed by a product, an auditor or test may require a certa
 - **AAMI TIR57**, Principles for medical device security – Risk management
 - **ANSI UL 2900-1**, Standard for Safety, Standard for Software Cybersecurity Network-Connectable      Products, Part 1: General Requirements
 - **ANSI UL 2900-2-1**, Standard for Safety, Software Cybersecurity for Network-Connectable Products, Part      2-1: Particular Requirements for Network Connectable Components of Healthcare and Wellness Systems
-- **BSI-CS 132**, [Cyber Security Requirements for Network-Connected Medical Devices](https://www.allianz-fuer-cybersicherheit.de/ACS/DE/_/downloads/BSI-CS_132E.pdf?__blob=publicationFile&v=3)
+- **BSI-CS 132**, [Cyber Security Requirements for Network-Connected Medical Devices](https://www.allianz-fuer-cybersicherheit.de/ACS/DE/_/downloads/BSI-CS/BSI-CS_132E.pdf?__blob=publicationFile&v=7)
 - **EN IEC 60601-1/AMD1**, Medical electrical equipment – Part 1: General requirements for basic safety and essential performance
 - **IEC 62304/AMD1**, Medical device software – Software life cycle processes
 - **IEC 62443-2-1**, Industrial communication networks – Network and system security – Part 2-1:      Establishing an industrial automation and control system security program
@@ -557,7 +559,7 @@ Depending on the risk posed by a product, an auditor or test may require a certa
 #### **b) Technical literature and books**
 
 - Claudia Eckert: [IT-Sicherheit:](https://www.amazon.de/Sicherheit-Konzepte-Verfahren-Protokolle-Gruyter/dp/3110551586/)[Konzepte - Verfahren - Protokolle (De Gruyter Studium)](https://www.amazon.de/Sicherheit-Konzepte-Verfahren-Protokolle-Gruyter/dp/3110551586/)
-- Johner Institute: [Video trainings on the IT security of medical devices](../../C:%5CUsers%5Cchristianjohner%5CDocuments%5C99_Temp%5Crepo%5Cit-security-guideline%5Cwww.auditgarant.de)
+- Johner Institute: [Video trainings on the IT security of medical devices](https://www.johner-institut.de/auditgarant/)
 - Current trends in [Bruce Schneier&#39;s blog](https://www.schneier.com/)
 
 ### **3. Considerations**
