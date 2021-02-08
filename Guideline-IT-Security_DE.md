@@ -22,7 +22,7 @@ Dieser Leitfaden wendet sich an Hersteller von Medizinprodukten, insbesondere vo
 
 Er hat die IT-Sicherheit der Produkte im Fokus, nicht die IT-Sicherheit der Organisation.
 
-Der Leitfaden ist auch geeignet, um die technischen Maßnahmen zu bewerten, die der vom Datenschutz gefordert werden. Dennoch liegt der Schwerpunkt auf der Patientensicherheit, nicht der Vertraulichkeit von Daten.
+Der Leitfaden ist auch geeignet, um die technischen Maßnahmen zu bewerten, die vom Datenschutz gefordert werden. Dennoch liegt der Schwerpunkt auf der Patientensicherheit, nicht der Vertraulichkeit von Daten.
 
 ### 3. Hinweise zur Verwendung
 
@@ -67,7 +67,7 @@ Dieser Leitfaden enthält Anforderungen, die nicht bei allen Produkten anwendbar
 
 #### c) Priorisierung
 
-Sollten die Hersteller nicht alle Anforderungen dieses Leitfadens von Beginn an erfüllen können, sollten so möglich und sinnvoll die Anforderungen in der Reihenfolge deren Priorität (zuerst Stufe 0, zum Schluss Stufe 3) erfüllen. Diese Stufen beschreibt der Anhang.
+Sollten die Hersteller nicht alle Anforderungen dieses Leitfadens von Beginn an erfüllen können, sollten sie - so möglich und sinnvoll - die Anforderungen in der Reihenfolge deren Priorität (zuerst Stufe 0, zum Schluss Stufe 3) erfüllen. Diese Stufen beschreibt der Anhang.
 
 Die Akzeptanz des erreichten Sicherheitsniveaus ist zu bewerten.
 
@@ -120,7 +120,7 @@ Die Hersteller sollten alle unten genannten Aspekte entweder in den Verfahrensan
 - Kundenkommunikation
 - Managementbewertung (ISO 13485:2016 fordert "anwendbare neue oder überarbeitete regulatorische Anforderungen" zu berücksichtigen.)
 
-Nutzt der Hersteller ausgelagerte Prozesse, so gelten die Anforderungen entsprechend. Beispielsweise müsste ein (Software-)Entwicklungsdienstleister verpflichtet werden, die für ihn relevanten Kapitel dieser Leitlinie zu beachten.
+Nutzt der Hersteller ausgelagerte Prozesse, so gelten die Anforderungen entsprechend. Beispielsweise müsste ein (Software-) Entwicklungsdienstleister verpflichtet werden, die für ihn relevanten Kapitel dieser Leitlinie zu beachten.
 
 ### 2. Kompetenzen
 
@@ -131,9 +131,9 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
 |B.2.1|Der Hersteller hat eine Liste aller Rollen erstellt, die mit dem Thema IT-Sicherheit direkt oder indirekt befasst sind [^B2-01]|1||
-|B.2.2|Der Hersteller hat für jede Rollen die Kompetenzen mit Bezug zur IT-Sicherheit bestimmt [^B2-02]|1||
-|B.2.3|Der Hersteller hat an gemessene Aufzeichnungen über die Ausbildung, Weiterbildung und Kompetenzen, die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen|1||
-|B.2.4|Die (Software-)Entwicklungspläne legen produktspezifisch die (darüber hinausgehenden oder abweichenden) Kompetenzen fest|2|Anforderung der ISO 13485:2016|
+|B.2.2|Der Hersteller hat für jede Rolle die Kompetenzen mit Bezug zur IT-Sicherheit bestimmt [^B2-02]|1||
+|B.2.3|Der Hersteller hat angemessene Aufzeichnungen über die Ausbildung, Weiterbildung und Kompetenzen, die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen|1||
+|B.2.4|Die (Software-) Entwicklungspläne legen produktspezifisch die (darüber hinausgehenden oder abweichenden) Kompetenzen fest|2|Anforderung der ISO 13485:2016|
 
 [^B2-01]: Beispiele sind: Entwickler, Tester, Regulatory Affairs und Qualitätsmanager, Mitarbeiter in Service und Support, Produktmanager, Medizinprodukteberater
 
@@ -183,7 +183,7 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 |C.1.b.i.4|Der Hersteller hat die Sicherheitsrelevanz (im Sinne von Gefährdung) aller Funktionen analysiert.|0||
 |C.1.b.i.5|Der Hersteller hat die Auswirkungen sicherheitsrelevanter (im Sinne von Gefährdung) Funktionen im Risikomanagement dokumentiert|0||
 |C.1.b.i.6|Der Hersteller hat jedes Benutzungsszenario[^C1bi-02] untersucht, welche Risiken sich aus einer nicht spezifizierten Anzeige von Informationen (z.B. keine, falsche, zu späte Anzeige) ergeben.|1|In Risikomanagement- oder Usability-Akte zeigen lassen|
-|C.1.b.i.7|Der Hersteller hat für jede Rolle und jedes Nachbarsystem die Funktionen des Produkts bestimmt, auf die sie über die jeweilige Schnittstelle zugreifen darf |1|"Mapping" von Rollen auf Funktionen zeigen lassen z.B. in Form einer Tabelle|
+|C.1.b.i.7|Der Hersteller hat für jede Rolle und jedes Nachbarsystem die Funktionen des Produkts bestimmt, auf die sie bzw. es über die jeweilige Schnittstelle zugreifen darf |1|"Mapping" von Rollen auf Funktionen zeigen lassen z.B. in Form einer Tabelle|
 |C.1.b.i.8|Der Hersteller hat die Wahl des Authentifizierungsverfahren (Benutzername / Passwort, Biometrisches Verfahren, Token z.B. Karte) für alle Rollen und alle Nachbarsysteme begründet |1|Die Begründung sollte risikobasiert sein|
 |C.1.b.i.9|Der Hersteller hat ggf. weitere Mechanismen gefordert, um die Wahrscheinlichkeit unautorisierter Zugriffe zu minimieren [^C1bi-04]|2||
 |C.1.b.i.10|Der Hersteller hat im Risikomanagement die Auswirkungen für die Patientensicherheit analysiert, wenn eine Person nicht auf Patienten- oder Gerätedaten zugreifen kann (z.B. keine Berechtigung, Passwort vergessen), und entsprechende Maßnahmen definiert [^C1bi-05]|1|Hier geht es um die Abwägung der Schutzziele "Vertraulichkeit" versus "Safety"|
@@ -236,13 +236,13 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 |C.1.c.1|Der Hersteller hat alle SOUP-/ OTS-Komponenten dokumentiert (inkl. Version, Hersteller, Referenz auf Informationen zu Updates, Release-Notes)|1|Liste / Tabelle zeigen lassen. Die FDA fordert die "Cybersecurity Bill of Materials (CBOM)"|
 |C.1.c.2|Der Hersteller hat die spezifischen Risiken, die sich durch die Wahl der Technologien (insbesondere Programmiersprache, SOUP- / OTS-Komponenten inklusive Betriebssystemen) ergeben analysiert.|2||
 |C.1.c.3|Der Hersteller hat Maßnahmen ergriffen, um sicherzustellen, dass die verwendeten Werkzeuge (z.B. Entwicklungsumgebung, Compiler), sowie die Plattformen und SOUP/OTS-Komponenten frei von Schadcode sind [^C1c-01]|2||
-|C.1.c.4|Der Hersteller haben einer Liste aller Dienste [^C1c-02] erstellt, die das Produkt (z.B. durch sein Betriebssystem) nach "außen" anbietet bzw. nutzt|1|sich diese Liste zeigen lassen|
+|C.1.c.4|Der Hersteller hat einer Liste aller Dienste [^C1c-02] erstellt, die das Produkt (z.B. durch sein Betriebssystem) nach "außen" anbietet bzw. nutzt|1|sich diese Liste zeigen lassen|
 |C.1.c.5|Der Hersteller hat für jeden Dienst begründet, weshalb dieser (zeitlich unbeschränkt) nach außen sichtbar sein muss|2|sich vom Hersteller erklären lassen, wie/wo gefordert und geprüft ist, dass nicht (oder nur zeitlich beschränkt) benötigte Dienste auch tatsächlich nicht (oder nur zeitlich beschränkt) angeboten werden. Ziel ist die "Attack Surface Reduction"|
 |C.1.c.6|Wenn das Produkt eine Schnittstelle anbietet, hat der Hersteller im Risikomanagement beschrieben, wie Angriffe über diese Schnittstelle beherrscht werden|1|eine völlige Beherrschung dieser Risiken ist bei USB-Schnittstellen i.d.R. kaum möglich, aber auch nicht in allen Fällen erforderlich|
 |C.1.c.7|Der Hersteller hat für jeden nach außen sichtbaren Dienst den Prozess identifiziert, der diesen Dienst anbietet / realisiert|2||
 |C.1.c.8|Der Hersteller hat für jeden Prozess den Nutzer (auf Betriebssystemebene) identifiziert und begründet, wenn dieser nicht mit minimalen Rechten ("worst case" als Root) läuft|2||
 |C.1.c.9|Der Hersteller hat Risiken durch mangelnde IT-Sicherheit systematisch durch ein Threat-Modeling abgeleitet. |2|Sich das Modell zeigen lassen, dass zumindest die externen Akteure und/oder Bedrohungen und die bedrohten Objekte erkennen lassen muss|
-|C.1.c.10|Der Hersteller hat die Risiken analysiert, die sich durch das (Auto-)Update von Anti-Malware ergeben|1||
+|C.1.c.10|Der Hersteller hat die Risiken analysiert, die sich durch das (Auto-) Update von Anti-Malware ergeben|1||
 |C.1.c.11|Der Hersteller hat festgelegt, wie das Produkt eine Kompromittierung der IT-Sicherheit feststellen, diese dokumentieren (log) und darauf wie schnell reagieren muss.|1||
 |C.1.c.12|Bezüglich des Auditlogs hat der Hersteller festgelegt, wo dessen Daten liegen, wie diese geschützt, aktualisiert und in welcher Form dieses automatisiert ausgewertet werden kann.|2||
 |C.1.c.13|Der Hersteller hat für alle Software-Komponenten [^C1c-03], Dienste bzw. Prozesse, Daten und Software-Komponenten analysiert, welche Risiken entstehen, wenn diese sich aufgrund eines Problems mit der IT-Sicherheit nicht spezifikationsgemäß verhalten |1|Entspricht einem FMEA-Ansatz|
@@ -272,7 +272,7 @@ Es besteht in Europa (im Gegensatz zu den USA) auch keine Pflicht, ein spezifisc
 |ID|Anforderung|Stufe|Kommentare|
 |:--:|:--|:--:|:--|
 |C.1.e.1|Der Hersteller hat mindestens eine Methode festgelegt, mit der die Einhaltung der Coding-Guidelines überprüft wird.|1|das wird dem Hersteller gelingen, wenn er Werkzeuge zur statischen Code-Analyse einsetzt und/oder Vorgaben für die Code-Reviews macht.|
-|C.1.e.2|Der Hersteller verlangt Code-Reviews für alle Komponenten, die (IT-)sicherheitsrelevanten Funktionen abbilden.|1|"Sicherheit" ist hier im Sinne von "Safety" zu verstehen|
+|C.1.e.2|Der Hersteller verlangt Code-Reviews für alle Komponenten, die (IT-) sicherheitsrelevanten Funktionen abbilden.|1|"Sicherheit" ist hier im Sinne von "Safety" zu verstehen|
 |C.1.e.3|Der Hersteller hat konkrete Prüfkriterien[^C1e-01] in seinen Vorgabedokumenten für die Code-Reviews.|2||
 |C.1.e.4|Die Code-Reviews werden nach dem Vier-Augen-Prinzip und nur von Personen durchgeführt, die über die notwendige Kompetenz verfügen. Der Hersteller hat diese Kompetenz dokumentiert[^C1e-02].|2||
 |C.1.e.5|Der Hersteller hat festgelegt, welche Tests (z.B. Unit-Tests) mit welchen Testfällen[^C1e-03] und welchem zu erreichenden Abdeckungsgraden notwendig sind.|1||
@@ -393,13 +393,13 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 | D.2.a.5  | Das Produkt sperrt Benutzer und Nachbarsysteme nach n Versuchen für m Minuten aus, wobei der Hersteller n und m Werte oder Untergrenzen festlegt. Der Hersteller hat die "Safety-bezogenen" Risiken als Folge des Aussperrens analysiert und ggf. risikominimierende Maßnahmen implementiert[^D2a-02]. |   1   |                                                              |
 | D.2.a.6  | Das Produkt zeigt im Falle eines nicht erfolgreichen Logins nur Informationen an, die es dem Anwender nicht erlauben die genaue Ursache der Sperrung zu erkennen, wie z.B. falscher Benutzername oder falsches Passwort. |   2   |                                                              |
 | D.2.a.7  | Das Produkt beendet Bediensitzungen für Benutzer und Nachbarsysteme nach n Minuten Inaktivität, wobei der Hersteller für n den Wert oder dessen Obergrenze festlegt. |   2   |                                                              |
-| D.2.a.8  | Das Produkt weist jedem Benutzer und jedem Nachbarsystem bei der Authentifizierung eine Rolle zu |   1   | Erklären lassen, in welcher/welchen Software-Komponente(n) Komponenten diese Funktionalität implementiert und wie dies geprüft ist. Die FDA fordert sogar ein hierarchisches Rollenkonzept. |
-| D.2.a.9  | Das Produkt erlaubt jeder Rolle den Zugriff auf nur die Funktionen, für die die sie berechtigt ist. Dies gilt insbesondere auch für das Update/Upgrade des Produkts |   1   | Erklären lassen, in welcher/welchen Software-Komponente(n) Komponenten diese Funktionalität implementiert und wie dies geprüft ist. Die FDA fordert sogar ein hierarchisches Rollenkonzept.                                                         |
+| D.2.a.8  | Das Produkt weist jedem Benutzer und jedem Nachbarsystem bei der Authentifizierung eine Rolle zu |   1   | Erklären lassen, in welcher/welchen Software-Komponente(n) diese Funktionalität implementiert wurde und wie dies geprüft ist. Die FDA fordert sogar ein hierarchisches Rollenkonzept. |
+| D.2.a.9  | Das Produkt erlaubt jeder Rolle den Zugriff auf nur die Funktionen, für die sie berechtigt ist. Dies gilt insbesondere auch für das Update/Upgrade des Produkts |   1   | Erklären lassen, in welcher/welchen Software-Komponente(n) diese Funktionalität implementiert wurde und wie dies geprüft ist. Die FDA fordert sogar ein hierarchisches Rollenkonzept.                                                         |
 | D.2.a.10 | Das Produkt erlaubt berechtigten Benutzern, andere Benutzer und Nachbarsysteme zu sperren [^D2a-03] |   1   | Diese berechtigten Benutzer sind typischerweise die Adminstratoren |
-| D.2.a.11 | Das Produkt erlaubt berechtigten Benutzern, die Authentifizierung notwendigen Elemente (Passwörter, kryptografische Schlüssel, Zertifikate) anderer Benutzer und Nachbarsysteme zurückzusetzen |   1   |                                                              |
+| D.2.a.11 | Das Produkt erlaubt berechtigten Benutzern, die zur Authentifizierung notwendigen Elemente (Passwörter, kryptografische Schlüssel, Zertifikate) anderer Benutzer und Nachbarsysteme zurückzusetzen |   1   |                                                              |
 | D.2.a.12 | Das Produkt erlaubt berechtigten Benutzern, andere Benutzer und Nachbarsysteme zu löschen |   1   |                                                              |
 | D.2.a.13 | Das Produkt erlaubt es Benutzern nicht, die eigene Berechtigung zu ändern |   2   |                                                              |
-| D.2.a.14 | Das Produkt erlaubt es, Berechtigungen auszuhebeln ("Breaking the glass"), und identifiziert / dokumentiert die Person und die Gründe[^D2a-04] |   2   |                                                              |
+| D.2.a.14 | Das Produkt erlaubt es, Berechtigungen auszuhebeln ("Breaking glass"), und identifiziert / dokumentiert die Person und die Gründe[^D2a-04] |   2   |                                                              |
 | D.2.a.15 | In einer Client-Server Architektur werden alle Maßnahmen zur IT-Sicherheit serverseitig berechnet und geprüft |   2   |                                                              |
 | D.2.a.16 | In einer Client-Server Architektur werden alle Eingaben des Clients serverseitig geprüft |   2   |                                                              |
 
@@ -423,9 +423,9 @@ Die Hersteller müssen jede der im Folgenden genannten Maßnahme daraufhin über
 | D.2.b.6  | Das Produkt überprüft alle Benutzereingaben und alle eingehenden Daten vor der weiteren Verarbeitung anhand von Hersteller festgelegten Überprüfungskriterien (s.o.) [^D2b-02] |   1   | Jeweils ein Beispiel für einen Dateninput an der Benutzer- und an der Datenschnittstelle auswählen und sich die Überprüfung im Code zeigen lassen |
 | D.2.b.7  | Das Produkt nutzt für die Übertragung von zeitkritischen Daten, die relevant für die Patientensicherheit sind, keine kabellose Übertragung. |   2   |                                                              |
 | D.2.b.8  | Das Produkt speichert Passwörter nur als "salted hash"       |   2   | z.B. nach Hash-Verfahren fragen und ggf. zeigen lassen       |
-| D.2.b.9  | Das Produkt speichert personenidentifizierende Merkmale nur verschlüsselt |   2   | Erklären lassen, was der Hersteller als personenidentifizierende Merkmale definiert und welchen Verschlüsselungs-mechanismus er nutzt |
+| D.2.b.9  | Das Produkt speichert personenidentifizierende Merkmale nur verschlüsselt |   2   | Erklären lassen, was der Hersteller als personenidentifizierende Merkmale definiert und welchen Verschlüsselungsmechanismus er nutzt |
 | D.2.b.10 | Das Produkt schützt kritische Daten vor ungewollter Veränderung und vor Verlust |   2   |                                                              |
-| D.2.b.11 | Das Programm überprüft bei jedem Neustart, ob die Mechanismen in Takt sind, mit denen die Daten vor Verlust und Veränderung geschützt werden. |   2   |                                                              |
+| D.2.b.11 | Das Programm überprüft bei jedem Neustart, ob die Mechanismen intakt sind, mit denen die Daten vor Verlust und Veränderung geschützt werden. |   2   |                                                              |
 | D.2.b.12 | Das Produkt erlaubt es Nutzern, Datenschnittstellen zu deaktivieren (z.B. USB, Fernzugriff) |   2   |                                                              |
 | D.2.b.13 | Das Produkt prüft den Programm-Code bei jedem Neustart auf Integrität |   2   |                                                              |
 | D.2.b.14 | Das Produkt stellt im Fall einer Kompromittierung einen Notfall-Modus für Funktionen bereit, die relevant für die Sicherheit der Patienten sind. |   2   |                                                              |
@@ -492,7 +492,7 @@ Die Begleitmaterialien beziehen sich v.a. auf die Gebrauchs- und Installationsan
 
 [^D4-02]: Beispiele: Ausbildung der Anwender (z.B. zum Umgang mit Passwörtern), Aktualisierung des Virenschutzes, Information des Herstellers über Zwischenfälle, Aufspielen von Updates und Patches, Monitoring, Backup (und Restore)
 
-[^D3-01]: Beispiele: Installation, Anschluss an Netzwerk, Auswerten der Audit-Logs, Löschen nicht benötigter Benutzer, Austausch von Schlüsseln oder Zertifikaten, Löschen von temporären Dateien
+[^D4-03]: Beispiele: Installation, Anschluss an Netzwerk, Auswerten der Audit-Logs, Löschen nicht benötigter Benutzer, Austausch von Schlüsseln oder Zertifikaten, Löschen von temporären Dateien
 [^D4-04]: Ggf. muss der Hersteller auch angeben, für welchen Zeitraum er beabsichtigt, den Support anzubieten.
 [^D4-05]: Netzwerk-, Architektur, Fluss- und Zustandsdiagramme. Schnittstellen, Komponenten, Kommunikationspfade, Authentifizierungsmechanismen für jede kommunizierende "Komponente" wie Webseiten, Server, Cloud-Speicher und Interoperable Systeme. "Design Features", die validierte Software-Updates und Patches gestatten. Liste aller Komponenten wie 3rd Party Software (s. CBOM der FDA)
 
@@ -566,7 +566,7 @@ Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfer bereits von Be
 3. Im Gegensatz zu den meisten anderen grundlegenden Anforderungen sind keine Normen zum Thema IT-Sicherheit harmonisiert. Daher gibt es keinen kanonischen Katalog an Anforderungen, der anerkannt den geforderten Stand der Technik reflektiert.
 4. Die FDA hat sowohl mehrere *Guidance Documents* veröffentlicht als auch Normen wie die ANSI UL 2900-2-1 anerkannt. Diese Vorgaben sind uneinheitlich bezüglich der Granularität, Vollständigkeit und konzeptionellen Integrität. Sie erfüllen nur bedingt die Ansprüche, die an die Qualität einer Norm üblicherweise gestellt werden. 
 5. Viele Normen sind kostenpflichtig (trotz teilweise fragwürdiger Qualität). Hersteller müssen nach Auffassung der Autoren kostenfrei Zugang zu regulatorischen Anforderungen haben.
-6. Weil die meisten Medizinproduktehersteller die IT-Sicherheit nicht oder nur unzureichend adressieren, erfüllen sie die grundlegenden Anforderungen nur teilweise. Es herrscht auf kein Konsens in Europe, welche technischen und prozessualen Pflichten den Hersteller betreffen.
+6. Weil die meisten Medizinproduktehersteller die IT-Sicherheit nicht oder nur unzureichend adressieren, erfüllen sie die grundlegenden Anforderungen nur teilweise. Es herrscht auch kein Konsens in Europa, welche technischen und prozessualen Pflichten den Hersteller betreffen.
 7. Für die meisten Hersteller wäre es weder zeitlich noch finanziell umsetzbar, mit einem Schlag ein IT-Sicherheits-Niveau zu erreichen, wie es z.B. der ANSI UL 2900 fordert. Daher sollten die Hersteller schrittweise ein State-of-the-Art Niveau bezüglich der IT-Sicherheit anstreben und erreichen. Damit verfolgt dieser Leitfaden das Ziel, lieber schnell erste Verbesserungen umzusetzen, als wegen Überforderung nichts zu tun.
 8. IT-Sicherheit muss in allen Phasen des Produkt-Lebenszyklusprozessen berücksichtigt werden. Eine Beschränkung auf das Testen ist unzureichend. Zusammen mit technischen Produktmaßnahmen ("Controls") und Dokumentation möchte dieser Leitfaden auf drei Säulen für Informationssicherheit hinweisen: Anforderungen, Prozess, Dokumentation. Die Struktur des Leitfadens reflektiert diese Säulen und wird auch nach den absehbaren technologischen Anpassungen noch bestehen bleiben.
 9. Es ist zu erwarten, dass Normen zur IT-Sicherheit von Medizinprodukten entwickelt und harmonisiert werden, was aber noch Jahre in Anspruch nehmen kann. Daher bedarf es eines Leitfadens (nur) in dieser Zwischenphase. 
