@@ -487,7 +487,7 @@ The accompanying materials refer primarily to the instructions for use and insta
 | D.4.4 | The support materials describe how to deal with lost or stolen authentication elements (e.g. cards, certificates, cryptographic keys) and forgotten passwords. | 1 |   |
 | D.4.5 | The support materials describe how users can recognize an IT security problem with the product and what to do in this case. | 2 | This means that the product implements this detection. |
 | D.4.6 | The support materials describe which anti-malware software has been approved for the product and where (e.g. link) it can be obtained and who is responsible for updating it. | 2 | Only to the extent applicable. |
-| D.4.7 | The support materials contain the manufacturer&#39;s contact details, which can be used to contact the manufacturer, for example, in the event of IT security problems with.[^D4-04]  |    1 |   |
+| D.4.7 | The support materials contain the manufacturer&#39;s contact details, which can be used to contact the manufacturer, for example, in the event of IT security problems.[^D4-04]  |    1 |   |
 | D.4.8 | The support materials also give a technical description of the product. [^D4-05] |    2 | This is an FDA requirement in particular. |
 
 [^D4-01]: Examples: network / interfaces (bandwidth, availability, ports, IP ranges, latencies, encryption, firewalls etc.), virus protection, operating systems, physical access permissions, other software that may or may not run on the system at the same time (e.g. games, firewall, database, web server). The FDA also requires an indication of the direction of communication in the interfaces.
