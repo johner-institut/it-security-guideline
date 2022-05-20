@@ -556,7 +556,7 @@ Abhängig vom Risiko eines Produkts kann ein Auditor bzw. Prüfer bereits von Be
 #### c) Fachliteratur, Lehrbücher
 
 - Eckert: [IT-Sicherheit: Konzepte - Verfahren - Protokolle (De Gruyter Studium](https://www.amazon.de/Sicherheit-Konzepte-Verfahren-Protokolle-Gruyter/dp/3110551586/)
-- Johner Institut: [Videotrainings zur IT-Sicherheit bei Medizinprodukten](www.auditgarant.de)
+- Johner Institut: [Videotrainings zur IT-Sicherheit bei Medizinprodukten](https://www.johner-institut.de/auditgarant/)
 - Aktuelle Trends im [Blog von Bruce Schneier](https://www.schneier.com/)
 
 ### 3. Erwägungsgründe
